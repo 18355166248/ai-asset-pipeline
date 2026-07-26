@@ -51,14 +51,27 @@ STYLE_SEG = ("A full-bleed 3:4 portrait fantasy card illustration. {style}. "
              "same style with lower detail density than the subject so the subject "
              "reads first.")
 
-# 立绘定稿段：先出这一张，锁定当参考图（无场景、无戏、全身可见）
+# 立绘定稿段：先出这一张，锁定当参考图（三视图、无戏、全身可见）
 REFERENCE_SEG = (
-    "A full-body character reference sheet, front view, neutral standing A-pose. "
-    "{style}. Even soft lighting, plain aged rice-paper background. The character "
-    "stands calmly, showing the complete costume, hairstyle and signature equipment "
-    "clearly; the whole body and the full face are visible and uncropped. This is an "
-    "identity turnaround, not a dramatic scene.\n"
+    "A full-body character reference sheet: three views of the SAME character side by "
+    "side - front view, a side-turned view in which one shoulder points toward the "
+    "viewer and the far half of the face is partly hidden, and back view - all in "
+    "an identical neutral standing A-pose, at identical scale and in an identical "
+    "style. {style}. Even soft lighting, plain aged rice-paper background. The "
+    "character stands calmly, showing the complete costume, hairstyle and signature "
+    "equipment clearly; the whole body and the full face are visible and uncropped in "
+    "every view. This is an identity turnaround, not a dramatic scene.\n"
     "Character identity: {face}")
+
+# 服饰年代约束（全套共用）。实测：否定式（no sneakers）模型不执行，必须正说描述实物。
+PERIOD_SEG = (
+    "All clothing, footwear and accessories are period-appropriate ancient Chinese. "
+    "Footwear: flat cloth shoes with a soft upturned toe and a thin fabric sole, or "
+    "soft leather boots bound with cloth ties, in the ancient Chinese style.")
+
+# 道具白名单（全套共用）：堵住模型自作主张加法杖/背包
+PROPS_SEG = ("Carry only the equipment explicitly named in the character identity "
+             "above{extra}. No additional props, no staff, no backpack, no pets.")
 
 # 妖兽版立绘段（无衣饰发型可言，改说体型与解剖特征）
 REFERENCE_SEG_BEAST = (
@@ -117,7 +130,8 @@ def build_card(face: str | None, scene: str, style: str, no_identity: bool) -> s
     return "\n\n".join(parts)
 
 
-def build_reference(face: str, style: str, beast: bool = False) -> str:
+def build_reference(face: str, style: str, beast: bool = False,
+                    props: str | None = None) -> str:
     # 立绘阶段没有参考图，剥掉画风预设里为卡面写的「照参考图」那句
     style = style.replace(" matching the attached character reference exactly:", ":")
     seg = REFERENCE_SEG_BEAST if beast else REFERENCE_SEG
@@ -128,7 +142,12 @@ def build_reference(face: str, style: str, beast: bool = False) -> str:
             "well-formed.",
             "Limbs and claws are clearly and correctly countable; creature anatomy "
             "is natural and well-formed.")
-    return "\n\n".join([seg.format(style=style, face=face), constraints])
+    parts = [seg.format(style=style, face=face)]
+    if not beast:  # 妖兽不穿衣、不持械，跳过服饰与道具约束
+        extra = f" plus {props}" if props else ""
+        parts.append(PERIOD_SEG + " " + PROPS_SEG.format(extra=extra))
+    parts.append(constraints)
+    return "\n\n".join(parts)
 
 
 def main() -> None:
@@ -144,6 +163,8 @@ def main() -> None:
                     help="立绘定稿模式：先出这一张当参考图（需 --face）")
     ap.add_argument("--beast", action="store_true",
                     help="妖兽立绘：改说体型解剖，不提衣饰发型")
+    ap.add_argument("--props", help="额外允许的道具（白名单），如 "
+                                    "'a single sheathed jian sword at the waist'")
     ap.add_argument("--no-identity", action="store_true", help="无脸怪物，省身份段")
     args = ap.parse_args()
 
@@ -155,7 +176,7 @@ def main() -> None:
         if not face:
             print("⚠ 立绘模式需要 --face / --face-file", file=sys.stderr)
             sys.exit(1)
-        print(build_reference(face, style, beast=args.beast))
+        print(build_reference(face, style, beast=args.beast, props=args.props))
         print("\n" + "-" * 60)
         print("↑ 这是【立绘定稿】prompt，先出这张、满意后存档，作为该角色后续所有卡的参考图")
         return
