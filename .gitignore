@@ -1,0 +1,7 @@
+output/
+input/*
+!input/.gitkeep
+__pycache__/
+*.pyc
+.venv/
+venv/
