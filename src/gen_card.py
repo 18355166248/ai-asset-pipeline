@@ -49,7 +49,12 @@ STYLE_SEG = ("A full-bleed 3:4 portrait fantasy card illustration. {style}. "
              "Dramatic cinematic lighting from the single in-scene light source "
              "specified in the scene description; the background is painted in the "
              "same style with lower detail density than the subject so the subject "
-             "reads first.")
+             "reads first. "
+             # 实测：夜景/强戏剧光会把画风压成写实厚涂，需正说式锚定纸底与画法
+             "The pale aged rice-paper ground stays visible through the washes across "
+             "the whole image, including the darkest areas; keep the light watercolor "
+             "ink-wash handling and visible brush texture even in night scenes, so the "
+             "picture always reads as a painting on paper.")
 
 # 立绘定稿段：先出这一张，锁定当参考图（三视图、无戏、全身可见）
 REFERENCE_SEG = (
@@ -117,7 +122,20 @@ def _read(val: str | None, path: str | None) -> str | None:
     return val.strip() if val else None
 
 
-def build_card(face: str | None, scene: str, style: str, no_identity: bool) -> str:
+def _beast_constraints() -> str:
+    """妖兽版约束：人形的「双手可数」换成四肢/爪/尾计数。
+    实测：蛇形身躯盘绕时不点明尾巴数量，模型会画出两条尾巴。"""
+    return CONSTRAINTS_SEG.replace(
+        "Hands are clearly and correctly countable; anatomy is natural and "
+        "well-formed.",
+        "The creature has exactly four legs and exactly one tail; limbs, claws and "
+        "the single tail are clearly and correctly countable, and the serpentine "
+        "body reads as one continuous unbroken form from head to tail tip. Creature "
+        "anatomy is natural and well-formed.")
+
+
+def build_card(face: str | None, scene: str, style: str, no_identity: bool,
+               beast: bool = False) -> str:
     parts = [STYLE_SEG.format(style=style)]
     if not no_identity:
         seg = IDENTITY_PREAMBLE
@@ -126,7 +144,7 @@ def build_card(face: str | None, scene: str, style: str, no_identity: bool) -> s
         parts.append(seg)
     parts.append(scene)
     parts.append(COMPOSITION_SEG)
-    parts.append(CONSTRAINTS_SEG)
+    parts.append(_beast_constraints() if beast else CONSTRAINTS_SEG)
     return "\n\n".join(parts)
 
 
@@ -190,7 +208,7 @@ def main() -> None:
         print("⚠ 未提供身份描述（--face / --face-file）。露脸角色强烈建议提供；"
               "确为无脸怪物请加 --no-identity。", file=sys.stderr)
 
-    print(build_card(face, scene, style, args.no_identity))
+    print(build_card(face, scene, style, args.no_identity, beast=args.beast))
     if not args.no_identity:
         print("\n" + "-" * 60)
         print("↑ 复制以上 prompt，并【附上该角色的立绘参考图】再发给 GPT/Gemini")
