@@ -11,6 +11,7 @@
   resized/   缩到游戏尺寸
   contact_cutouts.png  / contact_resized.png   质检表
 """
+
 from __future__ import annotations
 
 import argparse
@@ -33,6 +34,9 @@ def main() -> None:
     ap.add_argument("--gutter", type=int, default=0, help="每格内缩像素")
     ap.add_argument("--square", action="store_true", help="缩放补正方形")
     ap.add_argument("--floodfill", action="store_true", help="去背强制用 flood-fill")
+    ap.add_argument(
+        "--chroma", action="store_true", help="去背用绿幕式（配 #FF00FF 等高饱和背景）"
+    )
     ap.add_argument("--tolerance", type=int, default=32)
     args = ap.parse_args()
 
@@ -43,10 +47,21 @@ def main() -> None:
     d_resized = str(base / "resized")
 
     print(f"\n===== 处理 {args.src}  ({args.rows}x{args.cols}) =====")
-    slice_grid.slice_grid(args.src, args.rows, args.cols, d_slices,
-                          autocrop=args.autocrop, gutter=args.gutter)
-    cutout.run(d_slices, d_cut, tolerance=args.tolerance,
-               force_floodfill=args.floodfill)
+    slice_grid.slice_grid(
+        args.src,
+        args.rows,
+        args.cols,
+        d_slices,
+        autocrop=args.autocrop,
+        gutter=args.gutter,
+    )
+    cutout.run(
+        d_slices,
+        d_cut,
+        tolerance=args.tolerance,
+        force_floodfill=args.floodfill,
+        chroma=args.chroma,
+    )
     resize.run(d_cut, d_resized, args.size, square=args.square)
     contact.build(d_cut, str(base / "contact_cutouts.png"), cols=args.cols)
     contact.build(d_resized, str(base / "contact_resized.png"), cols=args.cols)

@@ -1,0 +1,30 @@
+Create ONE single square image containing a strict 6x6 grid (36 cells, 6 rows by 6 columns), evenly spaced. Every cell shows the SAME single character; only the pose / state changes.
+
+CHARACTER BIBLE (must stay identical in all 36 cells):
+A young male sword cultivator: a clean angular youthful face with a firm jaw, clear bright phoenix eyes, straight high nose, sharp straight sword-brows, a small vermilion cinnabar dot between the brows, apparent age early 20s, black hair in a high topknot bound by a jade pin, flowing azure daoist robes with wide sleeves, and a slender straight jian sword. Slim upright build, no armor, no hat.
+
+STYLE (identical for all 36 cells):
+Traditional Chinese ink-wash painting style (shuimo), flowing calligraphic brush outlines of varied weight, restrained mineral-pigment washes (azurite blue, malachite green, cinnabar red, gold) over black ink, elegant and airy. Keep every edge crisp and fully opaque - no bleeding wash beyond the outline, no faded dry-brush edges, no splatter.
+Keep the exact same character identity, same proportions, same color palette, same outfit, same equipment, same art style, same line weight and shading in every cell.
+
+PER-CELL VARIATION - left-to-right, top-to-bottom:
+1. standing calmly at rest  2. walking  3. running  4. leaping upward  5. gliding on a flying sword  6. seated cross-legged in meditation
+7. a horizontal sword slash  8. a downward sword strike  9. a forward sword thrust  10. drawing the sword from its scabbard  11. sword held in a defensive guard  12. sheathing the sword, back turned
+13. controlling several flying swords in the air  14. forming a hand seal with two fingers raised  15. releasing a sword-qi arc  16. channeling qi into a talisman strip  17. summoning a protective qi barrier  18. calling down a lightning strike
+19. wreathed in swirling azure spirit qi  20. glowing with golden protective light  21. surrounded by drifting sword-qi motes  22. moving fast with trailing afterimages  23. healing with soft green light  24. eyes alight during a cultivation breakthrough
+25. poisoned, veins darkened  26. bound by black demonic chains  27. frozen over with frost  28. burning with dark qi flames  29. wounded and bleeding at the shoulder  30. qi-deviated, hair and robes thrashing wildly
+31. recoiling from a hit  32. kneeling on one knee, exhausted  33. lying defeated on the ground  34. swallowing a pill  35. opening a jade slip to read it  36. raising a treasure overhead in victory
+
+LAYOUT RULES (strict):
+- Exactly 36 cells, one centered character per cell, no empty cell.
+- The character occupies about 70% of its cell, consistent scale and margins.
+- Same orientation for all cells (side three-quarter view).
+- Same character design in every cell - only the state changes. Do NOT redesign the outfit, hair, body type or equipment between cells.
+
+BACKGROUND (critical):
+- A single FLAT solid background color #FF00FF filling the whole image.
+- Absolutely NO gradient, NO drop shadow, NO reflection, NO texture.
+
+DO NOT include: any text, numbers, labels, captions, grid lines, cell borders, frames, watermark, or signature.
+
+Output: one 1:1 square image, high resolution.

@@ -1,0 +1,26 @@
+Create ONE single square image containing a strict 6x6 grid (36 cells, 6 rows by 6 columns), evenly spaced.
+
+STYLE (identical for all 36 items):
+Hand-drawn cartoon style, slightly wobbly ink outline, warm gouache-like flat coloring, cozy storybook game look, even soft lighting.
+Keep the SAME art style across every cell: same line weight, same shading method, same color grading, same camera angle, same lighting direction.
+
+CONTENT - one item per cell, left-to-right, top-to-bottom:
+1. short sword  2. great axe  3. war hammer  4. hunting bow  5. twin daggers  6. magic staff
+7. round wooden shield  8. iron helmet  9. leather chestplate  10. steel gauntlet  11. traveler cloak  12. enchanted boots
+13. red healing potion  14. blue mana potion  15. green poison flask  16. golden elixir  17. burning bomb flask  18. smoke bomb
+19. fire rune stone  20. ice rune stone  21. lightning rune stone  22. poison rune stone  23. holy light rune stone  24. shadow rune stone
+25. beating heart relic  26. hourglass relic  27. four-leaf clover charm  28. ancient spell tome  29. golden crown relic  30. winged amulet
+31. cracked cursed skull  32. broken chain shackle  33. black spider idol  34. bleeding dagger curse  35. hollow mask curse  36. rotting hand curse
+
+LAYOUT RULES (strict):
+- Exactly 36 items, one centered item per cell, no empty cell, no duplicates.
+- Each item occupies about 70% of its cell, consistent scale and margins.
+- Same orientation for all items (front view).
+
+BACKGROUND (critical):
+- A single FLAT solid background color #FF00FF filling the whole image.
+- Absolutely NO gradient, NO drop shadow, NO reflection, NO texture.
+
+DO NOT include: any text, numbers, labels, captions, grid lines, cell borders, frames, watermark, or signature.
+
+Output: one 1:1 square image, high resolution.
