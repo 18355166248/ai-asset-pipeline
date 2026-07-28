@@ -8,17 +8,17 @@ STYLE CONSISTENCY (identical for all 36 items):
 Keep the SAME art style across every cell: same line weight, same shading method, same color grading, same camera angle, same lighting direction.
 
 CONTENT - one item per cell, left-to-right, top-to-bottom:
-1. a slender flying sword with a jade pommel  2. a horsetail whisk (fuchen) with white strands  3. a ruyi scepter of green jade  4. an embroidered qiankun pouch  5. a bronze demon-revealing mirror  6. a luopan compass with concentric rings
-7. a glowing golden immortality pill  8. a jade-green healing elixir pill  9. a crimson qi-gathering pill  10. a swirling black-and-white breakthrough pill  11. a murky purple poison pill  12. a pill furnace (dan ding) with three legs
-13. a fire talisman strip with vermilion script  14. a thunder talisman strip crackling with sparks  15. an ice talisman strip rimed with frost  16. a demon-warding talisman strip  17. an earth-escape talisman strip  18. a golden protection talisman strip
-19. a lingzhi immortal mushroom  20. a ginseng root shaped like a small figure  21. a lump of translucent jade marrow  22. a beast core orb glowing from within  23. a single iridescent dragon scale  24. a long phoenix tail feather
-25. a carved jade pendant on a silk cord  26. a string of dark prayer beads  27. a jade slip tablet inscribed with script  28. a cluster of raw spirit stones  29. a gourd flask with a cork stopper  30. a small bronze incense censer with smoke
-31. a blood-red jade carved with a coiled worm  32. a sealed clay jar of gu insects  33. a bone flute carved with tiny skulls  34. a soul-binding chain of dark iron  35. a cracked demonic ritual mask  36. a tattered soul-summoning banner on a pole
+1. an empty square item frame of plain gray stone  2. an empty square item frame of green bamboo  3. an empty square item frame of blue jade  4. an empty square item frame of purple lacquer  5. an empty square item frame of gold filigree  6. an empty square item frame wreathed in black demonic qi
+7. a settings gear shaped like a bagua trigram disc  8. a drawstring pouch for the inventory  9. an unrolled map scroll  10. a pause symbol of two vertical jade bars  11. a small bronze bell for sound  12. a backward-curving return arrow
+13. a small sword silhouette for attack  14. a round shield sigil for defense  15. a running footprint for movement speed  16. a stopwatch-like spiral for attack speed  17. a four-point star for critical rate  18. a droplet-shaped heart for max health
+19. a red qi-blood droplet  20. a blue spirit-qi swirl  21. a golden ascending step for cultivation realm  22. a crossed pair of small swords for battle  23. a closed lotus for meditation  24. a cracked circle for a broken state
+25. a single hexagonal spirit stone  26. a small stack of three spirit stones  27. a round copper coin with a square hole  28. an ingot of silver  29. a rolled jade slip tablet  30. a folded paper talisman
+31. a single curling cloud-pattern corner ornament  32. a horizontal cloud-pattern divider bar  33. a square vermilion seal stamp, blank inside  34. a single dry-brush ink stroke accent  35. a small lotus blossom ornament  36. a hanging sword tassel with a knot
 
 LAYOUT RULES (strict):
 - Exactly 36 items, one centered item per cell, no empty cell, no duplicates.
 - Each item occupies about 70% of its cell, consistent scale and margins.
-- Same orientation for all items (front view).
+- Same orientation for all items (front view, flat symmetrical layout).
 - Every item stays fully INSIDE its own cell with a clear margin. Nothing may cross, overlap or touch a cell boundary - no effect, glow, tail or trailing element may extend into a neighbouring cell.
 
 BACKGROUND (critical):

@@ -1,7 +1,10 @@
 Create ONE single square image containing a strict 6x6 grid (36 cells, 6 rows by 6 columns), evenly spaced.
 
-STYLE (identical for all 36 items):
-Traditional Chinese ink-wash painting style (shuimo), flowing calligraphic brush outlines of varied weight, restrained mineral-pigment washes (azurite blue, malachite green, cinnabar red, gold) over black ink, elegant and airy. Keep every edge crisp and fully opaque - no bleeding wash beyond the outline, no faded dry-brush edges, no splatter.
+RENDERING MEDIUM (most important instruction - read before anything else):
+The image must look like a traditional Chinese ink-wash painting (shuimo) executed with a soft animal-hair brush on absorbent xuan rice paper. Every form is built out of visible calligraphic brush strokes of varying width, pressure and ink density - NOT from a uniform outline filled in with flat color. Black ink dominates the image; color is sparse and restrained, only thin mineral-pigment washes (azurite blue, malachite green, cinnabar red, gold) laid over the ink. Faces and hands are suggested with a few economical strokes, not rendered in detail. Keep every edge crisp and fully opaque - no bleeding wash beyond the outline, no faded dry-brush edges, no splatter.
+This is NOT anime, NOT manga, NOT Chinese donghua character art, NOT a cel-shaded illustration, NOT a mobile-gacha character portrait, NOT a modern digital painting, NOT 3D, NOT photorealistic. Do not use flat cel shading, airbrushed gradients, glossy highlights, rim lighting, or clean uniform lineart filled with solid color. No large glossy anime eyes, no rendered skin shading, no lip gloss, no detailed hair strand-by-strand rendering. If the result could be mistaken for a character illustration from a mobile game, it is wrong - it must read as brush and ink on paper.
+
+STYLE CONSISTENCY (identical for all 36 items):
 Keep the SAME art style across every cell: same line weight, same shading method, same color grading, same camera angle, same lighting direction.
 
 CONTENT - one item per cell, left-to-right, top-to-bottom:
@@ -16,11 +19,14 @@ LAYOUT RULES (strict):
 - Exactly 36 items, one centered item per cell, no empty cell, no duplicates.
 - Each item occupies about 70% of its cell, consistent scale and margins.
 - Same orientation for all items (side three-quarter view).
+- Every item stays fully INSIDE its own cell with a clear margin. Nothing may cross, overlap or touch a cell boundary - no effect, glow, tail or trailing element may extend into a neighbouring cell.
 
 BACKGROUND (critical):
 - A single FLAT solid background color #FF00FF filling the whole image.
 - Absolutely NO gradient, NO drop shadow, NO reflection, NO texture.
 
 DO NOT include: any text, numbers, labels, captions, grid lines, cell borders, frames, watermark, or signature.
+
+FINAL CHECK before you output: re-read the RENDERING MEDIUM section above and confirm the image matches it. The medium matters more than the subject matter.
 
 Output: one 1:1 square image, high resolution.

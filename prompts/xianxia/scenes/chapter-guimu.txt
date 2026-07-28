@@ -1,0 +1,19 @@
+Create ONE single 9:16 vertical illustration for a mobile game screen.
+
+RENDERING MEDIUM (most important instruction):
+The image must look like a traditional Chinese ink-wash landscape painting (shuimo) brushed onto xuan rice paper. Forms are built from layered ink washes and calligraphic brushwork of varying weight, with soft bleeding edges, dry-brush flying-white texture and large areas of deliberately empty paper. Black ink dominates; color is sparse and restrained, only thin mineral-pigment washes (azurite blue, malachite green, cinnabar red, gold) over the ink. Visible rice-paper grain, atmospheric and airy.
+This is NOT anime, NOT a digital matte painting, NOT 3D, NOT photorealistic, NOT a concept-art speedpaint. Do not use airbrushed gradients, lens flare, volumetric god rays, or saturated fantasy colors. It must read as brush and ink on paper.
+
+CONTENT:
+a desolate burial ground under a bruised night sky, leaning and toppled stone grave markers stretching into fog, tattered paper talismans caught on a bare dead tree, a thin sickle moon
+Color palette: desaturated bone gray, sickly green mist, dark ink.
+
+COMPOSITION:
+- Vertical mobile composition, the main subject sitting in the middle band.
+- Keep the top third quiet and uncluttered - a game title will be placed there.
+- Keep the bottom fifth quiet as well - buttons will be placed there.
+- Atmospheric depth, clear silhouette reading even at phone size.
+
+DO NOT include: any text, numbers, logo, UI element, button, watermark, signature, frame or border.
+
+Output: one 9:16 vertical image, high resolution.

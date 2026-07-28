@@ -8,17 +8,17 @@ STYLE CONSISTENCY (identical for all 36 items):
 Keep the SAME art style across every cell: same line weight, same shading method, same color grading, same camera angle, same lighting direction.
 
 CONTENT - one item per cell, left-to-right, top-to-bottom:
-1. a slender flying sword with a jade pommel  2. a horsetail whisk (fuchen) with white strands  3. a ruyi scepter of green jade  4. an embroidered qiankun pouch  5. a bronze demon-revealing mirror  6. a luopan compass with concentric rings
-7. a glowing golden immortality pill  8. a jade-green healing elixir pill  9. a crimson qi-gathering pill  10. a swirling black-and-white breakthrough pill  11. a murky purple poison pill  12. a pill furnace (dan ding) with three legs
-13. a fire talisman strip with vermilion script  14. a thunder talisman strip crackling with sparks  15. an ice talisman strip rimed with frost  16. a demon-warding talisman strip  17. an earth-escape talisman strip  18. a golden protection talisman strip
-19. a lingzhi immortal mushroom  20. a ginseng root shaped like a small figure  21. a lump of translucent jade marrow  22. a beast core orb glowing from within  23. a single iridescent dragon scale  24. a long phoenix tail feather
-25. a carved jade pendant on a silk cord  26. a string of dark prayer beads  27. a jade slip tablet inscribed with script  28. a cluster of raw spirit stones  29. a gourd flask with a cork stopper  30. a small bronze incense censer with smoke
-31. a blood-red jade carved with a coiled worm  32. a sealed clay jar of gu insects  33. a bone flute carved with tiny skulls  34. a soul-binding chain of dark iron  35. a cracked demonic ritual mask  36. a tattered soul-summoning banner on a pole
+1. a horizontal crescent sword-qi slash arc  2. a downward vertical sword-qi cleave  3. a forward piercing sword-qi cone  4. an expanding ring of sword-qi  5. a fan of many small flying swords  6. a downpour of sword-qi streaks
+7. a small four-point impact spark  8. a large critical-hit star burst  9. a blocked-hit fan of deflection sparks  10. a scatter of crimson blood droplets  11. a shattering burst of ice shards  12. a branching lightning impact flash
+13. a compact fireball with a short flame tail  14. a sharp ice spike projectile  15. a crackling ball of lightning  16. a curved blade of wind  17. a ball of murky green poison mist  18. a golden radiant light bolt
+19. a spherical protective qi barrier  20. a trail of three fading speed afterimages  21. a golden shield sigil ring  22. a rising swirl of soft green healing light  23. a ring of orbiting sword-qi motes  24. an upward pillar of breakthrough qi
+25. rising bubbles of green poison  26. a jagged frost crust marker  27. a cluster of dark burning flames  28. a loop of binding black iron chain  29. a drooping gray weakness sigil  30. a ring of circling stun stars
+31. a vertical pickup light beam  32. a circular teleport formation seal  33. a flat circular spell formation of seal script  34. a rising wisp of spirit qi  35. a low ring of landing dust  36. a dense tribulation thundercloud
 
 LAYOUT RULES (strict):
 - Exactly 36 items, one centered item per cell, no empty cell, no duplicates.
 - Each item occupies about 70% of its cell, consistent scale and margins.
-- Same orientation for all items (front view).
+- Same orientation for all items (front view, flat symmetrical layout).
 - Every item stays fully INSIDE its own cell with a clear margin. Nothing may cross, overlap or touch a cell boundary - no effect, glow, tail or trailing element may extend into a neighbouring cell.
 
 BACKGROUND (critical):

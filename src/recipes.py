@@ -565,13 +565,20 @@ RECIPES: dict[str, dict] = {
         "style": "shuimo",
         "view": "side three-quarter view",
         "bg": "#FF00FF",
+        # bible 只该钉「是谁」，不该顺带钉「怎么画」。上一版写的是立绘式五官描述
+        # （明亮的丹凤眼、高挺鼻梁……），那套语汇本身就在把模型往动漫立绘上拽，
+        # 和 STYLE 打架。这版把五官压到最简，并显式要求用笔墨方式交代，
+        # 同时把眉心朱砂痣升成 must（上一版它在 36 格里基本全丢了）。
         "bible": (
-            "A young male sword cultivator: a clean angular youthful face with a "
-            "firm jaw, clear bright phoenix eyes, straight high nose, sharp "
-            "straight sword-brows, a small vermilion cinnabar dot between the "
-            "brows, apparent age early 20s, black hair in a high topknot bound by "
-            "a jade pin, flowing azure daoist robes with wide sleeves, and a "
-            "slender straight jian sword. Slim upright build, no armor, no hat."
+            "A young male sword cultivator, slim and upright, apparent age early "
+            "20s: black hair gathered in a high topknot bound by a jade pin, "
+            "flowing azure daoist robes with wide sleeves, and a slender straight "
+            "jian sword. No armor, no hat. He MUST have a single small vermilion "
+            "cinnabar dot in the middle of his forehead between the brows - this "
+            "is his signature mark and must be clearly visible in every cell. "
+            "His face is indicated with only a few economical ink strokes for the "
+            "brows, eyes and mouth - do not render detailed or realistic facial "
+            "features, and do not enlarge or stylize the eyes."
         ),
         "items": [
             # 基础
@@ -618,6 +625,268 @@ RECIPES: dict[str, dict] = {
             "raising a treasure overhead in victory",
         ],
     },
+    # 战斗特效——飞剑拖尾、命中爆点、buff 光环这些，游戏里没有它们就只是「方块碰方块」。
+    # 特效格外怕 shuimo 的晕染：半透明的雾/光在 chroma 抠图时会被连着背景一起吃掉，
+    # 所以这条额外要求「实心笔触 + 硬边」，透明度交给引擎的 opacity/加色混合去做。
+    "xianxia-vfx": {
+        "desc": "仙侠 · 战斗特效 36 个（剑气/命中/弹道/增益/减益/环境）",
+        "style": "shuimo",
+        "view": "front view, flat symmetrical layout",
+        "bg": "#FF00FF",
+        "items": [
+            # 剑气斩击
+            "a horizontal crescent sword-qi slash arc",
+            "a downward vertical sword-qi cleave",
+            "a forward piercing sword-qi cone",
+            "an expanding ring of sword-qi",
+            "a fan of many small flying swords",
+            "a downpour of sword-qi streaks",
+            # 命中爆点
+            "a small four-point impact spark",
+            "a large critical-hit star burst",
+            "a blocked-hit fan of deflection sparks",
+            "a scatter of crimson blood droplets",
+            "a shattering burst of ice shards",
+            "a branching lightning impact flash",
+            # 元素弹道
+            "a compact fireball with a short flame tail",
+            "a sharp ice spike projectile",
+            "a crackling ball of lightning",
+            "a curved blade of wind",
+            "a ball of murky green poison mist",
+            "a golden radiant light bolt",
+            # 增益光环
+            "a spherical protective qi barrier",
+            "a trail of three fading speed afterimages",
+            "a golden shield sigil ring",
+            "a rising swirl of soft green healing light",
+            "a ring of orbiting sword-qi motes",
+            "an upward pillar of breakthrough qi",
+            # 减益标记
+            "rising bubbles of green poison",
+            "a jagged frost crust marker",
+            "a cluster of dark burning flames",
+            "a loop of binding black iron chain",
+            "a drooping gray weakness sigil",
+            "a ring of circling stun stars",
+            # 环境交互
+            "a vertical pickup light beam",
+            "a circular teleport formation seal",
+            "a flat circular spell formation of seal script",
+            "a rising wisp of spirit qi",
+            "a low ring of landing dust",
+            "a dense tribulation thundercloud",
+        ],
+    },
+    # UI 图标——只放「整图直接用」的图标和角饰。
+    # 刻意不含面板底 / 血条槽 / 按钮底：那些要九宫格拉伸，缩到 96px 再拉会糊，
+    # 得走 SCENES 里的单图流程按实际尺寸出，见 prompts/README.md「两条产线」。
+    "xianxia-ui": {
+        "desc": "仙侠 · UI 图标 36 个（品阶框/功能/属性/状态/货币/装饰）",
+        "style": "shuimo",
+        "view": "front view, flat symmetrical layout",
+        "bg": "#FF00FF",
+        "items": [
+            # 品阶框（空框，中间留空放物品图）
+            "an empty square item frame of plain gray stone",
+            "an empty square item frame of green bamboo",
+            "an empty square item frame of blue jade",
+            "an empty square item frame of purple lacquer",
+            "an empty square item frame of gold filigree",
+            "an empty square item frame wreathed in black demonic qi",
+            # 功能图标
+            "a settings gear shaped like a bagua trigram disc",
+            "a drawstring pouch for the inventory",
+            "an unrolled map scroll",
+            "a pause symbol of two vertical jade bars",
+            "a small bronze bell for sound",
+            "a backward-curving return arrow",
+            # 属性图标
+            "a small sword silhouette for attack",
+            "a round shield sigil for defense",
+            "a running footprint for movement speed",
+            "a stopwatch-like spiral for attack speed",
+            "a four-point star for critical rate",
+            "a droplet-shaped heart for max health",
+            # 状态图标
+            "a red qi-blood droplet",
+            "a blue spirit-qi swirl",
+            "a golden ascending step for cultivation realm",
+            "a crossed pair of small swords for battle",
+            "a closed lotus for meditation",
+            "a cracked circle for a broken state",
+            # 货币与资源
+            "a single hexagonal spirit stone",
+            "a small stack of three spirit stones",
+            "a round copper coin with a square hole",
+            "an ingot of silver",
+            "a rolled jade slip tablet",
+            "a folded paper talisman",
+            # 装饰角饰
+            "a single curling cloud-pattern corner ornament",
+            "a horizontal cloud-pattern divider bar",
+            "a square vermilion seal stamp, blank inside",
+            "a single dry-brush ink stroke accent",
+            "a small lotus blossom ornament",
+            "a hanging sword tassel with a knot",
+        ],
+    },
+    # 首领动作表——xianxia-enemies 里每只 boss 只有一格站姿，而关底首领是一局唯一的
+    # 高光，静态一帧撑不住出场、蓄力、狂暴、倒地这一整套表演。所以 boss 单独占一张
+    # 网格，规格对齐 xianxia-hero：带 bible 钉死身份，36 格只画同一只。
+    # 身份取套系里的 B1 墨龙（prompts/cards/faces/b1_molong.txt 同源），卡面和参考图
+    # 都已经出过，是当前一致性最稳的一只。换首领就换 bible。
+    "xianxia-boss-molong": {
+        "desc": "仙侠 · 首领 36 动作/状态（墨龙）",
+        "style": "shuimo",
+        "view": "side three-quarter view",
+        "bg": "#FF00FF",
+        "bible": (
+            "A colossal ancient Chinese ink dragon with a single unbroken "
+            "serpentine scaled body running continuously from its head to "
+            "exactly one tail, the tail ending in a single tuft; antlered "
+            "stag-like horns, a maned ridge running down its spine, long "
+            "trailing whiskers, exactly four clawed legs, blank pale-white eyes "
+            "with no visible pupil, scales rendered as layered wet ink washes in "
+            "black and deep indigo with faint azurite highlights, an animal "
+            "dragon head with no human features."
+        ),
+        "items": [
+            # 出场
+            "coiled at rest, head raised",
+            "descending out of the clouds",
+            "rearing up and roaring",
+            "hovering in place, body slowly undulating",
+            "circling in flight seen from the side",
+            "landing heavily, claws braced",
+            # 近身攻击
+            "swiping with a front claw",
+            "biting forward with jaws open",
+            "lashing with its tail",
+            "body-slamming forward",
+            "sweeping both front claws outward",
+            "coiling around to constrict",
+            # 远程 / 法术
+            "breathing a torrent of black ink",
+            "gathering a sphere of dark qi before its jaws",
+            "calling down forked lightning from above",
+            "summoning a storm of rain and wind",
+            "beating its whiskers to send out shockwave rings",
+            "spitting a barrage of ink bolts",
+            # 蓄力 / 阶段转换
+            "crouched low, gathering power, qi swirling inward",
+            "wreathed in a rising pillar of black qi",
+            "shedding scales as its body darkens in a rage transformation",
+            "eyes blazing white in an enraged state",
+            "shielded behind a barrier of swirling ink",
+            "splitting off small ink dragon wisps around itself",
+            # 受创状态
+            "recoiling from a heavy hit",
+            "one horn broken, bleeding",
+            "frozen over with frost across its scales",
+            "bound by golden sealing chains",
+            "poisoned, scales tinged sickly green",
+            "staggering with its head lowered",
+            # 落败
+            "collapsing onto its side",
+            "lying defeated, body dissolving into ink",
+            "dispersing into drifting ink smoke",
+            "curled up dormant with eyes closed",
+            "a shed empty scale husk of its body",
+            "reduced to a single floating dragon-shaped ink mote",
+        ],
+    },
+}
+
+# ── 场景 / 背景：单图产线，不切格不去背 ──────────────────────────────
+#
+# 和 RECIPES 是两回事，别混：RECIPES 出的是 6×6 网格，要经 slice → cutout → resize；
+# 场景图是一张整图直接当背景贴，跑切图管线只会把它毁掉。所以字段也不一样：
+# 没有 items / bg（它自己就是背景），多了 ratio 和 role。
+#
+# role=arena  俯视地表，直接铺在战斗区底下。游戏是竖屏俯视、敌人朝玩家直线走，
+#             所以必须是「从正上方看地面」，出成横版山水远景就贴不进去。
+# role=art    氛围插画，给主菜单 / 章节封面 / 结算页用，可以是正常的立绘式构图。
+SCENES: dict[str, dict] = {
+    "arena-qingshi": {
+        "desc": "战斗场地 · 第一章 青石山道（俯视地表）",
+        "role": "arena",
+        "ratio": "9:16 vertical",
+        "content": (
+            "a mountain path of weathered gray flagstones seen from directly "
+            "above, with patches of moss between the stones, scattered pine "
+            "needles, a few small rocks and tufts of grass at the edges, and "
+            "thin mist pooling in the cracks"
+        ),
+        "palette": "cool gray-green, slate blue shadows, muted moss green",
+    },
+    "arena-zhulin": {
+        "desc": "战斗场地 · 竹林（俯视地表）",
+        "role": "arena",
+        "ratio": "9:16 vertical",
+        "content": (
+            "a bamboo grove floor seen from directly above, packed earth "
+            "crossed by fallen bamboo stalks and scattered leaves, with the "
+            "cut stumps of bamboo and dappled shade at the edges"
+        ),
+        "palette": "malachite green, warm earth brown, pale ink gray",
+    },
+    "arena-guimu": {
+        "desc": "战斗场地 · 鬼雾乱葬岗（俯视地表）",
+        "role": "arena",
+        "ratio": "9:16 vertical",
+        "content": (
+            "a burial ground seen from directly above, cracked dry earth with "
+            "toppled stone grave markers, scattered bones and torn paper "
+            "talismans, and low corpse-mist creeping across the ground"
+        ),
+        "palette": "desaturated bone gray, sickly green mist, dark ink",
+    },
+    "title-xianxia": {
+        "desc": "主菜单背景 · 仙山云海（氛围插画）",
+        "role": "art",
+        "ratio": "9:16 vertical",
+        "content": (
+            "towering immortal mountain peaks rising out of a sea of clouds, "
+            "a distant cliff-top pavilion, a lone tiny figure on a flying "
+            "sword crossing the sky, dawn light behind the peaks"
+        ),
+        "palette": "azurite blue, ink black, gold dawn light, white cloud",
+    },
+    "chapter-qingshi": {
+        "desc": "章节封面 · 青石山道（氛围插画）",
+        "role": "art",
+        "ratio": "9:16 vertical",
+        "content": (
+            "a stone mountain path winding upward between pine trees into "
+            "mist, a weathered stone marker beside the path, overcast sky"
+        ),
+        "palette": "cool gray-green, slate blue, muted moss green",
+    },
+    # 章节封面按 arena 一比一配套：有几张战斗场地就得有几张封面，否则第二章一进去
+    # 就只能复用第一章的封面。palette 和同名 arena 保持一致，进出关不跳色。
+    "chapter-zhulin": {
+        "desc": "章节封面 · 竹林（氛围插画）",
+        "role": "art",
+        "ratio": "9:16 vertical",
+        "content": (
+            "a dense grove of tall bamboo receding into mist, a narrow trodden "
+            "path running between the stalks, fallen leaves drifting in shafts "
+            "of pale light"
+        ),
+        "palette": "malachite green, warm earth brown, pale ink gray",
+    },
+    "chapter-guimu": {
+        "desc": "章节封面 · 鬼雾乱葬岗（氛围插画）",
+        "role": "art",
+        "ratio": "9:16 vertical",
+        "content": (
+            "a desolate burial ground under a bruised night sky, leaning and "
+            "toppled stone grave markers stretching into fog, tattered paper "
+            "talismans caught on a bare dead tree, a thin sickle moon"
+        ),
+        "palette": "desaturated bone gray, sickly green mist, dark ink",
+    },
 }
 
 
@@ -627,3 +896,11 @@ def get(name: str) -> dict | None:
 
 def names() -> list[str]:
     return list(RECIPES)
+
+
+def get_scene(name: str) -> dict | None:
+    return SCENES.get(name)
+
+
+def scene_names() -> list[str]:
+    return list(SCENES)

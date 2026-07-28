@@ -37,6 +37,19 @@ python ../src/gen_prompt.py --style "flat vector game icon" --bg "#F2EFE9" \
 3. **锁死一种画风**：同描边粗细、同上色方式、同视角、同光照、同配色。
 4. **禁止**：文字 / 数字 / 标签 / 网格线 / 边框 / 水印 / 投影。
 5. **正方形 1:1 画布**。
+6. **画风要写「作画媒介」，不能只写风格名，还必须配负面清单**。实测：`xianxia-hero`
+   写了 "Traditional Chinese ink-wash painting style (shuimo)"，出来的是**日漫赛璐璐立绘**，
+   一点水墨都没有。原因是「仙侠 / 剑修 / 御剑」这些词在训练数据里和国漫立绘绑得太死，
+   一句风格形容词压不过题材本身的语义拉力。三处一起改才治得住：
+   ① 风格词改成描述物理过程（毛笔、宣纸、笔触堆形而非描边填色）；
+   ② 加 `STYLE_NEGATIVES`，显式点名 NOT anime / NOT cel-shaded / NOT 手游立绘；
+   ③ 把这段提到 prompt **最前面**并在结尾再确认一次——模型对首尾权重最高。
+7. **bible 只钉「是谁」，别顺带钉「怎么画」**。同一次实测里，bible 写的
+   "clear bright phoenix eyes, straight high nose" 这类立绘式五官描述，本身就在往
+   动漫画法上拽，和 STYLE 打架。身份特征（朱砂痣、发髻、法器）要写死并标 MUST，
+   五官则明确要求「几笔带过、不要细化、不要放大眼睛」。
+8. **禁止跨格溢出**。实测剑气弧、闪电、飞剑这类拖尾元素会伸进邻格，切图后既被截断、
+   又给邻格留下碎片，autocrop 也救不回来。模板里那句「宁可缩小姿势也不许出格」就是防这个。
 
 ## 出图后
 
@@ -45,3 +58,56 @@ python ../src/gen_prompt.py --style "flat vector game icon" --bg "#F2EFE9" \
 python ../src/run.py input/xxx.png -r 6 -c 6 --size 96 --autocrop
 ```
 打开 `output/xxx/contact_cutouts.png` 判定一致性 & 去背质量。
+
+## 两条产线：网格素材 vs 场景背景
+
+上面全部铁律只管**网格产线**。场景/背景是另一条线，别混：
+
+| | 网格产线（`--recipe`） | 场景产线（`--scene`） |
+|---|---|---|
+| 产物 | 一张 6×6，切成 36 个小素材 | 一张整图，直接当背景贴 |
+| 画布 | 1:1 正方形 | 9:16 竖屏 |
+| 背景 | 必须纯平 `#FF00FF` | **它自己就是背景**，不写背景色 |
+| 后处理 | `run.py` 切图 → 去背 → 缩放 | **不跑管线**，最多缩放一次 |
+| 画风键 | `shuimo`（禁晕染，为抠图让路） | `shuimo-scene`（放开晕染） |
+
+**把场景图丢进 `run.py` 会直接毁掉它** —— 会被切成 36 块再去背。
+
+```bash
+python ../src/gen_prompt.py --list-scenes
+python ../src/gen_prompt.py --scene arena-qingshi
+```
+
+`role=arena` 是**俯视地表**：游戏是竖屏俯视、敌人朝玩家直线走，底图必须是「从正上方
+看地面」。出成横版山水远景就贴不进去 —— 模板里那段 `VIEW (critical)` 就是防这个的。
+中央 70% 还要求低对比，否则精灵图叠上去认不出来。
+
+`role=art` 是氛围插画，给主菜单 / 章节封面用，构图正常，上三分之一留白压标题。
+
+## 仙侠套系物料清单
+
+| 物料 | prompt | 出图 | 进游戏 |
+|---|---|---|---|
+| 法宝丹药符箓 36 | `xianxia/xianxia-relics.txt` | ✅ | ✅ 36 张 |
+| 主角 36 动作 | `xianxia/xianxia-hero.txt` | ⚠️ 出过一版，**画风跑成动漫，废弃重出** | ❌ |
+| 敌人 36 只 | `xianxia/xianxia-enemies.txt` | ❌ | ❌ |
+| 首领 36 动作（墨龙） | `xianxia/xianxia-boss-molong.txt` | ❌ | ❌ |
+| 战斗特效 36 | `xianxia/xianxia-vfx.txt` | ❌ | ❌ |
+| UI 图标 36 | `xianxia/xianxia-ui.txt` | ❌ | ❌ |
+| 战斗场地 ×3 | `xianxia/scenes/arena-*.txt` | ❌ | ❌ |
+| 主菜单 ×1 / 章节封面 ×3 | `xianxia/scenes/title-*.txt`、`chapter-*.txt` | ❌ | ❌ |
+| 12 角色卡面 | `cards/cardprompts/*.txt` | ✅ | ❌ 游戏里还没用上 |
+
+**风格基准是水墨**（已出图的 36 法宝 + 12 卡面都是这套）。后续所有素材必须对齐它，
+出图后先拿 `contact_cutouts.png` 和 `output/cards_384/` 并排比一眼再入库。
+
+**首领单独占一张网格**：`xianxia-enemies` 里每只 boss 只有一格站姿，但关底首领是一局
+唯一的高光，出场 / 蓄力 / 狂暴 / 倒地这套表演一帧撑不住，所以按主角的规格给它带 bible
+的整张 36 格。身份取套系里的 B1 墨龙（`cards/faces/b1_molong.txt` 同源，卡面和参考图
+都已出过，一致性最稳）。换首领就换 bible。
+
+**这两样出图管线补不了，得单独找**：可商用中文字体（现在 Label 走系统默认字，
+水墨画配黑体很出戏）、音效和 BGM（一个都没有）。
+
+**九宫格 UI 底板**（面板底、血条槽、按钮底）刻意不在 `xianxia-ui` 里 —— 那些要拉伸，
+缩到 96px 再拉会糊，得按实际尺寸单独出。目前游戏用 `Graphics` 画的能凑合，先不做。

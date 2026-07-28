@@ -1,0 +1,23 @@
+Create ONE single 9:16 vertical image: a game battle-arena ground texture.
+
+VIEW (critical):
+- Straight top-down orthographic view, camera pointing directly down at the ground.
+- This is the FLOOR seen from above - not a landscape, not a horizon, no sky, no vanishing point, no side view.
+
+RENDERING MEDIUM (most important instruction):
+The image must look like a traditional Chinese ink-wash landscape painting (shuimo) brushed onto xuan rice paper. Forms are built from layered ink washes and calligraphic brushwork of varying weight, with soft bleeding edges, dry-brush flying-white texture and large areas of deliberately empty paper. Black ink dominates; color is sparse and restrained, only thin mineral-pigment washes (azurite blue, malachite green, cinnabar red, gold) over the ink. Visible rice-paper grain, atmospheric and airy.
+This is NOT anime, NOT a digital matte painting, NOT 3D, NOT photorealistic, NOT a concept-art speedpaint. Do not use airbrushed gradients, lens flare, volumetric god rays, or saturated fantasy colors. It must read as brush and ink on paper.
+
+CONTENT:
+a mountain path of weathered gray flagstones seen from directly above, with patches of moss between the stones, scattered pine needles, a few small rocks and tufts of grass at the edges, and thin mist pooling in the cracks
+Color palette: cool gray-green, slate blue shadows, muted moss green.
+
+READABILITY (critical - game sprites will be drawn on top):
+- Keep the central 70% of the image visually calm: low contrast, few details, no bright highlights and no busy patterns there.
+- Push all the larger detail and darker values toward the outer edges.
+- Even ambient lighting with no strong directional shadows - the characters carry their own shading.
+- Nothing in the image should read as a character or a pickup item.
+
+DO NOT include: any character, creature, person, UI element, health bar, icon, text, numbers, watermark, signature, frame or border.
+
+Output: one 9:16 vertical image, high resolution.

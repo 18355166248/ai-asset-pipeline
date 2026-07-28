@@ -6,18 +6,18 @@ This is NOT anime, NOT manga, NOT Chinese donghua character art, NOT a cel-shade
 The character description below tells you WHAT is depicted; this section tells you HOW it must be painted. When the two seem to pull in different directions, this section wins.
 
 CHARACTER BIBLE (must stay identical in all 36 cells):
-A young male sword cultivator, slim and upright, apparent age early 20s: black hair gathered in a high topknot bound by a jade pin, flowing azure daoist robes with wide sleeves, and a slender straight jian sword. No armor, no hat. He MUST have a single small vermilion cinnabar dot in the middle of his forehead between the brows - this is his signature mark and must be clearly visible in every cell. His face is indicated with only a few economical ink strokes for the brows, eyes and mouth - do not render detailed or realistic facial features, and do not enlarge or stylize the eyes.
+A colossal ancient Chinese ink dragon with a single unbroken serpentine scaled body running continuously from its head to exactly one tail, the tail ending in a single tuft; antlered stag-like horns, a maned ridge running down its spine, long trailing whiskers, exactly four clawed legs, blank pale-white eyes with no visible pupil, scales rendered as layered wet ink washes in black and deep indigo with faint azurite highlights, an animal dragon head with no human features.
 
 CONSISTENCY (identical for all 36 cells):
 Keep the exact same character identity, same proportions, same color palette, same outfit, same equipment, same art style, same line weight and shading in every cell.
 
 PER-CELL VARIATION - left-to-right, top-to-bottom:
-1. standing calmly at rest  2. walking  3. running  4. leaping upward  5. gliding on a flying sword  6. seated cross-legged in meditation
-7. a horizontal sword slash  8. a downward sword strike  9. a forward sword thrust  10. drawing the sword from its scabbard  11. sword held in a defensive guard  12. sheathing the sword, back turned
-13. controlling several flying swords in the air  14. forming a hand seal with two fingers raised  15. releasing a sword-qi arc  16. channeling qi into a talisman strip  17. summoning a protective qi barrier  18. calling down a lightning strike
-19. wreathed in swirling azure spirit qi  20. glowing with golden protective light  21. surrounded by drifting sword-qi motes  22. moving fast with trailing afterimages  23. healing with soft green light  24. eyes alight during a cultivation breakthrough
-25. poisoned, veins darkened  26. bound by black demonic chains  27. frozen over with frost  28. burning with dark qi flames  29. wounded and bleeding at the shoulder  30. qi-deviated, hair and robes thrashing wildly
-31. recoiling from a hit  32. kneeling on one knee, exhausted  33. lying defeated on the ground  34. swallowing a pill  35. opening a jade slip to read it  36. raising a treasure overhead in victory
+1. coiled at rest, head raised  2. descending out of the clouds  3. rearing up and roaring  4. hovering in place, body slowly undulating  5. circling in flight seen from the side  6. landing heavily, claws braced
+7. swiping with a front claw  8. biting forward with jaws open  9. lashing with its tail  10. body-slamming forward  11. sweeping both front claws outward  12. coiling around to constrict
+13. breathing a torrent of black ink  14. gathering a sphere of dark qi before its jaws  15. calling down forked lightning from above  16. summoning a storm of rain and wind  17. beating its whiskers to send out shockwave rings  18. spitting a barrage of ink bolts
+19. crouched low, gathering power, qi swirling inward  20. wreathed in a rising pillar of black qi  21. shedding scales as its body darkens in a rage transformation  22. eyes blazing white in an enraged state  23. shielded behind a barrier of swirling ink  24. splitting off small ink dragon wisps around itself
+25. recoiling from a heavy hit  26. one horn broken, bleeding  27. frozen over with frost across its scales  28. bound by golden sealing chains  29. poisoned, scales tinged sickly green  30. staggering with its head lowered
+31. collapsing onto its side  32. lying defeated, body dissolving into ink  33. dispersing into drifting ink smoke  34. curled up dormant with eyes closed  35. a shed empty scale husk of its body  36. reduced to a single floating dragon-shaped ink mote
 
 LAYOUT RULES (strict):
 - Exactly 36 cells, one centered character per cell, no empty cell.
