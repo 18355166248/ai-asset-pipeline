@@ -1,0 +1,30 @@
+Create ONE single square image containing a strict 6x6 grid (36 cells, 6 rows by 6 columns), evenly spaced. Every cell shows the SAME single character; only the pose / state changes.
+
+CHARACTER BIBLE (must stay identical in all 36 cells):
+A young human adventurer, slim athletic build, chin-length messy dark brown hair, a red headband, light brown leather chestplate over a cream tunic, dark green trousers, worn brown boots, a small round wooden shield strapped on the left forearm, and a plain steel short sword in the right hand. Cartoon proportions with a slightly large head, no cape, no helmet, no backpack.
+
+STYLE (identical for all 36 cells):
+Hand-drawn cartoon style, slightly wobbly ink outline, warm gouache-like flat coloring, cozy storybook game look, even soft lighting.
+Keep the exact same character identity, same proportions, same color palette, same outfit, same equipment, same art style, same line weight and shading in every cell.
+
+PER-CELL VARIATION - left-to-right, top-to-bottom:
+1. idle standing at rest  2. walking  3. running  4. jumping upward  5. dodge-rolling sideways  6. crouching low
+7. a horizontal sword slash  8. a heavy overhead sword attack  9. a forward thrust with the sword  10. blocking with the shield raised  11. a shield bash forward  12. recovering after a swing, sword lowered
+13. surrounded by a blue shield bubble  14. glowing red with rage  15. wrapped in golden holy light  16. speeding with wind trails  17. with floating healing sparkles  18. with a fire aura
+19. poisoned with a sickly green tint  20. frozen inside a block of ice  21. stunned with stars circling the head  22. burning with flames  23. bleeding and limping  24. cursed with dark purple smoke
+25. taking a hit and recoiling backward  26. knocked down on one knee, low on health  27. lying defeated on the ground  28. getting back up from the ground  29. panting and exhausted, hands on knees  30. shrugging off a hit, unfazed
+31. drinking a potion  32. opening a treasure chest  33. picking up a coin from the ground  34. reading an open map  35. sitting at a campfire resting  36. raising a relic overhead in victory
+
+LAYOUT RULES (strict):
+- Exactly 36 cells, one centered character per cell, no empty cell.
+- The character occupies about 70% of its cell, consistent scale and margins.
+- Same orientation for all cells (side three-quarter view).
+- Same character design in every cell - only the state changes. Do NOT redesign the outfit, hair, body type or equipment between cells.
+
+BACKGROUND (critical):
+- A single FLAT solid background color #FF00FF filling the whole image.
+- Absolutely NO gradient, NO drop shadow, NO reflection, NO texture.
+
+DO NOT include: any text, numbers, labels, captions, grid lines, cell borders, frames, watermark, or signature.
+
+Output: one 1:1 square image, high resolution.

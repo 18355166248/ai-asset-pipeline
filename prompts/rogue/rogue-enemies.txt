@@ -1,0 +1,26 @@
+Create ONE single square image containing a strict 6x6 grid (36 cells, 6 rows by 6 columns), evenly spaced.
+
+STYLE (identical for all 36 items):
+Hand-drawn cartoon style, slightly wobbly ink outline, warm gouache-like flat coloring, cozy storybook game look, even soft lighting.
+Keep the SAME art style across every cell: same line weight, same shading method, same color grading, same camera angle, same lighting direction.
+
+CONTENT - one item per cell, left-to-right, top-to-bottom:
+1. small green slime  2. big green slime  3. acid slime with bubbles  4. slime with a crown  5. split slime pair  6. giant king slime
+7. small bat  8. swarm bat  9. vampire bat with red eyes  10. stone gargoyle  11. winged demon imp  12. horned demon brute
+13. skeleton with rusty sword  14. skeleton archer  15. armored skeleton knight  16. skeleton mage with staff  17. bone hound  18. bone colossus
+19. mushroom sprout creature  20. spore mushroom monster  21. toxic mushroom walker  22. carnivorous plant  23. thorn vine beast  24. ancient treant
+25. rat scavenger  26. goblin scout with dagger  27. goblin brute with club  28. orc warrior with axe  29. orc shaman with totem  30. orc warlord in heavy armor
+31. boss: massive lava golem cracked with molten veins  32. boss: frost dragon whelp with ice spines  33. boss: shadow reaper in a tattered cloak with a scythe  34. boss: many-eyed void horror with tentacles  35. boss: clockwork war machine with saw arms  36. boss: crowned lich holding a soul orb
+
+LAYOUT RULES (strict):
+- Exactly 36 items, one centered item per cell, no empty cell, no duplicates.
+- Each item occupies about 70% of its cell, consistent scale and margins.
+- Same orientation for all items (side three-quarter view).
+
+BACKGROUND (critical):
+- A single FLAT solid background color #FF00FF filling the whole image.
+- Absolutely NO gradient, NO drop shadow, NO reflection, NO texture.
+
+DO NOT include: any text, numbers, labels, captions, grid lines, cell borders, frames, watermark, or signature.
+
+Output: one 1:1 square image, high resolution.

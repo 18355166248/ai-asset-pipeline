@@ -1,0 +1,26 @@
+Create ONE single square image containing a strict 6x6 grid (36 cells, 6 rows by 6 columns), evenly spaced.
+
+STYLE (identical for all 36 items):
+Traditional Chinese ink-wash painting style (shuimo), flowing calligraphic brush outlines of varied weight, restrained mineral-pigment washes (azurite blue, malachite green, cinnabar red, gold) over black ink, elegant and airy. Keep every edge crisp and fully opaque - no bleeding wash beyond the outline, no faded dry-brush edges, no splatter.
+Keep the SAME art style across every cell: same line weight, same shading method, same color grading, same camera angle, same lighting direction.
+
+CONTENT - one item per cell, left-to-right, top-to-bottom:
+1. a small mountain sprite made of moss and stone  2. a one-tailed fox spirit  3. a three-tailed fox spirit in robes  4. a tree demon with a face in its bark  5. a boar demon with iron tusks  6. a nine-tailed fox demon in flowing robes
+7. a drifting pale wisp ghost  8. a hopping jiangshi corpse with a talisman on its forehead  9. an armored jiangshi general  10. a long-haired vengeful female ghost  11. a chain-dragging shackled soul  12. a towering corpse king with blackened claws
+13. a green spirit serpent  14. a horned python demon  15. a scaled jiao dragon with short horns  16. a serpent woman with a coiled tail  17. a two-headed venom serpent  18. a storm-wreathed jiao dragon rising
+19. a swarm of black gu insects  20. a giant centipede demon  21. a jade spider with a marked back  22. a moth spirit with powdered wings  23. a scorpion demon with a raised tail  24. a gu queen fused with insect limbs
+25. a masked cultist disciple with a dagger  26. a blood-robed cultist channeling qi  27. a bone-armored demonic swordsman  28. a puppet master with strung marionettes  29. a corpse-raising necromancer with a bell  30. a demonic elder wreathed in black qi
+31. boss: a colossal ink-black dragon coiling through clouds  32. boss: a white-boned immortal skeleton in tattered robes  33. boss: a many-armed demon statue come alive  34. boss: a vast disembodied eye ringed with talismans  35. boss: a heavenly tribulation demon formed of black lightning  36. boss: a nine-tailed fox empress in full ceremonial robes
+
+LAYOUT RULES (strict):
+- Exactly 36 items, one centered item per cell, no empty cell, no duplicates.
+- Each item occupies about 70% of its cell, consistent scale and margins.
+- Same orientation for all items (side three-quarter view).
+
+BACKGROUND (critical):
+- A single FLAT solid background color #FF00FF filling the whole image.
+- Absolutely NO gradient, NO drop shadow, NO reflection, NO texture.
+
+DO NOT include: any text, numbers, labels, captions, grid lines, cell borders, frames, watermark, or signature.
+
+Output: one 1:1 square image, high resolution.

@@ -14,6 +14,7 @@
   # 只想看某个画风词
   python src/gen_prompt.py --list-styles
 """
+
 from __future__ import annotations
 
 import argparse
@@ -22,23 +23,45 @@ import sys
 import recipes as _recipes
 
 STYLES = {
-    "flat": ("Cute flat-vector game icon, soft rounded shapes, thick uniform "
-             "outline, 2-3 flat color tones per item with simple cel shading, "
-             "clean and playful mobile-game look, soft top-left lighting."),
-    "clay": ("Cute 3D cartoon render, soft clay-like material, rounded chunky "
-             "shapes, glossy but not reflective, gentle studio lighting, "
-             "isometric 3/4 view, playful mobile game asset look."),
-    "handdrawn": ("Hand-drawn cartoon style, slightly wobbly ink outline, warm "
-                  "gouache-like flat coloring, cozy storybook game look, even "
-                  "soft lighting."),
-    "pixel": ("Clean pixel-art game sprite, limited cohesive palette, crisp "
-              "pixels, subtle dithering for shading, consistent top-left light, "
-              "retro 16-bit look, no anti-aliased edges."),
-    "line": ("Minimal line-icon style, uniform rounded stroke, single accent "
-             "fill color, flat and geometric, modern clean UI look, no gradient."),
-    "realistic": ("Semi-realistic glossy game icon, soft rendered volume, rich "
-                  "clean colors, smooth gradients inside the item only, studio "
-                  "product lighting, 3/4 view, polished casual-game look."),
+    "flat": (
+        "Cute flat-vector game icon, soft rounded shapes, thick uniform "
+        "outline, 2-3 flat color tones per item with simple cel shading, "
+        "clean and playful mobile-game look, soft top-left lighting."
+    ),
+    "clay": (
+        "Cute 3D cartoon render, soft clay-like material, rounded chunky "
+        "shapes, glossy but not reflective, gentle studio lighting, "
+        "isometric 3/4 view, playful mobile game asset look."
+    ),
+    "handdrawn": (
+        "Hand-drawn cartoon style, slightly wobbly ink outline, warm "
+        "gouache-like flat coloring, cozy storybook game look, even "
+        "soft lighting."
+    ),
+    # 网格版水墨。与 gen_card.py 的 shuimo 预设是两回事：那版是给「带参考图的 3:4
+    # 卡面」写的，含 "matching the attached reference" 和宣纸底，网格出图两者都不适用。
+    # 这版刻意收紧了晕染和飞白——墨色洇开的柔边在去背时会被判成背景，抠完剩一圈毛刺。
+    "shuimo": (
+        "Traditional Chinese ink-wash painting style (shuimo), flowing "
+        "calligraphic brush outlines of varied weight, restrained mineral-pigment "
+        "washes (azurite blue, malachite green, cinnabar red, gold) over black "
+        "ink, elegant and airy. Keep every edge crisp and fully opaque - no "
+        "bleeding wash beyond the outline, no faded dry-brush edges, no splatter."
+    ),
+    "pixel": (
+        "Clean pixel-art game sprite, limited cohesive palette, crisp "
+        "pixels, subtle dithering for shading, consistent top-left light, "
+        "retro 16-bit look, no anti-aliased edges."
+    ),
+    "line": (
+        "Minimal line-icon style, uniform rounded stroke, single accent "
+        "fill color, flat and geometric, modern clean UI look, no gradient."
+    ),
+    "realistic": (
+        "Semi-realistic glossy game icon, soft rendered volume, rich "
+        "clean colors, smooth gradients inside the item only, studio "
+        "product lighting, 3/4 view, polished casual-game look."
+    ),
 }
 
 TEMPLATE = """Create ONE single square image containing a strict {rows}x{cols} grid \
@@ -66,9 +89,46 @@ frames, watermark, or signature.
 
 Output: one 1:1 square image, high resolution."""
 
+# 同一角色的 {n} 种状态（配方带 bible 字段时用这套，见 prompts/character_forms.md）。
+# 与 TEMPLATE 的区别：先用「角色圣经」把身份钉死，每格只准改状态、不准改设计。
+TEMPLATE_CHARACTER = """Create ONE single square image containing a strict {rows}x{cols} \
+grid ({n} cells, {rows} rows by {cols} columns), evenly spaced. Every cell shows the \
+SAME single character; only the pose / state changes.
+
+CHARACTER BIBLE (must stay identical in all {n} cells):
+{bible}
+
+STYLE (identical for all {n} cells):
+{style}
+Keep the exact same character identity, same proportions, same color palette, same \
+outfit, same equipment, same art style, same line weight and shading in every cell.
+
+PER-CELL VARIATION - left-to-right, top-to-bottom:
+{items}
+
+LAYOUT RULES (strict):
+- Exactly {n} cells, one centered character per cell, no empty cell.
+- The character occupies about 70% of its cell, consistent scale and margins.
+- Same orientation for all cells ({view}).
+- Same character design in every cell - only the state changes. Do NOT redesign the \
+outfit, hair, body type or equipment between cells.
+
+BACKGROUND (critical):
+- A single FLAT solid background color {bg} filling the whole image.
+- Absolutely NO gradient, NO drop shadow, NO reflection, NO texture.
+
+DO NOT include: any text, numbers, labels, captions, grid lines, cell borders, \
+frames, watermark, or signature.
+
+Output: one 1:1 square image, high resolution."""
+
 
 def parse_items(args) -> list[str]:
     raw = ""
+    # 配方直接给列表，不走逗号串：条目本身可能含逗号（如 "recovering after a swing,
+    # sword lowered"），join 再 split 会把一条切成两条，36 格悄悄变 40 格。
+    if getattr(args, "recipe_items", None):
+        return list(args.recipe_items)
     if args.items_file:
         with open(args.items_file, encoding="utf-8") as f:
             raw = f.read()
@@ -83,7 +143,8 @@ def numbered(items: list[str], cols: int) -> str:
     for i, it in enumerate(items, 1):
         row.append(f"{i}. {it}")
         if i % cols == 0:
-            lines.append("  ".join(row)); row = []
+            lines.append("  ".join(row))
+            row = []
     if row:
         lines.append("  ".join(row))
     return "\n".join(lines)
@@ -91,16 +152,25 @@ def numbered(items: list[str], cols: int) -> str:
 
 def main() -> None:
     ap = argparse.ArgumentParser(description="生成 6×6 网格提示词")
-    ap.add_argument("--style", default="flat",
-                    help=f"画风键: {', '.join(STYLES)}（或直接写整段英文画风）")
+    ap.add_argument(
+        "--style",
+        default="flat",
+        help=f"画风键: {', '.join(STYLES)}（或直接写整段英文画风）",
+    )
     ap.add_argument("--bg", default="#F2EFE9", help="纯平背景色")
-    ap.add_argument("--view", default="front view",
-                    help="统一视角，如 'front view' / '3/4 top-down view'")
+    ap.add_argument(
+        "--view",
+        default="front view",
+        help="统一视角，如 'front view' / '3/4 top-down view'",
+    )
     ap.add_argument("--rows", type=int, default=6)
     ap.add_argument("--cols", type=int, default=6)
     ap.add_argument("--items", help="逗号/换行分隔的物件")
     ap.add_argument("--items-file", help="物件列表文件（一行一个）")
     ap.add_argument("--recipe", help="用预置游戏配方（见 --list-recipes）")
+    ap.add_argument(
+        "--bible", help="角色圣经：36 格是同一角色的不同状态时用，把身份钉死"
+    )
     ap.add_argument("--list-styles", action="store_true")
     ap.add_argument("--list-recipes", action="store_true")
     args = ap.parse_args()
@@ -123,30 +193,49 @@ def main() -> None:
         if not r:
             print(f"⚠ 无此配方: {args.recipe}，用 --list-recipes 查看", file=sys.stderr)
             return
-        if args.style == "flat":       # 未手动改画风时用配方的
+        if args.style == "flat":  # 未手动改画风时用配方的
             args.style = r["style"]
         if args.view == "front view":  # 未手动改视角时用配方的
             args.view = r["view"]
-        if args.bg == "#F2EFE9":       # 未手动改背景时用配方的
+        if args.bg == "#F2EFE9":  # 未手动改背景时用配方的
             args.bg = r["bg"]
         if not args.items and not args.items_file:
-            args.items = ",".join(r["items"])
+            args.recipe_items = r["items"]
+        if not args.bible:
+            args.bible = r.get("bible")
 
     style = STYLES.get(args.style, args.style)
     items = parse_items(args)
     n = args.rows * args.cols
     if not items:
-        print("⚠ 未提供物件（--items 或 --items-file）。"
-              f"仍生成模板，请手动填 {n} 个物件占位。", file=sys.stderr)
+        print(
+            "⚠ 未提供物件（--items 或 --items-file）。"
+            f"仍生成模板，请手动填 {n} 个物件占位。",
+            file=sys.stderr,
+        )
         items_block = f"{{在此列出 {n} 个物件，编号 1-{n}}}"
     else:
         if len(items) != n:
-            print(f"⚠ 物件数 {len(items)} ≠ {n}（{args.rows}×{args.cols}），"
-                  "请补齐或调整行列。", file=sys.stderr)
+            print(
+                f"⚠ 物件数 {len(items)} ≠ {n}（{args.rows}×{args.cols}），"
+                "请补齐或调整行列。",
+                file=sys.stderr,
+            )
         items_block = numbered(items, args.cols)
 
-    print(TEMPLATE.format(rows=args.rows, cols=args.cols, n=n, style=style,
-                          items=items_block, view=args.view, bg=args.bg))
+    tpl = TEMPLATE_CHARACTER if args.bible else TEMPLATE
+    print(
+        tpl.format(
+            rows=args.rows,
+            cols=args.cols,
+            n=n,
+            style=style,
+            items=items_block,
+            view=args.view,
+            bg=args.bg,
+            bible=args.bible,
+        )
+    )
 
 
 if __name__ == "__main__":

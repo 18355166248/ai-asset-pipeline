@@ -1,0 +1,26 @@
+Create ONE single square image containing a strict 6x6 grid (36 cells, 6 rows by 6 columns), evenly spaced.
+
+STYLE (identical for all 36 items):
+Traditional Chinese ink-wash painting style (shuimo), flowing calligraphic brush outlines of varied weight, restrained mineral-pigment washes (azurite blue, malachite green, cinnabar red, gold) over black ink, elegant and airy. Keep every edge crisp and fully opaque - no bleeding wash beyond the outline, no faded dry-brush edges, no splatter.
+Keep the SAME art style across every cell: same line weight, same shading method, same color grading, same camera angle, same lighting direction.
+
+CONTENT - one item per cell, left-to-right, top-to-bottom:
+1. a slender flying sword with a jade pommel  2. a horsetail whisk (fuchen) with white strands  3. a ruyi scepter of green jade  4. an embroidered qiankun pouch  5. a bronze demon-revealing mirror  6. a luopan compass with concentric rings
+7. a glowing golden immortality pill  8. a jade-green healing elixir pill  9. a crimson qi-gathering pill  10. a swirling black-and-white breakthrough pill  11. a murky purple poison pill  12. a pill furnace (dan ding) with three legs
+13. a fire talisman strip with vermilion script  14. a thunder talisman strip crackling with sparks  15. an ice talisman strip rimed with frost  16. a demon-warding talisman strip  17. an earth-escape talisman strip  18. a golden protection talisman strip
+19. a lingzhi immortal mushroom  20. a ginseng root shaped like a small figure  21. a lump of translucent jade marrow  22. a beast core orb glowing from within  23. a single iridescent dragon scale  24. a long phoenix tail feather
+25. a carved jade pendant on a silk cord  26. a string of dark prayer beads  27. a jade slip tablet inscribed with script  28. a cluster of raw spirit stones  29. a gourd flask with a cork stopper  30. a small bronze incense censer with smoke
+31. a blood-red jade carved with a coiled worm  32. a sealed clay jar of gu insects  33. a bone flute carved with tiny skulls  34. a soul-binding chain of dark iron  35. a cracked demonic ritual mask  36. a tattered soul-summoning banner on a pole
+
+LAYOUT RULES (strict):
+- Exactly 36 items, one centered item per cell, no empty cell, no duplicates.
+- Each item occupies about 70% of its cell, consistent scale and margins.
+- Same orientation for all items (front view).
+
+BACKGROUND (critical):
+- A single FLAT solid background color #FF00FF filling the whole image.
+- Absolutely NO gradient, NO drop shadow, NO reflection, NO texture.
+
+DO NOT include: any text, numbers, labels, captions, grid lines, cell borders, frames, watermark, or signature.
+
+Output: one 1:1 square image, high resolution.
