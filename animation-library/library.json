@@ -1,0 +1,98 @@
+{
+  "name": "pivot-animation-library",
+  "version": 1,
+  "skeletons": [
+    "humanoid-basic",
+    "quadruped-basic"
+  ],
+  "clips": {
+    "humanoid-basic": [
+      {
+        "id": "idle",
+        "loop": true,
+        "end": 48,
+        "parts": 5,
+        "keyframes": 18
+      },
+      {
+        "id": "move",
+        "loop": true,
+        "end": 33,
+        "parts": 12,
+        "keyframes": 48
+      },
+      {
+        "id": "slash",
+        "loop": false,
+        "end": 24,
+        "parts": 9,
+        "keyframes": 46
+      },
+      {
+        "id": "slash2",
+        "loop": false,
+        "end": 26,
+        "parts": 10,
+        "keyframes": 48
+      },
+      {
+        "id": "cast",
+        "loop": false,
+        "end": 44,
+        "parts": 11,
+        "keyframes": 67
+      },
+      {
+        "id": "jump",
+        "loop": false,
+        "end": 32,
+        "parts": 11,
+        "keyframes": 81
+      },
+      {
+        "id": "dash",
+        "loop": false,
+        "end": 26,
+        "parts": 12,
+        "keyframes": 73
+      },
+      {
+        "id": "hit",
+        "loop": false,
+        "end": 20,
+        "parts": 9,
+        "keyframes": 38
+      }
+    ],
+    "quadruped-basic": [
+      {
+        "id": "move",
+        "loop": true,
+        "end": 33,
+        "parts": 16,
+        "keyframes": 74
+      },
+      {
+        "id": "idle",
+        "loop": true,
+        "end": 60,
+        "parts": 8,
+        "keyframes": 30
+      },
+      {
+        "id": "pounce",
+        "loop": false,
+        "end": 34,
+        "parts": 16,
+        "keyframes": 85
+      },
+      {
+        "id": "hit",
+        "loop": false,
+        "end": 22,
+        "parts": 12,
+        "keyframes": 52
+      }
+    ]
+  }
+}

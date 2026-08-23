@@ -1,0 +1,297 @@
+{
+  "id": "humanoid-basic",
+  "version": 1,
+  "description": "双足人形基础骨架。11 个可动部件，关节原点建在真实关节位置。",
+  "axes": {
+    "lateral": "X",
+    "forward": "Y",
+    "up": "Z",
+    "swingAxis": "X",
+    "note": "X 分左右、Y 是朝向，所以前后摆动绕 X 转。写成绕 Y 会让左右分离和前后摆动共用一个轴：正面看像开合跳，侧面看人薄成一条线。"
+  },
+  "materials": {
+    "cloth": [
+      0.16,
+      0.3,
+      0.34,
+      1
+    ],
+    "skin": [
+      0.86,
+      0.7,
+      0.52,
+      1
+    ],
+    "dark": [
+      0.1,
+      0.14,
+      0.18,
+      1
+    ]
+  },
+  "parts": [
+    {
+      "id": "root",
+      "parent": null,
+      "joint": [
+        0.0,
+        0,
+        0.0
+      ],
+      "shape": null
+    },
+    {
+      "id": "hips",
+      "parent": "root",
+      "joint": [
+        0.0,
+        0,
+        0.92
+      ],
+      "shape": {
+        "type": "box",
+        "size": [
+          0.42,
+          0.28,
+          0.3
+        ],
+        "offset": [
+          0,
+          0,
+          0.0
+        ],
+        "material": "cloth"
+      }
+    },
+    {
+      "id": "torso",
+      "parent": "hips",
+      "joint": [
+        0.0,
+        0,
+        1.02
+      ],
+      "shape": {
+        "type": "box",
+        "size": [
+          0.5,
+          0.32,
+          0.54
+        ],
+        "offset": [
+          0,
+          0,
+          0.24
+        ],
+        "material": "cloth"
+      }
+    },
+    {
+      "id": "head",
+      "parent": "torso",
+      "joint": [
+        0.0,
+        0,
+        1.56
+      ],
+      "shape": {
+        "type": "box",
+        "size": [
+          0.4,
+          0.4,
+          0.4
+        ],
+        "offset": [
+          0,
+          0,
+          0.18
+        ],
+        "material": "skin"
+      }
+    },
+    {
+      "id": "arm-l-upper",
+      "parent": "torso",
+      "joint": [
+        0.3,
+        0,
+        1.44
+      ],
+      "shape": {
+        "type": "box",
+        "size": [
+          0.16,
+          0.17,
+          0.46
+        ],
+        "offset": [
+          0,
+          0,
+          -0.2
+        ],
+        "material": "cloth"
+      }
+    },
+    {
+      "id": "arm-l-lower",
+      "parent": "arm-l-upper",
+      "joint": [
+        0.3,
+        0,
+        1.02
+      ],
+      "shape": {
+        "type": "box",
+        "size": [
+          0.14,
+          0.15,
+          0.42
+        ],
+        "offset": [
+          0,
+          0,
+          -0.18
+        ],
+        "material": "skin"
+      }
+    },
+    {
+      "id": "arm-r-upper",
+      "parent": "torso",
+      "joint": [
+        -0.3,
+        0,
+        1.44
+      ],
+      "shape": {
+        "type": "box",
+        "size": [
+          0.16,
+          0.17,
+          0.46
+        ],
+        "offset": [
+          0,
+          0,
+          -0.2
+        ],
+        "material": "cloth"
+      }
+    },
+    {
+      "id": "arm-r-lower",
+      "parent": "arm-r-upper",
+      "joint": [
+        -0.3,
+        0,
+        1.02
+      ],
+      "shape": {
+        "type": "box",
+        "size": [
+          0.14,
+          0.15,
+          0.42
+        ],
+        "offset": [
+          0,
+          0,
+          -0.18
+        ],
+        "material": "skin"
+      }
+    },
+    {
+      "id": "leg-l-upper",
+      "parent": "hips",
+      "joint": [
+        0.14,
+        0,
+        0.88
+      ],
+      "shape": {
+        "type": "box",
+        "size": [
+          0.16,
+          0.17,
+          0.46
+        ],
+        "offset": [
+          0,
+          0,
+          -0.2
+        ],
+        "material": "dark"
+      }
+    },
+    {
+      "id": "leg-l-lower",
+      "parent": "leg-l-upper",
+      "joint": [
+        0.14,
+        0,
+        0.46
+      ],
+      "shape": {
+        "type": "box",
+        "size": [
+          0.14,
+          0.15,
+          0.42
+        ],
+        "offset": [
+          0,
+          0,
+          -0.18
+        ],
+        "material": "dark"
+      }
+    },
+    {
+      "id": "leg-r-upper",
+      "parent": "hips",
+      "joint": [
+        -0.14,
+        0,
+        0.88
+      ],
+      "shape": {
+        "type": "box",
+        "size": [
+          0.16,
+          0.17,
+          0.46
+        ],
+        "offset": [
+          0,
+          0,
+          -0.2
+        ],
+        "material": "dark"
+      }
+    },
+    {
+      "id": "leg-r-lower",
+      "parent": "leg-r-upper",
+      "joint": [
+        -0.14,
+        0,
+        0.46
+      ],
+      "shape": {
+        "type": "box",
+        "size": [
+          0.14,
+          0.15,
+          0.42
+        ],
+        "offset": [
+          0,
+          0,
+          -0.18
+        ],
+        "material": "dark"
+      }
+    }
+  ]
+}

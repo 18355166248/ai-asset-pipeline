@@ -1,0 +1,389 @@
+{
+  "id": "quadruped-basic",
+  "version": 1,
+  "description": "四足兽基础骨架。17 个可动部件，含三节尾巴。比例参考狐类。",
+  "axes": {
+    "lateral": "X",
+    "forward": "Y",
+    "up": "Z",
+    "swingAxis": "X",
+    "note": "与人形骨架同一套约定：X 分左右、Y 是朝向，前后摆动绕 X 转。"
+  },
+  "materials": {
+    "fur": [
+      0.52,
+      0.2,
+      0.07,
+      1
+    ],
+    "fur-light": [
+      0.88,
+      0.82,
+      0.72,
+      1
+    ],
+    "fur-dark": [
+      0.14,
+      0.1,
+      0.09,
+      1
+    ]
+  },
+  "parts": [
+    {
+      "id": "root",
+      "parent": null,
+      "joint": [
+        0,
+        0,
+        0
+      ],
+      "shape": null
+    },
+    {
+      "id": "spine-rear",
+      "parent": "root",
+      "joint": [
+        0,
+        -0.3,
+        0.86
+      ],
+      "shape": {
+        "type": "box",
+        "size": [
+          0.38,
+          0.62,
+          0.42
+        ],
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "material": "fur"
+      }
+    },
+    {
+      "id": "spine-front",
+      "parent": "spine-rear",
+      "joint": [
+        0,
+        0.24,
+        0.9
+      ],
+      "shape": {
+        "type": "box",
+        "size": [
+          0.42,
+          0.58,
+          0.46
+        ],
+        "offset": [
+          0,
+          0.06,
+          0
+        ],
+        "material": "fur"
+      }
+    },
+    {
+      "id": "neck",
+      "parent": "spine-front",
+      "joint": [
+        0,
+        0.5,
+        1.0
+      ],
+      "shape": {
+        "type": "box",
+        "size": [
+          0.26,
+          0.34,
+          0.28
+        ],
+        "offset": [
+          0,
+          0.12,
+          0.04
+        ],
+        "material": "fur"
+      }
+    },
+    {
+      "id": "head",
+      "parent": "neck",
+      "joint": [
+        0,
+        0.72,
+        1.1
+      ],
+      "shape": {
+        "type": "box",
+        "size": [
+          0.3,
+          0.4,
+          0.3
+        ],
+        "offset": [
+          0,
+          0.14,
+          0.0
+        ],
+        "material": "fur"
+      }
+    },
+    {
+      "id": "tail-base",
+      "parent": "spine-rear",
+      "joint": [
+        0,
+        -0.6,
+        0.94
+      ],
+      "shape": {
+        "type": "box",
+        "size": [
+          0.14,
+          0.34,
+          0.14
+        ],
+        "offset": [
+          0,
+          -0.15,
+          0.02
+        ],
+        "material": "fur-dark"
+      }
+    },
+    {
+      "id": "tail-mid",
+      "parent": "tail-base",
+      "joint": [
+        0,
+        -0.9,
+        1.0
+      ],
+      "shape": {
+        "type": "box",
+        "size": [
+          0.11,
+          0.3,
+          0.11
+        ],
+        "offset": [
+          0,
+          -0.14,
+          0.02
+        ],
+        "material": "fur-dark"
+      }
+    },
+    {
+      "id": "tail-tip",
+      "parent": "tail-mid",
+      "joint": [
+        0,
+        -1.16,
+        1.06
+      ],
+      "shape": {
+        "type": "box",
+        "size": [
+          0.09,
+          0.26,
+          0.09
+        ],
+        "offset": [
+          0,
+          -0.12,
+          0.01
+        ],
+        "material": "fur-light"
+      }
+    },
+    {
+      "id": "leg-fl-upper",
+      "parent": "spine-front",
+      "joint": [
+        0.19,
+        0.4,
+        0.8
+      ],
+      "shape": {
+        "type": "box",
+        "size": [
+          0.14,
+          0.16,
+          0.4
+        ],
+        "offset": [
+          0,
+          0,
+          -0.18
+        ],
+        "material": "fur"
+      }
+    },
+    {
+      "id": "leg-fl-lower",
+      "parent": "leg-fl-upper",
+      "joint": [
+        0.19,
+        0.4,
+        0.42
+      ],
+      "shape": {
+        "type": "box",
+        "size": [
+          0.11,
+          0.13,
+          0.4
+        ],
+        "offset": [
+          0,
+          0,
+          -0.18
+        ],
+        "material": "fur-dark"
+      }
+    },
+    {
+      "id": "leg-bl-upper",
+      "parent": "spine-rear",
+      "joint": [
+        0.19,
+        -0.4,
+        0.8
+      ],
+      "shape": {
+        "type": "box",
+        "size": [
+          0.15,
+          0.16,
+          0.4
+        ],
+        "offset": [
+          0,
+          0,
+          -0.18
+        ],
+        "material": "fur"
+      }
+    },
+    {
+      "id": "leg-bl-lower",
+      "parent": "leg-bl-upper",
+      "joint": [
+        0.19,
+        -0.4,
+        0.42
+      ],
+      "shape": {
+        "type": "box",
+        "size": [
+          0.11,
+          0.13,
+          0.4
+        ],
+        "offset": [
+          0,
+          0,
+          -0.18
+        ],
+        "material": "fur-dark"
+      }
+    },
+    {
+      "id": "leg-fr-upper",
+      "parent": "spine-front",
+      "joint": [
+        -0.19,
+        0.4,
+        0.8
+      ],
+      "shape": {
+        "type": "box",
+        "size": [
+          0.14,
+          0.16,
+          0.4
+        ],
+        "offset": [
+          0,
+          0,
+          -0.18
+        ],
+        "material": "fur"
+      }
+    },
+    {
+      "id": "leg-fr-lower",
+      "parent": "leg-fr-upper",
+      "joint": [
+        -0.19,
+        0.4,
+        0.42
+      ],
+      "shape": {
+        "type": "box",
+        "size": [
+          0.11,
+          0.13,
+          0.4
+        ],
+        "offset": [
+          0,
+          0,
+          -0.18
+        ],
+        "material": "fur-dark"
+      }
+    },
+    {
+      "id": "leg-br-upper",
+      "parent": "spine-rear",
+      "joint": [
+        -0.19,
+        -0.4,
+        0.8
+      ],
+      "shape": {
+        "type": "box",
+        "size": [
+          0.15,
+          0.16,
+          0.4
+        ],
+        "offset": [
+          0,
+          0,
+          -0.18
+        ],
+        "material": "fur"
+      }
+    },
+    {
+      "id": "leg-br-lower",
+      "parent": "leg-br-upper",
+      "joint": [
+        -0.19,
+        -0.4,
+        0.42
+      ],
+      "shape": {
+        "type": "box",
+        "size": [
+          0.11,
+          0.13,
+          0.4
+        ],
+        "offset": [
+          0,
+          0,
+          -0.18
+        ],
+        "material": "fur-dark"
+      }
+    }
+  ]
+}
