@@ -1,6 +1,8 @@
 output/
 input/*
 !input/.gitkeep
+!input/codex/
+!input/codex/**
 __pycache__/
 *.pyc
 .venv/

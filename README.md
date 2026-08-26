@@ -68,3 +68,13 @@ python src/contact.py    output/cutouts -o output/contact/sheet.png
 3. **实验 C · 尺寸+去背**：看 `contact_resized.png`，把 `resized/` 贴进大鹅工程网格跑一眼。
 
 任一实验的一致性/去背/可读性不过关，说明 AI 生图暂不能当主力素材管线。
+
+## Codex 生图接入规范
+
+Codex 图片生成可以作为原始素材上游；本仓库仍是**唯一的确定性加工与验收出口**。
+不接入任何特定付费生成 API，也不把生成器的输出直接发布到游戏。
+
+完整的目录约定、元数据模板、验收闸门和发布规则见
+[docs/CODEX_ASSET_WORKFLOW.md](docs/CODEX_ASSET_WORKFLOW.md)。新资产以
+[assets-manifest.example.json](assets-manifest.example.json) 为台账模板：记录来源、
+提示词、参考图、目标尺寸、验证报告和发布状态，避免后续只剩一张 PNG 而无法复现。

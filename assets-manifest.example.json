@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "frontier-equipment-icons-v1",
+      "source": {
+        "provider": "codex-imagegen",
+        "raw": "input/codex/frontier-equipment-icons-v1/frontier-equipment-icons-v1.png",
+        "reference": null,
+        "prompt": "input/codex/frontier-equipment-icons-v1/prompt.md",
+        "generatedAt": "YYYY-MM-DD",
+        "cost": "platform-included-or-unknown"
+      },
+      "intent": {
+        "consumer": "frontier-brawler",
+        "kind": "equipment-icon-grid",
+        "displaySize": "64x64 px",
+        "background": "#FF00FF chroma key"
+      },
+      "processing": {
+        "workflow": "python src/run.py input/codex/frontier-equipment-icons-v1/frontier-equipment-icons-v1.png -r 2 -c 2 --size 64 --chroma --tolerance 45",
+        "output": "output/frontier-equipment-icons-v1/"
+      },
+      "verification": {
+        "contactSheet": "output/frontier-equipment-icons-v1/contact_resized.png",
+        "report": null,
+        "runtimeEvidence": "evidence/frontier-equipment-icons-v1/equipment-menu.png"
+      },
+      "release": {
+        "status": "draft",
+        "publishedPath": null
+      }
+    }
+  ]
+}
