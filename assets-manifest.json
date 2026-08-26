@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "frontier-equipment-icons-v1",
+      "source": {
+        "provider": "codex-imagegen",
+        "raw": "input/codex/frontier-equipment-icons-v1/frontier-equipment-icons-v1.png",
+        "reference": null,
+        "prompt": "input/codex/frontier-equipment-icons-v1/prompt.md",
+        "generatedAt": "2026-08-26",
+        "cost": "platform-included-or-unknown"
+      },
+      "intent": {
+        "consumer": "frontier-brawler",
+        "kind": "equipment-icon-grid",
+        "displaySize": "64x64 px",
+        "background": "requested #FF00FF; detected rgb(251,2,216); normalized by chroma key",
+        "cells": ["iron-maul", "wind-sabers", "spirit-focus", "field-armor"]
+      },
+      "processing": {
+        "workflow": ".venv-cutout/bin/python src/run.py input/codex/frontier-equipment-icons-v1/frontier-equipment-icons-v1.png -r 2 -c 2 --size 64 --chroma --tolerance 45",
+        "output": "output/frontier-equipment-icons-v1/"
+      },
+      "verification": {
+        "contactSheet": "output/frontier-equipment-icons-v1/contact_resized.png",
+        "report": null,
+        "runtimeEvidence": "evidence/frontier-equipment-icons-v1/equipment-menu.jpg"
+      },
+      "release": {
+        "status": "published",
+        "publishedPath": "../frontier-brawler/public/art/equipment/"
+      }
+    },
+    {
+      "id": "frontier-equipment-icons-v2",
+      "source": {
+        "provider": "codex-imagegen",
+        "raw": "input/codex/frontier-equipment-icons-v2/frontier-equipment-icons-v2.png",
+        "reference": "input/codex/frontier-equipment-icons-v1/frontier-equipment-icons-v1.png",
+        "prompt": "input/codex/frontier-equipment-icons-v2/prompt.md",
+        "generatedAt": "2026-08-26",
+        "cost": "platform-included-or-unknown"
+      },
+      "intent": {
+        "consumer": "frontier-brawler",
+        "kind": "equipment-icon-grid",
+        "displaySize": "64x64 px",
+        "background": "requested chroma magenta; detected rgb(243,3,211); normalized by chroma key",
+        "cells": ["breaker-maul", "hook-blades", "ember-focus", "scout-coat"]
+      },
+      "processing": {
+        "workflow": ".venv-cutout/bin/python src/run.py input/codex/frontier-equipment-icons-v2/frontier-equipment-icons-v2.png -r 2 -c 2 --size 64 --chroma --tolerance 45",
+        "output": "output/frontier-equipment-icons-v2/"
+      },
+      "verification": {
+        "contactSheet": "output/frontier-equipment-icons-v2/contact_resized.png",
+        "report": null,
+        "runtimeEvidence": "evidence/frontier-equipment-icons-v2/equipment-menu.jpg"
+      },
+      "release": {
+        "status": "published",
+        "publishedPath": "../frontier-brawler/public/art/equipment/"
+      }
+    },
+    {
+      "id": "frontier-equipment-icons-v3",
+      "source": {
+        "provider": "codex-imagegen",
+        "raw": "input/codex/frontier-equipment-icons-v3/frontier-equipment-icons-v3.png",
+        "reference": "input/codex/frontier-equipment-icons-v1/frontier-equipment-icons-v1.png",
+        "prompt": "input/codex/frontier-equipment-icons-v3/prompt.md",
+        "generatedAt": "2026-08-26",
+        "cost": "platform-included-or-unknown"
+      },
+      "intent": {
+        "consumer": "frontier-brawler",
+        "kind": "equipment-icon-grid",
+        "displaySize": "64x64 px",
+        "background": "requested chroma magenta; detected rgb(241,5,208); normalized by chroma key",
+        "cells": ["ritual-robe", "execution-charm", "war-sigil", "focus-bead"]
+      },
+      "processing": {
+        "workflow": ".venv-cutout/bin/python src/run.py input/codex/frontier-equipment-icons-v3/frontier-equipment-icons-v3.png -r 2 -c 2 --size 64 --chroma --tolerance 45",
+        "output": "output/frontier-equipment-icons-v3/"
+      },
+      "verification": {
+        "contactSheet": "output/frontier-equipment-icons-v3/contact_resized.png",
+        "report": null,
+        "runtimeEvidence": "evidence/frontier-equipment-icons-v3/equipment-menu.jpg"
+      },
+      "release": {
+        "status": "published",
+        "publishedPath": "../frontier-brawler/public/art/equipment/"
+      }
+    }
+  ]
+}
