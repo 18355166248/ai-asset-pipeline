@@ -25,7 +25,7 @@ from pathlib import Path
 
 from PIL import Image
 
-from utils import list_images, ensure_dir
+from utils import list_images, ensure_dir, thumbnail_square
 
 
 def common_bbox(images: list[Image.Image], pad: int = 2) -> tuple[int, int, int, int]:
@@ -54,7 +54,9 @@ def common_bbox(images: list[Image.Image], pad: int = 2) -> tuple[int, int, int,
 
 def build(src_dir: Path, out: Path, cols: int, rows: int | None,
           cell: int | None, trim: bool) -> None:
-    paths = [p for p in list_images(src_dir) if p.name != "manifest.json"]
+    if cols < 1 or (rows is not None and rows < 1) or (cell is not None and cell < 1):
+        raise ValueError("列数、行数和单格尺寸必须大于 0")
+    paths = list_images(src_dir)
     if not paths:
         raise SystemExit(f"没找到帧图片: {src_dir}")
 
@@ -67,18 +69,8 @@ def build(src_dir: Path, out: Path, cols: int, rows: int | None,
         box = common_bbox(frames)
         frames = [f.crop(box) for f in frames]
 
-    if cell:
-        # 等比缩到目标格子，再贴到透明正方形画布上居中。
-        # 直接 resize 成正方形会把角色压扁。
-        packed = []
-        for frame in frames:
-            scaled = frame.copy()
-            scaled.thumbnail((cell, cell), Image.LANCZOS)
-            canvas = Image.new("RGBA", (cell, cell), (0, 0, 0, 0))
-            canvas.paste(scaled, ((cell - scaled.width) // 2,
-                                  (cell - scaled.height) // 2), scaled)
-            packed.append(canvas)
-        frames = packed
+    if cell is not None:
+        frames = [thumbnail_square(frame, cell) for frame in frames]
 
     cell_w, cell_h = frames[0].size
     if rows is None:
@@ -90,7 +82,8 @@ def build(src_dir: Path, out: Path, cols: int, rows: int | None,
     sheet = Image.new("RGBA", (cols * cell_w, rows * cell_h), (0, 0, 0, 0))
     for index, frame in enumerate(frames):
         row, col = divmod(index, cols)
-        sheet.paste(frame, (col * cell_w, row * cell_h), frame)
+        # 图集保存原始 alpha，只有预览合成到不透明底色时才需要 mask。
+        sheet.paste(frame, (col * cell_w, row * cell_h))
 
     ensure_dir(out.parent)
     sheet.save(out)

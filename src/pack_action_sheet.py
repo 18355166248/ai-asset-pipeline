@@ -25,16 +25,18 @@ from pathlib import Path
 
 from PIL import Image
 
-from utils import list_images, ensure_dir
-
-if hasattr(sys.stdout, "reconfigure"):
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+from utils import list_images, ensure_dir, thumbnail_square
 
 
 def sample_row(paths: list[Path], cols: int) -> list[Path]:
     """把一个动作的帧均匀采样/补齐到 cols 张。"""
+    if cols < 1:
+        raise ValueError("列数必须大于 0")
     if not paths:
         raise SystemExit("空的动作目录")
+    # 单列只保留首帧，避免均匀采样公式的分母为零。
+    if cols == 1:
+        return paths[:1]
     if len(paths) == cols:
         return paths
     if len(paths) > cols:
@@ -46,6 +48,8 @@ def sample_row(paths: list[Path], cols: int) -> list[Path]:
 
 def build(rows: list[tuple[str, Path]], out: Path, cols: int,
           cell: int | None) -> None:
+    if not rows or cols < 1 or (cell is not None and cell < 1):
+        raise ValueError("动作不能为空，列数和单格尺寸必须大于 0")
     cells: list[list[Image.Image]] = []
     report: list[dict] = []
 
@@ -63,25 +67,14 @@ def build(rows: list[tuple[str, Path]], out: Path, cols: int,
             f"各动作的帧尺寸不一致，无法等分打包: {sorted(sizes)}。"
             f"整套动作要用 render_clip_set.py 渲，才会共用同一套归一化。")
 
-    if cell:
-        resized = []
-        for row in cells:
-            packed = []
-            for img in row:
-                scaled = img.copy()
-                scaled.thumbnail((cell, cell), Image.LANCZOS)
-                canvas = Image.new("RGBA", (cell, cell), (0, 0, 0, 0))
-                canvas.paste(scaled, ((cell - scaled.width) // 2,
-                                      (cell - scaled.height) // 2), scaled)
-                packed.append(canvas)
-            resized.append(packed)
-        cells = resized
+    if cell is not None:
+        cells = [[thumbnail_square(image, cell) for image in row] for row in cells]
 
     cell_w, cell_h = cells[0][0].size
     sheet = Image.new("RGBA", (cols * cell_w, len(cells) * cell_h), (0, 0, 0, 0))
     for r, row in enumerate(cells):
         for c, img in enumerate(row):
-            sheet.paste(img, (c * cell_w, r * cell_h), img)
+            sheet.paste(img, (c * cell_w, r * cell_h))
 
     ensure_dir(out.parent)
     sheet.save(out)
@@ -103,6 +96,9 @@ def build(rows: list[tuple[str, Path]], out: Path, cols: int,
 
 
 def main() -> None:
+    # 命令行保留 UTF-8 输出兼容；模块导入不改调用方的 stdout。
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     ap = argparse.ArgumentParser(description="多动作 -> 一行一动作的动作表")
     ap.add_argument("--rows", nargs="+", required=True,
                     help="按行序给出 名字=帧目录")

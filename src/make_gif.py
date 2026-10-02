@@ -18,7 +18,7 @@ from pathlib import Path
 
 from PIL import Image
 
-from utils import list_images, ensure_dir
+from utils import list_images, ensure_dir, thumbnail_square
 
 
 def build(src_dir: Path, out: Path, fps: int, size: int | None, scale: int,
@@ -32,15 +32,7 @@ def build(src_dir: Path, out: Path, fps: int, size: int | None, scale: int,
     if size:
         # 先缩到游戏尺寸，再整数倍放大——模拟素材在游戏里的真实分辨率，
         # 同时让 GIF 在屏幕上看得清。直接渲小图会看不出锯齿和可读性问题。
-        resized = []
-        for frame in frames:
-            small = frame.copy()
-            small.thumbnail((size, size), Image.LANCZOS)
-            canvas = Image.new("RGBA", (size, size), (0, 0, 0, 0))
-            canvas.paste(small, ((size - small.width) // 2,
-                                 (size - small.height) // 2), small)
-            resized.append(canvas)
-        frames = resized
+        frames = [thumbnail_square(frame, size) for frame in frames]
 
     if scale > 1:
         # 最近邻放大，保留像素级真相；用插值会把问题磨平。

@@ -32,7 +32,7 @@ def _font(sz: int):
     for name in ("consola.ttf", "arial.ttf", "DejaVuSansMono.ttf"):
         try:
             return ImageFont.truetype(name, sz)
-        except Exception:
+        except OSError:
             continue
     return ImageFont.load_default()
 

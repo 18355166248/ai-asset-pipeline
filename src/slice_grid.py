@@ -16,10 +16,15 @@ from utils import detect_bg_color, content_bbox, ensure_dir
 def slice_grid(src: str, rows: int, cols: int, out_dir: str,
                autocrop: bool = False, thresh: int = 30, margin: int = 4,
                gutter: int = 0) -> list[Path]:
+    if rows < 1 or cols < 1 or gutter < 0:
+        raise ValueError("行列数必须大于 0，内缩像素不能为负")
     img = Image.open(src).convert("RGB")
     W, H = img.size
     cell_w = W / cols
     cell_h = H / rows
+    # 先检查最小单元格，避免参数错误时留下半套切图。
+    if W // cols <= 2 * gutter or H // rows <= 2 * gutter:
+        raise ValueError("网格过密或 gutter 过大，单元格没有可用像素")
     bg = detect_bg_color(img)
     out = ensure_dir(out_dir)
     stem = Path(src).stem
@@ -28,11 +33,11 @@ def slice_grid(src: str, rows: int, cols: int, out_dir: str,
     for row in range(rows):
         for col in range(cols):
             # 等分切格，gutter 用于收缩单元格避免吃到相邻格
-            l = int(round(col * cell_w)) + gutter
+            left = int(round(col * cell_w)) + gutter
             t = int(round(row * cell_h)) + gutter
             r = int(round((col + 1) * cell_w)) - gutter
             b = int(round((row + 1) * cell_h)) - gutter
-            cell = img.crop((l, t, r, b))
+            cell = img.crop((left, t, r, b))
 
             if autocrop:
                 bbox = content_bbox(cell, bg, thresh=thresh, pad=margin)

@@ -37,7 +37,8 @@ def main() -> None:
     ap.add_argument(
         "--chroma", action="store_true", help="去背用绿幕式（配 #FF00FF 等高饱和背景）"
     )
-    ap.add_argument("--tolerance", type=int, default=32)
+    ap.add_argument("--tolerance", type=int, default=None,
+                    help="去背容差（flood-fill 默认 32，chroma 默认 60）")
     args = ap.parse_args()
 
     stem = Path(args.src).stem

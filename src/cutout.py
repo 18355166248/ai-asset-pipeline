@@ -10,7 +10,6 @@
 from __future__ import annotations
 
 import argparse
-from pathlib import Path
 import numpy as np
 from PIL import Image
 
@@ -108,10 +107,13 @@ def cutout_chroma(
 def run(
     src_dir: str,
     out_dir: str,
-    tolerance: int = 32,
+    tolerance: int | None = None,
     force_floodfill: bool = False,
     chroma: bool = False,
 ):
+    # 用 None 区分未传参数与显式 32，避免 chroma 吞掉用户指定的容差。
+    if tolerance is None:
+        tolerance = 60 if chroma else 32
     imgs = list_images(src_dir)
     if not imgs:
         print(f"[cutout] 没找到图片: {src_dir}")
@@ -129,7 +131,7 @@ def run(
     for p in imgs:
         img = Image.open(p).convert("RGB")
         if chroma:
-            res = cutout_chroma(img, tolerance if tolerance != 32 else 60)
+            res = cutout_chroma(img, tolerance)
         elif use_rembg:
             res = cutout_rembg(img)
         else:
@@ -142,7 +144,7 @@ def main() -> None:
     ap = argparse.ArgumentParser(description="批量去背为透明 PNG")
     ap.add_argument("src", help="待去背图片目录")
     ap.add_argument("-o", "--out", default="output/cutouts")
-    ap.add_argument("--tolerance", type=int, default=32, help="flood-fill 容差")
+    ap.add_argument("--tolerance", type=int, default=None, help="去背容差（flood-fill 默认 32，chroma 默认 60）")
     ap.add_argument(
         "--floodfill", action="store_true", help="强制用 flood-fill（跳过 rembg）"
     )

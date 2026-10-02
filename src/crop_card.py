@@ -57,12 +57,16 @@ def check_safe(img: Image.Image, safe_pct: float) -> tuple[bool, str]:
     bbox = subject_bbox(img)
     if bbox is None:
         return True, "主体检测失败（可能满幅出血），跳过校验"
-    l, t, r, b = bbox
+    left, top, right, bottom = bbox
     bad = []
-    if l < mx: bad.append(f"左({l}<{mx:.0f})")
-    if t < my: bad.append(f"上({t}<{my:.0f})")
-    if r > w - mx: bad.append(f"右({r}>{w - mx:.0f})")
-    if b > h - my: bad.append(f"下({b}>{h - my:.0f})")
+    if left < mx:
+        bad.append(f"左({left}<{mx:.0f})")
+    if top < my:
+        bad.append(f"上({top}<{my:.0f})")
+    if right > w - mx:
+        bad.append(f"右({right}>{w - mx:.0f})")
+    if bottom > h - my:
+        bad.append(f"下({bottom}>{h - my:.0f})")
     # 满幅出血的卡面主体本就顶边，这里只在「四边都越界」时视为正常
     if len(bad) == 4:
         return True, "四边均满幅（出血构图），跳过"
