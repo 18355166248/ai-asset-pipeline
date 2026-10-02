@@ -1,0 +1,4 @@
+interface:
+  display_name: "角色动作素材包"
+  short_description: "整理角色待机与攻击动作，保留帧时长和循环属性，输出图集与离线验收预览"
+  default_prompt: "使用 $character-motion-kit 将这个角色的待机和攻击动作整理成可预览、可复用的素材包。"

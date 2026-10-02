@@ -1,0 +1,4 @@
+interface:
+  display_name: "吉祥物素材包"
+  short_description: "为游戏和日常项目设计简洁吉祥物，导出多尺寸图片、候选预览与来源记录"
+  default_prompt: "使用 $mascot-kit 为当前项目制作吉祥物候选，并导出可预览的多尺寸素材包。"

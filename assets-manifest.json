@@ -2,6 +2,106 @@
   "version": 1,
   "assets": [
     {
+      "id": "clockwork-infantry-rig-collapse-v1",
+      "source": {
+        "provider": "project-authored-blender",
+        "raw": "../nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-rig-collapse-v1/render/clockwork-infantry-collapse.blend",
+        "reference": "../nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-rig-v2/model/clockwork-infantry.blend",
+        "prompt": "../nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-rig-collapse-v1/brief.md",
+        "generatedAt": "2026-09-28",
+        "cost": "local-authoring-no-external-api"
+      },
+      "intent": {
+        "consumer": "nightwatch-tower-defense",
+        "kind": "same-model-directional-collapse-candidate",
+        "displaySize": "256x256 canvas, same model pixel scale as 128x128 walk",
+        "background": "native transparent RGBA",
+        "cells": ["collapse-down", "collapse-left", "collapse-up", "collapse-right"]
+      },
+      "processing": {
+        "workflow": "../nightwatch-tower-defense/docs/poc/phase-c-fixed-rig-collapse-review.md",
+        "output": "../nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-rig-collapse-v1/bundle/",
+        "note": "只改同一源rig动作，四真实倾倒姿态，75ms/帧，单次；模型比例/地面锚点沿用行走，不逐帧裁切缩放。"
+      },
+      "verification": {
+        "contactSheet": "../nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-rig-collapse-v1/bundle/contact-collapse-left.png",
+        "report": "../nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-rig-collapse-v1/bundle/report.json",
+        "runtimeEvidence": "../nightwatch-tower-defense/docs/poc/phase-c-fixed-rig-collapse-review.md"
+      },
+      "release": {
+        "status": "draft",
+        "publishedPath": null,
+        "note": "仅 Cocos unitArt=rig-candidate 比较入口；没有替换默认美术，未获正式风格/手感/权利审批。"
+      }
+    },
+    {
+      "id": "clockwork-infantry-rig-v2",
+      "source": {
+        "provider": "project-authored-blender",
+        "raw": "../nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-rig-v2/model/clockwork-infantry.blend",
+        "reference": "../nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry.png",
+        "prompt": "../nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-rig-v2/brief.md",
+        "generatedAt": "2026-09-28",
+        "cost": "local-authoring-no-external-api"
+      },
+      "intent": {
+        "consumer": "nightwatch-tower-defense",
+        "kind": "fixed-model-directional-walk-candidate",
+        "displaySize": "128x128 frame; 512x512 shared atlas",
+        "background": "native transparent RGBA",
+        "cells": ["walk-down", "walk-left", "walk-up", "walk-right"]
+      },
+      "processing": {
+        "workflow": "../nightwatch-tower-defense/docs/poc/phase-c-fixed-rig-directional-walk-review.md",
+        "output": "../nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-rig-v2/bundle/",
+        "note": "一个本地模型/机械关节，全姿态共同拟合，不逐帧裁切缩放；源码版本快照保留；不是 sprite-gen 或 imagegen 产物。"
+      },
+      "verification": {
+        "contactSheet": "../nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-rig-v2/bundle/contact-walk-down.png",
+        "report": "../nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-rig-v2/bundle/report.json",
+        "runtimeEvidence": "../nightwatch-tower-defense/docs/poc/phase-c-fixed-rig-directional-walk-review.md"
+      },
+      "release": {
+        "status": "draft",
+        "publishedPath": null,
+        "note": "只有显式 unitArt=rig-candidate 的 Cocos 浏览器比较入口；默认原图保留，材质/玩家手感/权利未审批。"
+      }
+    },
+    {
+      "id": "clockwork-infantry-down-walk-v2",
+      "source": {
+        "provider": "codex-imagegen",
+        "raw": "../nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-down-walk-v2/source.png",
+        "reference": "../nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-down-walk-v1/source.png",
+        "prompt": "../nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-down-walk-v2/prompt.md",
+        "generatedAt": "2026-09-28",
+        "cost": "platform-included-or-unknown"
+      },
+      "intent": {
+        "consumer": "nightwatch-tower-defense",
+        "kind": "four-frame-down-walk-candidate",
+        "displaySize": "128x128 canvas; in-game target about one board cell",
+        "background": "native transparent RGBA",
+        "cells": ["left-forward", "right-passing", "right-forward", "left-passing"]
+      },
+      "processing": {
+        "workflow": "/Users/xmly/Swell/code/game-workspace/ai-asset-pipeline/.venv-cutout/bin/python /Users/xmly/Swell/code/game-workspace/ai-asset-pipeline/src/asset_bundle.py --recipe /Users/xmly/Swell/code/game-workspace/nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-down-walk-v2/recipe.json --input /Users/xmly/Swell/code/game-workspace/nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-down-walk-v2/source-grid.json --aseprite --out /Users/xmly/Swell/code/game-workspace/nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-down-walk-v2/bundle",
+        "output": "../nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-down-walk-v2/bundle/",
+        "note": "本地公开格式网格 descriptor 均匀切图，不是 sprite-gen 实际产物；重现时输出目录必须为空/新目录。"
+      },
+      "verification": {
+        "contactSheet": "../nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-down-walk-v2/bundle/contact-walk-down.png",
+        "report": "../nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-down-walk-v2/notes.md",
+        "previewEvidence": "evidence/clockwork-infantry-down-walk-v2/preview-registration.jpg",
+        "runtimeEvidence": null
+      },
+      "release": {
+        "status": "rejected-candidate",
+        "publishedPath": null,
+        "reason": "头顶和承重脚注册未通过；v1 和一次定向修正 v2 均保留，不批量生成其余方向、不复制到游戏运行时。"
+      }
+    },
+    {
       "id": "frontier-equipment-icons-v1",
       "source": {
         "provider": "codex-imagegen",
@@ -92,6 +192,98 @@
       "release": {
         "status": "published",
         "publishedPath": "../frontier-brawler/public/art/equipment/"
+      }
+    },
+    {
+      "id": "core-reactor-v1",
+      "source": {
+        "provider": "codex-imagegen",
+        "raw": "../nightwatch-tower-defense/art-source/first-level-objective/core-reactor-source-v1.png",
+        "reference": null,
+        "prompt": "../nightwatch-tower-defense/docs/poc/phase-c-world-core-art-regression.md",
+        "generatedAt": "2026-09-27",
+        "cost": "platform-included-or-unknown"
+      },
+      "intent": {
+        "consumer": "nightwatch-tower-defense",
+        "kind": "protected-exit-core-sprite",
+        "displaySize": "128x128 canvas, 1.22 board cells in-game",
+        "background": "transparent RGBA",
+        "cells": ["core-reactor"]
+      },
+      "processing": {
+        "workflow": "sips -z 128 128 ../nightwatch-tower-defense/art-source/first-level-objective/core-reactor-source-v1.png --out ../nightwatch-tower-defense/assets/resources/level-one/units/core-reactor-v1.png",
+        "output": "../nightwatch-tower-defense/assets/resources/level-one/units/core-reactor-v1.png"
+      },
+      "verification": {
+        "contactSheet": "../nightwatch-tower-defense/art-source/first-level-objective/core-reactor-phone-preview-v1.png",
+        "report": "../nightwatch-tower-defense/art-source/first-level-objective/core-reactor-v1-manifest.json",
+        "runtimeEvidence": null
+      },
+      "release": {
+        "status": "draft",
+        "publishedPath": null
+      }
+    },
+    {
+      "id": "nightwatch-first-level-runtime-budget-v1",
+      "source": {
+        "provider": "deterministic-project-derivative",
+        "raw": "../nightwatch-tower-defense/art-source/first-level-runtime-budget-v1/profile-manifest.json",
+        "reference": "../nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-rig-v2/",
+        "prompt": null,
+        "generatedAt": "2026-09-28",
+        "cost": "local-normalization-no-generation-call",
+        "rights": "inherits existing project model/background candidates; no new approval or commercial rights clearance"
+      },
+      "intent": {
+        "consumer": "nightwatch-tower-defense",
+        "kind": "runtime-size-profile-with-per-asset-provenance",
+        "displaySize": "same game-space scale; walk80/collapse160 source cells, backdrop768x1365",
+        "background": "motion RGBA / backdrop RGB; linear, no mipmaps",
+        "cells": ["infantry-walk-16", "infantry-collapse-16", "backdrop-primary", "backdrop-fallback"]
+      },
+      "processing": {
+        "workflow": "/Users/xmly/Swell/code/game-workspace/ai-asset-pipeline/.venv-cutout/bin/python /Users/xmly/Swell/code/game-workspace/nightwatch-tower-defense/scripts/art/build_runtime_art_profile.py --pipeline /Users/xmly/Swell/code/game-workspace/ai-asset-pipeline --out <new-batch-directory>; --install only if all new targets are absent",
+        "output": "../nightwatch-tower-defense/art-source/first-level-runtime-budget-v1/"
+      },
+      "verification": {
+        "contactSheet": "../nightwatch-tower-defense/art-source/first-level-runtime-budget-v1/walk/contact-walk-down.png",
+        "report": "../nightwatch-tower-defense/docs/poc/phase-c-compact-asset-budget.json",
+        "runtimeEvidence": "evidence/nightwatch-runtime-budget-v1/ordinary-wave-one.png",
+        "review": "../nightwatch-tower-defense/docs/poc/phase-c-compact-art-review.md"
+      },
+      "release": {"status": "draft", "publishedPath": null}
+    },
+    {
+      "id": "clockwork-infantry-collapse-v1",
+      "source": {
+        "provider": "codex-imagegen",
+        "raw": "input/codex/clockwork-infantry-collapse-v1/clockwork-infantry-collapse-v1.png",
+        "reference": "input/codex/clockwork-infantry-collapse-v1/reference.png",
+        "prompt": "input/codex/clockwork-infantry-collapse-v1/prompt.md",
+        "generatedAt": "2026-09-27",
+        "cost": "platform-included-or-unknown"
+      },
+      "intent": {
+        "consumer": "nightwatch-tower-defense",
+        "kind": "clockwork-infantry-death-frame",
+        "displaySize": "128x128 source canvas, about one board cell at runtime",
+        "background": "transparent RGBA",
+        "cells": ["upright", "collapse"]
+      },
+      "processing": {
+        "workflow": ".venv-cutout/bin/python src/asset_bundle.py --recipe ../nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-collapse-v1/recipe.json --input ../nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-collapse-v1/input --out ../nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-collapse-v1/bundle",
+        "output": "../nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-collapse-v1/bundle/"
+      },
+      "verification": {
+        "contactSheet": "../nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-collapse-v1/bundle/contact-death.png",
+        "report": "../nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-collapse-v1/bundle/report.json",
+        "runtimeEvidence": null
+      },
+      "release": {
+        "status": "draft",
+        "publishedPath": null
       }
     }
   ]

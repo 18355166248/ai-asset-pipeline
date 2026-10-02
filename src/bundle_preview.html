@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>素材预览 · Asset Pipeline</title>
+<style>
+:root{font-family:system-ui,-apple-system,sans-serif;color:#e7eaf0;background:#11151e;color-scheme:dark}
+*{box-sizing:border-box}body{max-width:1180px;margin:0 auto;padding:36px 24px}h1{font-size:30px;margin:8px 0 12px}p{color:#abb5c6;line-height:1.65}.eyebrow{font-size:12px;letter-spacing:2px;color:#a3c4ff}
+header{margin-bottom:28px}.badge{display:inline-block;border:1px solid #526173;border-radius:20px;padding:5px 12px;font-size:12px}
+.toolbar{display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:#1c2330;padding:16px;border-radius:14px;margin:20px 0}
+button,select{font:inherit;background:#2b3648;color:#fff;border:1px solid #526173;border-radius:8px;padding:8px 12px;cursor:pointer}button:disabled{opacity:.4;cursor:default}label{font-size:14px}input{vertical-align:middle}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}.card{background:#1c2330;border:1px solid #303c50;border-radius:14px;overflow:hidden}.caption{padding:14px;font-size:13px;overflow-wrap:anywhere}
+.surface{min-height:280px;display:flex;align-items:center;justify-content:flex-start;overflow:auto;padding:20px;background-color:#bbc3cf;background-image:conic-gradient(#dce1e8 25%,transparent 0 50%,#dce1e8 0 75%,transparent 0);background-size:20px 20px}.surface>img,.surface>canvas{flex-shrink:0;margin:auto}
+body[data-bg="light"] .surface{background:#fff}body[data-bg="dark"] .surface{background:#182230}canvas{image-rendering:pixelated;max-width:none}.static-image{max-width:none;object-fit:contain}
+.animation{display:grid;grid-template-columns:minmax(0,2fr) minmax(240px,1fr);gap:20px}.animation .surface{min-height:380px;border-radius:14px}.panel{padding:20px;background:#1c2330;border-radius:14px}dl{font-size:14px;line-height:1.8}dt{color:#abb5c6}dd{margin:0 0 10px;overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px;line-height:1.7}.hint{font-size:13px}.warnings{color:#ffd194}footer{margin-top:28px;font-size:12px;color:#abb5c6}details{margin-top:20px;padding:16px;border:1px solid #303c50;border-radius:12px}summary{cursor:pointer}
+@media(max-width:700px){body{padding:24px 14px}.animation{grid-template-columns:1fr}.toolbar{gap:10px}}
+</style>
+<body data-bg="checker">
+<header><div class="eyebrow">AI ASSET PIPELINE / LOCAL PREVIEW</div><h1 id="title"></h1><span class="badge">草稿 · 待人工检查</span><p>比较真实尺寸、透明边缘和动作节奏。这里的播放结果不代表游戏内验收通过。</p></header>
+<div class="toolbar"><label>背景 <select id="background"><option value="checker">棋盘格</option><option value="light">浅色</option><option value="dark">深色</option></select></label><label>显示倍率 <select id="zoom"><option value="1">1× 实际像素</option><option value="2">2×</option><option value="4">4×</option></select></label><label id="size-label">导出尺寸 <select id="size"></select></label></div>
+<main id="content"></main>
+<details open><summary>检查结果与人工复核</summary><pre id="qa"></pre></details>
+<details><summary>来源与加工记录</summary><pre id="record"></pre></details>
+<footer>预览页可离线打开。可交付文件和尺寸信息见同目录 manifest.json；输入指纹见 provenance.json。</footer>
+<script id="data" type="application/json">__BUNDLE_DATA__</script>
+<script>
+'use strict';
+const bundle=JSON.parse(document.getElementById('data').textContent), m=bundle.manifest;
+const byId=id=>document.getElementById(id), el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
+byId('title').textContent=m.title;
+byId('qa').textContent=[...bundle.report.warnings.map(x=>'注意：'+x),...bundle.report.manualChecks.map(x=>'待复核：'+x)].join('\n');
+byId('record').textContent=JSON.stringify({source:m.source,kind:m.kind,release:m.release},null,2);
+byId('background').onchange=e=>document.body.dataset.bg=e.target.value;
+let redraw=()=>{};byId('zoom').onchange=()=>redraw();
+if(m.kind==='static'){
+ const sizes=[...new Set(m.images.map(x=>x.width))];for(const n of sizes){const o=el('option',n+' px');o.value=n;byId('size').append(o);}
+ redraw=()=>{byId('content').replaceChildren();const grid=el('div',undefined,'grid');byId('content').append(grid);for(const item of m.images.filter(x=>x.width===Number(byId('size').value))){const card=el('article',undefined,'card'),surface=el('div',undefined,'surface'),img=el('img',undefined,'static-image');img.src=bundle.images[item.path];img.alt=item.name;img.width=item.width*Number(byId('zoom').value);img.height=item.height*Number(byId('zoom').value);surface.append(img);card.append(surface,el('div',item.name+' · '+item.width+' × '+item.height,'caption'));grid.append(card);}};
+ byId('size').onchange=()=>redraw();redraw();
+}else{
+ byId('size-label').hidden=true;
+ const toolbar=el('div',undefined,'toolbar'),stateLabel=el('label','动作 '),select=el('select');select.id='state';for(const s of m.states){const o=el('option',s.name);o.value=s.name;select.append(o);}stateLabel.append(select);
+ const play=el('button','暂停'),restart=el('button','从头播放'),step=el('button','下一帧'),speedLabel=el('label','速度 '),speed=el('select');speed.id='speed';for(const n of [.25,.5,1,2]){const o=el('option',n+'×');o.value=n;o.selected=n===1;speed.append(o);}speedLabel.append(speed);toolbar.append(stateLabel,play,restart,step,speedLabel);
+ const layout=el('div',undefined,'animation'),surface=el('div',undefined,'surface'),canvas=el('canvas'),panel=el('aside',undefined,'panel'),info=el('pre'),status=el('p',undefined,'hint');canvas.setAttribute('aria-label','角色动作预览');surface.append(canvas);panel.append(el('h2','播放信息'),info,status,el('p','先按 1× 倍率观察；放大只用于检查像素与边缘。攻击等非循环动作播放到末帧后停止。','hint'));layout.append(surface,panel);byId('content').append(toolbar,layout);
+ const atlas=new Image();let state=m.states[0],index=0,playing=true,last=null,elapsed=0;const ctx=canvas.getContext('2d');
+ redraw=()=>{const f=state.frames[index];canvas.width=f.w;canvas.height=f.h;canvas.style.width=f.w*Number(byId('zoom').value)+'px';canvas.style.height=f.h*Number(byId('zoom').value)+'px';ctx.imageSmoothingEnabled=false;if(atlas.complete&&atlas.naturalWidth)ctx.drawImage(atlas,f.x,f.y,f.w,f.h,0,0,f.w,f.h);info.textContent=state.name+'\n帧 '+(index+1)+' / '+state.frames.length+'\n时长 '+f.durationMs+' ms\n'+(state.loop?'循环动作':'单次动作')+'\n画布 '+f.w+' × '+f.h;status.textContent=playing?'播放中':'已暂停';play.textContent=playing?'暂停':'播放';};
+ const reset=()=>{index=0;elapsed=0;last=null;playing=true;redraw();};select.onchange=()=>{state=m.states.find(s=>s.name===select.value);reset();};restart.onclick=reset;play.onclick=()=>{if(!playing&&!state.loop&&index===state.frames.length-1){reset();return;}playing=!playing;last=null;redraw();};step.onclick=()=>{playing=false;index=(index+1)%state.frames.length;elapsed=0;redraw();};speed.onchange=()=>{last=null;};
+ // 按每帧时长播放；非循环动作不能被预览器悄悄改成循环。
+ function tick(now){if(last===null)last=now;if(playing){elapsed+=Math.min(now-last,250)*Number(speed.value);let changed=false;while(elapsed>=state.frames[index].durationMs){elapsed-=state.frames[index].durationMs;if(index+1<state.frames.length)index++;else if(state.loop)index=0;else{playing=false;elapsed=0;changed=true;break;}changed=true;}if(changed)redraw();}last=now;requestAnimationFrame(tick);}atlas.onload=()=>{redraw();requestAnimationFrame(tick);};atlas.src=bundle.images[m.atlas];redraw();
+}
+</script>
+</body></html>

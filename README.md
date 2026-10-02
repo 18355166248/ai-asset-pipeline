@@ -1,5 +1,21 @@
 # ai-asset-pipeline
 
+## 可复用素材工具箱
+
+新增两个 Skill 入口：`mascot-kit`（吉祥物与图标）、`character-motion-kit`（角色动作）。
+共用本地配方工具，输出多尺寸 PNG 或动作图集、离线交互预览、检查报告及来源记录。
+日常项目也可使用；不依赖游戏引擎。完整用法与输入格式见 [工具箱指南](docs/TOOLKIT.md)。
+
+```bash
+# 本工作区可复用已有虚拟环境；其他机器按工具箱指南安装核心依赖
+.venv-cutout/bin/python examples/make_demo.py --out output/toolkit-demo
+```
+
+打开 `output/toolkit-demo/mascot/preview.html` 或 `motion/preview.html` 体验。
+样例是机械验证用几何图形，不消耗模型额度，不代表 AI 生成效果。
+
+## 原有素材后处理流程
+
 验证「网页版 GPT / Gemini 出图能否当稳定游戏素材管线」的本地后处理工具。
 
 **分工**：生成靠你在网页手工做（6×6 一次性出图保证一致性）；本地这套负责

@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "kind": "motion",
+  "title": "角色动作检查",
+  "cell": [96, 96],
+  "anchor": [0.5, 1.0],
+  "resample": "nearest",
+  "background": "keep",
+  "source": {"provider": "user-supplied", "note": "输入必须是共用画布、比例和基准线的透明帧"},
+  "states": [
+    {"name": "idle", "directory": "idle", "fps": 8, "loop": true},
+    {"name": "attack", "directory": "attack", "fps": 12, "loop": false}
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "kind": "static",
+  "title": "吉祥物与图标候选",
+  "sizes": [32, 64, 128, 256],
+  "background": "keep",
+  "resample": "lanczos",
+  "source": {"provider": "user-supplied", "note": "填写原图来源、提示词和参考图位置"}
+}
