@@ -1,0 +1,970 @@
+input/codex/mint-adventurer-walk-v3/prompt.md
+  s_4324a839e2dea6::t_7adbb2498c10fa 1-15
+input/codex/mint-adventurer-reaction-v1/air-actual-prompt.txt
+  s_4324a839e2dea6::t_de983d2ae2b5fa 1
+examples/sprite-playground.html
+  s_4324a839e2dea6::t_149fd0452e8546 1-5,7-15,21-25,27-30,33-34,38-42
+  s_4324a839e2dea6::t_0f3660f664e21e 16-18
+  s_4324a839e2dea6::t_5eb6d672cf8040 6,26,32,36-37
+  s_4324a839e2dea6::t_f590cfacd5f2b5 19-20,31,35
+input/codex/mint-adventurer-attack-inbetween-spec-v1.json
+  s_4324a839e2dea6::t_44e7cc47c1102e 1
+tests/test_motion_preview_site.py
+  s_4324a839e2dea6::t_f5f15ca7675b61 20-21,42
+  s_4324a839e2dea6::t_7927c4a40cbefd 30,37-39
+  s_4324a839e2dea6::t_efddeabf663942 66-75
+  s_4324a839e2dea6::t_9f2020ea59aa6a 1-19,22-29,31-36,40,43-55,65,76-77
+  s_4324a839e2dea6::t_d03e67012466e8 41,56-64
+  s_4324a839e2dea6::t_f888c68c271278 78-95
+tests/test_motion_compare.py
+  s_4324a839e2dea6::t_384efc96ee9773 1-52
+examples/make_workbench.py
+  s_4324a839e2dea6::t_a7f9d1bb2de677 19-21,28-36,66-70
+  s_4324a839e2dea6::t_df6d669e7c21ff 1-18,22-27,37-61,64-65,71-76
+  s_4324a839e2dea6::t_991720882713ec 62-63
+docs/TOOLKIT.md
+  s_4324a839e2dea6::t_5d38722b3cdeb3 3-4
+input/codex/mint-adventurer-jump-v3/prep-actual-prompt.txt
+  s_4324a839e2dea6::t_3f7109fcc5a6e3 1
+workbench/index.html
+  s_4324a839e2dea6::t_e19572eed4bc10 1
+input/codex/mint-adventurer-attack-inbetween-v1/retract-fix-actual-prompt.txt
+  s_4324a839e2dea6::t_d12f675730414b 1
+tests/test_motion_collection.py
+  s_4324a839e2dea6::t_19fd19c8327333 1,3-28,33-37,39-40,46-63
+  s_4324a839e2dea6::t_08ed19a0c03436 2,41-42
+  s_4324a839e2dea6::t_238293e9ffe771 29-32
+  s_4324a839e2dea6::t_413dcf56d554ee 38,43-45
+input/codex/mint-adventurer-singleframe-v5/move-007-actual-prompt.txt
+  s_4324a839e2dea6::t_2a32d0eb0ec07c 1
+input/codex/mint-adventurer-blink-prompt-v1.txt
+  s_4324a839e2dea6::t_20560629343b07 1
+input/codex/mint-adventurer-arm-cycle-v1/neutral-fix-actual-prompt.txt
+  s_4324a839e2dea6::t_bb9490c7665b07 1
+input/codex/mint-adventurer-reaction-v1/notes.md
+  s_4324a839e2dea6::t_2057b21837f794 1-11
+input/codex/mint-adventurer-combat-v1/recovery-actual-prompt.txt
+  s_4324a839e2dea6::t_67df24310449b2 1
+src/motion_collection.py
+  s_4324a839e2dea6::t_413dcf56d554ee 74-75
+  s_4324a839e2dea6::t_20200af75b0c8f 71-73,76-78,81
+  s_4324a839e2dea6::t_08ed19a0c03436 69,79
+  s_4324a839e2dea6::t_44e92403322a23 1-68,70,80,82-114
+skills/character-motion-kit/SKILL.md
+  s_4324a839e2dea6::t_09999fa441568c 22-23
+  s_4324a839e2dea6::t_6b54d41c85f582 79-80
+  s_4324a839e2dea6::t_f69685e08718ff 87-88
+  s_4324a839e2dea6::t_ba1441ac33d82f 20-21,95-100
+  s_4324a839e2dea6::t_eaa83b1e72fafa 71-72
+  s_4324a839e2dea6::t_f2dab04d675326 81-82
+  s_4324a839e2dea6::t_ea35c38d854d5b 48-49
+  s_4324a839e2dea6::t_0cdee8c043698c 26-27
+  s_4324a839e2dea6::t_0d6a6a5127ef05 32-33
+  s_4324a839e2dea6::t_47f93b2973b6e9 75-76
+  s_4324a839e2dea6::t_67816632967216 3
+  s_4324a839e2dea6::t_5d4670829a3111 50-53
+  s_4324a839e2dea6::t_a70b7e8c9246ff 30-31
+  s_4324a839e2dea6::t_afe7571b0b63b6 83-84
+  s_4324a839e2dea6::t_cfa40302b8de74 24,69-70,73-74,77
+  s_4324a839e2dea6::t_a7f9d1bb2de677 14
+  s_4324a839e2dea6::t_2fed0b472e6018 10-13,15-16
+  s_4324a839e2dea6::t_2de461d37dbea9 44-45
+  s_4324a839e2dea6::t_37409662fa3e87 34-35
+  s_4324a839e2dea6::t_459f67a811ba86 42-43
+  s_4324a839e2dea6::t_50a96c94d5de5c 28-29
+  s_4324a839e2dea6::t_373804456ebaa2 17,25,78,101-104
+src/character_workbench.py
+  s_4324a839e2dea6::t_df6d669e7c21ff 176-180,269-275
+  s_4324a839e2dea6::t_62117da288a420 236-238,247
+  s_4324a839e2dea6::t_95fc7436c0ede1 186-190
+  s_4324a839e2dea6::t_afe14c9271b27e 193-207
+  s_4324a839e2dea6::t_e19572eed4bc10 1-175,181-185,191-192,208-235,239-246,248-253,268,276-294
+  s_4324a839e2dea6::t_444bad6771d539 254-267
+tests/test_motion_region_lock.py
+  s_4324a839e2dea6::t_ee6d9946df1571 19-21
+  s_4324a839e2dea6::t_c8b24e68bd0c8c 10,90-99
+  s_4324a839e2dea6::t_75de5d25129181 1-9,11-13,100-136
+  s_4324a839e2dea6::t_9b3da8ee681912 62-65,68,72-84,86-87,89
+  s_4324a839e2dea6::t_a673fe8e2ea7f3 66-67,69-71,85
+  s_4324a839e2dea6::t_9c1ced953aaa23 88
+  s_4324a839e2dea6::t_51f84ed04caa2a 14-18,22-35
+  s_4324a839e2dea6::t_58413ad771a392 36-61
+input/codex/mint-adventurer-reaction-v1/jump-prep-actual-prompt.txt
+  s_4324a839e2dea6::t_ebff0872c805ed 1
+input/codex/mint-adventurer-singleframe-v5/move-004-repair-prompt.txt
+  s_4324a839e2dea6::t_421054b78cbfc0 1
+tests/test_sprite_playground.py
+  s_4324a839e2dea6::t_62b3e83eb0310a 1-41
+input/codex/mint-adventurer-arm-cycle-v1/forward-actual-prompt.txt
+  s_4324a839e2dea6::t_29c2a9226ce2ff 1
+input/codex/mint-adventurer-stop-options-v1.json
+  s_4324a839e2dea6::t_0f3660f664e21e 1
+recipes/motion-starter.json
+  s_4324a839e2dea6::t_9925afa6ebdb98 1-4
+input/codex/mint-adventurer-reaction-v1/hit-actual-prompt.txt
+  s_4324a839e2dea6::t_ebff0872c805ed 1
+examples/godot-sprite/preview.gd
+  s_4324a839e2dea6::t_bb6e2f9a7f0932 1-28
+examples/motion-preview-site.html
+  s_4324a839e2dea6::t_c7561dcb2587f1 1-20
+recipes/workbench.json
+  s_4324a839e2dea6::t_a7f9d1bb2de677 1-11
+workbench/package.json
+  s_4324a839e2dea6::t_2d2b0f2c08eefd 1-7
+  s_4324a839e2dea6::t_dfa020a987163e 8-10
+input/codex/mint-adventurer-combat-v1/strike-actual-prompt.txt
+  s_4324a839e2dea6::t_d51910f4e68fa3 1
+src/motion_stride_review.py
+  s_4324a839e2dea6::t_5c9d760e1c81cd 1-127
+  s_4324a839e2dea6::t_630c442daf21d0 128-134
+input/codex/mint-adventurer-singleframe-v5/move-005-actual-prompt.txt
+  s_4324a839e2dea6::t_f7a6ecda7ca774 1
+input/codex/mint-adventurer-attack-inbetween-v1/extend-actual-prompt.txt
+  s_4324a839e2dea6::t_116dd587498d6b 1
+tests/test_motion_stride_review.py
+  s_4324a839e2dea6::t_aa57daa646d370 1-62
+  s_4324a839e2dea6::t_e70e7e1f9f3f99 63-75
+examples/stride-review.html
+  s_4324a839e2dea6::t_5c9d760e1c81cd 1-24
+  s_4324a839e2dea6::t_13468ed2140c9c 25
+input/codex/mint-adventurer-singleframe-v5/notes.md
+  s_4324a839e2dea6::t_ea2ff7fa3778db 1-13
+src/motion_preview_site.py
+  s_4324a839e2dea6::t_c7561dcb2587f1 1-4,6-10,12-43,70-82,84,89-99,102-104,110-116,125-142
+  s_4324a839e2dea6::t_d03e67012466e8 5,11,44-45,65-69,83,85-88
+  s_4324a839e2dea6::t_fee605f6bc6c9f 47,50-64,100-101
+  s_4324a839e2dea6::t_efddeabf663942 46,48-49
+  s_4324a839e2dea6::t_7927c4a40cbefd 105-109,117-124
+input/codex/mint-adventurer-arm-cycle-v1/forward-fix-actual-prompt.txt
+  s_4324a839e2dea6::t_fa05e2458297d6 1
+tests/test_godot_sprite_export.py
+  s_4324a839e2dea6::t_e7db303af25638 1-63
+docs/validation/character-workbench-v1.md
+  s_4324a839e2dea6::t_459f67a811ba86 120-127
+  s_4324a839e2dea6::t_fb0626806d5f95 23
+  s_4324a839e2dea6::t_f2dab04d675326 100-104,108-109
+  s_4324a839e2dea6::t_5d4670829a3111 128-192
+  s_4324a839e2dea6::t_0cb65c7637ed1b 1-4,25-55
+  s_4324a839e2dea6::t_9ba55e917e1cff 24
+  s_4324a839e2dea6::t_775f7d9627c13e 105-107
+  s_4324a839e2dea6::t_0cdee8c043698c 110-119
+  s_4324a839e2dea6::t_37409662fa3e87 56-99
+  s_4324a839e2dea6::t_944774521fd400 5,7-17
+  s_4324a839e2dea6::t_3c2cf9d0c6c1eb 6,18-22
+input/codex/mint-adventurer-singleframe-v5/move-001-actual-prompt.txt
+  s_4324a839e2dea6::t_3c6551306822e7 1
+input/codex/mint-adventurer-combat-v1/idle-actual-prompt.txt
+  s_4324a839e2dea6::t_aae0b9a6f73220 1
+input/codex/mint-adventurer-walk-v3/notes.md
+  s_4324a839e2dea6::t_d32256af1aaa5a 1-11
+recipes/workbench-models.json
+  s_4324a839e2dea6::t_9227b9088674a4 1-18
+examples/make_sprite_playground.py
+  s_4324a839e2dea6::t_0f3660f664e21e 9,21-24,31-32,44,46
+  s_4324a839e2dea6::t_149fd0452e8546 1-8,10-20,25-30,33-43,45
+input/codex/mint-adventurer-singleframe-v5/move-003-actual-prompt.txt
+  s_4324a839e2dea6::t_6231f7539c1973 1
+input/codex/mint-adventurer-singleframe-v5/down-near-torso-repair-v7.txt
+  s_4324a839e2dea6::t_784d691201d5b3 1
+input/codex/mint-adventurer-singleframe-v5/passing-repair-generate-prompt.txt
+  s_4324a839e2dea6::t_32e64a916a6207 1
+input/codex/mint-adventurer-jump-inbetween-v1/tuck-fix-actual-prompt.txt
+  s_4324a839e2dea6::t_b497ff8161763f 1
+input/codex/mint-adventurer-singleframe-v5/move-007-repair2-prompt.txt
+  s_4324a839e2dea6::t_1d639829044c41 1
+input/codex/mint-adventurer-attack-inbetween-v1/retract-actual-prompt.txt
+  s_4324a839e2dea6::t_116dd587498d6b 1
+input/codex/mint-adventurer-singleframe-v5/move-002-actual-prompt.txt
+  s_4324a839e2dea6::t_ca9230c0f0b141 1
+workbench/tests/sprite-controller.test.mjs
+  s_4324a839e2dea6::t_e11ce6e7320c08 36-38
+  s_4324a839e2dea6::t_f590cfacd5f2b5 40-47
+  s_4324a839e2dea6::t_774bb51391fb7d 48-62
+  s_4324a839e2dea6::t_0f3660f664e21e 63-90
+  s_4324a839e2dea6::t_dfa5ae3de298a0 1-35,39
+  s_4324a839e2dea6::t_1d4341585df566 91-93
+input/codex/mint-adventurer-combat-v1/notes.md
+  s_4324a839e2dea6::t_34a14a64eb03a0 1-11
+docs/CHARACTER_MOTION_PROMPTS.md
+  s_4324a839e2dea6::t_9925afa6ebdb98 1-52
+  s_4324a839e2dea6::t_6b692b09836621 53-56
+input/codex/mint-adventurer-reaction-v1/landing-actual-prompt.txt
+  s_4324a839e2dea6::t_24129e3b83374b 1
+input/codex/mint-adventurer-singleframe-v5/move-006-actual-prompt.txt
+  s_4324a839e2dea6::t_3cbe6a29689bcd 1
+input/codex/mint-adventurer-walk-fix-v8/lower-patch-plan-v2.json
+  s_4324a839e2dea6::t_66e3f45cfc4876 1-11
+input/codex/mint-adventurer-motion-v1/notes.md
+  s_4324a839e2dea6::t_ae13835dd2a305 1-36
+input/codex/mint-adventurer-jump-inbetween-v1/assemble_jump.py
+  s_4324a839e2dea6::t_8e37ab045db824 1-56
+docs/GPT_MOTION_GENERATION.md
+  s_4324a839e2dea6::t_afe7571b0b63b6 5-6,8,113,115,118-256,258
+  s_4324a839e2dea6::t_37409662fa3e87 259-266
+  s_4324a839e2dea6::t_09999fa441568c 7,9-10,427-429,431-432,442-443
+  s_4324a839e2dea6::t_67816632967216 1-4,17-23,25-112,114
+  s_4324a839e2dea6::t_0cdee8c043698c 12,286-302
+  s_4324a839e2dea6::t_f2dab04d675326 16,267-285
+  s_4324a839e2dea6::t_459f67a811ba86 303-319
+  s_4324a839e2dea6::t_c5b2a5f7e131a3 433-441,444
+  s_4324a839e2dea6::t_5d4670829a3111 13-14,320-426,448-463
+  s_4324a839e2dea6::t_ea35c38d854d5b 11,430,445-447
+  s_4324a839e2dea6::t_779c53a24106c4 24,116-117,257
+  s_4324a839e2dea6::t_346bf9b196ad7f 15
+input/codex/mint-adventurer-reaction-spec-v1.json
+  s_4324a839e2dea6::t_ae94a496b4ea79 1-18
+src/godot_sprite_export.py
+  s_4324a839e2dea6::t_1e8e4c84da8a52 25
+  s_4324a839e2dea6::t_bb6e2f9a7f0932 1-24,26-87
+src/motion_sequence.py
+  s_4324a839e2dea6::t_e9ea52be0b1691 1-122
+input/codex/mint-adventurer-collection-v1.json
+  s_4324a839e2dea6::t_e5dceef493f060 1-8
+input/codex/mint-adventurer-fullframe-v4/notes.md
+  s_4324a839e2dea6::t_d32256af1aaa5a 1-19
+input/codex/mint-adventurer-singleframe-v5/head-lock-plan.json
+  s_4324a839e2dea6::t_fb258c2ec0b62f 1-9
+src/cutout_motion.py
+  s_4324a839e2dea6::t_97a1225c6c7c6c 1-7,9-12,14-76,79,82-89,92-94,97-143,158-166,187-190,203-204,207-210,212-224
+  s_4324a839e2dea6::t_1412e48c786eca 13,77-78,80-81,90-91,95-96,144-157
+  s_4324a839e2dea6::t_c71911cf787781 173,175,182-186,191-202,205-206,211
+  s_4324a839e2dea6::t_2d1df2aefe15d2 8,167-172,174,176-181
+input/codex/mint-adventurer-jump-inbetween-v1/shallow-actual-prompt.txt
+  s_4324a839e2dea6::t_5d125fee6fa198 1
+input/codex/mint-adventurer-jump-v3/descent-actual-prompt.txt
+  s_4324a839e2dea6::t_3f7109fcc5a6e3 1
+input/codex/mint-adventurer-transition-prompt-v1.txt
+  s_4324a839e2dea6::t_8652288523e3ea 1
+src/motion_compare.py
+  s_4324a839e2dea6::t_1b96070ddbb126 1-65
+input/codex/mint-adventurer-singleframe-v5/passing-repair-edit-prompt.txt
+  s_4324a839e2dea6::t_32e64a916a6207 1
+input/codex/mint-adventurer-jump-inbetween-v1/shallow-fix-actual-prompt.txt
+  s_4324a839e2dea6::t_5d125fee6fa198 1
+workbench/tests/motion.test.mjs
+  s_4324a839e2dea6::t_023a4c43c6c02f 1-3,5,25-92
+  s_4324a839e2dea6::t_5b48c6794a88c2 4,12-23
+  s_4324a839e2dea6::t_62117da288a420 6-11,24
+input/codex/mint-adventurer-jump-inbetween-v1/tuck-actual-prompt.txt
+  s_4324a839e2dea6::t_5d125fee6fa198 1
+.gitignore
+  s_4324a839e2dea6::t_e19572eed4bc10 11
+  s_4324a839e2dea6::t_5290464876f9dc 12-14
+docs/CODEX_ASSET_WORKFLOW.md
+  s_4324a839e2dea6::t_ba1441ac33d82f 34-35,42-46,52-53,62-65
+input/codex/mint-adventurer-walk-fix-v8/actual-prompt.txt
+  s_4324a839e2dea6::t_2629fa922c7bc5 1
+examples/godot-sprite/validate.gd
+  s_4324a839e2dea6::t_5d1f4c00f5216e 26,46-62
+  s_4324a839e2dea6::t_bb6e2f9a7f0932 1-25,27-45,63-66
+input/codex/mint-adventurer-walk-fix-v8/lower-patch-plan.json
+  s_4324a839e2dea6::t_efa7f1eb94a600 9-10
+  s_4324a839e2dea6::t_2d4ab19bc38e40 1-8,11
+src/blender/make_test_rig.py
+  s_4324a839e2dea6::t_023a4c43c6c02f 149-157
+input/codex/mint-adventurer-motion-v1/prompt.md
+  s_4324a839e2dea6::t_d167d4bbfd913c 1-19
+README.md
+  s_4324a839e2dea6::t_ba1441ac33d82f 5-6
+  s_4324a839e2dea6::t_5d38722b3cdeb3 13-14,17-26,33,36
+  s_4324a839e2dea6::t_afe7571b0b63b6 11-12
+  s_4324a839e2dea6::t_779c53a24106c4 3-4,7-10
+  s_4324a839e2dea6::t_9ba55e917e1cff 15-16
+  s_4324a839e2dea6::t_8ab410313d9cf1 27-32,34-35,37,132-135
+tests/test_cutout_motion.py
+  s_4324a839e2dea6::t_fe8bc6f98aa520 1-3,5,7-11,13-60,78-81
+  s_4324a839e2dea6::t_a93fefde3da23c 4,6,12,61-77
+input/codex/mint-adventurer-attack-inbetween-v1/assemble_attack.py
+  s_4324a839e2dea6::t_ff81f281397790 1-21,23,25-53,55-63
+  s_4324a839e2dea6::t_c7aafbcaa4a309 22,24,54
+input/codex/mint-adventurer-hit-recovery-v1/recovery-actual-prompt.txt
+  s_4324a839e2dea6::t_4ecd546fc6f3f4 1
+input/codex/mint-adventurer-torso-fix-v1/actual-prompt.txt
+  s_4324a839e2dea6::t_d686476a3625d6 1
+tests/test_motion_sequence.py
+  s_4324a839e2dea6::t_49e9a1b499c3f6 1-81
+skills/character-motion-kit/agents/openai.yaml
+  s_4324a839e2dea6::t_2fed0b472e6018 2
+  s_4324a839e2dea6::t_779c53a24106c4 3-4
+input/codex/mint-adventurer-singleframe-v5/head-lock-plan-v8.json
+  s_4324a839e2dea6::t_a5ee57db3d8818 1
+src/motion_generation.py
+  s_4324a839e2dea6::t_90faad86575da5 192-195,222
+  s_4324a839e2dea6::t_5099fa9cd738bc 176-180,198-200,215-220,226-227,342-346,386,388,427-428
+  s_4324a839e2dea6::t_25f2a6027b1a41 206-211,355-358,369-381,387
+  s_4324a839e2dea6::t_bc8ef7dcb088c2 43,94-98,110,394
+  s_4324a839e2dea6::t_206c9b042befae 30,35-41,61
+  s_4324a839e2dea6::t_799f34e48a2049 197,201-204
+  s_4324a839e2dea6::t_b97e419c0ff4be 359-360
+  s_4324a839e2dea6::t_b671c5b260668f 272-299,400-404,406,432-434,452-453
+  s_4324a839e2dea6::t_7685c21910dbcc 172,230-232,235-250,419,422,429-431,447-449
+  s_4324a839e2dea6::t_bdd518b25c5674 253,256-257,259-260,263,267-268,435-436,451
+  s_4324a839e2dea6::t_686dd97eb0befb 144-145,161-162,213-214,224,340,350-351
+  s_4324a839e2dea6::t_ecf3503e255a7b 1-29,31-34,42,44-60,62-93,99-109,111-143,146-160,163-171,173-175,181-191,196,205,212,221,223,225,228-229,233-234,251-252,254-255,258,261-262,264-266,269-271,332-339,341,347-349,352-354,361-368,382-385,389-393,395-399,405,407-418,420-421,423-426,437-439,441-446,450,454-455,458-469
+  s_4324a839e2dea6::t_67816632967216 300-331,440,456-457
+docs/CHARACTER_MOTION_QUICKSTART.md
+  s_4324a839e2dea6::t_ba1441ac33d82f 1-4,9-10,13-59,70-72,83-88
+  s_4324a839e2dea6::t_ea35c38d854d5b 73-82
+  s_4324a839e2dea6::t_11f948b2975900 7,11-12,89
+  s_4324a839e2dea6::t_09999fa441568c 5-6,8,60-69
+  s_4324a839e2dea6::t_a2f94046e57ee4 90-109
+input/codex/mint-adventurer-combat-spec-v1.json
+  s_4324a839e2dea6::t_b703ed736ed53f 1-18
+docs/validation/godot-sprite-export-v1.md
+  s_4324a839e2dea6::t_afe7571b0b63b6 1-22
+input/codex/mint-adventurer-arm-cycle-v1/neutral-actual-prompt.txt
+  s_4324a839e2dea6::t_dd135599aa1531 1
+input/codex/mint-adventurer-reaction-v1/landing-repair-actual-prompt.txt
+  s_4324a839e2dea6::t_2a2ed8b49827f9 1
+input/codex/mint-adventurer-jump-v2/takeoff-actual-prompt.txt
+  s_4324a839e2dea6::t_8acd9c749508f1 1
+input/codex/mint-adventurer-singleframe-v5/move-001-repair2-prompt.txt
+  s_4324a839e2dea6::t_a59ef5f906525e 1
+tests/test_character_workbench.py
+  s_4324a839e2dea6::t_023a4c43c6c02f 1-15,34-100,103-107,109-128,149-153,163-168
+  s_4324a839e2dea6::t_8c2265c870281e 129-148
+  s_4324a839e2dea6::t_bb8e5466332f75 16-33
+  s_4324a839e2dea6::t_8d92de51595b17 101-102,108,154-162
+input/codex/mint-adventurer-fullframe-v4/prompt.md
+  s_4324a839e2dea6::t_f453df7996cb94 1-15
+input/codex/mint-adventurer-combat-v1/anticipation-actual-prompt.txt
+  s_4324a839e2dea6::t_aae0b9a6f73220 1
+input/codex/mint-adventurer-singleframe-v5/down-far-torso-repair-v7.txt
+  s_4324a839e2dea6::t_eeb46730da46fd 1
+tests/test_motion_generation.py
+  s_4324a839e2dea6::t_25f2a6027b1a41 1-9,11-13,64-129,134-140,154-157
+  s_4324a839e2dea6::t_206c9b042befae 10,14-21
+  s_4324a839e2dea6::t_80c720e9e4311d 36-63
+  s_4324a839e2dea6::t_90faad86575da5 130-133,141-153
+  s_4324a839e2dea6::t_4a0e3197024275 22-25,28-31,35
+  s_4324a839e2dea6::t_799f34e48a2049 26-27,32-34
+docs/CHARACTER_WORKBENCH.md
+  s_4324a839e2dea6::t_10bc443f8c3d7a 7-16
+  s_4324a839e2dea6::t_5d38722b3cdeb3 1-4,17-57,59-61,75-79,81,88-98,100-154
+  s_4324a839e2dea6::t_7936000934b865 58
+  s_4324a839e2dea6::t_89a3d9dd97fce2 99
+  s_4324a839e2dea6::t_a7f9d1bb2de677 5-6,80,82-87
+  s_4324a839e2dea6::t_d32256af1aaa5a 62-74,155
+src/motion_region_lock.py
+  s_4324a839e2dea6::t_fde90c36bcd7e3 78,91-116,148-151
+  s_4324a839e2dea6::t_9916240d03f09d 33-52,73-75,117-130,136,152,156
+  s_4324a839e2dea6::t_48f10803c13dd7 69,134
+  s_4324a839e2dea6::t_2d4ab19bc38e40 76-77,79-90,147,157
+  s_4324a839e2dea6::t_0d6a6a5127ef05 1
+  s_4324a839e2dea6::t_519ad44ed64271 2-25,31-32,53-68,70-72,131-133,137-146,153-155,158-177
+  s_4324a839e2dea6::t_fada73fbfc91fc 26-30,135
+assets-manifest.json
+  s_4324a839e2dea6::t_d3dd285f5822fc 19-24,57-62,95-100,134-139,170-175,206-211,242-244,276-281,293-296,313-316,331-1030
+config/sprite-gen.lock.json
+  s_4324a839e2dea6::t_6297f0bc9c7474 1-143
+docs/SPRITE_GEN_INTEGRATION.md
+  s_4324a839e2dea6::t_7eb959ba8c7ec9 1-78
+docs/validation/character-workbench-v1/compare-tool-v1.json
+  s_4324a839e2dea6::t_ef0d07dcfc7fd1 1-19
+docs/validation/character-workbench-v1/delivery-site-v16.json
+  s_4324a839e2dea6::t_d8bdf9e2daa2f3 1-35
+docs/validation/character-workbench-v1/react-migration-cleanup.json
+  s_4324a839e2dea6::t_9f3768110bfec5 1-15
+docs/validation/character-workbench-v1/review.json
+  s_4324a839e2dea6::t_cc166d69eb27fc 1-188
+docs/validation/character-workbench-v1/sprite-gen-pilot-v1.json
+  s_4324a839e2dea6::t_d15a5c45ad43a4 1-29
+docs/validation/character-workbench-v1/toolkit-cleanup-v1.json
+  s_4324a839e2dea6::t_4d9104cbd07e3e 1-241
+docs/validation/character-workbench-v1/toolkit-followup-v1.json
+  s_4324a839e2dea6::t_eb4c8ea7521ff3 1-16
+docs/validation/character-workbench-v1/toolkit-guidance-v3.json
+  s_4324a839e2dea6::t_4c5377d8af3dd5 1-10
+docs/validation/character-workbench-v1/toolkit-readiness-v20.json
+  s_4324a839e2dea6::t_dd34d8a9d2b168 1-41
+docs/validation/character-workbench-v1/toolkit-readiness-v23.json
+  s_4324a839e2dea6::t_95c2549ca1b473 1-68
+docs/validation/character-workbench-v1/tour-record-v19-toolkit.json
+  s_4324a839e2dea6::t_258e4223b92478 1-1384
+docs/validation/character-workbench-v1/tour-record-v20.json
+  s_4324a839e2dea6::t_ef9ca1fa758e80 1-922
+docs/validation/character-workbench-v1/walk-candidate-v21.json
+  s_4324a839e2dea6::t_25e8b0d7aabc15 1-38
+docs/validation/character-workbench-v1/walk-v22-controller.json
+  s_4324a839e2dea6::t_8da0709d74fbbe 1-12
+docs/validation/character-workbench-v1/walk-v22-proof.json
+  s_4324a839e2dea6::t_645028d988473f 1-71
+docs/validation/character-workbench-v1/walk-v23-proof.json
+  s_4324a839e2dea6::t_ccc7a2a9d45bf2 1-68
+examples/export-workbench/index.html
+  s_4324a839e2dea6::t_39c92b1454a0cb 1-12
+examples/export-workbench/main.mjs
+  s_4324a839e2dea6::t_6c1ddc02acef3e 1-286
+examples/export-workbench/motion.mjs
+  s_4324a839e2dea6::t_07e3d6ad0a4d6c 1-69
+examples/export-workbench/sprite-controller.mjs
+  s_4324a839e2dea6::t_04400d8148336b 1-122
+examples/motion-compare.html
+  s_4324a839e2dea6::t_677c709e63f717 1-10
+input/codex/mint-adventurer-arm-cycle-spec-v1.json
+  s_4324a839e2dea6::t_e12f2b65c1fdde 1
+input/codex/mint-adventurer-arm-cycle-v1/assembly-check.json
+  s_4324a839e2dea6::t_d1670bf4403a18 1-51
+input/codex/mint-adventurer-arm-cycle-v1/job/arm-inbetween-000-prompt.txt
+  s_4324a839e2dea6::t_852a91e87b1565 1
+input/codex/mint-adventurer-arm-cycle-v1/job/arm-inbetween-000/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_6cdcdad3ae1783 1
+input/codex/mint-adventurer-arm-cycle-v1/job/arm-inbetween-000/attempt-002/actual-prompt.txt
+  s_4324a839e2dea6::t_6da178315987bb 1
+input/codex/mint-adventurer-arm-cycle-v1/job/arm-inbetween-001-prompt.txt
+  s_4324a839e2dea6::t_c501dd463e765e 1
+input/codex/mint-adventurer-arm-cycle-v1/job/arm-inbetween-001/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_c0aacd0cd46b37 1
+input/codex/mint-adventurer-arm-cycle-v1/job/arm-inbetween-001/attempt-002/actual-prompt.txt
+  s_4324a839e2dea6::t_2ec2d9ab05042f 1
+input/codex/mint-adventurer-arm-cycle-v1/job/job.json
+  s_4324a839e2dea6::t_d14e126664da72 1-169
+input/codex/mint-adventurer-arm-patch-plan-v1.json
+  s_4324a839e2dea6::t_3eac27d4048dcd 1-30
+input/codex/mint-adventurer-arm-sequence-v1.json
+  s_4324a839e2dea6::t_b63a1c49d9266e 1-71
+input/codex/mint-adventurer-attack-inbetween-v1/assembly-check.json
+  s_4324a839e2dea6::t_14a5230bfda071 1-11
+input/codex/mint-adventurer-attack-inbetween-v1/assembly-reference-index.json
+  s_4324a839e2dea6::t_d35810c6c6c9f6 1-22
+input/codex/mint-adventurer-attack-inbetween-v1/assembly-source-manifest.json
+  s_4324a839e2dea6::t_822b4d4812b1ac 1-345
+input/codex/mint-adventurer-attack-inbetween-v1/attack-inbetween-000-prompt.txt
+  s_4324a839e2dea6::t_c86059d29af403 1
+input/codex/mint-adventurer-attack-inbetween-v1/attack-inbetween-000/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_2a3e0a3766ed98 1
+input/codex/mint-adventurer-attack-inbetween-v1/attack-inbetween-001-prompt.txt
+  s_4324a839e2dea6::t_3e01585d3956db 1
+input/codex/mint-adventurer-attack-inbetween-v1/attack-inbetween-001/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_6adac93dacb2bc 1
+input/codex/mint-adventurer-attack-inbetween-v1/attack-inbetween-001/attempt-002/actual-prompt.txt
+  s_4324a839e2dea6::t_183b16370ea095 1
+input/codex/mint-adventurer-attack-inbetween-v1/job.json
+  s_4324a839e2dea6::t_8f2dbec5728514 1-142
+input/codex/mint-adventurer-collection-v10.json
+  s_4324a839e2dea6::t_7875dbaaf4f9a2 1-43
+input/codex/mint-adventurer-collection-v12.json
+  s_4324a839e2dea6::t_93ddea5b88eee6 1-43
+input/codex/mint-adventurer-collection-v13.json
+  s_4324a839e2dea6::t_619b9a26963464 1-43
+input/codex/mint-adventurer-collection-v14.json
+  s_4324a839e2dea6::t_438e2730577bc0 1-43
+input/codex/mint-adventurer-collection-v15.json
+  s_4324a839e2dea6::t_28c24e51857fd4 1-43
+input/codex/mint-adventurer-collection-v16.json
+  s_4324a839e2dea6::t_22b6a4e59f1675 1-48
+input/codex/mint-adventurer-collection-v17.json
+  s_4324a839e2dea6::t_0199e95bd69b2d 1-48
+input/codex/mint-adventurer-collection-v18.json
+  s_4324a839e2dea6::t_9ed93e396c330c 1-54
+input/codex/mint-adventurer-collection-v19.json
+  s_4324a839e2dea6::t_792361cac8c377 1-54
+input/codex/mint-adventurer-collection-v2.json
+  s_4324a839e2dea6::t_bb3608eb153140 1-19
+input/codex/mint-adventurer-collection-v20.json
+  s_4324a839e2dea6::t_7baf32dd925a7d 1-54
+input/codex/mint-adventurer-collection-v21.json
+  s_4324a839e2dea6::t_e58ce7c7cb4a32 1-54
+input/codex/mint-adventurer-collection-v22.json
+  s_4324a839e2dea6::t_32dff571e3b4d6 1-54
+input/codex/mint-adventurer-collection-v23.json
+  s_4324a839e2dea6::t_5018fff7c10957 1-54
+input/codex/mint-adventurer-collection-v3.json
+  s_4324a839e2dea6::t_993e8ad16d0191 1-26
+input/codex/mint-adventurer-collection-v4.json
+  s_4324a839e2dea6::t_48b45b97db016d 1-31
+input/codex/mint-adventurer-collection-v5.json
+  s_4324a839e2dea6::t_d0988da5fb0fc7 1-31
+input/codex/mint-adventurer-collection-v6.json
+  s_4324a839e2dea6::t_3503c99b78d41d 1-31
+input/codex/mint-adventurer-collection-v7.json
+  s_4324a839e2dea6::t_3d505eb10fb5e0 1-36
+input/codex/mint-adventurer-collection-v8.json
+  s_4324a839e2dea6::t_409b5018b8128b 1-43
+input/codex/mint-adventurer-collection-v9.json
+  s_4324a839e2dea6::t_d03dd8edc719a0 1-43
+input/codex/mint-adventurer-combat-v1/attack-000-prompt.txt
+  s_4324a839e2dea6::t_551486fc72eb3b 1
+input/codex/mint-adventurer-combat-v1/attack-000/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_b66b84637fad1f 1
+input/codex/mint-adventurer-combat-v1/attack-001-prompt.txt
+  s_4324a839e2dea6::t_d2c09827e19062 1
+input/codex/mint-adventurer-combat-v1/attack-001/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_72b04ff7219012 1
+input/codex/mint-adventurer-combat-v1/attack-001/attempt-002/actual-prompt.txt
+  s_4324a839e2dea6::t_4c000f6094c79b 1
+input/codex/mint-adventurer-combat-v1/attack-002-prompt.txt
+  s_4324a839e2dea6::t_330408dc26cb8d 1
+input/codex/mint-adventurer-combat-v1/attack-002/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_70f5d81679d6ac 1
+input/codex/mint-adventurer-combat-v1/cycle-review-v1.json
+  s_4324a839e2dea6::t_85e9a5c8529438 1-12
+input/codex/mint-adventurer-combat-v1/idle-000-prompt.txt
+  s_4324a839e2dea6::t_fd91091e5159c6 1
+input/codex/mint-adventurer-combat-v1/idle-000/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_9558d19242f0fa 1
+input/codex/mint-adventurer-combat-v1/job.json
+  s_4324a839e2dea6::t_5f6c0a33707159 1-226
+input/codex/mint-adventurer-combat-v1/registration.json
+  s_4324a839e2dea6::t_32dee3f1c9ac9e 1-46
+input/codex/mint-adventurer-compare-v1.json
+  s_4324a839e2dea6::t_0789160d58d6c2 1-16
+input/codex/mint-adventurer-compare-v2.json
+  s_4324a839e2dea6::t_1468ceaa7fd010 1-16
+input/codex/mint-adventurer-compare-v3.json
+  s_4324a839e2dea6::t_137ddb85f729ef 1-16
+input/codex/mint-adventurer-contact-stop-spec-v1.json
+  s_4324a839e2dea6::t_ffee57d60fa7d3 1-29
+input/codex/mint-adventurer-contact-stop-v1/actual-prompt.txt
+  s_4324a839e2dea6::t_5f43b7ddfcf1b2 1
+input/codex/mint-adventurer-contact-stop-v1/assembly-v18-check.json
+  s_4324a839e2dea6::t_ddfdb58c727609 1-49
+input/codex/mint-adventurer-contact-stop-v1/controller-check.json
+  s_4324a839e2dea6::t_426898dab3bf3e 1-14
+input/codex/mint-adventurer-contact-stop-v1/job/job.json
+  s_4324a839e2dea6::t_4ef63ab37f3f43 1-107
+input/codex/mint-adventurer-contact-stop-v1/job/stop-front-source-000-prompt.txt
+  s_4324a839e2dea6::t_a562ffb6e7f549 1
+input/codex/mint-adventurer-contact-stop-v1/job/stop-front-source-000/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_06be9bb24e97bb 1
+input/codex/mint-adventurer-contact-stop-v1/job/stop-front-source-000/attempt-002/actual-prompt.txt
+  s_4324a839e2dea6::t_2074ba57107a5a 1
+input/codex/mint-adventurer-contact-stop-v1/repair-prompt.txt
+  s_4324a839e2dea6::t_c7769d5d1a08b6 1
+input/codex/mint-adventurer-contact-stop-v1/runtime-v18.json
+  s_4324a839e2dea6::t_f08a106cab9933 1-108
+input/codex/mint-adventurer-down-foot-patch-v1.json
+  s_4324a839e2dea6::t_954ca4308f7a63 1-18
+input/codex/mint-adventurer-down-foot-sequence-v1.json
+  s_4324a839e2dea6::t_1a9b84b8189ba0 1-67
+input/codex/mint-adventurer-down-foot-spec-v1.json
+  s_4324a839e2dea6::t_cc0e2043e43336 1-29
+input/codex/mint-adventurer-down-foot-v1/actual-prompt.txt
+  s_4324a839e2dea6::t_0eeaf55e37108b 1
+input/codex/mint-adventurer-down-foot-v1/job/job.json
+  s_4324a839e2dea6::t_8dfcbcfc3109d8 1-72
+input/codex/mint-adventurer-down-foot-v1/job/move-down-source-000-prompt.txt
+  s_4324a839e2dea6::t_d1f4fa535efcb8 1
+input/codex/mint-adventurer-down-foot-v1/job/move-down-source-000/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_4a8c2f9b3d3fc0 1
+input/codex/mint-adventurer-fullframe-v4/frame-layout.json
+  s_4324a839e2dea6::t_8f7565e25107e3 1-196
+input/codex/mint-adventurer-half-back-spec-v1.json
+  s_4324a839e2dea6::t_8dcd0dbe5282d1 1-29
+input/codex/mint-adventurer-half-back-v1/actual-prompt.txt
+  s_4324a839e2dea6::t_5a5d78ea90836e 1
+input/codex/mint-adventurer-half-back-v1/assembly-v19-check.json
+  s_4324a839e2dea6::t_00ee7f8fd24e72 1-48
+input/codex/mint-adventurer-half-back-v1/job/half-back-000-prompt.txt
+  s_4324a839e2dea6::t_f78d9b71a8aefa 1
+input/codex/mint-adventurer-half-back-v1/job/half-back-000/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_4425dfe7e30929 1
+input/codex/mint-adventurer-half-back-v1/job/job.json
+  s_4324a839e2dea6::t_901baf7bdba31e 1-72
+input/codex/mint-adventurer-half-back-v1/runtime-v19.json
+  s_4324a839e2dea6::t_45d4c186ff45d4 1-47
+input/codex/mint-adventurer-head-consistency-v1/assembly-check.json
+  s_4324a839e2dea6::t_b5fe45683427d4 1-34
+input/codex/mint-adventurer-head-consistency-v1/reference-processing.json
+  s_4324a839e2dea6::t_cb6b249cae99bb 1-16
+input/codex/mint-adventurer-head-consistency-v1/runtime-samples.json
+  s_4324a839e2dea6::t_b7d4ac7e099220 1-3372
+input/codex/mint-adventurer-head-move-plan-v1.json
+  s_4324a839e2dea6::t_584efa4d82162d 1-20
+input/codex/mint-adventurer-head-move-start-plan-v1.json
+  s_4324a839e2dea6::t_a3057c69fce399 1-13
+input/codex/mint-adventurer-head-move-stop-plan-v1.json
+  s_4324a839e2dea6::t_573313b336dace 1-13
+input/codex/mint-adventurer-hit-recovery-spec-v1.json
+  s_4324a839e2dea6::t_3a813a8f806176 1
+input/codex/mint-adventurer-hit-recovery-v1/assembly-check.json
+  s_4324a839e2dea6::t_e532a45993bcda 1-19
+input/codex/mint-adventurer-hit-recovery-v1/job/hit-recovery-000-prompt.txt
+  s_4324a839e2dea6::t_86bb35c8b4baad 1
+input/codex/mint-adventurer-hit-recovery-v1/job/hit-recovery-000/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_0f75714bdf4bb0 1
+input/codex/mint-adventurer-hit-recovery-v1/job/job.json
+  s_4324a839e2dea6::t_899ed2cb535fe6 1-72
+input/codex/mint-adventurer-hit-sequence-v1.json
+  s_4324a839e2dea6::t_6ca4fcbf6f6502 1-38
+input/codex/mint-adventurer-idle-spec-v1.json
+  s_4324a839e2dea6::t_af574b606d86a9 1-33
+input/codex/mint-adventurer-idle-v1/eye-patch-plan.json
+  s_4324a839e2dea6::t_61d89c01b643f3 1-14
+input/codex/mint-adventurer-idle-v1/idle-000-prompt.txt
+  s_4324a839e2dea6::t_ca347f2bfdc5ad 1
+input/codex/mint-adventurer-idle-v1/idle-000/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_8edb3936648420 1
+input/codex/mint-adventurer-idle-v1/idle-001-prompt.txt
+  s_4324a839e2dea6::t_befe506d4d1569 1
+input/codex/mint-adventurer-idle-v1/idle-001/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_776465bea97c07 1
+input/codex/mint-adventurer-idle-v1/job.json
+  s_4324a839e2dea6::t_b9a5a2557908df 1-103
+input/codex/mint-adventurer-idle-v1/notes.md
+  s_4324a839e2dea6::t_2c75329870dfce 1
+input/codex/mint-adventurer-idle-v1/runtime-review-v7.json
+  s_4324a839e2dea6::t_436179a70c5c20 1-22
+input/codex/mint-adventurer-jump-entry-sequence-v1.json
+  s_4324a839e2dea6::t_4ea45d1d21b777 1-77
+input/codex/mint-adventurer-jump-inbetween-spec-v1.json
+  s_4324a839e2dea6::t_1e5a4b828b426f 1
+input/codex/mint-adventurer-jump-inbetween-v1/assembly-check.json
+  s_4324a839e2dea6::t_c875f8371c7b82 1-16
+input/codex/mint-adventurer-jump-inbetween-v1/assembly-reference-index.json
+  s_4324a839e2dea6::t_db86ee2e4d5576 1-8
+input/codex/mint-adventurer-jump-inbetween-v1/job/job.json
+  s_4324a839e2dea6::t_1554522549043d 1-165
+input/codex/mint-adventurer-jump-inbetween-v1/job/jump-inbetween-000-prompt.txt
+  s_4324a839e2dea6::t_8db857899cd74a 1
+input/codex/mint-adventurer-jump-inbetween-v1/job/jump-inbetween-000/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_5c4071cfde5d6a 1
+input/codex/mint-adventurer-jump-inbetween-v1/job/jump-inbetween-000/attempt-002/actual-prompt.txt
+  s_4324a839e2dea6::t_85d64d43843ada 1
+input/codex/mint-adventurer-jump-inbetween-v1/job/jump-inbetween-001-prompt.txt
+  s_4324a839e2dea6::t_b014dae2cb94ee 1
+input/codex/mint-adventurer-jump-inbetween-v1/job/jump-inbetween-001/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_affe09078f9326 1
+input/codex/mint-adventurer-jump-inbetween-v1/job/jump-inbetween-001/attempt-002/actual-prompt.txt
+  s_4324a839e2dea6::t_e6d8db955637c8 1
+input/codex/mint-adventurer-jump-inbetween-v1/runtime-samples.json
+  s_4324a839e2dea6::t_f8dae645e28993 1-1740
+input/codex/mint-adventurer-jump-spec-v2.json
+  s_4324a839e2dea6::t_827c19ac1dfbe1 1-41
+input/codex/mint-adventurer-jump-spec-v3.json
+  s_4324a839e2dea6::t_bb54865546761a 1-45
+input/codex/mint-adventurer-jump-v2/job.json
+  s_4324a839e2dea6::t_08cbf597d7d706 1-181
+input/codex/mint-adventurer-jump-v2/jump-000-prompt.txt
+  s_4324a839e2dea6::t_a0c3bd5d1c2445 1
+input/codex/mint-adventurer-jump-v2/jump-000/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_acd260005d0c45 1
+input/codex/mint-adventurer-jump-v2/jump-001-prompt.txt
+  s_4324a839e2dea6::t_45f2442526707a 1
+input/codex/mint-adventurer-jump-v2/jump-001/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_04a883ea112555 1
+input/codex/mint-adventurer-jump-v2/jump-002-prompt.txt
+  s_4324a839e2dea6::t_6538d021c4e1fe 1
+input/codex/mint-adventurer-jump-v2/jump-002/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_95bcb3d88c7d99 1
+input/codex/mint-adventurer-jump-v2/jump-003-prompt.txt
+  s_4324a839e2dea6::t_c5bf79e1e08fb0 1
+input/codex/mint-adventurer-jump-v2/jump-003/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_e6b311d0664e22 1
+input/codex/mint-adventurer-jump-v2/notes.md
+  s_4324a839e2dea6::t_3e982387c4c653 1
+input/codex/mint-adventurer-jump-v3/job.json
+  s_4324a839e2dea6::t_651d9bac816f5f 1-224
+input/codex/mint-adventurer-jump-v3/jump-000-prompt.txt
+  s_4324a839e2dea6::t_2a566202f76510 1
+input/codex/mint-adventurer-jump-v3/jump-000/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_052470c5b29723 1
+input/codex/mint-adventurer-jump-v3/jump-001-prompt.txt
+  s_4324a839e2dea6::t_63bfbfde3e85e7 1
+input/codex/mint-adventurer-jump-v3/jump-001/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_52be4d04c4d9a8 1
+input/codex/mint-adventurer-jump-v3/jump-002-prompt.txt
+  s_4324a839e2dea6::t_f2b8679a37556d 1
+input/codex/mint-adventurer-jump-v3/jump-002/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_41749c8b9505f5 1
+input/codex/mint-adventurer-jump-v3/jump-003-prompt.txt
+  s_4324a839e2dea6::t_ca94de065d2470 1
+input/codex/mint-adventurer-jump-v3/jump-003/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_8c618a9f8c51e0 1
+input/codex/mint-adventurer-jump-v3/jump-004-prompt.txt
+  s_4324a839e2dea6::t_4a8ba3e0e7e215 1
+input/codex/mint-adventurer-jump-v3/jump-004/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_baa829ced48eac 1
+input/codex/mint-adventurer-jump-v3/notes.md
+  s_4324a839e2dea6::t_f514a698d627f0 1-7
+input/codex/mint-adventurer-jump-v3/runtime-review-v5.json
+  s_4324a839e2dea6::t_059d4f85dd5c03 1-18
+input/codex/mint-adventurer-reaction-v1/hit-000-prompt.txt
+  s_4324a839e2dea6::t_c8eefb29f3a6f8 1
+input/codex/mint-adventurer-reaction-v1/hit-000/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_9a74ff27ab3fa3 1
+input/codex/mint-adventurer-reaction-v1/job.json
+  s_4324a839e2dea6::t_082a6e5b71fd32 1-226
+input/codex/mint-adventurer-reaction-v1/jump-000-prompt.txt
+  s_4324a839e2dea6::t_88cbc96d4cddb4 1
+input/codex/mint-adventurer-reaction-v1/jump-000/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_6fec224dc3e57a 1
+input/codex/mint-adventurer-reaction-v1/jump-001-prompt.txt
+  s_4324a839e2dea6::t_be182bff7f2c5b 1
+input/codex/mint-adventurer-reaction-v1/jump-001/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_4c673a74c43f81 1
+input/codex/mint-adventurer-reaction-v1/jump-002-prompt.txt
+  s_4324a839e2dea6::t_93603d9d995335 1
+input/codex/mint-adventurer-reaction-v1/jump-002/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_19ba134371700a 1
+input/codex/mint-adventurer-reaction-v1/jump-002/attempt-002/actual-prompt.txt
+  s_4324a839e2dea6::t_6ae30907c54c3e 1
+input/codex/mint-adventurer-reaction-v1/registration.json
+  s_4324a839e2dea6::t_f129c8c8cee863 1-73
+input/codex/mint-adventurer-reaction-v1/runtime-review-v3.json
+  s_4324a839e2dea6::t_334738b10982e5 1-40
+input/codex/mint-adventurer-singleframe-v5/consumer-review-v7.json
+  s_4324a839e2dea6::t_68501b3430f01f 1-34
+input/codex/mint-adventurer-singleframe-v5/cycle-review-v6.json
+  s_4324a839e2dea6::t_6d8415c1c0b454 1-14
+input/codex/mint-adventurer-singleframe-v5/head-lock-plan-v6.json
+  s_4324a839e2dea6::t_cfd5dd905fa392 1-18
+input/codex/mint-adventurer-singleframe-v5/head-lock-plan-v7.json
+  s_4324a839e2dea6::t_f28b008bcd932a 1-18
+input/codex/mint-adventurer-singleframe-v5/job.json
+  s_4324a839e2dea6::t_0faccad9208a1d 1-804
+input/codex/mint-adventurer-singleframe-v5/move-000-prompt.txt
+  s_4324a839e2dea6::t_e17aeb6b8e98db 1
+input/codex/mint-adventurer-singleframe-v5/move-000/attempt-002/actual-prompt.txt
+  s_4324a839e2dea6::t_53bd4fba6d6d49 1
+input/codex/mint-adventurer-singleframe-v5/move-000/attempt-003/actual-prompt.txt
+  s_4324a839e2dea6::t_6427ab80215acd 1
+input/codex/mint-adventurer-singleframe-v5/move-001-prompt.txt
+  s_4324a839e2dea6::t_3db7090f461fb6 1
+input/codex/mint-adventurer-singleframe-v5/move-001/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_ae352d7b9dd344 1
+input/codex/mint-adventurer-singleframe-v5/move-001/attempt-002/actual-prompt.txt
+  s_4324a839e2dea6::t_f58aab211e2117 1
+input/codex/mint-adventurer-singleframe-v5/move-001/attempt-003/actual-prompt.txt
+  s_4324a839e2dea6::t_6ab092c7b26f76 1
+input/codex/mint-adventurer-singleframe-v5/move-001/attempt-004/actual-prompt.txt
+  s_4324a839e2dea6::t_e5eb71ad3afc49 1
+input/codex/mint-adventurer-singleframe-v5/move-002-prompt.txt
+  s_4324a839e2dea6::t_39030991bbfdff 1
+input/codex/mint-adventurer-singleframe-v5/move-002/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_81974cd74bc9d1 1
+input/codex/mint-adventurer-singleframe-v5/move-002/attempt-002/actual-prompt.txt
+  s_4324a839e2dea6::t_eac1be6a99f869 1
+input/codex/mint-adventurer-singleframe-v5/move-002/attempt-003/actual-prompt.txt
+  s_4324a839e2dea6::t_b3920375eaed66 1
+input/codex/mint-adventurer-singleframe-v5/move-003-prompt.txt
+  s_4324a839e2dea6::t_4b21d9de04e3e7 1
+input/codex/mint-adventurer-singleframe-v5/move-003/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_069cefd96971c0 1
+input/codex/mint-adventurer-singleframe-v5/move-003/attempt-002/actual-prompt.txt
+  s_4324a839e2dea6::t_f31d480cb4434d 1
+input/codex/mint-adventurer-singleframe-v5/move-004-prompt.txt
+  s_4324a839e2dea6::t_0252fde1f60bec 1
+input/codex/mint-adventurer-singleframe-v5/move-004/attempt-002/actual-prompt.txt
+  s_4324a839e2dea6::t_10c8dc999e53e3 1
+input/codex/mint-adventurer-singleframe-v5/move-004/attempt-003/actual-prompt.txt
+  s_4324a839e2dea6::t_d13c07dad6acc8 1
+input/codex/mint-adventurer-singleframe-v5/move-005-prompt.txt
+  s_4324a839e2dea6::t_69c65bb8ec4970 1
+input/codex/mint-adventurer-singleframe-v5/move-005/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_45563a249e0d65 1
+input/codex/mint-adventurer-singleframe-v5/move-005/attempt-002/actual-prompt.txt
+  s_4324a839e2dea6::t_af503f0533546b 1
+input/codex/mint-adventurer-singleframe-v5/move-005/attempt-003/actual-prompt.txt
+  s_4324a839e2dea6::t_5290a6c0693118 1
+input/codex/mint-adventurer-singleframe-v5/move-006-prompt.txt
+  s_4324a839e2dea6::t_f9ed87352c3411 1
+input/codex/mint-adventurer-singleframe-v5/move-006/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_520d55f5156913 1
+input/codex/mint-adventurer-singleframe-v5/move-006/attempt-002/actual-prompt.txt
+  s_4324a839e2dea6::t_be6d3b7adbba04 1
+input/codex/mint-adventurer-singleframe-v5/move-007-prompt.txt
+  s_4324a839e2dea6::t_dcffbb83b1268a 1
+input/codex/mint-adventurer-singleframe-v5/move-007/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_c4efe1b85e9f35 1
+input/codex/mint-adventurer-singleframe-v5/move-007/attempt-002/actual-prompt.txt
+  s_4324a839e2dea6::t_85307b1c527da4 1
+input/codex/mint-adventurer-singleframe-v5/move-007/attempt-003/actual-prompt.txt
+  s_4324a839e2dea6::t_cf9536b5563c24 1
+input/codex/mint-adventurer-singleframe-v5/move-007/attempt-004/actual-prompt.txt
+  s_4324a839e2dea6::t_b74ce73e22f98e 1
+input/codex/mint-adventurer-singleframe-v5/move-007/attempt-005/actual-prompt.txt
+  s_4324a839e2dea6::t_18bab32421dbf4 1
+input/codex/mint-adventurer-singleframe-v5/registration.json
+  s_4324a839e2dea6::t_361280cf5d66af 1-83
+input/codex/mint-adventurer-start-sequence-v2.json
+  s_4324a839e2dea6::t_ab1cdbab9a4eae 1-44
+input/codex/mint-adventurer-stop-back-base-v1.json
+  s_4324a839e2dea6::t_d3965e9a5dcc31 1-40
+input/codex/mint-adventurer-stop-back-base-v2.json
+  s_4324a839e2dea6::t_8bcce2b5fb84c3 1-46
+input/codex/mint-adventurer-stop-back-patch-v1.json
+  s_4324a839e2dea6::t_42433fb3cfab79 1-28
+input/codex/mint-adventurer-stop-back-patch-v2.json
+  s_4324a839e2dea6::t_861555093e1d58 1-29
+input/codex/mint-adventurer-stop-back-sequence-v1.json
+  s_4324a839e2dea6::t_8426451b21f5b4 1-50
+input/codex/mint-adventurer-stop-back-sequence-v2.json
+  s_4324a839e2dea6::t_ffeb79f28a7f7f 1-55
+input/codex/mint-adventurer-stop-front-base-v1.json
+  s_4324a839e2dea6::t_826c22ffbb0957 1-34
+input/codex/mint-adventurer-stop-front-patch-v1.json
+  s_4324a839e2dea6::t_6323ae5dd935d6 1-27
+input/codex/mint-adventurer-stop-front-sequence-v1.json
+  s_4324a839e2dea6::t_d469bf23e7fbaf 1-44
+input/codex/mint-adventurer-stop-options-v2.json
+  s_4324a839e2dea6::t_10acd9e10438fe 1-11
+input/codex/mint-adventurer-stop-options-v3.json
+  s_4324a839e2dea6::t_bc654dd3d954d8 1-12
+input/codex/mint-adventurer-stop-options-v4.json
+  s_4324a839e2dea6::t_772e7012ba2683 1-12
+input/codex/mint-adventurer-stop-runtime-v1.json
+  s_4324a839e2dea6::t_c013099e0b67ac 1-1713
+input/codex/mint-adventurer-stride-review-v1.json
+  s_4324a839e2dea6::t_40de6fdb15f71c 1-92
+input/codex/mint-adventurer-stride-review-v2.json
+  s_4324a839e2dea6::t_4169f9e4afd2fd 1-93
+input/codex/mint-adventurer-stride-review-v3.json
+  s_4324a839e2dea6::t_fa043d08b88533 1-93
+input/codex/mint-adventurer-support-return-v1/actual-prompt-6.txt
+  s_4324a839e2dea6::t_82327a30c476ad 1
+input/codex/mint-adventurer-support-return-v1/actual-prompt-7.txt
+  s_4324a839e2dea6::t_57d25fcf11b06f 1
+input/codex/mint-adventurer-support-return-v1/job/job.json
+  s_4324a839e2dea6::t_b9a75c5b7f312c 1-83
+input/codex/mint-adventurer-support-return-v1/job/move-support-source-000-prompt.txt
+  s_4324a839e2dea6::t_6a86d331d551ec 1
+input/codex/mint-adventurer-support-return-v1/job/move-support-source-000/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_70a5f312281e6e 1
+input/codex/mint-adventurer-support-return-v1/job/move-support-source-001-prompt.txt
+  s_4324a839e2dea6::t_ba3174578fb16f 1
+input/codex/mint-adventurer-support-return-v1/spec.json
+  s_4324a839e2dea6::t_5da29648c6e55e 1-33
+input/codex/mint-adventurer-torso-fix-v1/alpha-inspection.json
+  s_4324a839e2dea6::t_ca5a41dc5dd950 1-6
+input/codex/mint-adventurer-torso-fix-v1/generation-record.json
+  s_4324a839e2dea6::t_0f226fad83b710 1-59
+input/codex/mint-adventurer-torso-fix-v1/pack-check.json
+  s_4324a839e2dea6::t_71d022ca3fea7e 1-10
+input/codex/mint-adventurer-torso-fix-v1/recipe.json
+  s_4324a839e2dea6::t_f8cb17753fbd55 1-78
+input/codex/mint-adventurer-torso-fix-v1/registered-recipe.json
+  s_4324a839e2dea6::t_8592ecd80c814e 1-80
+input/codex/mint-adventurer-torso-fix-v1/registered-source.json
+  s_4324a839e2dea6::t_b92d4384a06b20 1-111
+input/codex/mint-adventurer-torso-fix-v1/registration.json
+  s_4324a839e2dea6::t_09f568adef4dc6 1-129
+input/codex/mint-adventurer-torso-fix-v1/source.json
+  s_4324a839e2dea6::t_d9864fe1b62f33 1-111
+input/codex/mint-adventurer-transition-spec-v1.json
+  s_4324a839e2dea6::t_d84fa65e975425 1-39
+input/codex/mint-adventurer-transition-v1/job.json
+  s_4324a839e2dea6::t_6551798b878fbf 1-117
+input/codex/mint-adventurer-transition-v1/move-start-000-prompt.txt
+  s_4324a839e2dea6::t_31699f6d3681dd 1
+input/codex/mint-adventurer-transition-v1/move-start-000/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_b8ded9bc56c017 1
+input/codex/mint-adventurer-transition-v1/move-stop-000-prompt.txt
+  s_4324a839e2dea6::t_a70591f01797c6 1
+input/codex/mint-adventurer-transition-v1/move-stop-000/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_4bb19079ed0e6b 1
+input/codex/mint-adventurer-transition-v1/notes.md
+  s_4324a839e2dea6::t_a08cbfe94c91b6 1
+input/codex/mint-adventurer-transition-v1/runtime-review-v8.json
+  s_4324a839e2dea6::t_118e2581e3aed9 1-18
+input/codex/mint-adventurer-walk-far-patch-v1.json
+  s_4324a839e2dea6::t_d6e6c47bd54e4f 1-15
+input/codex/mint-adventurer-walk-far-patch-v2.json
+  s_4324a839e2dea6::t_30b5a62ee9a5e1 1-15
+input/codex/mint-adventurer-walk-fix-v8/pixel-scope-check-v10.json
+  s_4324a839e2dea6::t_d9bd13edf2d2d9 1-17
+input/codex/mint-adventurer-walk-fix-v8/pixel-scope-check.json
+  s_4324a839e2dea6::t_103c09ef92b19d 1-14
+input/codex/mint-adventurer-walk-passing-inbetween-v1/actual-prompt.txt
+  s_4324a839e2dea6::t_7aaca05d818569 1
+input/codex/mint-adventurer-walk-passing-inbetween-v1/far-actual-prompt-v2.txt
+  s_4324a839e2dea6::t_30b7b568dcdeb8 1
+input/codex/mint-adventurer-walk-passing-inbetween-v1/far-actual-prompt.txt
+  s_4324a839e2dea6::t_70e6a9befcbc9c 1
+input/codex/mint-adventurer-walk-passing-inbetween-v1/far-job/job.json
+  s_4324a839e2dea6::t_563c373f4ed2bd 1-103
+input/codex/mint-adventurer-walk-passing-inbetween-v1/far-job/walk-far-inbetween-000-prompt.txt
+  s_4324a839e2dea6::t_b7cd0e5e12f41e 1
+input/codex/mint-adventurer-walk-passing-inbetween-v1/far-job/walk-far-inbetween-000/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_8aa00060f5cb31 1
+input/codex/mint-adventurer-walk-passing-inbetween-v1/far-job/walk-far-inbetween-000/attempt-002/actual-prompt.txt
+  s_4324a839e2dea6::t_0a015e23c9fc36 1
+input/codex/mint-adventurer-walk-passing-inbetween-v1/far-spec.json
+  s_4324a839e2dea6::t_e43d6c58e788c2 1-29
+input/codex/mint-adventurer-walk-passing-inbetween-v1/job/job.json
+  s_4324a839e2dea6::t_6e7c50776ec799 1-103
+input/codex/mint-adventurer-walk-passing-inbetween-v1/job/walk-passing-inbetween-000-prompt.txt
+  s_4324a839e2dea6::t_66a9bae298cc6a 1
+input/codex/mint-adventurer-walk-passing-inbetween-v1/job/walk-passing-inbetween-000/attempt-001/actual-prompt.txt
+  s_4324a839e2dea6::t_eb3955ca9f1afe 1
+input/codex/mint-adventurer-walk-passing-inbetween-v1/job/walk-passing-inbetween-000/attempt-002/actual-prompt.txt
+  s_4324a839e2dea6::t_03915c210267e3 1
+input/codex/mint-adventurer-walk-passing-inbetween-v1/spec.json
+  s_4324a839e2dea6::t_6bf5079a601061 1-29
+input/codex/mint-adventurer-walk-passing-patch-v1.json
+  s_4324a839e2dea6::t_d196a3cc33fa24 1-15
+input/codex/mint-adventurer-walk-passing-patch-v2.json
+  s_4324a839e2dea6::t_c6556ea2d3eeaa 1-15
+input/codex/mint-adventurer-walk-ten-sequence-v1.json
+  s_4324a839e2dea6::t_c728a821cfbcb2 1-82
+input/codex/mint-adventurer-walk-ten-sequence-v2.json
+  s_4324a839e2dea6::t_60c2df34d6899b 1-82
+input/codex/mint-adventurer-walk-v3/poses.json
+  s_4324a839e2dea6::t_7ed16804b5c1c9 1-609
+input/codex/mint-adventurer-walk-v3/rig.json
+  s_4324a839e2dea6::t_42534ee9d9f531 1-134
+input/codex/mint-adventurer-walk-v3/workbench.json
+  s_4324a839e2dea6::t_a6af8911289355 1-39
+scripts/fetch_sprite_gen.py
+  s_4324a839e2dea6::t_e3a79e04e3ef05 1-39
+src/sprite_gen_adapter.py
+  s_4324a839e2dea6::t_2a8399ddf45b89 1-218
+tests/motion-wizard.test.mjs
+  s_4324a839e2dea6::t_c2a5905c249788 1-20
+tests/test_sprite_gen_adapter.py
+  s_4324a839e2dea6::t_42196fcecbe23f 1-69
+workbench/components.json
+  s_4324a839e2dea6::t_136acbbe4f1fcf 1-20
+workbench/package-lock.json
+  s_4324a839e2dea6::t_ab498722410b07 1-3974
+workbench/scripts/prepare-data.mjs
+  s_4324a839e2dea6::t_9b4455a9d09865 1-57
+workbench/src/App.tsx
+  s_4324a839e2dea6::t_e40c7dbea86ff9 1-52
+workbench/src/components/ui/card.tsx
+  s_4324a839e2dea6::t_0a14e6ce4c2bb2 1-60
+workbench/src/components/ui/checkbox.tsx
+  s_4324a839e2dea6::t_1e502b05f26eff 1-29
+workbench/src/components/ui/input.tsx
+  s_4324a839e2dea6::t_407ff77a3d6f0e 1-20
+workbench/src/components/ui/textarea.tsx
+  s_4324a839e2dea6::t_80c2e0a801a7fe 1-17
+workbench/src/lib/prompts.js
+  s_4324a839e2dea6::t_86b52a91e06375 1-163
+workbench/src/lib/utils.ts
+  s_4324a839e2dea6::t_6f6e96172493bf 1-5
+workbench/src/main.tsx
+  s_4324a839e2dea6::t_23677816d1858e 1-15
+workbench/src/motion-contract.ts
+  s_4324a839e2dea6::t_2746ef10593c70 1-107
+workbench/src/pages/MotionEditor.tsx
+  s_4324a839e2dea6::t_276031f1804c45 1-351
+workbench/src/pages/Pipeline.tsx
+  s_4324a839e2dea6::t_612adb243dc186 1-358
+workbench/src/state/motion.ts
+  s_4324a839e2dea6::t_8effd17b340fa4 1-11
+workbench/src/state/wizard.ts
+  s_4324a839e2dea6::t_8c72980b4dcf68 1-94
+workbench/tests/motion-contract.test.mjs
+  s_4324a839e2dea6::t_627e5f71347edc 1-9
+workbench/tsconfig.json
+  s_4324a839e2dea6::t_63bb2aedd31275 1-23
+workbench/vite.config.ts
+  s_4324a839e2dea6::t_fde33b2aefcc9f 1-10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.1",
+  "base_commit_sha": "2aa9d71edf3e7480927f174153e242e31e7c571c",
+  "prompts": {},
+  "sessions": {
+    "s_4324a839e2dea6": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0e066-55ea-75e1-82e6-95196047cedb",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "lang.jiang <lang.jiang@ximalaya.com>"
+    }
+  }
+}
