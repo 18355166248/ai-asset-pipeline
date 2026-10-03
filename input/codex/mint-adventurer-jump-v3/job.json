@@ -1,0 +1,224 @@
+{
+  "version": 1,
+  "provider": "codex-builtin-imagegen",
+  "title": "薄荷冒险者 · 跳跃五相位 v3",
+  "identity": "Same original cute chestnut-bob anime adventurer, mint bow, golden eyes, ivory/mint tunic with leaf patterns, brown shorts/belt, leaf satchel, brown boots and fingerless gloves. Right facing, same proportions as actual idle master.",
+  "direction": "right-facing side view",
+  "canvas": [
+    512,
+    512
+  ],
+  "cell": [
+    256,
+    256
+  ],
+  "reference": {
+    "path": "reference.png",
+    "sha256": "f1a38bf4836378578d49b1f9fd09821a6bae03bd55526a9e28c6d23ad5a7f44d"
+  },
+  "anchor": [
+    0.5,
+    0.947265625
+  ],
+  "actions": [
+    {
+      "name": "jump",
+      "loop": false,
+      "frames": [
+        "jump-000",
+        "jump-001",
+        "jump-002",
+        "jump-003",
+        "jump-004"
+      ]
+    }
+  ],
+  "frames": {
+    "jump-000": {
+      "pose": "Shallow preparation, head/pelvis10..12px lower than idle, feet planted.",
+      "durationMs": 80,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "jump-000-prompt.txt",
+      "promptSha256": "18eb79ff0355743a5358bf48bf918424d5cc2a0d8286f317901a3b11efd26973",
+      "attempts": [
+        {
+          "sha256": "4dd9a1ad9c1980b7623389be8797f4998758356443d99f338850e988778814f7",
+          "original": "jump-000/attempt-001/source.png",
+          "frame": "jump-000/attempt-001/frame.png",
+          "frameSha256": "449899c7ae5ba9358269c031e90139474bcf412ecacddf0f5bf51623f2ea01b8",
+          "actualPrompt": "jump-000/attempt-001/actual-prompt.txt",
+          "promptSha256": "b6e4c5e3085c5756aa6419c78858ec3e7cf6c7d3b5bb83f9cfc2f99b37056a69",
+          "referenceInputs": [
+            {
+              "path": "jump-000/attempt-001/reference-01.png",
+              "sha256": "d2f93c7f79c6fb023c47aa9b155d171f480eabaa8d772d42348a9c37440f2918"
+            },
+            {
+              "path": "jump-000/attempt-001/reference-02.png",
+              "sha256": "f1a38bf4836378578d49b1f9fd09821a6bae03bd55526a9e28c6d23ad5a7f44d"
+            }
+          ],
+          "offset": [
+            0,
+            15
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        }
+      ],
+      "selected": 0
+    },
+    "jump-001": {
+      "pose": "Takeoff extension inbetween: rise from crouch, partly straight knees, boots near y470, head near y65. No baked root jump height.",
+      "durationMs": 60,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "jump-001-prompt.txt",
+      "promptSha256": "d2342f4d11c48a3ffd8109eb7eba873a5a830bdcfb4cf097ef42dab4d3fee667",
+      "attempts": [
+        {
+          "sha256": "9a6990403800ad387948458eb63a7d9b321813bcdfa06d2320245e87bd0e2b4a",
+          "original": "jump-001/attempt-001/source.png",
+          "frame": "jump-001/attempt-001/frame.png",
+          "frameSha256": "10b4bd1a5b031da07570554a538794269e242a00a56a35b1737617ff13277685",
+          "actualPrompt": "jump-001/attempt-001/actual-prompt.txt",
+          "promptSha256": "36231976246ba2251e05963747ff465953aa65add0acd07c11f2fa77d0418ef3",
+          "referenceInputs": [
+            {
+              "path": "jump-001/attempt-001/reference-01.png",
+              "sha256": "f1a38bf4836378578d49b1f9fd09821a6bae03bd55526a9e28c6d23ad5a7f44d"
+            },
+            {
+              "path": "jump-001/attempt-001/reference-02.png",
+              "sha256": "d2f93c7f79c6fb023c47aa9b155d171f480eabaa8d772d42348a9c37440f2918"
+            },
+            {
+              "path": "jump-001/attempt-001/reference-03.png",
+              "sha256": "2997a9facfaf6df5d4c2a4ba66bd063e406e870af6a473d12723a1a7a0f0ca35"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        }
+      ],
+      "selected": 0
+    },
+    "jump-002": {
+      "pose": "Airborne POSE ONLY: body/head/pelvis location stays at the idle reference height, both knees bend and both boots tuck up off ground to y430. Game/preview provides root translation separately. Do not bake whole-body jump height, no grounded foot, no shadow.",
+      "durationMs": 120,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "jump-002-prompt.txt",
+      "promptSha256": "532d9973d7cff9168eb624bc3cad6a137bece3d2b0b1b526b0b1808d8e91e9bc",
+      "attempts": [
+        {
+          "sha256": "626ab800c9ac2fcf215092b2e6792e1f5f309d56868882aa0caeab924b42fcc2",
+          "original": "jump-002/attempt-001/source.png",
+          "frame": "jump-002/attempt-001/frame.png",
+          "frameSha256": "2997a9facfaf6df5d4c2a4ba66bd063e406e870af6a473d12723a1a7a0f0ca35",
+          "actualPrompt": "jump-002/attempt-001/actual-prompt.txt",
+          "promptSha256": "770c2d18aa4ec3159f46da461ef452972949942ff4f6a9771044485faa146398",
+          "referenceInputs": [
+            {
+              "path": "jump-002/attempt-001/reference-01.png",
+              "sha256": "f1a38bf4836378578d49b1f9fd09821a6bae03bd55526a9e28c6d23ad5a7f44d"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        }
+      ],
+      "selected": 0
+    },
+    "jump-003": {
+      "pose": "Descent inbetween, unfold legs halfway, toes near y470, no planted feet. Preserve airborne upper-body height.",
+      "durationMs": 80,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "jump-003-prompt.txt",
+      "promptSha256": "8009a4b155bd91ee83e039404d512f03a35dc5583ed3fd56c1d54932b31201d1",
+      "attempts": [
+        {
+          "sha256": "6d5210e6e2ab998e44d00dd621d42a07e06f27255f3cb1c0d0022efdc2cabf7f",
+          "original": "jump-003/attempt-001/source.png",
+          "frame": "jump-003/attempt-001/frame.png",
+          "frameSha256": "ba0529ed70ad1c9cb59e7cd9225b4a1cddb6014c7e2ea576bde2954a3e3cecfd",
+          "actualPrompt": "jump-003/attempt-001/actual-prompt.txt",
+          "promptSha256": "b19166ccb95e26f235a4c9791e3aed4f75f9b4a7435863a7285686dd1a635633",
+          "referenceInputs": [
+            {
+              "path": "jump-003/attempt-001/reference-01.png",
+              "sha256": "2997a9facfaf6df5d4c2a4ba66bd063e406e870af6a473d12723a1a7a0f0ca35"
+            },
+            {
+              "path": "jump-003/attempt-001/reference-02.png",
+              "sha256": "90bab76933af842f1cd4e21ccffe789e31a7901caade3cb2b0fd056020d33a90"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        }
+      ],
+      "selected": 0
+    },
+    "jump-004": {
+      "pose": "Landing absorb: both boots planted at original spots y485, knees softly bent and pelvis lower by6px, near arm slightly forward to balance. Same facing/scale; returns to idle next.",
+      "durationMs": 100,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "jump-004-prompt.txt",
+      "promptSha256": "70495a9246b2f8bb1b475a5db7b2586c7e14359365e594c50c06a7d1fb615695",
+      "attempts": [
+        {
+          "sha256": "0c9136689028083e4eeb05e3db86a69807a43c6b83c1263ce5b6d1f0e1fc35ab",
+          "original": "jump-004/attempt-001/source.png",
+          "frame": "jump-004/attempt-001/frame.png",
+          "frameSha256": "90bab76933af842f1cd4e21ccffe789e31a7901caade3cb2b0fd056020d33a90",
+          "actualPrompt": "jump-004/attempt-001/actual-prompt.txt",
+          "promptSha256": "965ded19127080a0d685365822577f1fe72755c091b709dcd96bbec7a97dd27a",
+          "referenceInputs": [
+            {
+              "path": "jump-004/attempt-001/reference-01.png",
+              "sha256": "f1a38bf4836378578d49b1f9fd09821a6bae03bd55526a9e28c6d23ad5a7f44d"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        }
+      ],
+      "selected": 0
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "manifest": "../../../output/mint-adventurer-walk-v8-head-lock/bundle/manifest.json",
+  "action": "move",
+  "operation": "rectangle-patch",
+  "referenceFrame": 7,
+  "referenceImage": "../../../output/mint-adventurer-walk-v7-head-lock/bundle/frames/move/0007.png",
+  "frameIndices": [7],
+  "rect": [0,174,256,256],
+  "feather": 2
+}

@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>二维角色动作 · 验收与素材</title>
+<style>
+:root{color-scheme:dark;font:16px system-ui;background:#101920;color:#e2eceb}*{box-sizing:border-box}body{max-width:1040px;margin:auto;padding:28px 22px 60px}h1{font-size:clamp(25px,4vw,38px);margin:14px 0}h2{font-size:20px}p{line-height:1.75;color:#afc3c4}a{color:#9de1c8}header{border-bottom:1px solid #31474d;padding-bottom:24px}.badge{display:inline-block;border:1px solid #50746b;color:#9de1c8;padding:5px 12px;border-radius:24px;font-size:13px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0}.button{display:inline-block;text-decoration:none;padding:13px 19px;border:1px solid #53756d;border-radius:10px;background:#244b43;color:#e6fff4}.secondary{background:#1a2a32;border-color:#405962}.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:22px}section{padding:20px;border:1px solid #31474d;border-radius:14px;background:#16252c}ul{padding-left:22px;line-height:1.85}table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;padding:10px 5px;border-bottom:1px solid #31474d}code{background:#101920;border-radius:5px;padding:3px 5px;overflow-wrap:anywhere}.small{font-size:13px}img{width:170px;height:170px;object-fit:contain;float:right}@media(max-width:700px){.grid{grid-template-columns:1fr}body{padding:22px 16px}img{width:110px;height:110px}.button{padding:11px 14px}}
+</style>
+<header>
+<img src="material/bundle/frames/idle/0000.png" alt="当前角色待机原画">
+<span class="badge">二维原画 · 待验收</span>
+<h1>@@TITLE@@</h1><p>@@STATS@@。完整原画逐帧播放，可检查走路、起停、出拳、受击和跳跃。</p>
+<div class="actions"><a class="button" href="playable/">试玩整套动作</a><a class="button secondary" href="workbench/">逐帧检查</a></div>
+<p class="small">左向在试玩中由右向原画镜像。试玩的移动与跳跃是示例规则，接入游戏时匹配自己的物理轨迹和动作窗口。</p>
+</header>
+<div class="grid">
+<section><h2>拿到游戏里使用</h2><p>原画像素、锚点、逐帧时长和循环标记随素材包一起交付。</p><div class="actions"><a href="downloads/game-assets.zip">下载游戏素材包</a><a href="downloads/godot-preview.zip">下载 Godot 预览项目</a><a href="downloads/web-playground.zip">下载 Web 示例</a></div><p class="small">通用素材入口 <code>bundle/manifest.json</code>，锚点 @@ANCHOR@@。Godot 项目提供 SpriteFrames 导入和动作播放预览，物理与战斗由游戏接入。下载包含现有来源审查副本；完整 GPT 生成任务留在生产工作区。</p></section>
+<section><h2>换成你的角色，需要什么</h2><ul><li>一张完整角色参考，明确画风、朝向、服饰和随身物件。</li><li>动作清单与关键姿态，例如待机、走路、出拳、受击、跳跃。</li><li>游戏显示尺寸、统一画布、地面基准和锚点。</li><li>各动作的帧时长、循环，以及起跳、落地和命中时间。</li></ul><p class="small">参考图可以先用 GPT 生成。使用 <code>character-motion-kit</code>：确认角色参考 → GPT 逐帧制作 → 选择或修正失败原画 → 导出 → 正常速度验收。姿态草图有助于固定近远肢体和动作相位。</p></section>
+<section style="grid-column:1/-1"><h2>当前交付内容</h2><table><thead><tr><th>动作</th><th>播放位置</th><th>总时长</th><th>播放方式</th></tr></thead><tbody>@@ROWS@@</tbody></table><p class="small">播放位置包含已有原画的重复使用，不等于生成次数。素材版本指纹 @@HASH@@ · <a href="delivery.json">查看交付记录</a></p></section>
+</div>
+</html>

@@ -1,0 +1,22 @@
+{
+  "references": [
+    {
+      "path": "assembly-reference/attack-0000.png",
+      "sha256": "16150bbb07456ecd01430f9e1ec77b6a2fbaf635d6ca2f8c334b90c3f532ae33"
+    },
+    {
+      "path": "assembly-reference/attack-0001.png",
+      "sha256": "c4173fcdba3681dc03b1132daf67b3842318ec1df22744728648f93ce0145d0d"
+    },
+    {
+      "path": "assembly-reference/attack-0002.png",
+      "sha256": "8b00e98c944b2974b534232edf836e4da72044bc17f56d9bc85edc616d336750"
+    },
+    {
+      "path": "assembly-reference/idle-0000.png",
+      "sha256": "2ca08dfbeebcec7562e1a2c2573039465d3aa80d27c7f812d78c842714bd800d"
+    }
+  ],
+  "sourceManifest": "assembly-source-manifest.json",
+  "sourceManifestSha256": "2cdaa9014a38a4d564592b6f19fd57030957a33a16f13c6bba7fc156f93a91a2"
+}

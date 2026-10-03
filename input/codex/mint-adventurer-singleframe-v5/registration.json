@@ -1,0 +1,83 @@
+{
+  "method": "Explicit per-frame planted-sole registration, no per-frame scale/horizontal shift. Agent checked all eight full-body frames each with at least one grounded foot; pixel measurement uses alpha>128. Not valid automatically for jumping/running.",
+  "canvas": [
+    512,
+    512
+  ],
+  "frames": [
+    {
+      "frame": "move-000",
+      "measuredOpaqueBootSoleY": 478,
+      "targetSoleY": 485,
+      "offset": [
+        0,
+        7
+      ]
+    },
+    {
+      "frame": "move-001",
+      "measuredOpaqueBootSoleY": 477,
+      "targetSoleY": 485,
+      "offset": [
+        0,
+        8
+      ]
+    },
+    {
+      "frame": "move-002",
+      "measuredOpaqueBootSoleY": 488,
+      "targetSoleY": 485,
+      "offset": [
+        0,
+        -3
+      ]
+    },
+    {
+      "frame": "move-003",
+      "measuredOpaqueBootSoleY": 492,
+      "targetSoleY": 485,
+      "offset": [
+        0,
+        -7
+      ]
+    },
+    {
+      "frame": "move-004",
+      "measuredOpaqueBootSoleY": 488,
+      "targetSoleY": 485,
+      "offset": [
+        0,
+        -3
+      ]
+    },
+    {
+      "frame": "move-005",
+      "measuredOpaqueBootSoleY": 484,
+      "targetSoleY": 485,
+      "offset": [
+        0,
+        1
+      ]
+    },
+    {
+      "frame": "move-006",
+      "measuredOpaqueBootSoleY": 481,
+      "targetSoleY": 485,
+      "offset": [
+        0,
+        4
+      ]
+    },
+    {
+      "frame": "move-007",
+      "measuredOpaqueBootSoleY": 463,
+      "targetSoleY": 485,
+      "offset": [
+        0,
+        22
+      ],
+      "selectedAttemptIndex": 4,
+      "note": "One new GPT original imported twice (unregistered/rejected, registered/crop-only). Full art source not accepted."
+    }
+  ]
+}

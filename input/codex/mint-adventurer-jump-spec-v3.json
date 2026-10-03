@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "title": "薄荷冒险者 · 跳跃五相位 v3",
+  "direction": "right-facing side view",
+  "canvas": [
+    512,
+    512
+  ],
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    0.5,
+    0.947265625
+  ],
+  "actions": [
+    {
+      "name": "jump",
+      "loop": false,
+      "frames": [
+        {
+          "pose": "Shallow preparation, head/pelvis10..12px lower than idle, feet planted.",
+          "durationMs": 80
+        },
+        {
+          "pose": "Takeoff extension inbetween: rise from crouch, partly straight knees, boots near y470, head near y65. No baked root jump height.",
+          "durationMs": 60
+        },
+        {
+          "pose": "Airborne POSE ONLY: body/head/pelvis location stays at the idle reference height, both knees bend and both boots tuck up off ground to y430. Game/preview provides root translation separately. Do not bake whole-body jump height, no grounded foot, no shadow.",
+          "durationMs": 120
+        },
+        {
+          "pose": "Descent inbetween, unfold legs halfway, toes near y470, no planted feet. Preserve airborne upper-body height.",
+          "durationMs": 80
+        },
+        {
+          "pose": "Landing absorb: both boots planted at original spots y485, knees softly bent and pelvis lower by6px, near arm slightly forward to balance. Same facing/scale; returns to idle next.",
+          "durationMs": 100
+        }
+      ]
+    }
+  ]
+}

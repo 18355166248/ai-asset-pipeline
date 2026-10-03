@@ -1,0 +1,226 @@
+{
+  "version": 1,
+  "provider": "codex-builtin-imagegen",
+  "title": "薄荷冒险者 · 待机与拳击原画",
+  "identity": "Original cute chestnut-bob anime adventurer girl, mint bow, golden eyes, ivory/mint short tunic with leaf patterns, brown shorts and belt, brown leather fingerless gloves/boots, leaf satchel. Same proportions and camera as actual master frame.",
+  "direction": "right-facing side view",
+  "canvas": [
+    512,
+    512
+  ],
+  "cell": [
+    256,
+    256
+  ],
+  "reference": {
+    "path": "reference.png",
+    "sha256": "938e75ae8b4edebe7b653021eda02241cc530ed3017f79a62b3504b766440079"
+  },
+  "anchor": [
+    0.5,
+    0.947265625
+  ],
+  "actions": [
+    {
+      "name": "idle",
+      "loop": true,
+      "frames": [
+        "idle-000"
+      ]
+    },
+    {
+      "name": "attack",
+      "loop": false,
+      "frames": [
+        "attack-000",
+        "attack-001",
+        "attack-002"
+      ]
+    }
+  ],
+  "frames": {
+    "idle-000": {
+      "pose": "Relaxed combat ready stance. Same head/torso scale and location. Both boots planted y485, ankles x240 and x284, knees slightly soft. Near fist loosely raised at x292 y286, far fist x309 y273. Empty hands, no weapon.",
+      "durationMs": 400,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "idle-000-prompt.txt",
+      "promptSha256": "b52bc8fcd06ffc33ff776d0cd78d9ad929038df6babc73a1fff55f1c1cd9bc68",
+      "attempts": [
+        {
+          "sha256": "48607549c3eee7444fe4879965c60a4c1319c0362385692a8011e91d265a1b74",
+          "original": "idle-000/attempt-001/source.png",
+          "frame": "idle-000/attempt-001/frame.png",
+          "frameSha256": "f1a38bf4836378578d49b1f9fd09821a6bae03bd55526a9e28c6d23ad5a7f44d",
+          "actualPrompt": "idle-000/attempt-001/actual-prompt.txt",
+          "promptSha256": "39d11194a3712172d21732148244ade646fdee6918e388e7cd97edc47f4fc6ba",
+          "referenceInputs": [
+            {
+              "path": "idle-000/attempt-001/reference-01.png",
+              "sha256": "938e75ae8b4edebe7b653021eda02241cc530ed3017f79a62b3504b766440079"
+            }
+          ],
+          "offset": [
+            0,
+            2
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": {
+            "verdict": "accept",
+            "reason": "实际图双脚站立、两手护拳，角色身份可辨；这是静态待机原画；整体播放另行检查",
+            "reviewer": "agent"
+          }
+        }
+      ],
+      "selected": 0
+    },
+    "attack-000": {
+      "pose": "Small punch anticipation: near elbow pulled back, fist near x238 y278; far fist guards chest x308 y274. Boots planted same as idle. Torso leans only slightly back, head same size.",
+      "durationMs": 110,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "attack-000-prompt.txt",
+      "promptSha256": "704fe6afec1004fc69d7ef824d472381db571b225120f3b47865d9f26458b792",
+      "attempts": [
+        {
+          "sha256": "c4480655671ea228e75c3486662125a150aa0087a3b9e1a8b2474c91d209ae54",
+          "original": "attack-000/attempt-001/source.png",
+          "frame": "attack-000/attempt-001/frame.png",
+          "frameSha256": "5385ad1a8055603ea685c4057871e53dac73e7daf4d0ef627eddf0b904665706",
+          "actualPrompt": "attack-000/attempt-001/actual-prompt.txt",
+          "promptSha256": "c3e6cd722d50cc77e03e64e905d3318ad36bf2565029d057af7aa189782b0512",
+          "referenceInputs": [
+            {
+              "path": "attack-000/attempt-001/reference-01.png",
+              "sha256": "48607549c3eee7444fe4879965c60a4c1319c0362385692a8011e91d265a1b74"
+            }
+          ],
+          "offset": [
+            0,
+            2
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": {
+            "verdict": "accept",
+            "reason": "实际近侧拳收后，远侧拳护脸，双脚保持站姿，无多余手脚；整体播放另行检查",
+            "reviewer": "agent"
+          }
+        }
+      ],
+      "selected": 0
+    },
+    "attack-001": {
+      "pose": "Straight near-hand punch to screen RIGHT: near arm shoulder-elbow-fist straight at x365 y244; far hand stays at chest x286 y283. Torso leans forward slightly without rotating camera; boots stay planted. No weapon/trails.",
+      "durationMs": 80,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "attack-001-prompt.txt",
+      "promptSha256": "46a64256988916df01cb715b0ae8961fc67d1384e713924b6ecd24ab795e907e",
+      "attempts": [
+        {
+          "sha256": "3e97f260c9cc168d678c0b323a1f319700e493a0a88f11eb10263fe068caedc5",
+          "original": "attack-001/attempt-001/source.png",
+          "frame": "attack-001/attempt-001/frame.png",
+          "frameSha256": "67d9c4279a17b4ed7e178364e96c4941b2c6cdeb584c479ba7c972f5e11ed410",
+          "actualPrompt": "attack-001/attempt-001/actual-prompt.txt",
+          "promptSha256": "770c2d18aa4ec3159f46da461ef452972949942ff4f6a9771044485faa146398",
+          "referenceInputs": [
+            {
+              "path": "attack-001/attempt-001/reference-01.png",
+              "sha256": "c4480655671ea228e75c3486662125a150aa0087a3b9e1a8b2474c91d209ae54"
+            }
+          ],
+          "offset": [
+            0,
+            2
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        },
+        {
+          "sha256": "3e97f260c9cc168d678c0b323a1f319700e493a0a88f11eb10263fe068caedc5",
+          "original": "attack-001/attempt-002/source.png",
+          "frame": "attack-001/attempt-002/frame.png",
+          "frameSha256": "d355eb00053a625202d9442dfb8ecacb2d257c8c22d3ac50087d618097061d9b",
+          "actualPrompt": "attack-001/attempt-002/actual-prompt.txt",
+          "promptSha256": "770c2d18aa4ec3159f46da461ef452972949942ff4f6a9771044485faa146398",
+          "referenceInputs": [
+            {
+              "path": "attack-001/attempt-002/reference-01.png",
+              "sha256": "c4480655671ea228e75c3486662125a150aa0087a3b9e1a8b2474c91d209ae54"
+            }
+          ],
+          "offset": [
+            0,
+            1
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": {
+            "verdict": "accept",
+            "reason": "实际近侧手臂向右伸直，远侧拳留在护脸位，双脚站立；整体播放另行检查",
+            "reviewer": "agent"
+          }
+        }
+      ],
+      "selected": 1
+    },
+    "attack-002": {
+      "pose": "Punch recovery: near elbow bends, fist retracts toward x300 y278, far fist at x309 y273. Same ready stance boots; body returns toward idle, no new step.",
+      "durationMs": 140,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "attack-002-prompt.txt",
+      "promptSha256": "1d6748ea485ef26f84c85cebdb0af4df4cffada5850108dfa687ceb96f90ec11",
+      "attempts": [
+        {
+          "sha256": "2b40a8e897824a152696eb9b0311b47d42b771cf08603c9d87e2b7aad4b91b00",
+          "original": "attack-002/attempt-001/source.png",
+          "frame": "attack-002/attempt-001/frame.png",
+          "frameSha256": "19f43a3b67ecb6aee6b78a3d3bcb7968261af5c35ae6e58391c6688e4f3e47e9",
+          "actualPrompt": "attack-002/attempt-001/actual-prompt.txt",
+          "promptSha256": "9bbf076e2db9a1939d212ca6dbe13dbaa9ed7cf02c7b277c33cc39d2308b6bf7",
+          "referenceInputs": [
+            {
+              "path": "attack-002/attempt-001/reference-01.png",
+              "sha256": "3e97f260c9cc168d678c0b323a1f319700e493a0a88f11eb10263fe068caedc5"
+            }
+          ],
+          "offset": [
+            0,
+            1
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": {
+            "verdict": "accept",
+            "reason": "实际近侧拳收回胸前，区别于出拳和待机姿态，无多余手脚；整体播放另行检查",
+            "reviewer": "agent"
+          }
+        }
+      ],
+      "selected": 0
+    }
+  },
+  "cycleReviews": {
+    "attack": {
+      "signature": "088249984ac2597d80fa8bf1fcc0a971c61f47aba4ab1c8f60978e462034b8e0",
+      "verdict": "accept",
+      "reviewer": "agent",
+      "reason": "浏览器1倍速度检查110/80/140ms三阶段，前摇/伸拳/收招可辨，双脚落地；关闭回待机保持3/3，开启后idle。仅该攻击素材与预览行为，未批准游戏集成或完整角色包。"
+    }
+  }
+}

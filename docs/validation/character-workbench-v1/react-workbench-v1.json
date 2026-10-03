@@ -1,0 +1,21 @@
+{
+  "frontend": "Vite + React + React Router + shadcn/ui + Jotai",
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "nodeTests": 56,
+  "pythonFocusedTests": 25,
+  "browser": {
+    "legacyRouteRedirect": "/engine-pilot/ -> /motion",
+    "directPipelineStep6": "passed",
+    "missingArtifactGate": "passed",
+    "artifactPrompt": "passed",
+    "routeNavigation": "passed",
+    "durationEdit": "50 -> 75ms, cycle 800 -> 825ms",
+    "visiblePlanAndCopy": "passed",
+    "narrowViewportWidth": 399,
+    "contentWidth": 399
+  },
+  "imageGenerationCalls": 0,
+  "commitCreated": false,
+  "screenshot": "react-workbench-v1.png"
+}

@@ -8,3 +8,12 @@ __pycache__/
 .venv/
 venv/
 .venv-*/
+node_modules/
+
+# 可按锁文件恢复的上游源码缓存；适配层和锁文件独立维护。
+vendor/sprite-gen/
+workbench/dist/
+
+# 前端试点资源由prepare:data从冻结素材重建
+workbench/public/data/
+workbench/.local-source.json

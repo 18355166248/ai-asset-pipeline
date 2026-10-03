@@ -1,0 +1,111 @@
+{
+  "frames": [
+    {
+      "filename": "0000",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 418
+      },
+      "duration": 100,
+      "trimmed": false,
+      "rotated": false
+    },
+    {
+      "filename": "0001",
+      "frame": {
+        "x": 418,
+        "y": 0,
+        "w": 418,
+        "h": 418
+      },
+      "duration": 100,
+      "trimmed": false,
+      "rotated": false
+    },
+    {
+      "filename": "0002",
+      "frame": {
+        "x": 836,
+        "y": 0,
+        "w": 418,
+        "h": 418
+      },
+      "duration": 100,
+      "trimmed": false,
+      "rotated": false
+    },
+    {
+      "filename": "0003",
+      "frame": {
+        "x": 0,
+        "y": 418,
+        "w": 418,
+        "h": 418
+      },
+      "duration": 100,
+      "trimmed": false,
+      "rotated": false
+    },
+    {
+      "filename": "0004",
+      "frame": {
+        "x": 418,
+        "y": 418,
+        "w": 418,
+        "h": 418
+      },
+      "duration": 100,
+      "trimmed": false,
+      "rotated": false
+    },
+    {
+      "filename": "0005",
+      "frame": {
+        "x": 836,
+        "y": 418,
+        "w": 418,
+        "h": 418
+      },
+      "duration": 100,
+      "trimmed": false,
+      "rotated": false
+    },
+    {
+      "filename": "0006",
+      "frame": {
+        "x": 0,
+        "y": 836,
+        "w": 418,
+        "h": 418
+      },
+      "duration": 100,
+      "trimmed": false,
+      "rotated": false
+    },
+    {
+      "filename": "0007",
+      "frame": {
+        "x": 418,
+        "y": 836,
+        "w": 418,
+        "h": 418
+      },
+      "duration": 100,
+      "trimmed": false,
+      "rotated": false
+    }
+  ],
+  "meta": {
+    "image": "source.png",
+    "frameTags": [
+      {
+        "name": "move",
+        "from": 0,
+        "to": 7,
+        "direction": "forward"
+      }
+    ]
+  }
+}

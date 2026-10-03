@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "manifest": "../../../output/mint-adventurer-singleframe-v5-repaired/bundle/manifest.json",
+  "action": "move",
+  "referenceFrame": 0,
+  "cutY": 110,
+  "feather": 12,
+  "headOffsetY": [0, 2, 0, -2, 0, 2, 0, -2]
+}

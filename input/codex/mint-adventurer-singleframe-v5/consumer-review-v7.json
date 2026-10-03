@@ -1,0 +1,34 @@
+{
+  "status": "draft",
+  "cycleReviews": {
+    "move": {
+      "signature": "2d541ecf57a4cb2b939c4aeda681d66d7efd977b4b8ce7350ab028ca9ff6b97f",
+      "verdict": "reject",
+      "reviewer": "agent",
+      "reason": "v7两张承重服饰局部修正已查看，仍有躯干宽度/领口高度变化；原地及消费端运动仅预览，不批准完整步态或游戏。"
+    }
+  },
+  "collectionManifestSha256": "e3d3ee09f282be5dbc751fa6aab97d317a5a729ec99d9076866c87b9e6619465",
+  "sourceChanges": {
+    "move-001": 3,
+    "move-005": 2
+  },
+  "actualNewGptCalls": 2,
+  "observations": [
+    "auto demo move3/8 x401 vs initial380",
+    "jump3/5 height38.7",
+    "auto demo ended idle x378.5",
+    "attack3/3 groundheight0"
+  ],
+  "proofs": [
+    "docs/validation/character-workbench-v1/playable-move-v6.png",
+    "docs/validation/character-workbench-v1/playable-jump-v6.png"
+  ],
+  "browserErrors": [],
+  "limits": [
+    "loop torso/neck variation remains",
+    "idle breathing missing",
+    "continuous key hold/touch acceptance not established",
+    "not a full combat game"
+  ]
+}

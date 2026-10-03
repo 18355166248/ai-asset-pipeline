@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "manifest": "../../output/mint-adventurer-transition-v1/bundle/manifest.json",
+  "action": "move-stop",
+  "operation": "upper-region",
+  "referenceFrame": 0,
+  "referenceImage": "mint-adventurer-head-consistency-v1/head-reference.png",
+  "cutY": 99,
+  "feather": 5,
+  "headOffsetY": [
+    0
+  ]
+}

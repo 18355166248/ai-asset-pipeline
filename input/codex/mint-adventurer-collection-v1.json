@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "title": "薄荷冒险者 · GPT 动作集合候选",
+  "inputs": [
+    {"manifest": "../../output/mint-adventurer-combat-v1/bundle/manifest.json", "actions": ["idle", "attack"]},
+    {"manifest": "../../output/mint-adventurer-passing-v6-head-lock/bundle/manifest.json", "actions": ["move"]}
+  ]
+}

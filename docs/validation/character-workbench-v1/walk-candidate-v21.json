@@ -1,0 +1,38 @@
+{
+  "status": "draft-candidate",
+  "actualNewGptCalls": 1,
+  "wholeGeneratedFrameAccepted": false,
+  "sourceOffsetOn512Canvas": [
+    20,
+    0
+  ],
+  "partialRectOn256Cell": [
+    140,
+    178,
+    224,
+    256
+  ],
+  "changes": [
+    {
+      "action": "move",
+      "frame": 1,
+      "changedPixels": 2439,
+      "outsideRectExact": true
+    }
+  ],
+  "otherFramesRgbaExact": true,
+  "timingAndLoopsUnchanged": true,
+  "pythonTests": 74,
+  "browser": {
+    "comparison": "walk-review-v21",
+    "normalSpeedObserved": true,
+    "sameFrameInspected": 1,
+    "diagnosticSlider": [
+      90,
+      130,
+      90
+    ]
+  },
+  "formalArtOrGameAcceptance": false,
+  "remaining": "Second support group and full walking visual acceptance remain unresolved; contour contact centers are diagnostic only."
+}

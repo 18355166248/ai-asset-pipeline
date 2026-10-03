@@ -1,0 +1,15 @@
+{
+  "deleted": [
+    "examples/motion-toolkit.html",
+    "examples/motion-toolkit.css",
+    "examples/motion-wizard.mjs (pure functions moved)",
+    "examples/sprite-gen-review.html",
+    "src/motion_toolkit_site.py",
+    "src/sprite_gen_review_site.py",
+    "workbench/src/engine-review.ts",
+    "tests/test_motion_toolkit_site.py"
+  ],
+  "movedExportRenderer": "examples/export-workbench",
+  "retiredStaticServerArchive": "output/archives/retired-html-frontend-20261003.tar.gz",
+  "productionInputsPreserved": true
+}

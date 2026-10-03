@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "inputs": [
+    {
+      "manifest": "../../output/mint-adventurer-collection-v20/bundle/manifest.json"
+    },
+    {
+      "manifest": "../../output/mint-adventurer-down-foot-source-v1/bundle/manifest.json"
+    }
+  ],
+  "states": [
+    {
+      "name": "move",
+      "loop": true,
+      "frames": [
+        {
+          "input": 0,
+          "action": "move",
+          "frame": 0,
+          "durationMs": 100
+        },
+        {
+          "input": 1,
+          "action": "move-down-source",
+          "frame": 0,
+          "durationMs": 100
+        },
+        {
+          "input": 0,
+          "action": "move",
+          "frame": 2,
+          "durationMs": 100
+        },
+        {
+          "input": 0,
+          "action": "move",
+          "frame": 3,
+          "durationMs": 100
+        },
+        {
+          "input": 0,
+          "action": "move",
+          "frame": 4,
+          "durationMs": 100
+        },
+        {
+          "input": 0,
+          "action": "move",
+          "frame": 5,
+          "durationMs": 100
+        },
+        {
+          "input": 0,
+          "action": "move",
+          "frame": 6,
+          "durationMs": 100
+        },
+        {
+          "input": 0,
+          "action": "move",
+          "frame": 7,
+          "durationMs": 100
+        }
+      ]
+    }
+  ]
+}

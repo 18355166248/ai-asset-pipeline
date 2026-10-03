@@ -1,4 +1,4 @@
 interface:
-  display_name: "角色动作素材包"
-  short_description: "整理角色待机与攻击动作，保留帧时长和循环属性，输出图集与离线验收预览"
-  default_prompt: "使用 $character-motion-kit 将这个角色的待机和攻击动作整理成可预览、可复用的素材包。"
+  display_name: "角色动作工具箱"
+  short_description: "基于 GPT 逐帧生成并修正二维角色动作，整理已有素材，保留来源、时长和验收记录"
+  default_prompt: "使用 $character-motion-kit 基于当前 GPT 生图制作和修正角色二维动作，明确所需素材并保留真实生成来源；已有图集或动画模型则直接整理预览与验收记录。"

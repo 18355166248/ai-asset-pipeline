@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "title": "薄荷冒险者 · 眨眼待机",
+  "direction": "right-facing side view",
+  "canvas": [
+    512,
+    512
+  ],
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    0.5,
+    0.947265625
+  ],
+  "actions": [
+    {
+      "name": "idle",
+      "loop": true,
+      "frames": [
+        {
+          "pose": "Original neutral open-eye guard pose, reused actual drawing.",
+          "durationMs": 3110
+        },
+        {
+          "pose": "Gentle blink only, preserve all other pixels.",
+          "durationMs": 90
+        }
+      ]
+    }
+  ]
+}

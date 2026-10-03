@@ -1,0 +1,47 @@
+[
+  {
+    "releaseMs": 10,
+    "visitedStartFrame": 0,
+    "cancelFrames": 2,
+    "finalAction": "idle",
+    "finalX": 0.26999999999999996
+  },
+  {
+    "releaseMs": 40,
+    "visitedStartFrame": 1,
+    "cancelFrames": 3,
+    "finalAction": "idle",
+    "finalX": 2.16
+  },
+  {
+    "releaseMs": 70,
+    "visitedStartFrame": 2,
+    "cancelFrames": 4,
+    "finalAction": "idle",
+    "finalX": 5.67
+  },
+  {
+    "releaseMs": 90,
+    "visitedStartFrame": 3,
+    "cancelFrames": 5,
+    "finalAction": "idle",
+    "finalX": 8.91
+  },
+  {
+    "startBoundaryTimePassed": true,
+    "lastStartRect": {
+      "x": 768,
+      "y": 1280,
+      "w": 256,
+      "h": 256,
+      "durationMs": 25
+    },
+    "firstMoveRect": {
+      "x": 0,
+      "y": 256,
+      "w": 256,
+      "h": 256,
+      "durationMs": 100
+    }
+  }
+]

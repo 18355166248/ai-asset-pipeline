@@ -1,0 +1,12 @@
+[
+  {
+    "releaseSeconds": 0.12,
+    "stopClip": "move-stop",
+    "finished": "idle"
+  },
+  {
+    "releaseSeconds": 0.52,
+    "stopClip": "stop-front",
+    "finished": "idle"
+  }
+]

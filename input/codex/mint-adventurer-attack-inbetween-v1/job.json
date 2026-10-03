@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "provider": "codex-builtin-imagegen",
+  "title": "出拳中间原画（不是完整攻击动作）",
+  "identity": "Cute chibi anime adventurer, chestnut bob, amber eyes, mint bow, ivory mint tunic, brown satchel, shorts, gloves and ankle boots. Fixed side camera and planted stance.",
+  "direction": "right-facing side view",
+  "canvas": [
+    512,
+    512
+  ],
+  "cell": [
+    256,
+    256
+  ],
+  "reference": {
+    "path": "reference.png",
+    "sha256": "16150bbb07456ecd01430f9e1ec77b6a2fbaf635d6ca2f8c334b90c3f532ae33"
+  },
+  "anchor": [
+    0.5,
+    0.947265625
+  ],
+  "actions": [
+    {
+      "name": "attack-inbetween",
+      "loop": false,
+      "frames": [
+        "attack-inbetween-000",
+        "attack-inbetween-001"
+      ]
+    }
+  ],
+  "frames": {
+    "attack-inbetween-000": {
+      "pose": "Near fist half extended between existing anticipation and straight punch, elbow still bent. Same head, body, clothes, boots and planted baseline.",
+      "durationMs": 40,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "attack-inbetween-000-prompt.txt",
+      "promptSha256": "ac067be057ccefa2a547711541dc8d040b653cad9c088260387ebe69dd58c7c1",
+      "attempts": [
+        {
+          "sha256": "17baff32a08f32f4ecda02aa844136a8df1912f8a73ae45d6d010dd5bd52922f",
+          "original": "attack-inbetween-000/attempt-001/source.png",
+          "frame": "attack-inbetween-000/attempt-001/frame.png",
+          "frameSha256": "e53497ee46fc746ec19ad1a1147e27ae8c0ffd71fab0201ad6e75aef0db7cd3e",
+          "actualPrompt": "attack-inbetween-000/attempt-001/actual-prompt.txt",
+          "promptSha256": "c7164d5680be04331d6cdf962272c77c80558a6a50548ae0c153eaad451ce92a",
+          "referenceInputs": [
+            {
+              "path": "attack-inbetween-000/attempt-001/reference-01.png",
+              "sha256": "16150bbb07456ecd01430f9e1ec77b6a2fbaf635d6ca2f8c334b90c3f532ae33"
+            },
+            {
+              "path": "attack-inbetween-000/attempt-001/reference-02.png",
+              "sha256": "c4173fcdba3681dc03b1132daf67b3842318ec1df22744728648f93ce0145d0d"
+            }
+          ],
+          "offset": [
+            0,
+            2
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        }
+      ],
+      "selected": 0
+    },
+    "attack-inbetween-001": {
+      "pose": "Near fist retracting from straight punch, elbow folding down, before guard recovery. Same head, body, clothes, boots and planted baseline.",
+      "durationMs": 45,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "attack-inbetween-001-prompt.txt",
+      "promptSha256": "abaa9f2897c50f4d541b29fedf4bacb37410cb8d15fde7e1f1f94629b5e911d5",
+      "attempts": [
+        {
+          "sha256": "6836d84dc89829ee001f9190588eb5a48a705f5ab95798bcf245a3bb49514d1a",
+          "original": "attack-inbetween-001/attempt-001/source.png",
+          "frame": "attack-inbetween-001/attempt-001/frame.png",
+          "frameSha256": "73583bf10cfabd0e43d74ff6ac14a264a72762d958da39da12d06b8b9c1f5732",
+          "actualPrompt": "attack-inbetween-001/attempt-001/actual-prompt.txt",
+          "promptSha256": "c22ef1a84c7b3b5aed39a31429096a910a68fd94a60321edc14a917390640bdc",
+          "referenceInputs": [
+            {
+              "path": "attack-inbetween-001/attempt-001/reference-01.png",
+              "sha256": "c4173fcdba3681dc03b1132daf67b3842318ec1df22744728648f93ce0145d0d"
+            },
+            {
+              "path": "attack-inbetween-001/attempt-001/reference-02.png",
+              "sha256": "8b00e98c944b2974b534232edf836e4da72044bc17f56d9bc85edc616d336750"
+            }
+          ],
+          "offset": [
+            0,
+            -2
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": {
+            "verdict": "reject",
+            "reason": "前拳已退到紧凑守势，接近原收招，不能作为伸直到收回之间的有效中间位。保留原图后只修正前拳与肘位置。",
+            "reviewer": "agent"
+          }
+        },
+        {
+          "sha256": "60c2d6d35297d8ed595e234c72160d7c3bc3e153c4c098d61724b554108eb1ba",
+          "original": "attack-inbetween-001/attempt-002/source.png",
+          "frame": "attack-inbetween-001/attempt-002/frame.png",
+          "frameSha256": "569af4aca779ace97717391ba36dea60fb81b5ad07954af2fd16dcaba460d1d7",
+          "actualPrompt": "attack-inbetween-001/attempt-002/actual-prompt.txt",
+          "promptSha256": "3c15b85e57a5c69d8ff417a74c761428822e05eb163a537ff5af097258777d11",
+          "referenceInputs": [
+            {
+              "path": "attack-inbetween-001/attempt-002/reference-01.png",
+              "sha256": "6836d84dc89829ee001f9190588eb5a48a705f5ab95798bcf245a3bb49514d1a"
+            },
+            {
+              "path": "attack-inbetween-001/attempt-002/reference-02.png",
+              "sha256": "c4173fcdba3681dc03b1132daf67b3842318ec1df22744728648f93ce0145d0d"
+            }
+          ],
+          "offset": [
+            0,
+            -3
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        }
+      ],
+      "selected": 1
+    }
+  }
+}

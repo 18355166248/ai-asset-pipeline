@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "provider": "codex-builtin-imagegen",
+  "title": "步行另半周期中间原画",
+  "identity": "同一薄荷冒险者，另一半支撑周期，原上身固定",
+  "direction": "right-facing side view",
+  "canvas": [
+    512,
+    512
+  ],
+  "cell": [
+    256,
+    256
+  ],
+  "reference": {
+    "path": "reference.png",
+    "sha256": "04a45a16c3542971f3754ca4927e981262a7e18309bae05a08e412370b6a1bd5"
+  },
+  "anchor": [
+    0.5,
+    0.947265625
+  ],
+  "actions": [
+    {
+      "name": "walk-far-inbetween",
+      "loop": false,
+      "frames": [
+        "walk-far-inbetween-000"
+      ]
+    }
+  ],
+  "frames": {
+    "walk-far-inbetween-000": {
+      "pose": "Halfway between down and passing; raised knee partly advances, support foot grounded",
+      "durationMs": 50,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "walk-far-inbetween-000-prompt.txt",
+      "promptSha256": "3430f2ba097248e2a92626c2a097226df159d9e24b576243aeb18551b35b3e11",
+      "attempts": [
+        {
+          "sha256": "022ad8ce4ff39058d188a1a5b0d49f00989d76417facef067fc6507f12140930",
+          "original": "walk-far-inbetween-000/attempt-001/source.png",
+          "frame": "walk-far-inbetween-000/attempt-001/frame.png",
+          "frameSha256": "17f46c02cc71af52aaabba1cc665851d7207eb29f3cd0ab9e11dc7978556b030",
+          "actualPrompt": "walk-far-inbetween-000/attempt-001/actual-prompt.txt",
+          "promptSha256": "f75e618949b9676dbb801f364c36708e087030f92b0b541b37a457519797812b",
+          "referenceInputs": [
+            {
+              "path": "walk-far-inbetween-000/attempt-001/reference-01.png",
+              "sha256": "04a45a16c3542971f3754ca4927e981262a7e18309bae05a08e412370b6a1bd5"
+            },
+            {
+              "path": "walk-far-inbetween-000/attempt-001/reference-02.png",
+              "sha256": "c3ec363a25234c59ea57e91d0a3a2e5879c978610f467518b5ac3d8c7454e0c2"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": {
+            "verdict": "reject",
+            "reason": "直接跨到经过姿态，抬脚已越过承重脚且承重脚偏后，不是需要的中间姿态；不采用。",
+            "reviewer": "agent"
+          }
+        },
+        {
+          "sha256": "4ae772b1c8a2555e0c338cfa77a8358ca4b2990079654eef222388aa92995569",
+          "original": "walk-far-inbetween-000/attempt-002/source.png",
+          "frame": "walk-far-inbetween-000/attempt-002/frame.png",
+          "frameSha256": "ae97d498a1863256503a430dcfc283a6f8a78004322e76b546570a915719e16b",
+          "actualPrompt": "walk-far-inbetween-000/attempt-002/actual-prompt.txt",
+          "promptSha256": "4793b21cd07fea84040dcb1797d394965ef76fca6cd986315b8dbafa76ecaf2b",
+          "referenceInputs": [
+            {
+              "path": "walk-far-inbetween-000/attempt-002/reference-01.png",
+              "sha256": "04a45a16c3542971f3754ca4927e981262a7e18309bae05a08e412370b6a1bd5"
+            }
+          ],
+          "offset": [
+            0,
+            -1
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": {
+            "verdict": "reject",
+            "reason": "整帧重画上身身份，不整帧采用。后脚仍在承重脚后并前摆，可作下身中间姿态来源；512画布y-1对齐地面，脚位未精确到提示坐标，不能宣称支撑点匹配，派生循环另验收。",
+            "reviewer": "agent"
+          }
+        }
+      ],
+      "selected": 1
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "status": "previewed-only",
+  "reviewer": "agent",
+  "actualNewGptCalls": 1,
+  "sourceFramePositions": 21,
+  "distinctRgbaPoses": 20,
+  "collectionManifestSha256": "c0fe7deabf23b8b15f8e060d2e1e863bb758b9a50b4f98eebb1f66aacea1bf82",
+  "observed": [
+    "workbench move-start1/1 at0.060/0.060s held",
+    "consumer auto-demo move2/8 x398.3 root0 scale1"
+  ],
+  "proof": "docs/validation/character-workbench-v1/move-start-v8.png",
+  "limits": [
+    "one shared intermediate does not cover every stopping leg phase",
+    "whole walking consistency remains rejected",
+    "consumer touch/continuous key hold/full game acceptance not established"
+  ]
+}

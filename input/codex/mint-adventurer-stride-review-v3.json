@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "manifest": "../../output/mint-adventurer-collection-v21/bundle/manifest.json",
+  "action": "move",
+  "markerKind": "contact-region",
+  "speed": 90,
+  "renderScale": 1,
+  "alphaThreshold": 128,
+  "observations": [
+    {
+      "frame": 0,
+      "group": "support-a",
+      "rect": [
+        140,
+        212,
+        224,
+        256
+      ]
+    },
+    {
+      "frame": 1,
+      "group": "support-a",
+      "rect": [
+        140,
+        212,
+        224,
+        256
+      ]
+    },
+    {
+      "frame": 2,
+      "group": "support-a",
+      "rect": [
+        110,
+        212,
+        170,
+        256
+      ]
+    },
+    {
+      "frame": 3,
+      "group": "support-a",
+      "rect": [
+        110,
+        212,
+        170,
+        256
+      ]
+    },
+    {
+      "frame": 4,
+      "group": "support-b",
+      "rect": [
+        140,
+        212,
+        224,
+        256
+      ]
+    },
+    {
+      "frame": 5,
+      "group": "support-b",
+      "rect": [
+        140,
+        212,
+        224,
+        256
+      ]
+    },
+    {
+      "frame": 6,
+      "group": "support-b",
+      "rect": [
+        100,
+        212,
+        170,
+        256
+      ]
+    },
+    {
+      "frame": 7,
+      "group": "support-b",
+      "rect": [
+        70,
+        205,
+        150,
+        256
+      ]
+    }
+  ],
+  "notes": "人工框扩大到完整承重靴子，避免轮廓边缘被窄框截断；只测接触轮廓，不自动确认固定脚点。",
+  "direction": 1
+}

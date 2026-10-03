@@ -1,0 +1,196 @@
+{
+  "version": 1,
+  "source": "walk.png",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "canvas": [
+    346,
+    457
+  ],
+  "baselineY": 436,
+  "frames": [
+    {
+      "index": 0,
+      "rect": [
+        0,
+        0,
+        314,
+        425
+      ],
+      "groundAnchorY": 415,
+      "translate": [
+        16,
+        21
+      ],
+      "durationMs": 67
+    },
+    {
+      "index": 1,
+      "rect": [
+        314,
+        0,
+        627,
+        425
+      ],
+      "groundAnchorY": 417,
+      "translate": [
+        16,
+        19
+      ],
+      "durationMs": 66
+    },
+    {
+      "index": 2,
+      "rect": [
+        627,
+        0,
+        940,
+        425
+      ],
+      "groundAnchorY": 418,
+      "translate": [
+        16,
+        18
+      ],
+      "durationMs": 67
+    },
+    {
+      "index": 3,
+      "rect": [
+        940,
+        0,
+        1254,
+        425
+      ],
+      "groundAnchorY": 417,
+      "translate": [
+        16,
+        19
+      ],
+      "durationMs": 67
+    },
+    {
+      "index": 4,
+      "rect": [
+        0,
+        425,
+        314,
+        844
+      ],
+      "groundAnchorY": 412,
+      "translate": [
+        16,
+        24
+      ],
+      "durationMs": 66
+    },
+    {
+      "index": 5,
+      "rect": [
+        314,
+        425,
+        627,
+        844
+      ],
+      "groundAnchorY": 412,
+      "translate": [
+        16,
+        24
+      ],
+      "durationMs": 67
+    },
+    {
+      "index": 6,
+      "rect": [
+        627,
+        425,
+        940,
+        844
+      ],
+      "groundAnchorY": 412,
+      "translate": [
+        16,
+        24
+      ],
+      "durationMs": 67
+    },
+    {
+      "index": 7,
+      "rect": [
+        940,
+        425,
+        1254,
+        844
+      ],
+      "groundAnchorY": 412,
+      "translate": [
+        16,
+        24
+      ],
+      "durationMs": 66
+    },
+    {
+      "index": 8,
+      "rect": [
+        0,
+        844,
+        314,
+        1254
+      ],
+      "groundAnchorY": 398,
+      "translate": [
+        16,
+        38
+      ],
+      "durationMs": 67
+    },
+    {
+      "index": 9,
+      "rect": [
+        314,
+        844,
+        627,
+        1254
+      ],
+      "groundAnchorY": 398,
+      "translate": [
+        16,
+        38
+      ],
+      "durationMs": 67
+    },
+    {
+      "index": 10,
+      "rect": [
+        627,
+        844,
+        940,
+        1254
+      ],
+      "groundAnchorY": 396,
+      "translate": [
+        16,
+        40
+      ],
+      "durationMs": 66
+    },
+    {
+      "index": 11,
+      "rect": [
+        940,
+        844,
+        1254,
+        1254
+      ],
+      "groundAnchorY": 398,
+      "translate": [
+        16,
+        38
+      ],
+      "durationMs": 67
+    }
+  ],
+  "note": "Explicit pilot registration: measured lowest opaque boot pixel as planted-foot anchor; translate only, no per-frame scaling or horizontal bbox alignment. All poses assumed to have at least one foot on ground; requires visual review."
+}

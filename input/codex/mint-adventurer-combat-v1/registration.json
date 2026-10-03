@@ -1,0 +1,46 @@
+{
+  "canvas": [
+    512,
+    512
+  ],
+  "targetSoleY": 485,
+  "method": "Agent checked both grounded feet. Whole canvas normalisation; no per-frame rescale of character. Alpha>128 sole bounds.",
+  "frames": [
+    {
+      "frame": "idle-000",
+      "measuredOpaqueBootSoleY": 483,
+      "offset": [
+        0,
+        2
+      ],
+      "selectedAttemptIndex": 0
+    },
+    {
+      "frame": "attack-000",
+      "measuredOpaqueBootSoleY": 483,
+      "offset": [
+        0,
+        2
+      ],
+      "selectedAttemptIndex": 0
+    },
+    {
+      "frame": "attack-001",
+      "measuredOpaqueBootSoleY": 484,
+      "offset": [
+        0,
+        1
+      ],
+      "selectedAttemptIndex": 1
+    },
+    {
+      "frame": "attack-002",
+      "measuredOpaqueBootSoleY": 484,
+      "offset": [
+        0,
+        1
+      ],
+      "selectedAttemptIndex": 0
+    }
+  ]
+}

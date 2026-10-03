@@ -1,0 +1,226 @@
+{
+  "version": 1,
+  "provider": "codex-builtin-imagegen",
+  "title": "薄荷冒险者 · 受击与跳跃姿态",
+  "identity": "Same original cute chestnut-bob anime adventurer, mint bow, golden eyes, ivory/mint tunic with leaf patterns, brown shorts/belt, leaf satchel, brown boots and fingerless gloves. Right facing, same proportions as actual idle master.",
+  "direction": "right-facing side view",
+  "canvas": [
+    512,
+    512
+  ],
+  "cell": [
+    256,
+    256
+  ],
+  "reference": {
+    "path": "reference.png",
+    "sha256": "f1a38bf4836378578d49b1f9fd09821a6bae03bd55526a9e28c6d23ad5a7f44d"
+  },
+  "anchor": [
+    0.5,
+    0.947265625
+  ],
+  "actions": [
+    {
+      "name": "hit",
+      "loop": false,
+      "frames": [
+        "hit-000"
+      ]
+    },
+    {
+      "name": "jump",
+      "loop": false,
+      "frames": [
+        "jump-000",
+        "jump-001",
+        "jump-002"
+      ]
+    }
+  ],
+  "frames": {
+    "hit-000": {
+      "pose": "Small recoil: torso leans back a little, near arm protects chest, far hand guards face, knees soft; same boots planted. Pained closed-eye expression but same face and character. No blood, no body displacement.",
+      "durationMs": 160,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "hit-000-prompt.txt",
+      "promptSha256": "bb804f534edba747ea269f13067452114d8fded6545d548f7cbf30886b2a1433",
+      "attempts": [
+        {
+          "sha256": "0b4207f58ec8dbe1352774ad900dc6bfdd7e7ac2f73b45cf7ca91c1da46e985a",
+          "original": "hit-000/attempt-001/source.png",
+          "frame": "hit-000/attempt-001/frame.png",
+          "frameSha256": "8351e737b9689f6645cbb6360e785e3d45b376560b6e2763aae5a314658706f0",
+          "actualPrompt": "hit-000/attempt-001/actual-prompt.txt",
+          "promptSha256": "1e78ca9dbb3f910411160b1f858d84be914564e8659c1d214b08502f221a7dd1",
+          "referenceInputs": [
+            {
+              "path": "hit-000/attempt-001/reference-01.png",
+              "sha256": "f1a38bf4836378578d49b1f9fd09821a6bae03bd55526a9e28c6d23ad5a7f44d"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": {
+            "verdict": "accept",
+            "reason": "闭眼轻微后仰护胸、双脚落地，身份可辨；仅单帧，整段另外验收",
+            "reviewer": "agent"
+          }
+        }
+      ],
+      "selected": 0
+    },
+    "jump-000": {
+      "pose": "Jump preparation: both knees bend slightly, pelvis lowers by12px, boots remain planted y485, same facing/scale. Arms poised near chest.",
+      "durationMs": 100,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "jump-000-prompt.txt",
+      "promptSha256": "e83df9af484911994e6b7b14d0fcdfa3c320d84db70b886195288dfe3a6c8eb3",
+      "attempts": [
+        {
+          "sha256": "a17642cc14d4e57e8c5feb7f5ea268fa895485199e006a10210ee1a4e4c96ba0",
+          "original": "jump-000/attempt-001/source.png",
+          "frame": "jump-000/attempt-001/frame.png",
+          "frameSha256": "d2f93c7f79c6fb023c47aa9b155d171f480eabaa8d772d42348a9c37440f2918",
+          "actualPrompt": "jump-000/attempt-001/actual-prompt.txt",
+          "promptSha256": "770c2d18aa4ec3159f46da461ef452972949942ff4f6a9771044485faa146398",
+          "referenceInputs": [
+            {
+              "path": "jump-000/attempt-001/reference-01.png",
+              "sha256": "f1a38bf4836378578d49b1f9fd09821a6bae03bd55526a9e28c6d23ad5a7f44d"
+            }
+          ],
+          "offset": [
+            0,
+            3
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": {
+            "verdict": "accept",
+            "reason": "实际双脚着地、双膝下压，作为起跳准备姿态；压缩比文字要求更大，整段另检",
+            "reviewer": "agent"
+          }
+        }
+      ],
+      "selected": 0
+    },
+    "jump-001": {
+      "pose": "Airborne POSE ONLY: body/head/pelvis location stays at the idle reference height, both knees bend and both boots tuck up off ground to y430. Game/preview provides root translation separately. Do not bake whole-body jump height, no grounded foot, no shadow.",
+      "durationMs": 220,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "jump-001-prompt.txt",
+      "promptSha256": "532d9973d7cff9168eb624bc3cad6a137bece3d2b0b1b526b0b1808d8e91e9bc",
+      "attempts": [
+        {
+          "sha256": "626ab800c9ac2fcf215092b2e6792e1f5f309d56868882aa0caeab924b42fcc2",
+          "original": "jump-001/attempt-001/source.png",
+          "frame": "jump-001/attempt-001/frame.png",
+          "frameSha256": "2997a9facfaf6df5d4c2a4ba66bd063e406e870af6a473d12723a1a7a0f0ca35",
+          "actualPrompt": "jump-001/attempt-001/actual-prompt.txt",
+          "promptSha256": "770c2d18aa4ec3159f46da461ef452972949942ff4f6a9771044485faa146398",
+          "referenceInputs": [
+            {
+              "path": "jump-001/attempt-001/reference-01.png",
+              "sha256": "f1a38bf4836378578d49b1f9fd09821a6bae03bd55526a9e28c6d23ad5a7f44d"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": {
+            "verdict": "accept",
+            "reason": "双脚收起，无落地脚；头部高度接近待机，未做整角色上移；仅单帧，整段另外验收",
+            "reviewer": "agent"
+          }
+        }
+      ],
+      "selected": 0
+    },
+    "jump-002": {
+      "pose": "Landing absorb: both boots planted at original spots y485, knees softly bent and pelvis lower by6px, near arm slightly forward to balance. Same facing/scale; returns to idle next.",
+      "durationMs": 120,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "jump-002-prompt.txt",
+      "promptSha256": "70495a9246b2f8bb1b475a5db7b2586c7e14359365e594c50c06a7d1fb615695",
+      "attempts": [
+        {
+          "sha256": "809ec7ca308d4fb8300244c2745f16c8b03b533ced6a0af9ed225be918b86ba8",
+          "original": "jump-002/attempt-001/source.png",
+          "frame": "jump-002/attempt-001/frame.png",
+          "frameSha256": "d2f94a222c34cb681ac8dbe16bf4a12a699ee00f84d3b4742ce5c23d3f272510",
+          "actualPrompt": "jump-002/attempt-001/actual-prompt.txt",
+          "promptSha256": "98a362d743711b6e3fd8aa9a659a9f454305b5aa043fc6b5940278759f7b0a53",
+          "referenceInputs": [
+            {
+              "path": "jump-002/attempt-001/reference-01.png",
+              "sha256": "a17642cc14d4e57e8c5feb7f5ea268fa895485199e006a10210ee1a4e4c96ba0"
+            },
+            {
+              "path": "jump-002/attempt-001/reference-02.png",
+              "sha256": "f1a38bf4836378578d49b1f9fd09821a6bae03bd55526a9e28c6d23ad5a7f44d"
+            }
+          ],
+          "offset": [
+            0,
+            2
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": {
+            "verdict": "reject",
+            "reason": "仍保持深蹲，未按要求接近待机；暂不选中",
+            "reviewer": "agent"
+          }
+        },
+        {
+          "sha256": "0c9136689028083e4eeb05e3db86a69807a43c6b83c1263ce5b6d1f0e1fc35ab",
+          "original": "jump-002/attempt-002/source.png",
+          "frame": "jump-002/attempt-002/frame.png",
+          "frameSha256": "90bab76933af842f1cd4e21ccffe789e31a7901caade3cb2b0fd056020d33a90",
+          "actualPrompt": "jump-002/attempt-002/actual-prompt.txt",
+          "promptSha256": "965ded19127080a0d685365822577f1fe72755c091b709dcd96bbec7a97dd27a",
+          "referenceInputs": [
+            {
+              "path": "jump-002/attempt-002/reference-01.png",
+              "sha256": "f1a38bf4836378578d49b1f9fd09821a6bae03bd55526a9e28c6d23ad5a7f44d"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": {
+            "verdict": "accept",
+            "reason": "双脚落地、身体接近待机，近拳更低，区别于失败深蹲；仅单帧，整段另外验收",
+            "reviewer": "agent"
+          }
+        }
+      ],
+      "selected": 1
+    }
+  }
+}

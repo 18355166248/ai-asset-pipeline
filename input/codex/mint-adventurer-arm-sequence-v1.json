@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "title": "\u6b65\u884c\u6446\u81c2\u6765\u6e90\u7f16\u6392\u5019\u9009",
+  "inputs": [
+    {
+      "manifest": "../../output/mint-adventurer-collection-v16/bundle/manifest.json"
+    },
+    {
+      "manifest": "../../output/mint-adventurer-arm-inbetween-v1/bundle/manifest.json"
+    },
+    {
+      "manifest": "../../output/mint-adventurer-singleframe-v5-repaired/bundle/manifest.json"
+    }
+  ],
+  "states": [
+    {
+      "name": "move",
+      "loop": true,
+      "frames": [
+        {
+          "input": 0,
+          "action": "move",
+          "frame": 0,
+          "durationMs": 100
+        },
+        {
+          "input": 0,
+          "action": "move",
+          "frame": 1,
+          "durationMs": 100
+        },
+        {
+          "input": 1,
+          "action": "arm-inbetween",
+          "frame": 0,
+          "durationMs": 100
+        },
+        {
+          "input": 1,
+          "action": "arm-inbetween",
+          "frame": 1,
+          "durationMs": 100
+        },
+        {
+          "input": 2,
+          "action": "move",
+          "frame": 4,
+          "durationMs": 100
+        },
+        {
+          "input": 1,
+          "action": "arm-inbetween",
+          "frame": 1,
+          "durationMs": 100
+        },
+        {
+          "input": 1,
+          "action": "arm-inbetween",
+          "frame": 0,
+          "durationMs": 100
+        },
+        {
+          "input": 0,
+          "action": "move",
+          "frame": 7,
+          "durationMs": 100
+        }
+      ]
+    }
+  ]
+}

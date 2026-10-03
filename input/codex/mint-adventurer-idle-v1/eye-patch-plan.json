@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "manifest": "../../../output/mint-adventurer-idle-v1-raw/bundle/manifest.json",
+  "action": "idle",
+  "operation": "rectangle-patch",
+  "referenceFrame": 0,
+  "rect": [
+    137,
+    61,
+    156,
+    82
+  ],
+  "feather": 2
+}

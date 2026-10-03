@@ -1,0 +1,49 @@
+{
+  "actualNewGptCallsThisTurn": 1,
+  "actualContactStopJobCallsTotal": 2,
+  "newPartialSourcesUsed": 2,
+  "wholeGeneratedCandidatesAccepted": false,
+  "collectionActions": 8,
+  "collectionFramePositions": 37,
+  "collectionDistinctRgba": 28,
+  "frontDurationsMs": [
+    55,
+    55,
+    30
+  ],
+  "backDurationsMs": [
+    40,
+    45,
+    45,
+    30
+  ],
+  "outsideAndProtectedRgbaEqual": true,
+  "lastStopFrameEqualsRealIdle": true,
+  "actualRuntimePathsPassed": 4,
+  "browserStopDemoFinal": {
+    "action": "idle",
+    "height": 0,
+    "x": 413.3,
+    "capturedErrors": []
+  },
+  "browserWorkbench": {
+    "clip": "stop-front",
+    "timeMs": 70,
+    "frame": "2/3"
+  },
+  "zipIntegrityPassed": true,
+  "status": "draft",
+  "gameAcceptance": false,
+  "remaining": "跨动作与完整美术/游戏仍需验收；停步裁切接缝与原画残留小噪点尚需检查",
+  "godot": {
+    "version": "4.7.2",
+    "realImportPassed": true,
+    "checks": 101,
+    "animations": 8
+  },
+  "defaultRootBrowserVerified": "current-v18",
+  "normalSpeedFrontReplayEnd": {
+    "timeMs": 140,
+    "frame": "3/3"
+  }
+}

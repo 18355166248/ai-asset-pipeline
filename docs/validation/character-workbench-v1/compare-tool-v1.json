@@ -1,0 +1,19 @@
+{
+  "actualNewGptCalls": 1,
+  "newCandidateMerged": false,
+  "job": "input/codex/mint-adventurer-support-return-v1/job/job.json",
+  "plannedPhase7Executed": false,
+  "comparisonTool": "src/motion_compare.py",
+  "preservesActualDurations": true,
+  "browserSeekMs": [
+    700,
+    100
+  ],
+  "bothFrameNumbers": [
+    8,
+    2
+  ],
+  "capturedJsErrors": [],
+  "pythonTests": 77,
+  "animationAcceptance": "not-completed"
+}

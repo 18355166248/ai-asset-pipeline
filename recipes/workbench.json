@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "title": "二维角色动作工作台",
+  "characters": [
+    {
+      "id": "my-hero", "title": "我的二维角色", "kind": "sprite",
+      "manifest": "../output/my-motion-pack/manifest.json", "direction": "side",
+      "defaultAction": "idle", "requiredActions": ["idle", "move", "attack", "hit"]
+    }
+  ]
+}

@@ -1,0 +1,804 @@
+{
+  "version": 1,
+  "provider": "codex-builtin-imagegen",
+  "title": "GPT 逐帧步行任务",
+  "identity": "Cute chibi anime adventurer, chestnut bob, amber eyes, mint bow, ivory and mint tunic, brown shorts, brown gloves and ankle boots, brown satchel. Warm natural skin. Clean consistent line art, restrained shading.",
+  "direction": "right-facing side view",
+  "canvas": [
+    512,
+    512
+  ],
+  "cell": [
+    256,
+    256
+  ],
+  "reference": {
+    "path": "reference.png",
+    "sha256": "34f6d2136b06fb04e2bfd500aff9af8df32d6b2cb2694dd345e900a1e18c49c8"
+  },
+  "actions": [
+    {
+      "name": "move",
+      "loop": true,
+      "frames": [
+        "move-000",
+        "move-001",
+        "move-002",
+        "move-003",
+        "move-004",
+        "move-005",
+        "move-006",
+        "move-007"
+      ]
+    }
+  ],
+  "frames": {
+    "move-000": {
+      "pose": "near-contact. Near foreground ankle x=316, y=478; far background ankle x=196, y=478. Opposite arm swing. This is anatomical limb identity, not silhouette-only matching.",
+      "durationMs": 100,
+      "guide": "move-000-guide.png",
+      "guideSha256": "2ac8e272aadc7bfeb619a7b7ab47c62b25917516e346412cd995726fc0f7d85c",
+      "prompt": "move-000-prompt.txt",
+      "promptSha256": "c14bd8db6af7d5f1bbc658a33da6b72bfd873b870293115b0e62ef02d8159fb2",
+      "attempts": [
+        {
+          "sha256": "f9c523abfa5abd8d97c5e386920ba1a4bd18e30384ce3cd0e758d3a6d27a5ae6",
+          "original": "move-000/attempt-001/source.png",
+          "frame": "move-000/attempt-001/frame.png",
+          "frameSha256": "fdaf02dd2d42522b79bbea6a1efd75a120189fa63c7cc9e2ea7634d65e38ea3f",
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        },
+        {
+          "sha256": "f9c523abfa5abd8d97c5e386920ba1a4bd18e30384ce3cd0e758d3a6d27a5ae6",
+          "original": "move-000/attempt-002/source.png",
+          "frame": "move-000/attempt-002/frame.png",
+          "frameSha256": "fdaf02dd2d42522b79bbea6a1efd75a120189fa63c7cc9e2ea7634d65e38ea3f",
+          "actualPrompt": "move-000/attempt-002/actual-prompt.txt",
+          "promptSha256": "c14bd8db6af7d5f1bbc658a33da6b72bfd873b870293115b0e62ef02d8159fb2",
+          "referenceInputs": [
+            {
+              "path": "move-000/attempt-002/reference-01.png",
+              "sha256": "2ac8e272aadc7bfeb619a7b7ab47c62b25917516e346412cd995726fc0f7d85c"
+            },
+            {
+              "path": "move-000/attempt-002/reference-02.png",
+              "sha256": "34f6d2136b06fb04e2bfd500aff9af8df32d6b2cb2694dd345e900a1e18c49c8"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        },
+        {
+          "sha256": "f9c523abfa5abd8d97c5e386920ba1a4bd18e30384ce3cd0e758d3a6d27a5ae6",
+          "original": "move-000/attempt-003/source.png",
+          "frame": "move-000/attempt-003/frame.png",
+          "frameSha256": "938e75ae8b4edebe7b653021eda02241cc530ed3017f79a62b3504b766440079",
+          "actualPrompt": "move-000/attempt-003/actual-prompt.txt",
+          "promptSha256": "c14bd8db6af7d5f1bbc658a33da6b72bfd873b870293115b0e62ef02d8159fb2",
+          "referenceInputs": [
+            {
+              "path": "move-000/attempt-003/reference-01.png",
+              "sha256": "2ac8e272aadc7bfeb619a7b7ab47c62b25917516e346412cd995726fc0f7d85c"
+            },
+            {
+              "path": "move-000/attempt-003/reference-02.png",
+              "sha256": "34f6d2136b06fb04e2bfd500aff9af8df32d6b2cb2694dd345e900a1e18c49c8"
+            }
+          ],
+          "offset": [
+            0,
+            7
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        }
+      ],
+      "selected": 2
+    },
+    "move-001": {
+      "pose": "near-down. Near foreground ankle x=286, y=480; far background ankle x=214, y=454. Opposite arm swing. This is anatomical limb identity, not silhouette-only matching.",
+      "durationMs": 100,
+      "guide": "move-001-guide.png",
+      "guideSha256": "f40abea6a2e460b001d820e9fbf01b21a9007b7e0f52e5b49806c05a2ea31e2a",
+      "prompt": "move-001-prompt.txt",
+      "promptSha256": "c5d11ae096a16e47de859f4f6c97691f8a0d663a6d2108397f2db75f0ad9d065",
+      "attempts": [
+        {
+          "sha256": "26252a13dbbfe1f405411fac700955d5c0ee77c2046c8c7b4f7d10d7ce3a12f5",
+          "original": "move-001/attempt-001/source.png",
+          "frame": "move-001/attempt-001/frame.png",
+          "frameSha256": "c2978394e717c251d72b0b07500addca0472754eea3fe635ca1afb270eeb649c",
+          "actualPrompt": "move-001/attempt-001/actual-prompt.txt",
+          "promptSha256": "0ccb13fc46c3ef46b2412d08545050eae1bb067c3593461d04ffe83806140a16",
+          "referenceInputs": [
+            {
+              "path": "move-001/attempt-001/reference-01.png",
+              "sha256": "f9c523abfa5abd8d97c5e386920ba1a4bd18e30384ce3cd0e758d3a6d27a5ae6"
+            },
+            {
+              "path": "move-001/attempt-001/reference-02.png",
+              "sha256": "f40abea6a2e460b001d820e9fbf01b21a9007b7e0f52e5b49806c05a2ea31e2a"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        },
+        {
+          "sha256": "26252a13dbbfe1f405411fac700955d5c0ee77c2046c8c7b4f7d10d7ce3a12f5",
+          "original": "move-001/attempt-002/source.png",
+          "frame": "move-001/attempt-002/frame.png",
+          "frameSha256": "f364fb67fc9a2bbb29031c8549593b3a7fff31058254032d9826ec0d4cb81110",
+          "actualPrompt": "move-001/attempt-002/actual-prompt.txt",
+          "promptSha256": "0ccb13fc46c3ef46b2412d08545050eae1bb067c3593461d04ffe83806140a16",
+          "referenceInputs": [
+            {
+              "path": "move-001/attempt-002/reference-01.png",
+              "sha256": "f9c523abfa5abd8d97c5e386920ba1a4bd18e30384ce3cd0e758d3a6d27a5ae6"
+            },
+            {
+              "path": "move-001/attempt-002/reference-02.png",
+              "sha256": "f40abea6a2e460b001d820e9fbf01b21a9007b7e0f52e5b49806c05a2ea31e2a"
+            }
+          ],
+          "offset": [
+            0,
+            1
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        },
+        {
+          "sha256": "6f02b91f077446253eaba901114a9f54c875a942080ac8269ed74750923df1c7",
+          "original": "move-001/attempt-003/source.png",
+          "frame": "move-001/attempt-003/frame.png",
+          "frameSha256": "15ff7db87633ca7c0397af8d6de4baeef6635c5f9219dbaa7d1b0ada653da21f",
+          "actualPrompt": "move-001/attempt-003/actual-prompt.txt",
+          "promptSha256": "93d078cd51785ad96f1eb44a3cc7d62db2a781f79cac9c15147d9dda38576288",
+          "referenceInputs": [
+            {
+              "path": "move-001/attempt-003/reference-01.png",
+              "sha256": "938e75ae8b4edebe7b653021eda02241cc530ed3017f79a62b3504b766440079"
+            }
+          ],
+          "offset": [
+            0,
+            8
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        },
+        {
+          "sha256": "37fe138776338bd86299780b76334ed2721ceb185f54c708dd09252c5b55913f",
+          "original": "move-001/attempt-004/source.png",
+          "frame": "move-001/attempt-004/frame.png",
+          "frameSha256": "4d2f3cdc8261817a0ae183510f35b4821c98f302cc4e3b9d2565520fc629e76d",
+          "actualPrompt": "move-001/attempt-004/actual-prompt.txt",
+          "promptSha256": "7b2be2433c821a5c6637b60cd0bca8495ad2f0d9b8b10fd08d5536e5dc4e7747",
+          "referenceInputs": [
+            {
+              "path": "move-001/attempt-004/reference-01.png",
+              "sha256": "15ff7db87633ca7c0397af8d6de4baeef6635c5f9219dbaa7d1b0ada653da21f"
+            },
+            {
+              "path": "move-001/attempt-004/reference-02.png",
+              "sha256": "938e75ae8b4edebe7b653021eda02241cc530ed3017f79a62b3504b766440079"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        }
+      ],
+      "selected": 3
+    },
+    "move-002": {
+      "pose": "far-passing. Near foreground ankle x=256, y=480; far background ankle x=256, y=438. Opposite arm swing. This is anatomical limb identity, not silhouette-only matching.",
+      "durationMs": 100,
+      "guide": "move-002-guide.png",
+      "guideSha256": "518398bee7c40460502ed53740c931da30578be6916bfad88e550e4377243af8",
+      "prompt": "move-002-prompt.txt",
+      "promptSha256": "0e8d2dd99bf017af12f6d73c06d6bea9acb5981b8cc8a34f5ce29c67c598b42a",
+      "attempts": [
+        {
+          "sha256": "b7ea7142fb64f9aaa81de48a9c66c25577376d5bf1615b82edad1082f70d837b",
+          "original": "move-002/attempt-001/source.png",
+          "frame": "move-002/attempt-001/frame.png",
+          "frameSha256": "1a36617ce16c14776da5ae2c924db22e5fe5bd84d7826c24de761afb811c3dc9",
+          "actualPrompt": "move-002/attempt-001/actual-prompt.txt",
+          "promptSha256": "0d9406f18d66f2e561f4521392b5703d64e36c1c1a602b6d662672cd21cec259",
+          "referenceInputs": [
+            {
+              "path": "move-002/attempt-001/reference-01.png",
+              "sha256": "518398bee7c40460502ed53740c931da30578be6916bfad88e550e4377243af8"
+            },
+            {
+              "path": "move-002/attempt-001/reference-02.png",
+              "sha256": "f9c523abfa5abd8d97c5e386920ba1a4bd18e30384ce3cd0e758d3a6d27a5ae6"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        },
+        {
+          "sha256": "04448ffc9be28f02246bf209eb994bab3540e0f221b16e762c4c7ca8033f1820",
+          "original": "move-002/attempt-002/source.png",
+          "frame": "move-002/attempt-002/frame.png",
+          "frameSha256": "ff2522d956fde100cda905f7212eed4351696ad9980af459c243642804280b29",
+          "actualPrompt": "move-002/attempt-002/actual-prompt.txt",
+          "promptSha256": "e054dd27e450f4e69fd56c07d26bc766bc13fe56e1870c36b398a61a49d7b8d9",
+          "referenceInputs": [
+            {
+              "path": "move-002/attempt-002/reference-01.png",
+              "sha256": "1a36617ce16c14776da5ae2c924db22e5fe5bd84d7826c24de761afb811c3dc9"
+            },
+            {
+              "path": "move-002/attempt-002/reference-02.png",
+              "sha256": "938e75ae8b4edebe7b653021eda02241cc530ed3017f79a62b3504b766440079"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": {
+            "verdict": "reject",
+            "reason": "实际输出仍为后脚后踢，未执行指定经过姿态；未选为预览版本",
+            "reviewer": "agent"
+          }
+        },
+        {
+          "sha256": "2a8e57fdde40305304d49703ba301cf0fde1967c46c587b1abcaa5fcb391973f",
+          "original": "move-002/attempt-003/source.png",
+          "frame": "move-002/attempt-003/frame.png",
+          "frameSha256": "aa94392ab9f028d74c28643029de6da0e9b02126a854ff3e33b6a0067b02901c",
+          "actualPrompt": "move-002/attempt-003/actual-prompt.txt",
+          "promptSha256": "7ccedff1c545dc85a0759048942e96a6da987a845a70813ee10fb5602f7f533b",
+          "referenceInputs": [
+            {
+              "path": "move-002/attempt-003/reference-01.png",
+              "sha256": "730a425818052418d8cd86dce936066688e6f4f2ba3fc00db8d6b6684a316576"
+            },
+            {
+              "path": "move-002/attempt-003/reference-02.png",
+              "sha256": "938e75ae8b4edebe7b653021eda02241cc530ed3017f79a62b3504b766440079"
+            }
+          ],
+          "offset": [
+            0,
+            -3
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        }
+      ],
+      "selected": 2
+    },
+    "move-003": {
+      "pose": "far-swing. Near foreground ankle x=221, y=478; far background ankle x=294, y=458. Opposite arm swing. This is anatomical limb identity, not silhouette-only matching.",
+      "durationMs": 100,
+      "guide": "move-003-guide.png",
+      "guideSha256": "2bdc6fd07b927c89bd4ec300d6f6838a9cc2f2c6c252989289246b2c572dba81",
+      "prompt": "move-003-prompt.txt",
+      "promptSha256": "eab4de394a674077da09c2d29dca1f05ddec08799915a9e100cc66b80c5bcb59",
+      "attempts": [
+        {
+          "sha256": "67e8f37f0dd8512d63549aa9a4bc997d41a22410bca5d8dcc284de731c000eaa",
+          "original": "move-003/attempt-001/source.png",
+          "frame": "move-003/attempt-001/frame.png",
+          "frameSha256": "703349a66d16654a251ae47236b8c592772e9b62d99ce99ee8b3c3fd87620938",
+          "actualPrompt": "move-003/attempt-001/actual-prompt.txt",
+          "promptSha256": "6d34dda487b9fc03fa0336dd19bb512ed83a9ea27b138680c78f711a64f90034",
+          "referenceInputs": [
+            {
+              "path": "move-003/attempt-001/reference-01.png",
+              "sha256": "b7ea7142fb64f9aaa81de48a9c66c25577376d5bf1615b82edad1082f70d837b"
+            },
+            {
+              "path": "move-003/attempt-001/reference-02.png",
+              "sha256": "2bdc6fd07b927c89bd4ec300d6f6838a9cc2f2c6c252989289246b2c572dba81"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        },
+        {
+          "sha256": "67e8f37f0dd8512d63549aa9a4bc997d41a22410bca5d8dcc284de731c000eaa",
+          "original": "move-003/attempt-002/source.png",
+          "frame": "move-003/attempt-002/frame.png",
+          "frameSha256": "c30efb9b6a955ed6d52c5d3f9f9427a733af84653e51614843a50af06d899749",
+          "actualPrompt": "move-003/attempt-002/actual-prompt.txt",
+          "promptSha256": "6d34dda487b9fc03fa0336dd19bb512ed83a9ea27b138680c78f711a64f90034",
+          "referenceInputs": [
+            {
+              "path": "move-003/attempt-002/reference-01.png",
+              "sha256": "b7ea7142fb64f9aaa81de48a9c66c25577376d5bf1615b82edad1082f70d837b"
+            },
+            {
+              "path": "move-003/attempt-002/reference-02.png",
+              "sha256": "2bdc6fd07b927c89bd4ec300d6f6838a9cc2f2c6c252989289246b2c572dba81"
+            }
+          ],
+          "offset": [
+            0,
+            -7
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        }
+      ],
+      "selected": 1
+    },
+    "move-004": {
+      "pose": "far-contact. Near foreground ankle x=196, y=478; far background ankle x=316, y=478. Opposite arm swing. This is anatomical limb identity, not silhouette-only matching.",
+      "durationMs": 100,
+      "guide": "move-004-guide.png",
+      "guideSha256": "0d4a372f6ab615a2fe339744f31f4d60d31dcdf41868c834406ca05b33261b67",
+      "prompt": "move-004-prompt.txt",
+      "promptSha256": "6f6bd9130deb8717ffa84db5e5118f29f649a1bd22405ec142bbb365627e1f36",
+      "attempts": [
+        {
+          "sha256": "1a8234ce8df5e47fbe5b5b18ea3f9b7e3f0ef5b4991edfbd69e179ded3f1f92f",
+          "original": "move-004/attempt-001/source.png",
+          "frame": "move-004/attempt-001/frame.png",
+          "frameSha256": "93176585ed796df34be1dc8fff9574cf3c54df0c23caa51dadf256678ee19f9b",
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": {
+            "verdict": "reject",
+            "reason": "Near visible arm remains behind torso, rather than swinging forward as opposite-contact guide requests. Anatomical near/far legs remain ambiguous; do not expand this pose into all eight frames.",
+            "reviewer": "agent"
+          }
+        },
+        {
+          "sha256": "e8808ab04fb7e5a66846f356fbf80ad74e0cae1fdcb6b2881b11958a8e87e823",
+          "original": "move-004/attempt-002/source.png",
+          "frame": "move-004/attempt-002/frame.png",
+          "frameSha256": "0d6aa7820647081aa4705f341cef57082976bb5d2b55272c4ba09ddcdbfa779d",
+          "actualPrompt": "move-004/attempt-002/actual-prompt.txt",
+          "promptSha256": "f7cdade7237c6ac69bc81b7acb810efdc605cdada1a4b2f4aac568f1c45b27fd",
+          "referenceInputs": [
+            {
+              "path": "move-004/attempt-002/reference-01.png",
+              "sha256": "f9c523abfa5abd8d97c5e386920ba1a4bd18e30384ce3cd0e758d3a6d27a5ae6"
+            },
+            {
+              "path": "move-004/attempt-002/reference-02.png",
+              "sha256": "0d4a372f6ab615a2fe339744f31f4d60d31dcdf41868c834406ca05b33261b67"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        },
+        {
+          "sha256": "e8808ab04fb7e5a66846f356fbf80ad74e0cae1fdcb6b2881b11958a8e87e823",
+          "original": "move-004/attempt-003/source.png",
+          "frame": "move-004/attempt-003/frame.png",
+          "frameSha256": "574ad12c544f88b3a8f9424493a126c0753e7106fc4afb1ea4adb01ab44b9c18",
+          "actualPrompt": "move-004/attempt-003/actual-prompt.txt",
+          "promptSha256": "f7cdade7237c6ac69bc81b7acb810efdc605cdada1a4b2f4aac568f1c45b27fd",
+          "referenceInputs": [
+            {
+              "path": "move-004/attempt-003/reference-01.png",
+              "sha256": "f9c523abfa5abd8d97c5e386920ba1a4bd18e30384ce3cd0e758d3a6d27a5ae6"
+            },
+            {
+              "path": "move-004/attempt-003/reference-02.png",
+              "sha256": "0d4a372f6ab615a2fe339744f31f4d60d31dcdf41868c834406ca05b33261b67"
+            }
+          ],
+          "offset": [
+            0,
+            -3
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        }
+      ],
+      "selected": 2
+    },
+    "move-005": {
+      "pose": "far-down. Near foreground ankle x=214, y=454; far background ankle x=286, y=480. Opposite arm swing. This is anatomical limb identity, not silhouette-only matching.",
+      "durationMs": 100,
+      "guide": "move-005-guide.png",
+      "guideSha256": "8de402374fd49c94b2d1dee1b1e98fdfb0850097eecba41d9b7ec8d758a6c075",
+      "prompt": "move-005-prompt.txt",
+      "promptSha256": "459427e9719d3119e04c0d7f28f53ab50f5db46c1d95f06f1e4d4906b3a9aad1",
+      "attempts": [
+        {
+          "sha256": "bf25937babf63867efd9c36958adb1460440d38d8481454e7570491feca77f81",
+          "original": "move-005/attempt-001/source.png",
+          "frame": "move-005/attempt-001/frame.png",
+          "frameSha256": "cde411227ee214a0633cc5a1610ac168c09265ed6e5c4064b70ad88c03db73d0",
+          "actualPrompt": "move-005/attempt-001/actual-prompt.txt",
+          "promptSha256": "dad308bd72d1eafae068d1ae4cb45450185085d820bdd1a298e168285041a6d1",
+          "referenceInputs": [
+            {
+              "path": "move-005/attempt-001/reference-01.png",
+              "sha256": "e8808ab04fb7e5a66846f356fbf80ad74e0cae1fdcb6b2881b11958a8e87e823"
+            },
+            {
+              "path": "move-005/attempt-001/reference-02.png",
+              "sha256": "8de402374fd49c94b2d1dee1b1e98fdfb0850097eecba41d9b7ec8d758a6c075"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        },
+        {
+          "sha256": "bf25937babf63867efd9c36958adb1460440d38d8481454e7570491feca77f81",
+          "original": "move-005/attempt-002/source.png",
+          "frame": "move-005/attempt-002/frame.png",
+          "frameSha256": "e6ad08a337834d4401008ee8e562677bb14fe71bcccc0613e6fd60a7844a340c",
+          "actualPrompt": "move-005/attempt-002/actual-prompt.txt",
+          "promptSha256": "dad308bd72d1eafae068d1ae4cb45450185085d820bdd1a298e168285041a6d1",
+          "referenceInputs": [
+            {
+              "path": "move-005/attempt-002/reference-01.png",
+              "sha256": "e8808ab04fb7e5a66846f356fbf80ad74e0cae1fdcb6b2881b11958a8e87e823"
+            },
+            {
+              "path": "move-005/attempt-002/reference-02.png",
+              "sha256": "8de402374fd49c94b2d1dee1b1e98fdfb0850097eecba41d9b7ec8d758a6c075"
+            }
+          ],
+          "offset": [
+            0,
+            1
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        },
+        {
+          "sha256": "92910ab4b5935f0e39d14cdb9dcfe283f9e8f676271745e2f153bf8230e4d573",
+          "original": "move-005/attempt-003/source.png",
+          "frame": "move-005/attempt-003/frame.png",
+          "frameSha256": "aeb6be04b0b9894a4362320b031baa029ecc7ec7af902dca7f7082d6f2e6ac5c",
+          "actualPrompt": "move-005/attempt-003/actual-prompt.txt",
+          "promptSha256": "b5149b28f4f61053ba366ffc22de68bf0d02e85fdee65ce3edfd7df458b7415d",
+          "referenceInputs": [
+            {
+              "path": "move-005/attempt-003/reference-01.png",
+              "sha256": "e6ad08a337834d4401008ee8e562677bb14fe71bcccc0613e6fd60a7844a340c"
+            },
+            {
+              "path": "move-005/attempt-003/reference-02.png",
+              "sha256": "938e75ae8b4edebe7b653021eda02241cc530ed3017f79a62b3504b766440079"
+            }
+          ],
+          "offset": [
+            0,
+            -1
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        }
+      ],
+      "selected": 2
+    },
+    "move-006": {
+      "pose": "near-passing. Near foreground ankle x=256, y=438; far background ankle x=256, y=480. Opposite arm swing. This is anatomical limb identity, not silhouette-only matching.",
+      "durationMs": 100,
+      "guide": "move-006-guide.png",
+      "guideSha256": "3e862bcf7ac647397fb1310c3c97880ee52fd9e89fb0b59313d5acfc58ec6eba",
+      "prompt": "move-006-prompt.txt",
+      "promptSha256": "d7220324b6aa2a8115f45881ba71795397157c3700d4051ff932e30a0b2ef7d5",
+      "attempts": [
+        {
+          "sha256": "076e83d54534551eeba2133c9986359f898305f8fdfbdd8ef1887b47b5a5b4ce",
+          "original": "move-006/attempt-001/source.png",
+          "frame": "move-006/attempt-001/frame.png",
+          "frameSha256": "5aef0661572056bc17b8a6444410dc8462d2e64d9314ef48f3f9672af3566936",
+          "actualPrompt": "move-006/attempt-001/actual-prompt.txt",
+          "promptSha256": "855757daef5e3d10c06228fd1b4be57d409a012b57749104960bdc3d61815a62",
+          "referenceInputs": [
+            {
+              "path": "move-006/attempt-001/reference-01.png",
+              "sha256": "3e862bcf7ac647397fb1310c3c97880ee52fd9e89fb0b59313d5acfc58ec6eba"
+            },
+            {
+              "path": "move-006/attempt-001/reference-02.png",
+              "sha256": "f9c523abfa5abd8d97c5e386920ba1a4bd18e30384ce3cd0e758d3a6d27a5ae6"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        },
+        {
+          "sha256": "076e83d54534551eeba2133c9986359f898305f8fdfbdd8ef1887b47b5a5b4ce",
+          "original": "move-006/attempt-002/source.png",
+          "frame": "move-006/attempt-002/frame.png",
+          "frameSha256": "1d2beff0d59277329661508827d37489d31aa4d95830d48a89c7517bd10168b3",
+          "actualPrompt": "move-006/attempt-002/actual-prompt.txt",
+          "promptSha256": "855757daef5e3d10c06228fd1b4be57d409a012b57749104960bdc3d61815a62",
+          "referenceInputs": [
+            {
+              "path": "move-006/attempt-002/reference-01.png",
+              "sha256": "3e862bcf7ac647397fb1310c3c97880ee52fd9e89fb0b59313d5acfc58ec6eba"
+            },
+            {
+              "path": "move-006/attempt-002/reference-02.png",
+              "sha256": "f9c523abfa5abd8d97c5e386920ba1a4bd18e30384ce3cd0e758d3a6d27a5ae6"
+            }
+          ],
+          "offset": [
+            0,
+            4
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        }
+      ],
+      "selected": 1
+    },
+    "move-007": {
+      "pose": "near-swing. Near foreground ankle x=294, y=458; far background ankle x=221, y=478. Opposite arm swing. This is anatomical limb identity, not silhouette-only matching.",
+      "durationMs": 100,
+      "guide": "move-007-guide.png",
+      "guideSha256": "165923458170a7c1cacb31ad5d7827dc2794205fb0d0db5a077c43be2a3f6b9a",
+      "prompt": "move-007-prompt.txt",
+      "promptSha256": "4f17cf2d892e2f634ce6dba54eb3036de5077d46046e613674fd8feecafeb142",
+      "attempts": [
+        {
+          "sha256": "5e7a11678c78e56aa1d35775e5d429f418ab0c89cf7902fa6dcfe0d0ccc9c38a",
+          "original": "move-007/attempt-001/source.png",
+          "frame": "move-007/attempt-001/frame.png",
+          "frameSha256": "dda8c3960308bc6b22ceb1029ad1f0f0773d538cb4a4054d512ff2ba2c737c8b",
+          "actualPrompt": "move-007/attempt-001/actual-prompt.txt",
+          "promptSha256": "2dde061b3f0b93ea02da1502910c1b5bc20fd46d174cd41c7091f394f6888f52",
+          "referenceInputs": [
+            {
+              "path": "move-007/attempt-001/reference-01.png",
+              "sha256": "076e83d54534551eeba2133c9986359f898305f8fdfbdd8ef1887b47b5a5b4ce"
+            },
+            {
+              "path": "move-007/attempt-001/reference-02.png",
+              "sha256": "165923458170a7c1cacb31ad5d7827dc2794205fb0d0db5a077c43be2a3f6b9a"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        },
+        {
+          "sha256": "5e7a11678c78e56aa1d35775e5d429f418ab0c89cf7902fa6dcfe0d0ccc9c38a",
+          "original": "move-007/attempt-002/source.png",
+          "frame": "move-007/attempt-002/frame.png",
+          "frameSha256": "e9d20d58ea2f12034d4ecc40626147c18464f153f0cb2952d34490edab12570c",
+          "actualPrompt": "move-007/attempt-002/actual-prompt.txt",
+          "promptSha256": "2dde061b3f0b93ea02da1502910c1b5bc20fd46d174cd41c7091f394f6888f52",
+          "referenceInputs": [
+            {
+              "path": "move-007/attempt-002/reference-01.png",
+              "sha256": "076e83d54534551eeba2133c9986359f898305f8fdfbdd8ef1887b47b5a5b4ce"
+            },
+            {
+              "path": "move-007/attempt-002/reference-02.png",
+              "sha256": "165923458170a7c1cacb31ad5d7827dc2794205fb0d0db5a077c43be2a3f6b9a"
+            }
+          ],
+          "offset": [
+            0,
+            -4
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        },
+        {
+          "sha256": "372822244a211cc41ab7ac93f844e2cfda5816689e6849a6a15f1e88bdf41f57",
+          "original": "move-007/attempt-003/source.png",
+          "frame": "move-007/attempt-003/frame.png",
+          "frameSha256": "2c32c300d234cfcf1f05209cf8c62b9b72331f1c4d9c787785c3207d73145895",
+          "actualPrompt": "move-007/attempt-003/actual-prompt.txt",
+          "promptSha256": "f4b128b41de6ef7b84eb74039c812dd77d0a1ff93bb57ad35f321b54bc75227d",
+          "referenceInputs": [
+            {
+              "path": "move-007/attempt-003/reference-01.png",
+              "sha256": "938e75ae8b4edebe7b653021eda02241cc530ed3017f79a62b3504b766440079"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        },
+        {
+          "sha256": "c45baa11b6d133520719c8f515756f6fabbfaea12d9cab5ef884190aa65d9b11",
+          "original": "move-007/attempt-004/source.png",
+          "frame": "move-007/attempt-004/frame.png",
+          "frameSha256": "68c0295674fbfa019ebf2113082c39dabe1c19a9ff5ccaf185dc7418a8fa5246",
+          "actualPrompt": "move-007/attempt-004/actual-prompt.txt",
+          "promptSha256": "e9f022d99906412a1ca774a01e11aec4b1855fba715b422dd3b1d7e50f9a2547",
+          "referenceInputs": [
+            {
+              "path": "move-007/attempt-004/reference-01.png",
+              "sha256": "57b517f2130e735d2ba34b532296721bce3c01630d580df073507421d7801c3e"
+            },
+            {
+              "path": "move-007/attempt-004/reference-02.png",
+              "sha256": "165923458170a7c1cacb31ad5d7827dc2794205fb0d0db5a077c43be2a3f6b9a"
+            },
+            {
+              "path": "move-007/attempt-004/reference-03.png",
+              "sha256": "03bcf2d32401a8ad41abad4a1486bd9c23bec55d2a526528d1edd89589e26924"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": {
+            "verdict": "reject",
+            "reason": "摆腿靴子确已离地，但整帧最低脚底为463而基准485；此未配准版本不直接用于播放。保留原图，新建同一生图的22px纵向配准版本，不算新增GPT调用。",
+            "reviewer": "agent"
+          }
+        },
+        {
+          "sha256": "c45baa11b6d133520719c8f515756f6fabbfaea12d9cab5ef884190aa65d9b11",
+          "original": "move-007/attempt-005/source.png",
+          "frame": "move-007/attempt-005/frame.png",
+          "frameSha256": "4d3fca3dbcded867dfd8d2ac840796047f63769d3bfd7ab17fda49b8185efe3a",
+          "actualPrompt": "move-007/attempt-005/actual-prompt.txt",
+          "promptSha256": "e9f022d99906412a1ca774a01e11aec4b1855fba715b422dd3b1d7e50f9a2547",
+          "referenceInputs": [
+            {
+              "path": "move-007/attempt-005/reference-01.png",
+              "sha256": "57b517f2130e735d2ba34b532296721bce3c01630d580df073507421d7801c3e"
+            },
+            {
+              "path": "move-007/attempt-005/reference-02.png",
+              "sha256": "165923458170a7c1cacb31ad5d7827dc2794205fb0d0db5a077c43be2a3f6b9a"
+            },
+            {
+              "path": "move-007/attempt-005/reference-03.png",
+              "sha256": "03bcf2d32401a8ad41abad4a1486bd9c23bec55d2a526528d1edd89589e26924"
+            }
+          ],
+          "offset": [
+            0,
+            22
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": {
+            "verdict": "reject",
+            "reason": "配准22px后的整帧仍有头颈位置漂移，头部复用候选有重影；整帧不接受。只作为透明下半身裁切来源，v10衍生包保留旧头颈/上身；单相位改善不代表完整步态接受。",
+            "reviewer": "agent"
+          }
+        }
+      ],
+      "selected": 4
+    }
+  },
+  "anchor": [
+    0.5,
+    0.947265625
+  ],
+  "cycleReviews": {
+    "move": {
+      "signature": "b7b557738f35baad5318478ff837e8e882f37b3158a7f87081991e7f3bb5d99c",
+      "verdict": "reject",
+      "reviewer": "agent",
+      "reason": "当前源原画仍有躯干/头颈比例差异，第8帧仅能在显式旧上身复用后改善摆腿。v10派生循环保留8帧800ms，尚未达到完整美术接受，任意步态相位停步未解决。"
+    }
+  }
+}

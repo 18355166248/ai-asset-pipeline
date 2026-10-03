@@ -1,0 +1,14 @@
+{
+  "sourceJob": "job.json",
+  "cycleReviews": {
+    "move": {
+      "signature": "1bdbf72445cd7cb03fb21d8fe827a6ed6561ffce6daa2a9340391f190ad09bb6",
+      "verdict": "reject",
+      "reviewer": "agent",
+      "reason": "v6 经过姿态已纠正；原画/固定头部衍生循环仍有躯干宽度和衣服轮廓变化，浏览器证据 docs/validation/character-workbench-v1/passing-v6.png；整体步态未通过"
+    }
+  },
+  "evidence": "docs/validation/character-workbench-v1/passing-v6.png",
+  "derivedAtlasSha256": "40499746643f35872efbbb8d6e3f15d30b3b8aea174e0705bf8f7a2145420314",
+  "note": "Source frame review applies to current selected raw frames; fixed-head derived atlas inspected separately, still not approved."
+}

@@ -1,0 +1,34 @@
+{
+  "actualGptCalls": 0,
+  "status": "draft",
+  "checks": [
+    {
+      "action": "move",
+      "frames": 8,
+      "bodyBytesEqual": true,
+      "sourceTimingLoopEqual": true,
+      "rebuildAtlasEqual": true
+    },
+    {
+      "action": "move-start",
+      "frames": 1,
+      "bodyBytesEqual": true,
+      "sourceTimingLoopEqual": true,
+      "rebuildAtlasEqual": true
+    },
+    {
+      "action": "move-stop",
+      "frames": 1,
+      "bodyBytesEqual": true,
+      "sourceTimingLoopEqual": true,
+      "rebuildAtlasEqual": true
+    }
+  ],
+  "regionLockTests": 5,
+  "gameAcceptance": false,
+  "runtimeTransitionsAndDisplacementEqual": true,
+  "runtimeFinalAction": "idle",
+  "gifSamplingMs": 20,
+  "gifCameraFollowsCharacter": true,
+  "gifSamplesAreNotNewDrawings": true
+}

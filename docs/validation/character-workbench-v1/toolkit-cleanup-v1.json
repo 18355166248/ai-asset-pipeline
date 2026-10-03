@@ -1,0 +1,241 @@
+{
+  "retired": [
+    {
+      "path": "arm-v17",
+      "bytes": 7841815,
+      "files": 20
+    },
+    {
+      "path": "attack-v13",
+      "bytes": 8450435,
+      "files": 26
+    },
+    {
+      "path": "candidate-v21",
+      "bytes": 24276427,
+      "files": 118
+    },
+    {
+      "path": "candidate-v22",
+      "bytes": 24742034,
+      "files": 120
+    },
+    {
+      "path": "compare-tool-v1",
+      "bytes": 2428225,
+      "files": 4
+    },
+    {
+      "path": "compare-tool-v2",
+      "bytes": 2446507,
+      "files": 4
+    },
+    {
+      "path": "compare-tool-v3",
+      "bytes": 2446818,
+      "files": 4
+    },
+    {
+      "path": "current-v16",
+      "bytes": 20963688,
+      "files": 103
+    },
+    {
+      "path": "current-v17",
+      "bytes": 21251086,
+      "files": 114
+    },
+    {
+      "path": "current-v18",
+      "bytes": 23860532,
+      "files": 124
+    },
+    {
+      "path": "current-v19",
+      "bytes": 25246084,
+      "files": 128
+    },
+    {
+      "path": "current-v19-toolkit",
+      "bytes": 24274030,
+      "files": 117
+    },
+    {
+      "path": "entry-redirect-v20.html",
+      "bytes": 350,
+      "files": 1
+    },
+    {
+      "path": "generation-plan.json",
+      "bytes": 38,
+      "files": 1
+    },
+    {
+      "path": "hit-v15",
+      "bytes": 9512276,
+      "files": 26
+    },
+    {
+      "path": "identity-v16",
+      "bytes": 9304917,
+      "files": 26
+    },
+    {
+      "path": "jump-v14",
+      "bytes": 8957380,
+      "files": 26
+    },
+    {
+      "path": "latest-v16",
+      "bytes": 18443690,
+      "files": 103
+    },
+    {
+      "path": "latest-v16-delivery",
+      "bytes": 18443690,
+      "files": 103
+    },
+    {
+      "path": "latest-v16-site",
+      "bytes": 19263578,
+      "files": 114
+    },
+    {
+      "path": "legacy-v10.html",
+      "bytes": 5008,
+      "files": 1
+    },
+    {
+      "path": "main-7e0ac31158681b89.mjs",
+      "bytes": 19054,
+      "files": 1
+    },
+    {
+      "path": "main.mjs",
+      "bytes": 19003,
+      "files": 1
+    },
+    {
+      "path": "manifest-696890f244a9fbed.json",
+      "bytes": 1035869,
+      "files": 1
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 1035869,
+      "files": 1
+    },
+    {
+      "path": "motion-bbfc154cfe8a696c.mjs",
+      "bytes": 3512,
+      "files": 1
+    },
+    {
+      "path": "motion.mjs",
+      "bytes": 3512,
+      "files": 1
+    },
+    {
+      "path": "playable",
+      "bytes": 794800,
+      "files": 5
+    },
+    {
+      "path": "playable-v11",
+      "bytes": 797811,
+      "files": 6
+    },
+    {
+      "path": "provenance.json",
+      "bytes": 728,
+      "files": 1
+    },
+    {
+      "path": "report-12b4d67a114f7a2c.json",
+      "bytes": 972,
+      "files": 1
+    },
+    {
+      "path": "report.json",
+      "bytes": 972,
+      "files": 1
+    },
+    {
+      "path": "stride-review-v1",
+      "bytes": 217969,
+      "files": 4
+    },
+    {
+      "path": "stride-review-v2",
+      "bytes": 218172,
+      "files": 4
+    },
+    {
+      "path": "stride-review-v3",
+      "bytes": 217907,
+      "files": 4
+    },
+    {
+      "path": "stride-review-v4",
+      "bytes": 217787,
+      "files": 4
+    },
+    {
+      "path": "toolkit-v1.html",
+      "bytes": 6276,
+      "files": 1
+    },
+    {
+      "path": "toolkit-v2.html",
+      "bytes": 6257,
+      "files": 1
+    },
+    {
+      "path": "toolkit-v3.html",
+      "bytes": 11050,
+      "files": 1
+    },
+    {
+      "path": "toolkit-v4.html",
+      "bytes": 16943,
+      "files": 1
+    },
+    {
+      "path": "toolkit-v5.html",
+      "bytes": 17983,
+      "files": 1
+    },
+    {
+      "path": "toolkit-v6.html",
+      "bytes": 18017,
+      "files": 1
+    },
+    {
+      "path": "torso-v12",
+      "bytes": 7838364,
+      "files": 26
+    },
+    {
+      "path": "vendor",
+      "bytes": 2280076,
+      "files": 7
+    },
+    {
+      "path": "walk-review-v21",
+      "bytes": 3509,
+      "files": 1
+    }
+  ],
+  "removedBytes": 286941020,
+  "remaining": [
+    "START.txt",
+    "candidate-v23",
+    "compare-tool-v4",
+    "current-v20",
+    "index.html",
+    "toolkit.html"
+  ],
+  "archive": "output/archives/retired-motion-preview-20261003.tar.gz",
+  "archiveSha256": "1b1f8a2c7b6fa9b74e11309af903892942f0d023f514d56917e085e08a9175df",
+  "scope": "Only retired HTTP preview copies. Production sources and reusable tools retained."
+}

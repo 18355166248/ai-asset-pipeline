@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "inputs": [
+    {
+      "manifest": "../../output/mint-adventurer-collection-v17/bundle/manifest.json"
+    },
+    {
+      "manifest": "../../output/mint-adventurer-half-back-source-v1/bundle/manifest.json"
+    },
+    {
+      "manifest": "../../output/mint-adventurer-arm-inbetween-v1/bundle/manifest.json"
+    },
+    {
+      "manifest": "../../output/mint-adventurer-contact-stop-recovery-source-v1/bundle/manifest.json"
+    }
+  ],
+  "states": [
+    {
+      "name": "move-stop",
+      "loop": false,
+      "frames": [
+        {
+          "input": 0,
+          "action": "move-stop",
+          "frame": 0,
+          "durationMs": 35
+        },
+        {
+          "input": 1,
+          "action": "half-back",
+          "frame": 0,
+          "durationMs": 35
+        },
+        {
+          "input": 2,
+          "action": "arm-inbetween",
+          "frame": 0,
+          "durationMs": 40
+        },
+        {
+          "input": 3,
+          "action": "stop-front-source",
+          "frame": 0,
+          "durationMs": 35
+        },
+        {
+          "input": 0,
+          "action": "idle",
+          "frame": 0,
+          "durationMs": 30
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "version": 1,
+  "provider": "codex-builtin-imagegen",
+  "title": "步行摆臂中间原画（不是完整步态）",
+  "identity": "Same cute chestnut bob anime adventurer, mint bow, golden eye, ivory/mint tunic with leaf patterns, brown shorts/belt/gloves/boots and leaf satchel. Same right-facing side camera and master head/scale.",
+  "direction": "right-facing side view",
+  "canvas": [
+    512,
+    512
+  ],
+  "cell": [
+    256,
+    256
+  ],
+  "reference": {
+    "path": "reference.png",
+    "sha256": "2ca08dfbeebcec7562e1a2c2573039465d3aa80d27c7f812d78c842714bd800d"
+  },
+  "anchor": [
+    0.5,
+    0.947265625
+  ],
+  "actions": [
+    {
+      "name": "arm-inbetween",
+      "loop": false,
+      "frames": [
+        "arm-inbetween-000",
+        "arm-inbetween-001"
+      ]
+    }
+  ],
+  "frames": {
+    "arm-inbetween-000": {
+      "pose": "Both arms naturally down at passing phase: near visible shoulder to near glove at cell x128 y153, far arm hangs partly hidden, no backward reach.",
+      "durationMs": 100,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "arm-inbetween-000-prompt.txt",
+      "promptSha256": "dae3ecab30d5608009ec677ae633c5d15a73c3369330df33d46799b0c0f1310c",
+      "attempts": [
+        {
+          "sha256": "97ce67a91bc8e281bf028c247c51abbc5776028824e5fbf56bcc2fcd0009a79e",
+          "original": "arm-inbetween-000/attempt-001/source.png",
+          "frame": "arm-inbetween-000/attempt-001/frame.png",
+          "frameSha256": "134cf498a6e6a525d1a23e1e3d8a7ce73616010ea64d4a7e4f1cbe7e54f32842",
+          "actualPrompt": "arm-inbetween-000/attempt-001/actual-prompt.txt",
+          "promptSha256": "55a7e15afb7fce8a709917a9c043041d7736364e937d64a25ca301642b37e867",
+          "referenceInputs": [
+            {
+              "path": "arm-inbetween-000/attempt-001/reference-01.png",
+              "sha256": "12a5fd2bcd014a566f9cb1d1a5dc4ac246ec41ffd4e8ba3d9bf361efd6405fc9"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": {
+            "verdict": "reject",
+            "reason": "完整候选重画身体/腿，且背景臂或前景摆幅未到目标；不接受整帧。",
+            "reviewer": "agent"
+          }
+        },
+        {
+          "sha256": "0a7b369345633aca3f7913ad53224efe354f9386e8e3a8ef93d0aadecf9fcd1a",
+          "original": "arm-inbetween-000/attempt-002/source.png",
+          "frame": "arm-inbetween-000/attempt-002/frame.png",
+          "frameSha256": "32698696f23acc0bed9561278ddebe7cfd6aa611e383586bc352198bc6457bed",
+          "actualPrompt": "arm-inbetween-000/attempt-002/actual-prompt.txt",
+          "promptSha256": "489534ceb4622fe60d570522950eeb3f7f5bf47db96736bd7e09e8f175e7aad8",
+          "referenceInputs": [
+            {
+              "path": "arm-inbetween-000/attempt-002/reference-01.png",
+              "sha256": "97ce67a91bc8e281bf028c247c51abbc5776028824e5fbf56bcc2fcd0009a79e"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": {
+            "verdict": "reject",
+            "reason": "整帧仍改动脸、服饰及腿；只作为摆臂局部来源，派生候选另行检查，不接受完整原画。",
+            "reviewer": "agent"
+          }
+        }
+      ],
+      "selected": 1
+    },
+    "arm-inbetween-001": {
+      "pose": "Near arm foreground swings forward halfway toward full forward reference, near glove x151 y146; far arm swings back behind torso/leaf bag. Preserve whole character and legs.",
+      "durationMs": 100,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "arm-inbetween-001-prompt.txt",
+      "promptSha256": "377bcda828bad53e29ef370229b75a5bcaccad3749f3922f4e7cc53001d54895",
+      "attempts": [
+        {
+          "sha256": "3f05dbf7e79f61de8c8c3a4df9a4f7362898b9fe53272a51047b3f1b6b3acf3f",
+          "original": "arm-inbetween-001/attempt-001/source.png",
+          "frame": "arm-inbetween-001/attempt-001/frame.png",
+          "frameSha256": "abd519a2e59787323ee3b7b717c7a025538ae30f2a1c7fdd0be035f0abfedea3",
+          "actualPrompt": "arm-inbetween-001/attempt-001/actual-prompt.txt",
+          "promptSha256": "2fb2aabebfe78b53f6731354adc43d39f921ce5e39c4f32daf96e67ad26781d0",
+          "referenceInputs": [
+            {
+              "path": "arm-inbetween-001/attempt-001/reference-01.png",
+              "sha256": "171c1b87b20ea27695d12647fa5164b83d6a233687bbc3f88ffaaea0cfa09765"
+            },
+            {
+              "path": "arm-inbetween-001/attempt-001/reference-02.png",
+              "sha256": "574ad12c544f88b3a8f9424493a126c0753e7106fc4afb1ea4adb01ab44b9c18"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": {
+            "verdict": "reject",
+            "reason": "完整候选重画身体/腿，且背景臂或前景摆幅未到目标；不接受整帧。",
+            "reviewer": "agent"
+          }
+        },
+        {
+          "sha256": "d43db438b611124ac62558d32e16cc5ca0173fadbce7969bb7fa90ffa5fe362b",
+          "original": "arm-inbetween-001/attempt-002/source.png",
+          "frame": "arm-inbetween-001/attempt-002/frame.png",
+          "frameSha256": "0241e1f785ad3db175896bd8a684e3c7e983f1910c9eef8d2bba86e6c3753674",
+          "actualPrompt": "arm-inbetween-001/attempt-002/actual-prompt.txt",
+          "promptSha256": "cc7cbc15a26fcc921d1fbdfe45ccdacd8fec8b8c195a9ee6b3a289352530431b",
+          "referenceInputs": [
+            {
+              "path": "arm-inbetween-001/attempt-002/reference-01.png",
+              "sha256": "3f05dbf7e79f61de8c8c3a4df9a4f7362898b9fe53272a51047b3f1b6b3acf3f"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": {
+            "verdict": "reject",
+            "reason": "整帧仍改动脸、服饰及腿；只作为摆臂局部来源，派生候选另行检查，不接受完整原画。",
+            "reviewer": "agent"
+          }
+        }
+      ],
+      "selected": 1
+    }
+  }
+}

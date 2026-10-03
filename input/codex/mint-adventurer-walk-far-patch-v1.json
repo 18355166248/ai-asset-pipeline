@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "manifest": "../../output/mint-adventurer-walk-far-source-v1/bundle/manifest.json",
+  "action": "walk-far-inbetween",
+  "operation": "rectangle-patch",
+  "referenceFrame": 0,
+  "referenceImage": "mint-adventurer-walk-passing-inbetween-v1/far-reference-cell.png",
+  "rect": [
+    74,
+    174,
+    222,
+    256
+  ],
+  "feather": 2
+}

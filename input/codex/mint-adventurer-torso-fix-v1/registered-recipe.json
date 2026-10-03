@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "kind": "motion",
+  "title": "薄荷角色躯干一致性候选",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    0.5,
+    0.947265625
+  ],
+  "background": "keep",
+  "resample": "lanczos",
+  "source": {
+    "version": 1,
+    "provider": "codex-builtin-imagegen",
+    "operation": "edit-existing-eight-frame-sheet",
+    "actualGptCalls": 1,
+    "target": {
+      "path": "edit-target-grid.png",
+      "sha256": "9efde59a180c691bf52693567e5032d245b1f2c112d458c6778b6801d9190522"
+    },
+    "actualPrompt": {
+      "path": "actual-prompt.txt",
+      "sha256": "4c2e0ba4522da8513e58d245e8c228939b5e1205f16594fe56d448def393e57b"
+    },
+    "referenceOrder": [
+      "edit-target-grid.png"
+    ],
+    "layout": {
+      "columns": 3,
+      "rows": 3,
+      "inputCell": [
+        256,
+        256
+      ],
+      "frameCells": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "requiredEmptyCells": [
+        8
+      ]
+    },
+    "sourceMotion": "output/mint-adventurer-walk-v8-body-patch/bundle/manifest.json",
+    "requestedInvariant": "existing limb pose/contact/foot height per cell; same torso dimensions",
+    "review": {
+      "status": "candidate-inspection",
+      "gameAcceptance": false
+    },
+    "output": {
+      "path": "source.png",
+      "sha256": "2e02ec312223f05cd7ba7a20401c0cfa9683fe299df03ff4bef36eaf462b685c",
+      "size": [
+        1254,
+        1254
+      ],
+      "cell": [
+        418,
+        418
+      ]
+    },
+    "registration": "registration.json",
+    "registrationSha256": "cbbb87fb6553bcf270275924bbcc2825656a6b2be6a934fa9ea18913d75ad011"
+  },
+  "states": [
+    {
+      "name": "move",
+      "loop": true,
+      "fps": 10
+    }
+  ]
+}

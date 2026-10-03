@@ -1,0 +1,41 @@
+{
+  "sourceCollection": "output/mint-adventurer-collection-v20",
+  "actualNewGptCallsThisTurn": 0,
+  "firstJumpFrameIsActualIdle": true,
+  "allOtherRgbaUnchanged": true,
+  "allDurationsAndLoopsUnchanged": true,
+  "nonLoopLastFramesAreActualIdle": {
+    "attack": true,
+    "hit": true,
+    "jump": true,
+    "move-stop": true,
+    "stop-front": true
+  },
+  "zipIntegrityPassed": true,
+  "fullPythonTestsPassed": 69,
+  "nodeTestsLastPassed": 37,
+  "artStatus": "draft",
+  "gameAcceptance": false,
+  "browser": {
+    "visitedActions": [
+      "attack",
+      "hit",
+      "idle",
+      "jump",
+      "move",
+      "move-start",
+      "move-stop",
+      "stop-front"
+    ],
+    "actualSpriteBlendMs": 0,
+    "capturedErrors": [],
+    "defaultRoot": "current-v20"
+  },
+  "godot": {
+    "version": "4.7.2",
+    "actualImportPassed": true,
+    "checks": 109,
+    "animations": 8
+  },
+  "remainingReview": "walking source foot contact versus consumer movement speed; final visual/game acceptance"
+}

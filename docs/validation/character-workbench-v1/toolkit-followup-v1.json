@@ -1,0 +1,16 @@
+{
+  "localHtmlReferencesChecked": 27,
+  "missing": [],
+  "zipCrcPassed": [
+    "candidate-v23/downloads/web-playground.zip",
+    "candidate-v23/downloads/game-assets.zip",
+    "candidate-v23/downloads/godot-preview.zip",
+    "current-v20/downloads/web-playground.zip",
+    "current-v20/downloads/game-assets.zip",
+    "current-v20/downloads/godot-preview.zip"
+  ],
+  "wizardTests": 13,
+  "siteTests": 4,
+  "newGptCalls": 0,
+  "note": "Browser flow tests use fixture paths; no new character was generated or accepted."
+}

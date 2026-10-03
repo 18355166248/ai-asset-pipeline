@@ -1,0 +1,11 @@
+{
+  "actualGptCalls": 3,
+  "selectedNewPoses": 2,
+  "failedCandidatePreserved": true,
+  "states": 7,
+  "framePositions": 24,
+  "distinctRgbaPoses": 22,
+  "rebuildSameAtlas": true,
+  "actualControllerTiming": "impact 110..190ms; total330ms; ends idle",
+  "status": "draft"
+}

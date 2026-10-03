@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "provider": "codex-builtin-imagegen",
+  "operation": "edit-existing-eight-frame-sheet",
+  "actualGptCalls": 1,
+  "target": {
+    "path": "edit-target-grid.png",
+    "sha256": "9efde59a180c691bf52693567e5032d245b1f2c112d458c6778b6801d9190522"
+  },
+  "actualPrompt": {
+    "path": "actual-prompt.txt",
+    "sha256": "4c2e0ba4522da8513e58d245e8c228939b5e1205f16594fe56d448def393e57b"
+  },
+  "referenceOrder": [
+    "edit-target-grid.png"
+  ],
+  "layout": {
+    "columns": 3,
+    "rows": 3,
+    "inputCell": [
+      256,
+      256
+    ],
+    "frameCells": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "requiredEmptyCells": [
+      8
+    ]
+  },
+  "sourceMotion": "output/mint-adventurer-walk-v8-body-patch/bundle/manifest.json",
+  "requestedInvariant": "existing limb pose/contact/foot height per cell; same torso dimensions",
+  "review": {
+    "status": "candidate-improved",
+    "reviewer": "agent",
+    "reason": "Torso/collar/hem looks more consistent; eight qualitative walk phases remain. Pixel identity and exact limb coordinates not preserved, full cross-action/game approval still pending.",
+    "gameAcceptance": false,
+    "runtimeEvidence": "docs/validation/character-workbench-v1/torso-consistency-v12.png"
+  },
+  "output": {
+    "path": "source.png",
+    "sha256": "2e02ec312223f05cd7ba7a20401c0cfa9683fe299df03ff4bef36eaf462b685c",
+    "size": [
+      1254,
+      1254
+    ],
+    "cell": [
+      418,
+      418
+    ]
+  }
+}

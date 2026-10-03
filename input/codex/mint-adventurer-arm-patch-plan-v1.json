@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "manifest": "../../output/mint-adventurer-arm-sequence-v1/bundle/manifest.json",
+  "action": "move",
+  "operation": "rectangle-patch",
+  "referenceFrame": 0,
+  "referenceManifest": "../../output/mint-adventurer-collection-v16/bundle/manifest.json",
+  "rect": [
+    78,
+    104,
+    202,
+    169
+  ],
+  "feather": 2,
+  "frameIndices": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "protectedRects": [
+    [
+      134,
+      94,
+      160,
+      114
+    ]
+  ]
+}

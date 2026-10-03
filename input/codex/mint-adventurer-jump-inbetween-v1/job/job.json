@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "provider": "codex-builtin-imagegen",
+  "title": "跳跃浅压缩与半收腿原画（不是完整跳跃）",
+  "identity": "Same cute chestnut-bob anime adventurer, mint bow, golden eyes, ivory/mint tunic, brown shorts/belt/boots, leaf satchel and fingerless gloves. Preserve exact character scale and side camera.",
+  "direction": "right-facing side view",
+  "canvas": [
+    512,
+    512
+  ],
+  "cell": [
+    256,
+    256
+  ],
+  "reference": {
+    "path": "reference.png",
+    "sha256": "f1a38bf4836378578d49b1f9fd09821a6bae03bd55526a9e28c6d23ad5a7f44d"
+  },
+  "anchor": [
+    0.5,
+    0.947265625
+  ],
+  "actions": [
+    {
+      "name": "jump-inbetween",
+      "loop": false,
+      "frames": [
+        "jump-inbetween-000",
+        "jump-inbetween-001"
+      ]
+    }
+  ],
+  "frames": {
+    "jump-inbetween-000": {
+      "pose": "Shallow compression between idle and existing crouch; boots planted; head only 10px below idle on 512 canvas.",
+      "durationMs": 40,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "jump-inbetween-000-prompt.txt",
+      "promptSha256": "3b2a4364b1574daeb1c7495ab8430afb7480fbdb5159a36f9fd89041ddcc0f7a",
+      "attempts": [
+        {
+          "sha256": "381c97d10ea2da2ed2fff9f44e7be354e9f56e70b7a11c01330dd1dc4b73d0e6",
+          "original": "jump-inbetween-000/attempt-001/source.png",
+          "frame": "jump-inbetween-000/attempt-001/frame.png",
+          "frameSha256": "fa9591bff8ee5288cc94783a3d6203b426f8ee17b3320040f42edc52be30b011",
+          "actualPrompt": "jump-inbetween-000/attempt-001/actual-prompt.txt",
+          "promptSha256": "16b796e5c967b31712f31dba2f67e6927f435d76e6a06cda59ef12387fb2681d",
+          "referenceInputs": [
+            {
+              "path": "jump-inbetween-000/attempt-001/reference-01.png",
+              "sha256": "f1a38bf4836378578d49b1f9fd09821a6bae03bd55526a9e28c6d23ad5a7f44d"
+            },
+            {
+              "path": "jump-inbetween-000/attempt-001/reference-02.png",
+              "sha256": "449899c7ae5ba9358269c031e90139474bcf412ecacddf0f5bf51623f2ea01b8"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": {
+            "verdict": "reject",
+            "reason": "压缩过深，头顶86比旧压缩74更低，不是浅压缩。",
+            "reviewer": "agent"
+          }
+        },
+        {
+          "sha256": "31c72dfa7cb45d991bb732fb281ffbecbbce270c19c8af4a390a38a9a0588dc3",
+          "original": "jump-inbetween-000/attempt-002/source.png",
+          "frame": "jump-inbetween-000/attempt-002/frame.png",
+          "frameSha256": "3f3660ee133f4962097ba8a2b4bbeb97c6e160b4430007260cee38802fe65e7f",
+          "actualPrompt": "jump-inbetween-000/attempt-002/actual-prompt.txt",
+          "promptSha256": "c2d8457e362a0273723e59c1b295ddf4e740f097bd708a267eb5b2f95266c8e6",
+          "referenceInputs": [
+            {
+              "path": "jump-inbetween-000/attempt-002/reference-01.png",
+              "sha256": "f1a38bf4836378578d49b1f9fd09821a6bae03bd55526a9e28c6d23ad5a7f44d"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        }
+      ],
+      "selected": 1
+    },
+    "jump-inbetween-001": {
+      "pose": "Half tuck between takeoff and airborne; head at original height, both feet lifted, knees midway bent.",
+      "durationMs": 40,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "jump-inbetween-001-prompt.txt",
+      "promptSha256": "c56fb7cc862c3e2d5e24781b602d494fbd256f9ee1234011eca9a00ea6d725a7",
+      "attempts": [
+        {
+          "sha256": "070ad25998b33797feaa16114eb3768e338b3463d47d4c68010d2ec9cb441bb2",
+          "original": "jump-inbetween-001/attempt-001/source.png",
+          "frame": "jump-inbetween-001/attempt-001/frame.png",
+          "frameSha256": "01add5d0fa5a7977bb289219df816b7b3ca480323f2bb4a16582b6e195bab1e9",
+          "actualPrompt": "jump-inbetween-001/attempt-001/actual-prompt.txt",
+          "promptSha256": "822e77329eb3b78e2a4bbddf23f9ee91d4f02e1df55b4b1045d8a1a3089afe61",
+          "referenceInputs": [
+            {
+              "path": "jump-inbetween-001/attempt-001/reference-01.png",
+              "sha256": "10b4bd1a5b031da07570554a538794269e242a00a56a35b1737617ff13277685"
+            },
+            {
+              "path": "jump-inbetween-001/attempt-001/reference-02.png",
+              "sha256": "2997a9facfaf6df5d4c2a4ba66bd063e406e870af6a473d12723a1a7a0f0ca35"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": {
+            "verdict": "reject",
+            "reason": "接近完整收腿，脚底435比旧空中帧还高，不能作半收腿。",
+            "reviewer": "agent"
+          }
+        },
+        {
+          "sha256": "8624123408df9292c6543cb1a78dcb0bb23daa0bc24f7c7276c506b360b09706",
+          "original": "jump-inbetween-001/attempt-002/source.png",
+          "frame": "jump-inbetween-001/attempt-002/frame.png",
+          "frameSha256": "6d1dfbcdcf920a42e75050c6abc7251d1e934ccd9b9ea12c8ea02b53d0aa7572",
+          "actualPrompt": "jump-inbetween-001/attempt-002/actual-prompt.txt",
+          "promptSha256": "a8ffd2fc0163d3fb0dc177e5d3f68ffaf32fbe759a04d71cef3a80747057052f",
+          "referenceInputs": [
+            {
+              "path": "jump-inbetween-001/attempt-002/reference-01.png",
+              "sha256": "10b4bd1a5b031da07570554a538794269e242a00a56a35b1737617ff13277685"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        }
+      ],
+      "selected": 1
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "title": "步行支撑后段候选",
+  "direction": "right-facing side view",
+  "canvas": [
+    512,
+    512
+  ],
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    0.5,
+    0.947265625
+  ],
+  "actions": [
+    {
+      "name": "move-support-source",
+      "loop": false,
+      "frames": [
+        {
+          "pose": "phase 6: supporting leftmost boot closer below body, preserve lifted far leg and upper body",
+          "durationMs": 100
+        },
+        {
+          "pose": "phase 7: supporting leftmost boot closer below body, preserve lifted far leg and upper body",
+          "durationMs": 100
+        }
+      ]
+    }
+  ]
+}

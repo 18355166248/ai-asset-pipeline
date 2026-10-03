@@ -1,0 +1,12 @@
+{
+  "cycleReviews": {
+    "attack": {
+      "signature": "088249984ac2597d80fa8bf1fcc0a971c61f47aba4ab1c8f60978e462034b8e0",
+      "verdict": "accept",
+      "reviewer": "agent",
+      "reason": "浏览器1倍速度检查110/80/140ms三阶段，前摇/伸拳/收招可辨，双脚落地；关闭回待机保持3/3，开启后idle。仅该攻击素材与预览行为，未批准游戏集成或完整角色包。"
+    }
+  },
+  "evidence": "docs/validation/character-workbench-v1/collection-attack-v1.png",
+  "scope": "Agent preview check for attack only; not user approval, full character or game acceptance."
+}

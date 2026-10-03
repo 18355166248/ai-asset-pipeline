@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "inputs": [
+    {
+      "manifest": "../../output/mint-adventurer-collection-v17/bundle/manifest.json"
+    }
+  ],
+  "states": [
+    {
+      "name": "stop-front",
+      "loop": false,
+      "frames": [
+        {
+          "input": 0,
+          "action": "move-stop",
+          "frame": 0,
+          "durationMs": 55
+        },
+        {
+          "input": 0,
+          "action": "move-stop",
+          "frame": 0,
+          "durationMs": 55
+        },
+        {
+          "input": 0,
+          "action": "idle",
+          "frame": 0,
+          "durationMs": 30
+        }
+      ]
+    }
+  ]
+}

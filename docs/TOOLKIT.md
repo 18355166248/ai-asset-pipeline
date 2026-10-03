@@ -1,5 +1,7 @@
 # 视觉素材工具箱 v1
 
+整套角色动作的二维/模型检查现可使用 [角色动作工作台](CHARACTER_WORKBENCH.md)，复用这里的 motion manifest，无需重做素材管线。
+
 两个入口共用一套本地交付工具：`mascot-kit` 管吉祥物候选，`character-motion-kit` 管角色动作；`src/asset_bundle.py` 负责文件加工与交付。本工具不内置模型或密钥管理，也不调用付费生成 API。
 
 ## 运行

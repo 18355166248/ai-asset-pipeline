@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "title": "薄荷冒险者 · GPT 动作集合候选",
+  "inputs": [
+    {
+      "manifest": "../../output/mint-adventurer-combat-v1-reviewed/bundle/manifest.json",
+      "actions": [
+        "attack"
+      ]
+    },
+    {
+      "manifest": "../../output/mint-adventurer-walk-v7-head-lock/bundle/manifest.json",
+      "actions": [
+        "move"
+      ]
+    },
+    {
+      "manifest": "../../output/mint-adventurer-reaction-v1/bundle/manifest.json",
+      "actions": [
+        "hit"
+      ]
+    },
+    {
+      "manifest": "../../output/mint-adventurer-jump-v3/bundle/manifest.json",
+      "actions": [
+        "jump"
+      ]
+    },
+    {
+      "manifest": "../../output/mint-adventurer-idle-v1-patched/bundle/manifest.json",
+      "actions": [
+        "idle"
+      ]
+    }
+  ]
+}

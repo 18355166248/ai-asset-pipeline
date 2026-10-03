@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "provider": "codex-builtin-imagegen",
+  "title": "薄荷冒险者 · 眨眼待机",
+  "identity": "Original cute chestnut-bob anime adventurer girl, mint bow, golden eyes, ivory/mint short tunic with leaf patterns, brown shorts and belt, brown leather fingerless gloves/boots, leaf satchel. Same proportions and camera as actual master frame.",
+  "direction": "right-facing side view",
+  "canvas": [
+    512,
+    512
+  ],
+  "cell": [
+    256,
+    256
+  ],
+  "reference": {
+    "path": "reference.png",
+    "sha256": "f1a38bf4836378578d49b1f9fd09821a6bae03bd55526a9e28c6d23ad5a7f44d"
+  },
+  "anchor": [
+    0.5,
+    0.947265625
+  ],
+  "actions": [
+    {
+      "name": "idle",
+      "loop": true,
+      "frames": [
+        "idle-000",
+        "idle-001"
+      ]
+    }
+  ],
+  "frames": {
+    "idle-000": {
+      "pose": "Original neutral open-eye guard pose, reused actual drawing.",
+      "durationMs": 3110,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "idle-000-prompt.txt",
+      "promptSha256": "7ceb0cd9b3e069371ec076d8729b5f0c1842838b49f1f7d43ed9966b9fdb9acc",
+      "attempts": [
+        {
+          "sha256": "48607549c3eee7444fe4879965c60a4c1319c0362385692a8011e91d265a1b74",
+          "original": "idle-000/attempt-001/source.png",
+          "frame": "idle-000/attempt-001/frame.png",
+          "frameSha256": "f1a38bf4836378578d49b1f9fd09821a6bae03bd55526a9e28c6d23ad5a7f44d",
+          "actualPrompt": "idle-000/attempt-001/actual-prompt.txt",
+          "promptSha256": "39d11194a3712172d21732148244ade646fdee6918e388e7cd97edc47f4fc6ba",
+          "referenceInputs": [
+            {
+              "path": "idle-000/attempt-001/reference-01.png",
+              "sha256": "938e75ae8b4edebe7b653021eda02241cc530ed3017f79a62b3504b766440079"
+            }
+          ],
+          "offset": [
+            0,
+            2
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        }
+      ],
+      "selected": 0
+    },
+    "idle-001": {
+      "pose": "Gentle blink only, preserve all other pixels.",
+      "durationMs": 90,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "idle-001-prompt.txt",
+      "promptSha256": "380eb833ff7364c7c1af57159a7f70be49dac973d4873c16620241a6ad6116c0",
+      "attempts": [
+        {
+          "sha256": "f8f42d5a7a0aa65cb2c3c4c733223f4b0ab6eb71cc28d59d9c77e8f567d778f9",
+          "original": "idle-001/attempt-001/source.png",
+          "frame": "idle-001/attempt-001/frame.png",
+          "frameSha256": "d73470eddd6431cdeaf01fa0f34b4d584f789194aecf829f738ed7d2cb4e3177",
+          "actualPrompt": "idle-001/attempt-001/actual-prompt.txt",
+          "promptSha256": "80fff8df2c27da742e5e3c8bf8476b157771d454e07889d0c673d81a91d421a1",
+          "referenceInputs": [
+            {
+              "path": "idle-001/attempt-001/reference-01.png",
+              "sha256": "f1a38bf4836378578d49b1f9fd09821a6bae03bd55526a9e28c6d23ad5a7f44d"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        }
+      ],
+      "selected": 0
+    }
+  }
+}

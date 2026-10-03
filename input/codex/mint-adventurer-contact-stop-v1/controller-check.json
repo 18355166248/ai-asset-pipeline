@@ -1,0 +1,14 @@
+{
+  "stopClipsByContactImplemented": true,
+  "nodeTestsPassed": 34,
+  "previewSiteTestsPassed": 5,
+  "playgroundTestsPassed": 3,
+  "artAccepted": false,
+  "defaultPreviewStill": "current-v17",
+  "status": "draft",
+  "actualGptCalls": 1,
+  "selectedCandidateSources": 1,
+  "wholeGeneratedCandidateAccepted": false,
+  "derivedStopAnimationAccepted": false,
+  "reason": "前手仍接近完整前摆，且整帧身份/服饰/腿部重画，需进一步局部修正"
+}

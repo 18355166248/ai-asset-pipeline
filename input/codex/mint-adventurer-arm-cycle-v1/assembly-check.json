@@ -1,0 +1,51 @@
+{
+  "actualGptCalls": 4,
+  "selectedNewPartialSources": 2,
+  "reusedOldForwardPose": 1,
+  "wholeGeneratedCandidatesAccepted": false,
+  "framePositions": 8,
+  "changedPhasesZeroBased": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "durationMs": 800,
+  "durationsMs": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+  ],
+  "loop": true,
+  "outsideAndProtectedBytesEqual": true,
+  "unmodifiedPhasesEqual": true,
+  "rebuiltAtlasEqual": true,
+  "regionToolTests": 6,
+  "status": "draft",
+  "gameAcceptance": false,
+  "gifFramesAreOriginalPoses": true,
+  "collectionActions": 7,
+  "collectionFramePositions": 31,
+  "collectionDistinctRgba": 24,
+  "godot": {
+    "version": "4.7.2",
+    "checks": 86,
+    "animations": 7,
+    "realImportPassed": true
+  },
+  "browser": {
+    "workbenchTimeMs": 440,
+    "workbenchFrame": "5/8",
+    "stopDemoFinalAction": "idle",
+    "stopDemoFinalX": 413.3,
+    "capturedErrors": []
+  },
+  "remainingIssue": "shared move-stop arm does not match both move contact phases",
+  "deliveryZipIntegrityPassed": true
+}

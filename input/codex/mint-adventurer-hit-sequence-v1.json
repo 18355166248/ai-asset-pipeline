@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "title": "受击恢复三姿态候选",
+  "inputs": [
+    {
+      "manifest": "../../output/mint-adventurer-collection-v14/bundle/manifest.json"
+    },
+    {
+      "manifest": "../../output/mint-adventurer-hit-recovery-v1/bundle/manifest.json"
+    }
+  ],
+  "states": [
+    {
+      "name": "hit",
+      "loop": false,
+      "frames": [
+        {
+          "input": 0,
+          "action": "hit",
+          "frame": 0,
+          "durationMs": 80
+        },
+        {
+          "input": 1,
+          "action": "hit-recovery",
+          "frame": 0,
+          "durationMs": 50
+        },
+        {
+          "input": 0,
+          "action": "idle",
+          "frame": 0,
+          "durationMs": 30
+        }
+      ]
+    }
+  ]
+}

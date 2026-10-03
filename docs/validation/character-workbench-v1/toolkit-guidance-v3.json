@@ -1,0 +1,10 @@
+{
+  "entry": "toolkit-v3.html",
+  "newImageGenerationCalls": 0,
+  "referencePromptExpanded": true,
+  "starterIdentityAndTimingFilled": true,
+  "referencePathRemainsEmpty": true,
+  "focusedToolkitTests": 4,
+  "fullPromptGuide": "docs/CHARACTER_MOTION_PROMPTS.md",
+  "screenshot": "docs/validation/character-workbench-v1/toolkit-guidance-v3.png"
+}

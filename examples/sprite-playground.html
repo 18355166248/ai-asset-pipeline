@@ -1,0 +1,42 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>二维动作实战示例</title><style>
+body{margin:0;padding:18px;background:#14242d;color:#e3eeeb;font:15px system-ui}main{max-width:760px;margin:auto}h1{font-size:23px}canvas{width:100%;background:#213a42;border-radius:12px}button,a{font:inherit;color:#e3eeeb;background:#304f54;border:1px solid #647e7b;border-radius:8px;padding:12px;text-decoration:none}nav{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}button{touch-action:none}p{line-height:1.6}#status{font-variant-numeric:tabular-nums}
+</style><main><h1>二维动作实战示例</h1><p>方向键走动，空格跳跃，J 出拳，K 受击。也可使用下面的按钮。左向由原画镜像，仅作接入演示。</p>
+<canvas id="game" width="760" height="440" aria-label="二维角色可操作场景"></canvas>
+<nav><button data-direction="-1">← 按住左移</button><button data-direction="1">按住右移 →</button><button data-action="jump">跳跃</button><button data-action="attack">出拳</button><button data-action="hit">受击</button><button data-action="demo">自动演示</button><button data-action="stop-demo">停步演示</button><a href="../">返回动作工作台</a></nav>
+<p id="status" role="status">正在加载图集…</p><p>使用实际 PNG 原画和 manifest 时长。场景只示范地面移动、解析跳跃弹道与动作返回；不含战斗碰撞、伤害和完整关卡。</p></main>
+<script type="module">
+import { SpriteController } from './sprite-controller.mjs';
+const canvas=document.querySelector('#game'),ctx=canvas.getContext('2d'),status=document.querySelector('#status');
+try {
+ const url=new URL('./bundle/manifest.json',location.href),response=await fetch(url);
+ if(!response.ok)throw new Error('素材配置加载失败');
+ const manifest=await response.json(),image=new Image();
+ await new Promise((resolve,reject)=>{image.onload=resolve;image.onerror=()=>reject(new Error('图集加载失败'));image.src=new URL(manifest.atlas,url).href;});
+ const optionsResponse=await fetch(new URL('./controller-options.json',location.href));
+ if(!optionsResponse.ok)throw new Error('消费配置加载失败');
+ const player=new SpriteController(manifest,await optionsResponse.json());player.x=380;
+ const keys=new Set(),pointers=new Map();let last=performance.now(),demo=null;
+ const clear=()=>{keys.clear();pointers.clear();demo=null;last=performance.now();};
+ // 后台/失焦及触摸取消清理按住状态，避免恢复后继续走或跨过动作时段。
+ addEventListener('blur',clear);document.addEventListener('visibilitychange',clear);
+ addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','Space','KeyJ','KeyK'].includes(e.code))e.preventDefault();keys.add(e.code);if(!e.repeat)player.trigger({Space:'jump',KeyJ:'attack',KeyK:'hit'}[e.code]);});
+ addEventListener('keyup',e=>keys.delete(e.code));
+ for(const button of document.querySelectorAll('button')){
+  button.addEventListener('pointerdown',e=>{button.setPointerCapture(e.pointerId);if(button.dataset.direction)pointers.set(e.pointerId,Number(button.dataset.direction));else if(button.dataset.action==='demo')demo={time:0,jumped:false,attacked:false};else if(button.dataset.action==='stop-demo')demo={kind:'stop',time:0};else player.trigger(button.dataset.action);});
+  for(const event of ['pointerup','pointercancel','lostpointercapture'])button.addEventListener(event,e=>pointers.delete(e.pointerId));
+ }
+ function draw(now){
+  const dt=document.hidden?0:Math.min((now-last)/1000,.05);last=now;
+  let direction=(keys.has('ArrowRight')?1:0)-(keys.has('ArrowLeft')?1:0)+[...pointers.values()].reduce((a,b)=>a+b,0);
+  if(demo){demo.time+=dt;if(demo.kind==='stop'){direction=demo.time<.31?1:0;if(demo.time>1.2)demo=null;}else if(demo.time<1)direction=1;else if(demo.time<1.5){direction=0;if(!demo.jumped){player.trigger('jump');demo.jumped=true;}}else if(demo.time<1.9){direction=0;if(!demo.attacked){player.trigger('attack');demo.attacked=true;}}else if(demo.time<2.9)direction=-1;else{demo=null;direction=0;}}
+  const pose=player.update(dt,direction);player.x=Math.max(110,Math.min(650,player.x));
+  ctx.clearRect(0,0,760,440);ctx.fillStyle='#2b494c';ctx.fillRect(0,370,760,70);ctx.strokeStyle='#aac8b5';ctx.beginPath();ctx.moveTo(0,370);ctx.lineTo(760,370);ctx.stroke();
+  const f=pose.frame;ctx.save();ctx.translate(player.x,370+pose.y);ctx.scale(pose.facing,pose.scaleY);ctx.drawImage(image,f.x,f.y,f.w,f.h,-manifest.anchor[0]*f.w,-manifest.anchor[1]*f.h,f.w,f.h);ctx.restore();
+  // move-settle是运行时复用的原画片段；显示使用实际片段长度，不能从源动作Map取不存在的动作。
+  status.textContent=`${pose.action} · 原画 ${pose.index+1}/${player.currentClip().frames.length} · 高度 ${(-pose.y).toFixed(1)} px · x ${player.x.toFixed(1)} · 呼吸倍率 ${pose.scaleY.toFixed(4)}`;
+  requestAnimationFrame(draw);
+ }
+ requestAnimationFrame(draw);
+} catch(error) {status.textContent=`无法运行：${error.message}`;}
+</script></html>

@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "title": "\u6309\u843d\u811a\u76f8\u4f4d\u505c\u6b65\u5019\u9009",
+  "inputs": [
+    {
+      "manifest": "../../output/mint-adventurer-collection-v17/bundle/manifest.json"
+    },
+    {
+      "manifest": "../../output/mint-adventurer-contact-stop-source-v1/bundle/manifest.json"
+    },
+    {
+      "manifest": "../../output/mint-adventurer-contact-stop-recovery-source-v1/bundle/manifest.json"
+    },
+    {
+      "manifest": "../../output/mint-adventurer-arm-inbetween-v1/bundle/manifest.json"
+    }
+  ],
+  "states": [
+    {
+      "name": "stop-front",
+      "loop": false,
+      "frames": [
+        {
+          "input": 1,
+          "action": "stop-front-source",
+          "frame": 0,
+          "durationMs": 55
+        },
+        {
+          "input": 2,
+          "action": "stop-front-source",
+          "frame": 0,
+          "durationMs": 55
+        },
+        {
+          "input": 0,
+          "action": "idle",
+          "frame": 0,
+          "durationMs": 30
+        }
+      ]
+    }
+  ]
+}

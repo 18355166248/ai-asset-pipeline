@@ -1,0 +1,73 @@
+{
+  "canvas": [
+    512,
+    512
+  ],
+  "anchor": [
+    0.5,
+    0.947265625
+  ],
+  "frames": [
+    {
+      "frame": "hit-000",
+      "opaqueBounds": [
+        142,
+        46,
+        381,
+        485
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alignment": "planted-sole-to485",
+      "frameSha256": "8351e737b9689f6645cbb6360e785e3d45b376560b6e2763aae5a314658706f0"
+    },
+    {
+      "frame": "jump-000",
+      "opaqueBounds": [
+        161,
+        86,
+        384,
+        482
+      ],
+      "offset": [
+        0,
+        3
+      ],
+      "alignment": "planted-sole-to485",
+      "frameSha256": "d2f93c7f79c6fb023c47aa9b155d171f480eabaa8d772d42348a9c37440f2918"
+    },
+    {
+      "frame": "jump-001",
+      "opaqueBounds": [
+        158,
+        51,
+        358,
+        444
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alignment": "pose-only-no-ground-registration",
+      "frameSha256": "2997a9facfaf6df5d4c2a4ba66bd063e406e870af6a473d12723a1a7a0f0ca35"
+    },
+    {
+      "frame": "jump-002",
+      "opaqueBounds": [
+        158,
+        51,
+        383,
+        485
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alignment": "planted-sole-to485",
+      "frameSha256": "90bab76933af842f1cd4e21ccffe789e31a7901caade3cb2b0fd056020d33a90"
+    }
+  ],
+  "note": "Airborne pose is intentionally NOT shifted down to planted baseline; body translation belongs to game/preview physics."
+}

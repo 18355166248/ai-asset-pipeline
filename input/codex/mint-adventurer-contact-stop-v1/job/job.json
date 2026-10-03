@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "provider": "codex-builtin-imagegen",
+  "title": "前摆落脚停步中间姿态",
+  "identity": "薄荷冒险者，棕色短发绿色蝴蝶结，白色绿边连衣裙，棕色手套靴子，绿色叶包，可爱二次元右侧视角",
+  "direction": "right-facing side view",
+  "canvas": [
+    512,
+    512
+  ],
+  "cell": [
+    256,
+    256
+  ],
+  "reference": {
+    "path": "reference.png",
+    "sha256": "4265b8e04f0e0fd01fbd5d1f0bc279da6c9dda4b6e088024bfaffbf68136d6fd"
+  },
+  "anchor": [
+    0.5,
+    0.947265625
+  ],
+  "actions": [
+    {
+      "name": "stop-front-source",
+      "loop": false,
+      "frames": [
+        "stop-front-source-000"
+      ]
+    }
+  ],
+  "frames": {
+    "stop-front-source-000": {
+      "pose": "Foreground near arm lowers from forward swing toward guard; near glove at x150 y150 cell coordinates, far arm behind torso. Legs preserve stopping stance.",
+      "durationMs": 80,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "stop-front-source-000-prompt.txt",
+      "promptSha256": "ccad46bca6f464d051f9344b5fce6c43d61f1ea3f4ebb31ae1ac8be4aad692bc",
+      "attempts": [
+        {
+          "sha256": "15a28c95b8f4470a822c48a709cca381210f52f3ac2c5d6c13422986672d68ca",
+          "original": "stop-front-source-000/attempt-001/source.png",
+          "frame": "stop-front-source-000/attempt-001/frame.png",
+          "frameSha256": "6ad78b3709afa39b2b5fed7f3b82cec3a75fd42a148bafd3e4e24b4acf480ad2",
+          "actualPrompt": "stop-front-source-000/attempt-001/actual-prompt.txt",
+          "promptSha256": "8b0eb534058d93e6b1fef3dcdc7cb050fee0696021914c22ba2288a0d3473ac9",
+          "referenceInputs": [
+            {
+              "path": "stop-front-source-000/attempt-001/reference-01.png",
+              "sha256": "4265b8e04f0e0fd01fbd5d1f0bc279da6c9dda4b6e088024bfaffbf68136d6fd"
+            },
+            {
+              "path": "stop-front-source-000/attempt-001/reference-02.png",
+              "sha256": "76b7aba5ef6801c1744c65006095846bb42bb4845cccc5de3f5ceb66a6c73367"
+            },
+            {
+              "path": "stop-front-source-000/attempt-001/reference-03.png",
+              "sha256": "9f88151546071720cc295965eb086d09eaf5893abe6b208a42ce8a7874a310f3"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": {
+            "verdict": "reject",
+            "reason": "整帧脸服饰与腿部重画，前手仍接近完整前摆；保留为候选局部来源，尚未接受派生停步循环。",
+            "reviewer": "agent"
+          }
+        },
+        {
+          "sha256": "e38ed5aa248e3bee991ac85946f27b66718f7b665e4dc6eccaad5d4bc1d7be98",
+          "original": "stop-front-source-000/attempt-002/source.png",
+          "frame": "stop-front-source-000/attempt-002/frame.png",
+          "frameSha256": "af2ede295ec8c07b7bb75e7332a8fbf1aa75a82ce59f4cb775bfcc73e87194b0",
+          "actualPrompt": "stop-front-source-000/attempt-002/actual-prompt.txt",
+          "promptSha256": "57c271fb12e614b773d4f55f241f04abf2cdf8e7ba8b1092a5248331e8172be1",
+          "referenceInputs": [
+            {
+              "path": "stop-front-source-000/attempt-002/reference-01.png",
+              "sha256": "6ad78b3709afa39b2b5fed7f3b82cec3a75fd42a148bafd3e4e24b4acf480ad2"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": {
+            "verdict": "reject",
+            "reason": "整帧身份与服饰腿部仍重画，仅屈肘回收姿态可作局部来源；派生动画另行检查。",
+            "reviewer": "agent"
+          }
+        }
+      ],
+      "selected": 1
+    }
+  }
+}

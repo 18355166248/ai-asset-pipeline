@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "title": "二次元角色 · 二维骨骼步态对比",
+  "defaultCharacter": "mint-v3",
+  "characters": [
+    {
+      "id": "mint-v3",
+      "title": "v3 · 二维骨骼连续步态",
+      "kind": "sprite",
+      "manifest": "../../../output/mint-adventurer-cutout-v3-r2/bundle/manifest.json",
+      "direction": "side",
+      "defaultAction": "move",
+      "requiredActions": [
+        "idle",
+        "move",
+        "attack",
+        "hit",
+        "jump"
+      ],
+      "reference": "reference.png",
+      "reviewNotes": [
+        "同一套真实分层图片，二维 IK 控制左右腿交替；不是 GLB 或整张姿势图集重抽。",
+        "move：48 帧 / 800ms；idle：48 帧 / 2000ms，循环时长按原始逐帧时间保留。",
+        "脚底落地轨迹与骨长检查通过；关节美术与目标游戏速度仍待实战验证。"
+      ]
+    },
+    {
+      "id": "mint-v2",
+      "title": "v2 · 旧步态（未通过）",
+      "kind": "sprite",
+      "manifest": "../../../output/mint-adventurer-pilot-v1/v2/bundle/manifest.json",
+      "direction": "side",
+      "defaultAction": "move",
+      "reviewNotes": [
+        "未通过：两半周期仍有同侧腿重复，仅作旧版对照。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "provider": "codex-builtin-imagegen",
+  "title": "步行支撑后段候选",
+  "identity": "薄荷冒险者，棕短发绿蝴蝶结，白绿裙，棕靴手套，侧面向右",
+  "direction": "right-facing side view",
+  "canvas": [
+    512,
+    512
+  ],
+  "cell": [
+    256,
+    256
+  ],
+  "reference": {
+    "path": "reference.png",
+    "sha256": "c3ec363a25234c59ea57e91d0a3a2e5879c978610f467518b5ac3d8c7454e0c2"
+  },
+  "anchor": [
+    0.5,
+    0.947265625
+  ],
+  "actions": [
+    {
+      "name": "move-support-source",
+      "loop": false,
+      "frames": [
+        "move-support-source-000",
+        "move-support-source-001"
+      ]
+    }
+  ],
+  "frames": {
+    "move-support-source-000": {
+      "pose": "phase 6: supporting leftmost boot closer below body, preserve lifted far leg and upper body",
+      "durationMs": 100,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "move-support-source-000-prompt.txt",
+      "promptSha256": "5bfa877e74996f429fbac41ed6fa1d303655cee671743ccc2914b5aed28b2e71",
+      "attempts": [
+        {
+          "sha256": "dc23fc241eba6dbbfe7b1937717e440cfbb9cef067a3b38441bf29ab503198c7",
+          "original": "move-support-source-000/attempt-001/source.png",
+          "frame": "move-support-source-000/attempt-001/frame.png",
+          "frameSha256": "dbdd664e7f4c8ca93b8c79fdf42853b93fcb714cb2d011b18af6da94e88a5a9b",
+          "actualPrompt": "move-support-source-000/attempt-001/actual-prompt.txt",
+          "promptSha256": "deb2b0ee7267e8db75204e0c41d91b68939eaea4647c73ad49e9ac838fc2ea84",
+          "referenceInputs": [
+            {
+              "path": "move-support-source-000/attempt-001/reference-01.png",
+              "sha256": "c3ec363a25234c59ea57e91d0a3a2e5879c978610f467518b5ac3d8c7454e0c2"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": {
+            "verdict": "reject",
+            "reason": "脚底未移到要求x302位置；上身发生重画与水平接缝，不能作为整帧或局部改进。仅一次真实调用，phase7未执行，不合入集合。轮廓标记不能替代解剖与步态验收。",
+            "reviewer": "agent"
+          }
+        }
+      ],
+      "selected": null
+    },
+    "move-support-source-001": {
+      "pose": "phase 7: supporting leftmost boot closer below body, preserve lifted far leg and upper body",
+      "durationMs": 100,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "move-support-source-001-prompt.txt",
+      "promptSha256": "bbf871ba7ff89aef23205f7ac440d0c5c892c1d0976872a1c81ea44e9d266b05",
+      "attempts": [],
+      "selected": null
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "manifest": "../../output/mint-adventurer-collection-v20/bundle/manifest.json",
+  "action": "move",
+  "markerKind": "contact-region",
+  "speed": 90,
+  "renderScale": 1,
+  "alphaThreshold": 128,
+  "observations": [
+    {
+      "frame": 0,
+      "group": "support-a",
+      "rect": [
+        158,
+        218,
+        214,
+        256
+      ]
+    },
+    {
+      "frame": 1,
+      "group": "support-a",
+      "rect": [
+        160,
+        218,
+        216,
+        256
+      ]
+    },
+    {
+      "frame": 2,
+      "group": "support-a",
+      "rect": [
+        118,
+        213,
+        168,
+        256
+      ]
+    },
+    {
+      "frame": 3,
+      "group": "support-a",
+      "rect": [
+        117,
+        213,
+        168,
+        256
+      ]
+    },
+    {
+      "frame": 4,
+      "group": "support-b",
+      "rect": [
+        164,
+        212,
+        220,
+        256
+      ]
+    },
+    {
+      "frame": 5,
+      "group": "support-b",
+      "rect": [
+        154,
+        212,
+        207,
+        256
+      ]
+    },
+    {
+      "frame": 6,
+      "group": "support-b",
+      "rect": [
+        114,
+        214,
+        160,
+        256
+      ]
+    },
+    {
+      "frame": 7,
+      "group": "support-b",
+      "rect": [
+        87,
+        205,
+        143,
+        256
+      ]
+    }
+  ],
+  "notes": "人工选择每半周期的地面靴子轮廓；分组不是自动识别腿身份。接触轮廓中心不是固定解剖点。"
+}

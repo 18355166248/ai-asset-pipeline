@@ -1,0 +1,29 @@
+{
+  "phase": "existing-material-import",
+  "engine": {
+    "repository": "https://github.com/aldegad/sprite-gen",
+    "version": "2.20.0",
+    "commit": "d993e5300b4255111e8ee0e29779caea1b3b97bd"
+  },
+  "positions": 12,
+  "sourceUnchanged": true,
+  "bundleRgbaAndDurationVerified": true,
+  "browserPlanAppliedToNewBatch": true,
+  "tests": {
+    "pythonAdapter": 7,
+    "pythonToolkit": 4,
+    "node": 41
+  },
+  "browserTimingEdit": {
+    "beforeMs": 800,
+    "afterMs": 825,
+    "poseBeforeMs": 50,
+    "poseAfterMs": 75,
+    "originalUnchanged": true
+  },
+  "downloadFileVerified": false,
+  "visibleJsonFallbackVerified": true,
+  "imageGenerationCalls": 0,
+  "motionAccepted": false,
+  "targetCharacter": "green-hat-goggles reference path pending"
+}

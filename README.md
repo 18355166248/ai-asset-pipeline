@@ -1,5 +1,40 @@
 # ai-asset-pipeline
 
+## 本地前端
+
+Vite + React + React Router + shadcn/ui + Jotai。
+
+```bash
+npm ci --prefix workbench --ignore-scripts
+npm run dev --prefix workbench
+```
+
+打开 http://127.0.0.1:8770/pipeline（九步引导）或 /motion（真实时序与修复候选）。构建、数据切换与清理范围见 [前端指南](docs/FRONTEND.md)。
+
+## 基于 GPT 制作二维角色动作
+
+从 [使用入口与所需素材](docs/CHARACTER_MOTION_QUICKSTART.md) 开始：准备完整角色参考、动作/朝向、尺寸/锚点和时长，在 Codex 调用 `$character-motion-kit`，交付试玩与通用二维素材包。当前工具留在此项目供多个游戏复用。
+
+`character-motion-kit` 已增加逐帧生成任务：准备角色参考与姿态草图，实际调用 Codex 内置 GPT 生图，导入真实帧、局部修正、记录审查，再导出透明帧和动作图集。任务可续做，失败版本保留。当前不需要另配 API key；Python 负责材料和导出，真正生图由 Skill 调用宿主工具。
+
+所需素材、命令及自定义攻击等动作规格见 [GPT 动作制作指南](docs/GPT_MOTION_GENERATION.md)。`src/motion_generation.py` 提供 prepare / import / review / inspect / status / pack；配套八帧真实步行试点仍处于视觉验收阶段。
+
+现有二维包可用 `src/godot_sprite_export.py --manifest <manifest.json> --out <新目录>` 导出 Godot SpriteFrames 与独立预览项目。保留真实帧时长、循环和脚底锚点；游戏物理与动作切换由消费端接入。[原生资源验证](docs/validation/godot-sprite-export-v1.md)已通过，原画仍为待验收草稿。
+
+## 角色整体动作工作台
+
+默认以二维角色图集为主；GLB/部件模型检查为可选功能，不要求二维游戏转换为三维。
+
+统一检查二维动作包、双足/四足部件模型和已有动画的 GLB：整套动作巡演、逐帧、模型过渡、缺项报告与来源记录。使用现有素材链路，不依赖消费游戏。用法、五个参考帖子的评估和边界见 [工作台指南](docs/CHARACTER_WORKBENCH.md)。
+
+```bash
+npm ci --prefix workbench
+.venv-cutout/bin/python examples/make_workbench.py --out output/character-workbench
+.venv-cutout/bin/python -m http.server 8771 --bind 127.0.0.1 --directory output/character-workbench/viewer
+```
+
+此处是可导出的离线预览示例，打开 `http://127.0.0.1:8771/`；模型需要自带动作，首版不自动绑骨或重定向。
+
 ## 可复用素材工具箱
 
 新增两个 Skill 入口：`mascot-kit`（吉祥物与图标）、`character-motion-kit`（角色动作）。
@@ -94,3 +129,7 @@ Codex 图片生成可以作为原始素材上游；本仓库仍是**唯一的确
 [docs/CODEX_ASSET_WORKFLOW.md](docs/CODEX_ASSET_WORKFLOW.md)。新资产以
 [assets-manifest.example.json](assets-manifest.example.json) 为台账模板：记录来源、
 提示词、参考图、目标尺寸、验证报告和发布状态，避免后续只剩一张 PNG 而无法复现。
+
+## sprite-gen 动作工作层
+
+固定版本接入、精确时序、隔离候选和人工验收门禁见 [接入说明](docs/SPRITE_GEN_INTEGRATION.md)。当前完成现有素材导入试点，未验证目标角色的真实生成成功率。

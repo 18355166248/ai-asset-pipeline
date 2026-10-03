@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "provider": "codex-builtin-imagegen",
+  "title": "受击恢复中间原画（不是完整受击动作）",
+  "identity": "Same cute chestnut-bob anime adventurer, mint bow, golden eye, ivory/mint tunic, brown shorts/belt/gloves/boots and leaf satchel; right-facing side view, same proportions.",
+  "direction": "right-facing side view",
+  "canvas": [
+    512,
+    512
+  ],
+  "cell": [
+    256,
+    256
+  ],
+  "reference": {
+    "path": "reference.png",
+    "sha256": "f1a38bf4836378578d49b1f9fd09821a6bae03bd55526a9e28c6d23ad5a7f44d"
+  },
+  "anchor": [
+    0.5,
+    0.947265625
+  ],
+  "actions": [
+    {
+      "name": "hit-recovery",
+      "loop": false,
+      "frames": [
+        "hit-recovery-000"
+      ]
+    }
+  ],
+  "frames": {
+    "hit-recovery-000": {
+      "pose": "Halfway returning from recoil to idle, head and torso midway, near hand lowers from face toward guard, eye reopens. Boots planted at original baseline.",
+      "durationMs": 50,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "hit-recovery-000-prompt.txt",
+      "promptSha256": "be03920551194ef40ead5ca68e1c17dc110c8617e9c2ceb3f08a9dee436b4db1",
+      "attempts": [
+        {
+          "sha256": "e36ec0b20f330023dce189ddc6695646bf2924811ac7129101c7662d478a6253",
+          "original": "hit-recovery-000/attempt-001/source.png",
+          "frame": "hit-recovery-000/attempt-001/frame.png",
+          "frameSha256": "0e5a6bc9664b163f9d9cbcd90e29496a845e1662ac9670f67803acaeb26ae32e",
+          "actualPrompt": "hit-recovery-000/attempt-001/actual-prompt.txt",
+          "promptSha256": "d9dabe8c53f58dee6876770ac6626a84774f2de88f5bc4e51ac0f87a322bc88a",
+          "referenceInputs": [
+            {
+              "path": "hit-recovery-000/attempt-001/reference-01.png",
+              "sha256": "8351e737b9689f6645cbb6360e785e3d45b376560b6e2763aae5a314658706f0"
+            },
+            {
+              "path": "hit-recovery-000/attempt-001/reference-02.png",
+              "sha256": "f1a38bf4836378578d49b1f9fd09821a6bae03bd55526a9e28c6d23ad5a7f44d"
+            }
+          ],
+          "offset": [
+            0,
+            2
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        }
+      ],
+      "selected": 0
+    }
+  }
+}

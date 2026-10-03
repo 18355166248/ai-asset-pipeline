@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "manifest": "../../output/mint-adventurer-walk-torso-v1-registered/bundle/manifest.json",
+  "action": "move",
+  "operation": "upper-region",
+  "referenceFrame": 0,
+  "referenceImage": "mint-adventurer-head-consistency-v1/head-reference.png",
+  "cutY": 99,
+  "feather": 5,
+  "headOffsetY": [
+    0,
+    1,
+    0,
+    -1,
+    0,
+    1,
+    0,
+    -1
+  ]
+}

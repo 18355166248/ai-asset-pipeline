@@ -146,7 +146,15 @@ def apply_clip(parts: dict[str, bpy.types.Object], clip: dict) -> None:
         action = obj.animation_data.action if obj.animation_data else None
         if not action:
             continue
-        for curve in action.fcurves:
+        # Blender 4.4 开始动作按 slot 分层，5.0 删除 action.fcurves；
+        # 只取当前对象绑定的 slot，避免多对象 Action 时误改其他部件的曲线。
+        if getattr(action, "is_action_layered", False):
+            from bpy_extras.anim_utils import action_get_channelbag_for_slot
+            bag = action_get_channelbag_for_slot(action, obj.animation_data.action_slot)
+            curves = bag.fcurves if bag else []
+        else:
+            curves = action.fcurves
+        for curve in curves:
             if clip["loop"]:
                 # 循环动作用连续加速插值：首尾姿态相同还不够，
                 # 接缝处的速度也必须连续，否则每圈都会顿一下。

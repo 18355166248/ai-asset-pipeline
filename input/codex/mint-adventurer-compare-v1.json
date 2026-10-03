@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "action": "move",
+  "title": "步态同步对比 · v21候选",
+  "note": "前版与承重腿局部候选；共享真实时间，不把脚底诊断数字当作步态通过。",
+  "inputs": [
+    {
+      "manifest": "../../output/mint-adventurer-collection-v20/bundle/manifest.json",
+      "label": "v20 前版"
+    },
+    {
+      "manifest": "../../output/mint-adventurer-collection-v21/bundle/manifest.json",
+      "label": "v21 承重腿候选"
+    }
+  ]
+}

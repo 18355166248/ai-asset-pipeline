@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "title": "步行压低相位承重脚候选",
+  "direction": "right-facing side view",
+  "canvas": [
+    512,
+    512
+  ],
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    0.5,
+    0.947265625
+  ],
+  "actions": [
+    {
+      "name": "move-down-source",
+      "loop": false,
+      "frames": [
+        {
+          "pose": "Supporting rightmost boot moves 12 cell pixels back while floor unchanged; hip and lifted leg preserved.",
+          "durationMs": 100
+        }
+      ]
+    }
+  ]
+}

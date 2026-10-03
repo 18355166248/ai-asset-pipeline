@@ -1,0 +1,19 @@
+{
+  "actualGptCalls": 1,
+  "selectedNewDrawings": 1,
+  "framePositions": 31,
+  "distinctImages": 24,
+  "hitDurationMs": 160,
+  "durationsMs": [
+    80,
+    50,
+    30
+  ],
+  "rebuiltAtlasEqual": true,
+  "sequenceToolTests": 4,
+  "runtimeTimingVerified": true,
+  "status": "draft",
+  "gameAcceptance": false,
+  "gifSamplingMs": 10,
+  "gifSamplesAreNotNewDrawings": true
+}

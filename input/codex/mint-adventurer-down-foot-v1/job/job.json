@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "provider": "codex-builtin-imagegen",
+  "title": "步行压低相位承重脚候选",
+  "identity": "薄荷冒险者，棕色短发绿色蝴蝶结，白绿裙，棕色手套和靴子，绿色叶包，右侧二次元角色",
+  "direction": "right-facing side view",
+  "canvas": [
+    512,
+    512
+  ],
+  "cell": [
+    256,
+    256
+  ],
+  "reference": {
+    "path": "reference.png",
+    "sha256": "666b91ac3c6c222037403399f3b4a640c8b8000d2eb1ffabcf51340f3749203a"
+  },
+  "anchor": [
+    0.5,
+    0.947265625
+  ],
+  "actions": [
+    {
+      "name": "move-down-source",
+      "loop": false,
+      "frames": [
+        "move-down-source-000"
+      ]
+    }
+  ],
+  "frames": {
+    "move-down-source-000": {
+      "pose": "Supporting rightmost boot moves 12 cell pixels back while floor unchanged; hip and lifted leg preserved.",
+      "durationMs": 100,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "move-down-source-000-prompt.txt",
+      "promptSha256": "c6d591528cf4ecc237ae62cbeaee55d2249384f9fafe910a6ac825c5874ecf9f",
+      "attempts": [
+        {
+          "sha256": "dccb2b44455d2b4ceade80e2c8c73d17bb7afbb63a4808d222c10234d2dc9d86",
+          "original": "move-down-source-000/attempt-001/source.png",
+          "frame": "move-down-source-000/attempt-001/frame.png",
+          "frameSha256": "1fc7f3e39b25af7f63d2224dd9bcd91adb75583664620462f21a48add5c9b245",
+          "actualPrompt": "move-down-source-000/attempt-001/actual-prompt.txt",
+          "promptSha256": "64741b6d2794fa39b6e32246c7204934e5cdbb21b1cb584a853571043b34e5f6",
+          "referenceInputs": [
+            {
+              "path": "move-down-source-000/attempt-001/reference-01.png",
+              "sha256": "666b91ac3c6c222037403399f3b4a640c8b8000d2eb1ffabcf51340f3749203a"
+            }
+          ],
+          "offset": [
+            20,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": {
+            "verdict": "reject",
+            "reason": "整帧重画身份服饰与腿，脚部后收超过提示幅度；归一化画布显式x+20像素以便局部膝/踝配准，只作为右承重腿区域来源，派生动画另验收。仅一次真实GPT调用。",
+            "reviewer": "agent"
+          }
+        }
+      ],
+      "selected": 0
+    }
+  }
+}

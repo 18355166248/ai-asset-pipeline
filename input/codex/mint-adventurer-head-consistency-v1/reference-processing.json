@@ -1,0 +1,16 @@
+{
+  "operation": "explicit-source-crop-mask",
+  "actualGptCalls": 0,
+  "source": "idle-master.png",
+  "sourceSha256": "2ca08dfbeebcec7562e1a2c2573039465d3aa80d27c7f812d78c842714bd800d",
+  "clearRect": [
+    159,
+    89,
+    256,
+    100
+  ],
+  "reason": "Remove idle guarding fist from head seam; keeps hairstyle/face/neck above cut99. No generated identity or automatic body recognition.",
+  "result": "head-reference.png",
+  "resultSha256": "58beb0f66dc9d7274b5a0d54c9b31ec01797c4e2279e67b05fcbe19a3edd777f",
+  "status": "draft"
+}

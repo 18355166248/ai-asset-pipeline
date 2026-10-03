@@ -1,0 +1,129 @@
+{
+  "method": "Explicit per-frame grounded walking sole registration; whole-canvas resize only, no bbox scale or cutout joints",
+  "canvas": [
+    512,
+    512
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "gridRect": [
+        0,
+        0,
+        418,
+        418
+      ],
+      "opaqueSoleY": 488,
+      "offset": [
+        0,
+        -3
+      ],
+      "registeredSoleY": 485
+    },
+    {
+      "index": 1,
+      "gridRect": [
+        418,
+        0,
+        836,
+        418
+      ],
+      "opaqueSoleY": 489,
+      "offset": [
+        0,
+        -4
+      ],
+      "registeredSoleY": 485
+    },
+    {
+      "index": 2,
+      "gridRect": [
+        836,
+        0,
+        1254,
+        418
+      ],
+      "opaqueSoleY": 488,
+      "offset": [
+        0,
+        -3
+      ],
+      "registeredSoleY": 485
+    },
+    {
+      "index": 3,
+      "gridRect": [
+        0,
+        418,
+        418,
+        836
+      ],
+      "opaqueSoleY": 489,
+      "offset": [
+        0,
+        -4
+      ],
+      "registeredSoleY": 485
+    },
+    {
+      "index": 4,
+      "gridRect": [
+        418,
+        418,
+        836,
+        836
+      ],
+      "opaqueSoleY": 489,
+      "offset": [
+        0,
+        -4
+      ],
+      "registeredSoleY": 485
+    },
+    {
+      "index": 5,
+      "gridRect": [
+        836,
+        418,
+        1254,
+        836
+      ],
+      "opaqueSoleY": 488,
+      "offset": [
+        0,
+        -3
+      ],
+      "registeredSoleY": 485
+    },
+    {
+      "index": 6,
+      "gridRect": [
+        0,
+        836,
+        418,
+        1254
+      ],
+      "opaqueSoleY": 490,
+      "offset": [
+        0,
+        -5
+      ],
+      "registeredSoleY": 485
+    },
+    {
+      "index": 7,
+      "gridRect": [
+        418,
+        836,
+        836,
+        1254
+      ],
+      "opaqueSoleY": 489,
+      "offset": [
+        0,
+        -4
+      ],
+      "registeredSoleY": 485
+    }
+  ]
+}

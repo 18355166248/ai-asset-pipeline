@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "title": "\u8584\u8377\u5192\u9669\u8005 \u00b7 GPT \u52a8\u4f5c\u96c6\u5408\u5019\u9009",
+  "inputs": [
+    {
+      "manifest": "../../output/mint-adventurer-attack-six-v1/bundle/manifest.json",
+      "actions": [
+        "attack"
+      ]
+    },
+    {
+      "manifest": "../../output/mint-adventurer-arm-cycle-v1/bundle/manifest.json",
+      "actions": [
+        "move"
+      ]
+    },
+    {
+      "manifest": "../../output/mint-adventurer-hit-three-v1/bundle/manifest.json",
+      "actions": [
+        "hit"
+      ]
+    },
+    {
+      "manifest": "../../output/mint-adventurer-jump-ten-v1/bundle/manifest.json",
+      "actions": [
+        "jump"
+      ]
+    },
+    {
+      "manifest": "../../output/mint-adventurer-idle-v1-patched/bundle/manifest.json",
+      "actions": [
+        "idle"
+      ]
+    },
+    {
+      "manifest": "../../output/mint-adventurer-head-move-start-v1/bundle/manifest.json",
+      "actions": [
+        "move-start"
+      ]
+    },
+    {
+      "manifest": "../../output/mint-adventurer-stop-back-v1/bundle/manifest.json",
+      "actions": [
+        "move-stop"
+      ]
+    },
+    {
+      "manifest": "../../output/mint-adventurer-stop-front-v1/bundle/manifest.json",
+      "actions": [
+        "stop-front"
+      ]
+    }
+  ]
+}

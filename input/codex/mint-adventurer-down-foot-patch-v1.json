@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "manifest": "../../output/mint-adventurer-down-foot-sequence-v1/bundle/manifest.json",
+  "action": "move",
+  "operation": "rectangle-patch",
+  "referenceFrame": 0,
+  "referenceManifest": "../../output/mint-adventurer-collection-v20/bundle/manifest.json",
+  "rect": [
+    140,
+    178,
+    224,
+    256
+  ],
+  "feather": 2,
+  "frameIndices": [
+    1
+  ]
+}

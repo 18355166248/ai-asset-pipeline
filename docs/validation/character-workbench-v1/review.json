@@ -1,0 +1,188 @@
+{
+  "status": "previewed-only",
+  "character": "humanoid-demo",
+  "clips": [
+    {
+      "name": "cast",
+      "duration": 1.7916666666666667,
+      "loop": false
+    },
+    {
+      "name": "dash",
+      "duration": 1.0416666666666667,
+      "loop": false
+    },
+    {
+      "name": "hit",
+      "duration": 0.7916666666666666,
+      "loop": false
+    },
+    {
+      "name": "idle",
+      "duration": 1.9583333333333333,
+      "loop": true
+    },
+    {
+      "name": "jump",
+      "duration": 1.2916666666666667,
+      "loop": false
+    },
+    {
+      "name": "move",
+      "duration": 1.3333333333333333,
+      "loop": true
+    },
+    {
+      "name": "slash",
+      "duration": 0.9583333333333334,
+      "loop": false
+    },
+    {
+      "name": "slash2",
+      "duration": 1.0416666666666667,
+      "loop": false
+    }
+  ],
+  "visitedActions": [
+    {
+      "character": "humanoid-demo",
+      "action": "idle",
+      "blendMs": 180,
+      "at": "2026-10-02T14:11:47.398Z"
+    },
+    {
+      "character": "humanoid-demo",
+      "action": "cast",
+      "blendMs": 180,
+      "at": "2026-10-02T14:11:47.482Z"
+    },
+    {
+      "character": "humanoid-demo",
+      "action": "dash",
+      "blendMs": 180,
+      "at": "2026-10-02T14:11:49.454Z"
+    },
+    {
+      "character": "humanoid-demo",
+      "action": "hit",
+      "blendMs": 180,
+      "at": "2026-10-02T14:11:50.687Z"
+    },
+    {
+      "character": "humanoid-demo",
+      "action": "idle",
+      "blendMs": 180,
+      "at": "2026-10-02T14:11:51.670Z"
+    },
+    {
+      "character": "humanoid-demo",
+      "action": "jump",
+      "blendMs": 180,
+      "at": "2026-10-02T14:11:55.770Z"
+    },
+    {
+      "character": "humanoid-demo",
+      "action": "move",
+      "blendMs": 180,
+      "at": "2026-10-02T14:11:57.254Z"
+    },
+    {
+      "character": "humanoid-demo",
+      "action": "slash",
+      "blendMs": 180,
+      "at": "2026-10-02T14:12:00.104Z"
+    },
+    {
+      "character": "humanoid-demo",
+      "action": "slash2",
+      "blendMs": 180,
+      "at": "2026-10-02T14:12:01.254Z"
+    },
+    {
+      "character": "humanoid-demo",
+      "action": "cast",
+      "blendMs": 180,
+      "at": "2026-10-02T14:12:02.487Z"
+    },
+    {
+      "character": "humanoid-demo",
+      "action": "dash",
+      "blendMs": 180,
+      "at": "2026-10-02T14:12:04.470Z"
+    },
+    {
+      "character": "humanoid-demo",
+      "action": "hit",
+      "blendMs": 180,
+      "at": "2026-10-02T14:12:05.704Z"
+    },
+    {
+      "character": "humanoid-demo",
+      "action": "idle",
+      "blendMs": 180,
+      "at": "2026-10-02T14:12:06.687Z"
+    },
+    {
+      "character": "humanoid-demo",
+      "action": "jump",
+      "blendMs": 180,
+      "at": "2026-10-02T14:12:10.787Z"
+    },
+    {
+      "character": "humanoid-demo",
+      "action": "move",
+      "blendMs": 180,
+      "at": "2026-10-02T14:12:12.270Z"
+    },
+    {
+      "character": "humanoid-demo",
+      "action": "slash",
+      "blendMs": 180,
+      "at": "2026-10-02T14:12:15.119Z"
+    },
+    {
+      "character": "humanoid-demo",
+      "action": "slash2",
+      "blendMs": 180,
+      "at": "2026-10-02T14:12:16.270Z"
+    },
+    {
+      "character": "humanoid-demo",
+      "action": "cast",
+      "blendMs": 180,
+      "at": "2026-10-02T14:12:17.504Z"
+    },
+    {
+      "character": "humanoid-demo",
+      "action": "dash",
+      "blendMs": 180,
+      "at": "2026-10-02T14:12:19.487Z"
+    },
+    {
+      "character": "humanoid-demo",
+      "action": "hit",
+      "blendMs": 180,
+      "at": "2026-10-02T14:12:20.720Z"
+    },
+    {
+      "character": "humanoid-demo",
+      "action": "idle",
+      "blendMs": 180,
+      "at": "2026-10-02T14:12:21.704Z"
+    },
+    {
+      "character": "humanoid-demo",
+      "action": "jump",
+      "blendMs": 180,
+      "at": "2026-10-02T14:12:25.804Z"
+    }
+  ],
+  "manualChecks": [
+    "左右腿交替承重",
+    "脚底与武器轨迹",
+    "循环接缝",
+    "过渡与收招",
+    "目标游戏时间窗口"
+  ],
+  "runtimeEvidence": null
+}

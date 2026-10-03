@@ -1,0 +1,10 @@
+{
+  "states": 7,
+  "moveFrames": 8,
+  "moveDurationMs": 800,
+  "moveLoop": true,
+  "gptCalls": 1,
+  "sheetEditNotEightSeparateCalls": true,
+  "blankCellOpaquePixels": 0,
+  "status": "draft"
+}

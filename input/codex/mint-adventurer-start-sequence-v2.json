@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "title": "\u56db\u59ff\u6001\u8d77\u6b65\u5019\u9009",
+  "inputs": [
+    {
+      "manifest": "../../output/mint-adventurer-stop-back-v2/bundle/manifest.json"
+    },
+    {
+      "manifest": "../../output/mint-adventurer-collection-v17/bundle/manifest.json"
+    }
+  ],
+  "states": [
+    {
+      "name": "move-start",
+      "loop": false,
+      "frames": [
+        {
+          "input": 0,
+          "action": "move-stop",
+          "frame": 3,
+          "durationMs": 25
+        },
+        {
+          "input": 0,
+          "action": "move-stop",
+          "frame": 2,
+          "durationMs": 25
+        },
+        {
+          "input": 0,
+          "action": "move-stop",
+          "frame": 1,
+          "durationMs": 25
+        },
+        {
+          "input": 1,
+          "action": "move",
+          "frame": 0,
+          "durationMs": 25
+        }
+      ]
+    }
+  ]
+}

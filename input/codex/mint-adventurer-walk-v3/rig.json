@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "image": "parts.png",
+  "cell": [
+    192,
+    256
+  ],
+  "root": [
+    104,
+    160.5
+  ],
+  "attachments": {
+    "nearHip": [
+      -4,
+      0
+    ],
+    "farHip": [
+      4,
+      0
+    ],
+    "nearShoulder": [
+      -16,
+      -64
+    ],
+    "farShoulder": [
+      12,
+      -57
+    ]
+  },
+  "bones": {
+    "thigh": 35.5,
+    "calf": 35.5,
+    "upperArm": 32,
+    "forearm": 28
+  },
+  "gait": {
+    "stride": 34,
+    "lift": 14,
+    "duty": 0.6,
+    "bob": 2.7,
+    "ankleY": 227,
+    "groundY": 247
+  },
+  "actions": {
+    "idle": {
+      "frames": 48,
+      "fps": 24
+    },
+    "move": {
+      "frames": 48,
+      "fps": 60
+    }
+  },
+  "parts": {
+    "body": {
+      "rect": [
+        109,
+        14,
+        446,
+        580
+      ],
+      "anchor": [
+        0.65,
+        0.957
+      ],
+      "height": 154
+    },
+    "upperArm": {
+      "rect": [
+        708,
+        130,
+        850,
+        480
+      ],
+      "anchor": [
+        0.5,
+        0.13
+      ],
+      "height": 41.02564102564102
+    },
+    "forearm": {
+      "rect": [
+        1241,
+        161,
+        1354,
+        554
+      ],
+      "anchor": [
+        0.5,
+        0.12
+      ],
+      "height": 44.44444444444444
+    },
+    "thigh": {
+      "rect": [
+        200,
+        619,
+        374,
+        983
+      ],
+      "anchor": [
+        0.5,
+        0.14
+      ],
+      "height": 47.972972972972975
+    },
+    "calf": {
+      "rect": [
+        702,
+        624,
+        820,
+        983
+      ],
+      "anchor": [
+        0.5,
+        0.12
+      ],
+      "height": 44.375
+    },
+    "boot": {
+      "rect": [
+        1184,
+        729,
+        1422,
+        970
+      ],
+      "anchor": [
+        0.32,
+        0.14
+      ],
+      "height": 22
+    }
+  }
+}

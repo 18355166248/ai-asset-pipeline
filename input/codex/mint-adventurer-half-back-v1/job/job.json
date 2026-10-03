@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "provider": "codex-builtin-imagegen",
+  "title": "起停半后摆原画",
+  "identity": "薄荷冒险者，棕色短发绿色蝴蝶结，白色绿边裙，棕色手套靴子和绿色叶包，二次元右侧视角",
+  "direction": "right-facing side view",
+  "canvas": [
+    512,
+    512
+  ],
+  "cell": [
+    256,
+    256
+  ],
+  "reference": {
+    "path": "reference.png",
+    "sha256": "4265b8e04f0e0fd01fbd5d1f0bc279da6c9dda4b6e088024bfaffbf68136d6fd"
+  },
+  "anchor": [
+    0.5,
+    0.947265625
+  ],
+  "actions": [
+    {
+      "name": "half-back",
+      "loop": false,
+      "frames": [
+        "half-back-000"
+      ]
+    }
+  ],
+  "frames": {
+    "half-back-000": {
+      "pose": "Near glove halfway between full backward reach and vertical hanging arm, near glove x112 y149 at cell size; far glove below chest.",
+      "durationMs": 35,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "half-back-000-prompt.txt",
+      "promptSha256": "45c5e32ffc305d7bb077f40ed783a622a8f9faa8e66105b7b41d38bfc70022db",
+      "attempts": [
+        {
+          "sha256": "20ade21a1f5898be5ce19415ab39d7f22ca472714eaa0784124d1505775f5f9b",
+          "original": "half-back-000/attempt-001/source.png",
+          "frame": "half-back-000/attempt-001/frame.png",
+          "frameSha256": "b189c5a9e397e8e95af196acd4f295c52897c4c35224310a2b1d858e87ae1b31",
+          "actualPrompt": "half-back-000/attempt-001/actual-prompt.txt",
+          "promptSha256": "67d8744e80e2e2824824dc0e0c2a5c0a97b953f6d8d168e54a0120f582bc4ebd",
+          "referenceInputs": [
+            {
+              "path": "half-back-000/attempt-001/reference-01.png",
+              "sha256": "4265b8e04f0e0fd01fbd5d1f0bc279da6c9dda4b6e088024bfaffbf68136d6fd"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": {
+            "verdict": "reject",
+            "reason": "整帧脸服饰腿部重画，近手仅稍前收且远臂下降更多，未精确达到提示坐标；仅作局部候选来源，完整起停序列另检查。",
+            "reviewer": "agent"
+          }
+        }
+      ],
+      "selected": 0
+    }
+  }
+}

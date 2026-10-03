@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "title": "起停半后摆原画",
+  "direction": "right-facing side view",
+  "canvas": [
+    512,
+    512
+  ],
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    0.5,
+    0.947265625
+  ],
+  "actions": [
+    {
+      "name": "half-back",
+      "loop": false,
+      "frames": [
+        {
+          "pose": "Near glove halfway between full backward reach and vertical hanging arm, near glove x112 y149 at cell size; far glove below chest.",
+          "durationMs": 35
+        }
+      ]
+    }
+  ]
+}

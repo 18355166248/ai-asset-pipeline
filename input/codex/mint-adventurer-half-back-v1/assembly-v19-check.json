@@ -1,0 +1,48 @@
+{
+  "actualGptCallsThisTurn": 1,
+  "wholeGeneratedCandidateAccepted": false,
+  "sourceUse": "explicit arms ROI only",
+  "startDurationsMs": [
+    25,
+    25,
+    25,
+    25
+  ],
+  "backStopDurationsMs": [
+    35,
+    35,
+    40,
+    35,
+    30
+  ],
+  "framePositions": 41,
+  "distinctRgba": 28,
+  "actions": 8,
+  "startLastFrameEqualsMoveFirstRgba": true,
+  "backStopOutsideAndProtectedEqual": true,
+  "shortTapPaths": 4,
+  "contactStopPaths": 4,
+  "nodeTestsPassed": 37,
+  "previewSiteTestsPassed": 5,
+  "playgroundTestsPassed": 3,
+  "zipIntegrityPassed": true,
+  "browser": {
+    "workbenchTimeMs": 65,
+    "frame": "3/4",
+    "stopDemoFinalAction": "idle",
+    "x": 413.3,
+    "height": 0,
+    "capturedErrors": [],
+    "normalStartReplayEndMs": 100,
+    "normalStartReplayEndFrame": "4/4",
+    "defaultRoot": "current-v19"
+  },
+  "status": "draft",
+  "gameAcceptance": false,
+  "godot": {
+    "version": "4.7.2",
+    "realImportPassed": true,
+    "checks": 109,
+    "animations": 8
+  }
+}

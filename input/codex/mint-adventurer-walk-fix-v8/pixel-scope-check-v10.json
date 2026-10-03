@@ -1,0 +1,17 @@
+{
+  "sourceOld": "output/mint-adventurer-walk-v7-head-lock/bundle/frames/move",
+  "sourceNew": "output/mint-adventurer-walk-v8-body-patch/bundle/frames/move",
+  "unmodifiedFrames": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "frame7OutsideRectEqual": true,
+  "actualGptCalls": 1,
+  "registeredAttempts": 2,
+  "status": "draft"
+}

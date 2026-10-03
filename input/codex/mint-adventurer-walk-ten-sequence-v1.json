@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "inputs": [
+    {
+      "manifest": "../../output/mint-adventurer-collection-v21/bundle/manifest.json"
+    },
+    {
+      "manifest": "../../output/mint-adventurer-walk-passing-patched-v1/bundle/manifest.json"
+    },
+    {
+      "manifest": "../../output/mint-adventurer-walk-far-patched-v1/bundle/manifest.json"
+    }
+  ],
+  "states": [
+    {
+      "name": "move",
+      "loop": true,
+      "frames": [
+        {
+          "input": 0,
+          "action": "move",
+          "frame": 0,
+          "durationMs": 100
+        },
+        {
+          "input": 0,
+          "action": "move",
+          "frame": 1,
+          "durationMs": 50
+        },
+        {
+          "input": 1,
+          "action": "walk-passing-inbetween",
+          "frame": 0,
+          "durationMs": 50
+        },
+        {
+          "input": 0,
+          "action": "move",
+          "frame": 2,
+          "durationMs": 100
+        },
+        {
+          "input": 0,
+          "action": "move",
+          "frame": 3,
+          "durationMs": 100
+        },
+        {
+          "input": 0,
+          "action": "move",
+          "frame": 4,
+          "durationMs": 100
+        },
+        {
+          "input": 0,
+          "action": "move",
+          "frame": 5,
+          "durationMs": 50
+        },
+        {
+          "input": 2,
+          "action": "walk-far-inbetween",
+          "frame": 0,
+          "durationMs": 50
+        },
+        {
+          "input": 0,
+          "action": "move",
+          "frame": 6,
+          "durationMs": 100
+        },
+        {
+          "input": 0,
+          "action": "move",
+          "frame": 7,
+          "durationMs": 100
+        }
+      ]
+    }
+  ]
+}

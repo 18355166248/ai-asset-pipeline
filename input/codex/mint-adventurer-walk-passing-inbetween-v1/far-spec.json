@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "title": "步行另半周期中间原画",
+  "direction": "right-facing side view",
+  "canvas": [
+    512,
+    512
+  ],
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    0.5,
+    0.947265625
+  ],
+  "actions": [
+    {
+      "name": "walk-far-inbetween",
+      "loop": false,
+      "frames": [
+        {
+          "pose": "Halfway between down and passing; raised knee partly advances, support foot grounded",
+          "durationMs": 50
+        }
+      ]
+    }
+  ]
+}

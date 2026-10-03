@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "provider": "codex-builtin-imagegen",
+  "title": "薄荷冒险者 · 起停中间姿态",
+  "identity": "Original cute chestnut-bob anime adventurer girl, mint bow, golden eyes, ivory/mint short tunic with leaf patterns, brown shorts and belt, brown leather fingerless gloves/boots, leaf satchel. Same proportions and camera as actual master frame.",
+  "direction": "right-facing side view",
+  "canvas": [
+    512,
+    512
+  ],
+  "cell": [
+    256,
+    256
+  ],
+  "reference": {
+    "path": "reference.png",
+    "sha256": "f1a38bf4836378578d49b1f9fd09821a6bae03bd55526a9e28c6d23ad5a7f44d"
+  },
+  "anchor": [
+    0.5,
+    0.947265625
+  ],
+  "actions": [
+    {
+      "name": "move-start",
+      "loop": false,
+      "frames": [
+        "move-start-000"
+      ]
+    },
+    {
+      "name": "move-stop",
+      "loop": false,
+      "frames": [
+        "move-stop-000"
+      ]
+    }
+  ],
+  "frames": {
+    "move-start-000": {
+      "pose": "Arms halfway between idle guard and walking contact; grounded idle feet. Same actual intermediate drawing reused for reverse transition.",
+      "durationMs": 60,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "move-start-000-prompt.txt",
+      "promptSha256": "85b6d8390db88e707434d9a62ca4abf4ea589e432c8758b57f9033d4e11f97ba",
+      "attempts": [
+        {
+          "sha256": "9466c57db899f7bb354d7c98f9ec51567d152017035dd5450defdccd41dd9814",
+          "original": "move-start-000/attempt-001/source.png",
+          "frame": "move-start-000/attempt-001/frame.png",
+          "frameSha256": "bd0890f41be5fbda6e340a1cf05b29254e565b4fd857dac6b63c3f8c2e503be3",
+          "actualPrompt": "move-start-000/attempt-001/actual-prompt.txt",
+          "promptSha256": "820bdbe3580966afcadb0191e28c9dc5f5aedb86a7b25a1ef5b1539091795865",
+          "referenceInputs": [
+            {
+              "path": "move-start-000/attempt-001/reference-01.png",
+              "sha256": "f1a38bf4836378578d49b1f9fd09821a6bae03bd55526a9e28c6d23ad5a7f44d"
+            },
+            {
+              "path": "move-start-000/attempt-001/reference-02.png",
+              "sha256": "938e75ae8b4edebe7b653021eda02241cc530ed3017f79a62b3504b766440079"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        }
+      ],
+      "selected": 0
+    },
+    "move-stop-000": {
+      "pose": "Arms halfway between idle guard and walking contact; grounded idle feet. Same actual intermediate drawing reused for reverse transition.",
+      "durationMs": 80,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "move-stop-000-prompt.txt",
+      "promptSha256": "5a903ba75b301a412881d1656d27bcd7f5dba7e64051340d4f80ee0b50b109d5",
+      "attempts": [
+        {
+          "sha256": "9466c57db899f7bb354d7c98f9ec51567d152017035dd5450defdccd41dd9814",
+          "original": "move-stop-000/attempt-001/source.png",
+          "frame": "move-stop-000/attempt-001/frame.png",
+          "frameSha256": "bd0890f41be5fbda6e340a1cf05b29254e565b4fd857dac6b63c3f8c2e503be3",
+          "actualPrompt": "move-stop-000/attempt-001/actual-prompt.txt",
+          "promptSha256": "820bdbe3580966afcadb0191e28c9dc5f5aedb86a7b25a1ef5b1539091795865",
+          "referenceInputs": [
+            {
+              "path": "move-stop-000/attempt-001/reference-01.png",
+              "sha256": "f1a38bf4836378578d49b1f9fd09821a6bae03bd55526a9e28c6d23ad5a7f44d"
+            },
+            {
+              "path": "move-stop-000/attempt-001/reference-02.png",
+              "sha256": "938e75ae8b4edebe7b653021eda02241cc530ed3017f79a62b3504b766440079"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        }
+      ],
+      "selected": 0
+    }
+  }
+}

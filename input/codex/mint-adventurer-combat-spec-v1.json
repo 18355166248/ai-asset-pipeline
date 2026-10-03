@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "title": "薄荷冒险者 · 待机与拳击原画",
+  "direction": "right-facing side view",
+  "canvas": [512, 512],
+  "cell": [256, 256],
+  "anchor": [0.5, 0.947265625],
+  "actions": [
+    {"name": "idle", "loop": true, "frames": [
+      {"pose": "Relaxed combat ready stance. Same head/torso scale and location. Both boots planted y485, ankles x240 and x284, knees slightly soft. Near fist loosely raised at x292 y286, far fist x309 y273. Empty hands, no weapon.", "durationMs": 400}
+    ]},
+    {"name": "attack", "loop": false, "frames": [
+      {"pose": "Small punch anticipation: near elbow pulled back, fist near x238 y278; far fist guards chest x308 y274. Boots planted same as idle. Torso leans only slightly back, head same size.", "durationMs": 110},
+      {"pose": "Straight near-hand punch to screen RIGHT: near arm shoulder-elbow-fist straight at x365 y244; far hand stays at chest x286 y283. Torso leans forward slightly without rotating camera; boots stay planted. No weapon/trails.", "durationMs": 80},
+      {"pose": "Punch recovery: near elbow bends, fist retracts toward x300 y278, far fist at x309 y273. Same ready stance boots; body returns toward idle, no new step.", "durationMs": 140}
+    ]}
+  ]
+}

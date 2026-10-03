@@ -1,0 +1,11 @@
+{
+  "stopContactFrames": [
+    0,
+    4
+  ],
+  "contactHoldMs": 40,
+  "stopClipsByContact": {
+    "0": "move-stop",
+    "4": "stop-front"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "provider": "codex-builtin-imagegen",
+  "title": "步行压低到经过中间原画",
+  "identity": "薄荷冒险者棕发绿蝴蝶结白绿裙棕靴，向右侧面，比例固定",
+  "direction": "right-facing side view",
+  "canvas": [
+    512,
+    512
+  ],
+  "cell": [
+    256,
+    256
+  ],
+  "reference": {
+    "path": "reference.png",
+    "sha256": "71b2289b3d465cbefe89e43e374a926f10cd32392ac4593c6746639cafefc9ee"
+  },
+  "anchor": [
+    0.5,
+    0.947265625
+  ],
+  "actions": [
+    {
+      "name": "walk-passing-inbetween",
+      "loop": false,
+      "frames": [
+        "walk-passing-inbetween-000"
+      ]
+    }
+  ],
+  "frames": {
+    "walk-passing-inbetween-000": {
+      "pose": "Halfway between down and passing; raised knee partly advances, support foot grounded",
+      "durationMs": 50,
+      "guide": null,
+      "guideSha256": null,
+      "prompt": "walk-passing-inbetween-000-prompt.txt",
+      "promptSha256": "b1919d08d476e668c2c5aa0721c9a6fc7da5d6da30abdf3ef68e955bc23d6e56",
+      "attempts": [
+        {
+          "sha256": "dd279ae1ebc91c5eff2d44ac2e4c3846024fa384ccde1bb3d201aa0b514ae0f1",
+          "original": "walk-passing-inbetween-000/attempt-001/source.png",
+          "frame": "walk-passing-inbetween-000/attempt-001/frame.png",
+          "frameSha256": "7e2934e51cc56edd046f4852e9776d38ea5fe84a3b99033f79ec15a40997a15d",
+          "actualPrompt": "walk-passing-inbetween-000/attempt-001/actual-prompt.txt",
+          "promptSha256": "c8db9608fefba502b9a20d7e222ca1563238c0d1166953d066788d0405b13580",
+          "referenceInputs": [
+            {
+              "path": "walk-passing-inbetween-000/attempt-001/reference-01.png",
+              "sha256": "71b2289b3d465cbefe89e43e374a926f10cd32392ac4593c6746639cafefc9ee"
+            },
+            {
+              "path": "walk-passing-inbetween-000/attempt-001/reference-02.png",
+              "sha256": "6a9b9dbaff8eeb084d4d68a69c7988a0a2068721b1855ff83b57de9bdea5e2a7"
+            }
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": null
+        },
+        {
+          "sha256": "dd279ae1ebc91c5eff2d44ac2e4c3846024fa384ccde1bb3d201aa0b514ae0f1",
+          "original": "walk-passing-inbetween-000/attempt-002/source.png",
+          "frame": "walk-passing-inbetween-000/attempt-002/frame.png",
+          "frameSha256": "d57c26aaa165e842ef5815334a906520690ed085f27e11e399c168651999b354",
+          "actualPrompt": "walk-passing-inbetween-000/attempt-002/actual-prompt.txt",
+          "promptSha256": "c8db9608fefba502b9a20d7e222ca1563238c0d1166953d066788d0405b13580",
+          "referenceInputs": [
+            {
+              "path": "walk-passing-inbetween-000/attempt-002/reference-01.png",
+              "sha256": "71b2289b3d465cbefe89e43e374a926f10cd32392ac4593c6746639cafefc9ee"
+            },
+            {
+              "path": "walk-passing-inbetween-000/attempt-002/reference-02.png",
+              "sha256": "6a9b9dbaff8eeb084d4d68a69c7988a0a2068721b1855ff83b57de9bdea5e2a7"
+            }
+          ],
+          "offset": [
+            0,
+            4
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "review": {
+            "verdict": "reject",
+            "reason": "整帧重画身份衣饰，不整帧采用。后脚前摆与屈膝可作下身中间姿态来源，512画布显式y+4对齐地面；同一真实GPT原图两次登记，不是两次调用。局部派生与循环另验收。",
+            "reviewer": "agent"
+          }
+        }
+      ],
+      "selected": 1
+    }
+  }
+}

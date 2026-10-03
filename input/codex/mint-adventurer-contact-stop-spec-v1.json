@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "title": "\u524d\u6446\u843d\u811a\u505c\u6b65\u4e2d\u95f4\u59ff\u6001",
+  "direction": "right-facing side view",
+  "canvas": [
+    512,
+    512
+  ],
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    0.5,
+    0.947265625
+  ],
+  "actions": [
+    {
+      "name": "stop-front-source",
+      "loop": false,
+      "frames": [
+        {
+          "pose": "Foreground near arm lowers from forward swing toward guard; near glove at x150 y150 cell coordinates, far arm behind torso. Legs preserve stopping stance.",
+          "durationMs": 80
+        }
+      ]
+    }
+  ]
+}

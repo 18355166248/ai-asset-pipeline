@@ -1,0 +1,12 @@
+{
+  "stopContactFrames": [
+    0,
+    5
+  ],
+  "contactHoldMs": 40,
+  "stopClipsByContact": {
+    "0": "move-stop",
+    "5": "stop-front"
+  },
+  "reverseStartOnRelease": true
+}

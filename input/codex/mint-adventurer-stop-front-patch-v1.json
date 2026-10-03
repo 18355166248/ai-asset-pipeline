@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "manifest": "../../output/mint-adventurer-stop-front-sequence-v1/bundle/manifest.json",
+  "action": "stop-front",
+  "operation": "rectangle-patch",
+  "referenceFrame": 0,
+  "referenceManifest": "../../output/mint-adventurer-stop-front-base-v1/bundle/manifest.json",
+  "rect": [
+    78,
+    104,
+    202,
+    169
+  ],
+  "feather": 2,
+  "protectedRects": [
+    [
+      134,
+      94,
+      160,
+      114
+    ]
+  ],
+  "frameIndices": [
+    0,
+    1
+  ]
+}

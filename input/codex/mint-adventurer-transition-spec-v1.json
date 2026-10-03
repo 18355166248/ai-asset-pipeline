@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "title": "薄荷冒险者 · 起停中间姿态",
+  "direction": "right-facing side view",
+  "canvas": [
+    512,
+    512
+  ],
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    0.5,
+    0.947265625
+  ],
+  "actions": [
+    {
+      "name": "move-start",
+      "loop": false,
+      "frames": [
+        {
+          "pose": "Arms halfway between idle guard and walking contact; grounded idle feet. Same actual intermediate drawing reused for reverse transition.",
+          "durationMs": 60
+        }
+      ]
+    },
+    {
+      "name": "move-stop",
+      "loop": false,
+      "frames": [
+        {
+          "pose": "Arms halfway between idle guard and walking contact; grounded idle feet. Same actual intermediate drawing reused for reverse transition.",
+          "durationMs": 80
+        }
+      ]
+    }
+  ]
+}

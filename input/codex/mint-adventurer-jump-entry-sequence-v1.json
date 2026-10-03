@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "title": "跳跃身份入口一致性修正",
+  "inputs": [
+    {
+      "manifest": "../../output/mint-adventurer-collection-v19/bundle/manifest.json"
+    }
+  ],
+  "states": [
+    {
+      "name": "jump",
+      "loop": false,
+      "frames": [
+        {
+          "input": 0,
+          "action": "idle",
+          "frame": 0,
+          "durationMs": 40
+        },
+        {
+          "input": 0,
+          "action": "jump",
+          "frame": 1,
+          "durationMs": 40
+        },
+        {
+          "input": 0,
+          "action": "jump",
+          "frame": 2,
+          "durationMs": 60
+        },
+        {
+          "input": 0,
+          "action": "jump",
+          "frame": 3,
+          "durationMs": 40
+        },
+        {
+          "input": 0,
+          "action": "jump",
+          "frame": 4,
+          "durationMs": 80
+        },
+        {
+          "input": 0,
+          "action": "jump",
+          "frame": 5,
+          "durationMs": 40
+        },
+        {
+          "input": 0,
+          "action": "jump",
+          "frame": 6,
+          "durationMs": 40
+        },
+        {
+          "input": 0,
+          "action": "jump",
+          "frame": 7,
+          "durationMs": 40
+        },
+        {
+          "input": 0,
+          "action": "jump",
+          "frame": 8,
+          "durationMs": 30
+        },
+        {
+          "input": 0,
+          "action": "jump",
+          "frame": 9,
+          "durationMs": 30
+        }
+      ]
+    }
+  ]
+}

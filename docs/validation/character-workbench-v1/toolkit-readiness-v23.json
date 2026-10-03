@@ -1,0 +1,68 @@
+{
+  "status": "toolkit-ready-with-draft-art",
+  "userFeedback": "有改善，先完善工具入口",
+  "root": "http://127.0.0.1:8770/",
+  "skillInstalledSymlink": true,
+  "entryForm": {
+    "invalidRelativePathRejected": true,
+    "requestFromActualReferenceGenerated": true,
+    "generationNotPretended": true
+  },
+  "nativeGodot": {
+    "version": "4.7.2",
+    "importExitCode": 0,
+    "validationExitCode": 0,
+    "checks": 113,
+    "animations": 8,
+    "scope": "resource/preview playback, not full-game integration"
+  },
+  "archivesVerified": [
+    "game-assets",
+    "web-playground",
+    "godot-preview"
+  ],
+  "sourceManifestSha256": "4af513373038bdc17e59a4887b2aee08a48e79e94a9f3fcd078b98f152a20d83",
+  "pythonTests": 81,
+  "nodeTests": 37,
+  "formalGameArtAcceptance": false,
+  "entryHtml": "toolkit-v2.html",
+  "entrySourceValidation": [
+    "actual manifest/canvas/atlas validated",
+    "required playable/workbench/download files present",
+    "comparison/baseline pages present"
+  ],
+  "completionAudit": [
+    {
+      "requirement": "Reusable Skill or backend",
+      "evidence": "Installed character-motion-kit symlink, generic generation/sequence/collection/export/compare/site tools; Skill chosen as permitted",
+      "result": "proven"
+    },
+    {
+      "requirement": "Explain required materials and use",
+      "evidence": "Quickstart, Skill and rendered form list reference, identity, direction, actions, dimensions, timing; real browser request compiled",
+      "result": "proven"
+    },
+    {
+      "requirement": "Use current GPT image generation",
+      "evidence": "Native generated sources, saved actual prompts/reference order, source hashes, rejected and partial candidates in job manifests",
+      "result": "proven"
+    },
+    {
+      "requirement": "Improve animation effect",
+      "evidence": "v23 two true lower-body intermediate sources, 10 frames 800ms, ROI remnant repaired; user confirmed 有改善，先完善工具入口",
+      "result": "proven for requested direction; art remains draft"
+    },
+    {
+      "requirement": "Usable preview and output",
+      "evidence": "Default root v2 form, navigation to actual playable, comparison seeks, 3 ZIP integrity/source equality, Godot real import and113 checks",
+      "result": "proven"
+    }
+  ],
+  "latestBrowser": {
+    "rootResolved": "toolkit-v2.html",
+    "actualManifestSummary": "8动作43播放位置，move10帧800ms",
+    "requestCompiled": true,
+    "playableLinkNavigatedAndReturned": true,
+    "screenshot": "toolkit-entry-v2.png"
+  }
+}

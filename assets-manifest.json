@@ -16,7 +16,12 @@
         "kind": "same-model-directional-collapse-candidate",
         "displaySize": "256x256 canvas, same model pixel scale as 128x128 walk",
         "background": "native transparent RGBA",
-        "cells": ["collapse-down", "collapse-left", "collapse-up", "collapse-right"]
+        "cells": [
+          "collapse-down",
+          "collapse-left",
+          "collapse-up",
+          "collapse-right"
+        ]
       },
       "processing": {
         "workflow": "../nightwatch-tower-defense/docs/poc/phase-c-fixed-rig-collapse-review.md",
@@ -49,7 +54,12 @@
         "kind": "fixed-model-directional-walk-candidate",
         "displaySize": "128x128 frame; 512x512 shared atlas",
         "background": "native transparent RGBA",
-        "cells": ["walk-down", "walk-left", "walk-up", "walk-right"]
+        "cells": [
+          "walk-down",
+          "walk-left",
+          "walk-up",
+          "walk-right"
+        ]
       },
       "processing": {
         "workflow": "../nightwatch-tower-defense/docs/poc/phase-c-fixed-rig-directional-walk-review.md",
@@ -82,7 +92,12 @@
         "kind": "four-frame-down-walk-candidate",
         "displaySize": "128x128 canvas; in-game target about one board cell",
         "background": "native transparent RGBA",
-        "cells": ["left-forward", "right-passing", "right-forward", "left-passing"]
+        "cells": [
+          "left-forward",
+          "right-passing",
+          "right-forward",
+          "left-passing"
+        ]
       },
       "processing": {
         "workflow": "/Users/xmly/Swell/code/game-workspace/ai-asset-pipeline/.venv-cutout/bin/python /Users/xmly/Swell/code/game-workspace/ai-asset-pipeline/src/asset_bundle.py --recipe /Users/xmly/Swell/code/game-workspace/nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-down-walk-v2/recipe.json --input /Users/xmly/Swell/code/game-workspace/nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-down-walk-v2/source-grid.json --aseprite --out /Users/xmly/Swell/code/game-workspace/nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-down-walk-v2/bundle",
@@ -116,7 +131,12 @@
         "kind": "equipment-icon-grid",
         "displaySize": "64x64 px",
         "background": "requested #FF00FF; detected rgb(251,2,216); normalized by chroma key",
-        "cells": ["iron-maul", "wind-sabers", "spirit-focus", "field-armor"]
+        "cells": [
+          "iron-maul",
+          "wind-sabers",
+          "spirit-focus",
+          "field-armor"
+        ]
       },
       "processing": {
         "workflow": ".venv-cutout/bin/python src/run.py input/codex/frontier-equipment-icons-v1/frontier-equipment-icons-v1.png -r 2 -c 2 --size 64 --chroma --tolerance 45",
@@ -147,7 +167,12 @@
         "kind": "equipment-icon-grid",
         "displaySize": "64x64 px",
         "background": "requested chroma magenta; detected rgb(243,3,211); normalized by chroma key",
-        "cells": ["breaker-maul", "hook-blades", "ember-focus", "scout-coat"]
+        "cells": [
+          "breaker-maul",
+          "hook-blades",
+          "ember-focus",
+          "scout-coat"
+        ]
       },
       "processing": {
         "workflow": ".venv-cutout/bin/python src/run.py input/codex/frontier-equipment-icons-v2/frontier-equipment-icons-v2.png -r 2 -c 2 --size 64 --chroma --tolerance 45",
@@ -178,7 +203,12 @@
         "kind": "equipment-icon-grid",
         "displaySize": "64x64 px",
         "background": "requested chroma magenta; detected rgb(241,5,208); normalized by chroma key",
-        "cells": ["ritual-robe", "execution-charm", "war-sigil", "focus-bead"]
+        "cells": [
+          "ritual-robe",
+          "execution-charm",
+          "war-sigil",
+          "focus-bead"
+        ]
       },
       "processing": {
         "workflow": ".venv-cutout/bin/python src/run.py input/codex/frontier-equipment-icons-v3/frontier-equipment-icons-v3.png -r 2 -c 2 --size 64 --chroma --tolerance 45",
@@ -209,7 +239,9 @@
         "kind": "protected-exit-core-sprite",
         "displaySize": "128x128 canvas, 1.22 board cells in-game",
         "background": "transparent RGBA",
-        "cells": ["core-reactor"]
+        "cells": [
+          "core-reactor"
+        ]
       },
       "processing": {
         "workflow": "sips -z 128 128 ../nightwatch-tower-defense/art-source/first-level-objective/core-reactor-source-v1.png --out ../nightwatch-tower-defense/assets/resources/level-one/units/core-reactor-v1.png",
@@ -241,7 +273,12 @@
         "kind": "runtime-size-profile-with-per-asset-provenance",
         "displaySize": "same game-space scale; walk80/collapse160 source cells, backdrop768x1365",
         "background": "motion RGBA / backdrop RGB; linear, no mipmaps",
-        "cells": ["infantry-walk-16", "infantry-collapse-16", "backdrop-primary", "backdrop-fallback"]
+        "cells": [
+          "infantry-walk-16",
+          "infantry-collapse-16",
+          "backdrop-primary",
+          "backdrop-fallback"
+        ]
       },
       "processing": {
         "workflow": "/Users/xmly/Swell/code/game-workspace/ai-asset-pipeline/.venv-cutout/bin/python /Users/xmly/Swell/code/game-workspace/nightwatch-tower-defense/scripts/art/build_runtime_art_profile.py --pipeline /Users/xmly/Swell/code/game-workspace/ai-asset-pipeline --out <new-batch-directory>; --install only if all new targets are absent",
@@ -253,7 +290,10 @@
         "runtimeEvidence": "evidence/nightwatch-runtime-budget-v1/ordinary-wave-one.png",
         "review": "../nightwatch-tower-defense/docs/poc/phase-c-compact-art-review.md"
       },
-      "release": {"status": "draft", "publishedPath": null}
+      "release": {
+        "status": "draft",
+        "publishedPath": null
+      }
     },
     {
       "id": "clockwork-infantry-collapse-v1",
@@ -270,7 +310,10 @@
         "kind": "clockwork-infantry-death-frame",
         "displaySize": "128x128 source canvas, about one board cell at runtime",
         "background": "transparent RGBA",
-        "cells": ["upright", "collapse"]
+        "cells": [
+          "upright",
+          "collapse"
+        ]
       },
       "processing": {
         "workflow": ".venv-cutout/bin/python src/asset_bundle.py --recipe ../nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-collapse-v1/recipe.json --input ../nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-collapse-v1/input --out ../nightwatch-tower-defense/art-source/first-level-units/clockwork-infantry-collapse-v1/bundle",
@@ -284,6 +327,706 @@
       "release": {
         "status": "draft",
         "publishedPath": null
+      }
+    },
+    {
+      "id": "mint-adventurer-motion-v1",
+      "source": {
+        "provider": "codex-imagegen",
+        "raw": "input/codex/mint-adventurer-motion-v1/walk-v2.png",
+        "reference": "input/codex/mint-adventurer-motion-v1/reference.png",
+        "prompt": "input/codex/mint-adventurer-motion-v1/prompt.md",
+        "generatedAt": "2026-10-02",
+        "cost": "platform-included-or-unknown",
+        "calls": 3,
+        "files": {
+          "reference.png": {
+            "path": "input/codex/mint-adventurer-motion-v1/reference.png",
+            "sha256": "34f6d2136b06fb04e2bfd500aff9af8df32d6b2cb2694dd345e900a1e18c49c8"
+          },
+          "walk-v1.png": {
+            "path": "input/codex/mint-adventurer-motion-v1/walk-v1.png",
+            "sha256": "4c3cc4a7a869a7c968001facb03cc1903069e53fefd4be20278da6b0ac6f01aa"
+          },
+          "walk-v2.png": {
+            "path": "input/codex/mint-adventurer-motion-v1/walk-v2.png",
+            "sha256": "8db7ae3898896ea8b32615868b627e55c394862cc6ecabd5bb39fbe34435b217"
+          }
+        }
+      },
+      "intent": {
+        "consumer": "character-workbench",
+        "kind": "cute-anime-2d-walk-pilot",
+        "displaySize": "192x256 cell",
+        "background": "native RGBA",
+        "cells": [
+          "contact",
+          "down",
+          "passing",
+          "up",
+          "opposite-contact",
+          "opposite-down",
+          "opposite-passing",
+          "opposite-up"
+        ]
+      },
+      "processing": {
+        "workflow": ".venv-cutout/bin/python examples/make_anime_pilot.py --out output/mint-adventurer-pilot-v1",
+        "output": "output/mint-adventurer-pilot-v1/",
+        "note": "Expected phases listed in intent, not proof that generated frames achieved them; source pixels preserved."
+      },
+      "verification": {
+        "contactSheet": "output/mint-adventurer-pilot-v1/v2/bundle/contact-move.png",
+        "report": "input/codex/mint-adventurer-motion-v1/notes.md",
+        "previewEvidence": "docs/validation/character-workbench-v1/anime-pilot-v2.jpg",
+        "runtimeEvidence": null
+      },
+      "release": {
+        "status": "rejected-candidate",
+        "publishedPath": null,
+        "reason": "Both versions fail reliable near/far leg alternation; no game runtime replacement."
+      }
+    },
+    {
+      "id": "mint-adventurer-walk-v3",
+      "source": {
+        "provider": "codex-imagegen",
+        "raw": "input/codex/mint-adventurer-walk-v3/parts.png",
+        "reference": "input/codex/mint-adventurer-walk-v3/reference.png",
+        "prompt": "input/codex/mint-adventurer-walk-v3/prompt.md",
+        "generatedAt": "2026-10-02",
+        "calls": 2,
+        "cost": "platform-included-or-unknown",
+        "files": {
+          "reference.png": {
+            "path": "input/codex/mint-adventurer-walk-v3/reference.png",
+            "sha256": "34f6d2136b06fb04e2bfd500aff9af8df32d6b2cb2694dd345e900a1e18c49c8"
+          },
+          "walk-guide.png": {
+            "path": "input/codex/mint-adventurer-walk-v3/walk-guide.png",
+            "sha256": "415a6b2e9aac0fd16b78dfcda7742a7b36eb36ad5303345489129d4aa72162a8"
+          },
+          "parts.png": {
+            "path": "input/codex/mint-adventurer-walk-v3/parts.png",
+            "sha256": "9769d86cf756381035db0a57d27a6ca24c5134ac6534e253d9a2711ef9bbbd90"
+          },
+          "contact-attempt.png": {
+            "path": "input/codex/mint-adventurer-walk-v3/contact-attempt.png",
+            "sha256": "279de342ff785a58fc551c47536d2418cb37bfd74823570b7339c20a852055ae"
+          },
+          "contacts.png": {
+            "path": "input/codex/mint-adventurer-walk-v3/contacts.png",
+            "sha256": "30bfec03a828447b1e3de05ab781b08f05ae498e1a344f2c8553c94da209a3ad"
+          }
+        }
+      },
+      "intent": {
+        "consumer": "character-workbench",
+        "kind": "2d-walk-quality-pilot",
+        "background": "native RGBA"
+      },
+      "processing": {
+        "output": "output/mint-adventurer-cutout-v3-package/",
+        "note": "Original generated art retained; no game publication."
+      },
+      "verification": {
+        "report": "input/codex/mint-adventurer-walk-v3/notes.md",
+        "runtimeEvidence": null
+      },
+      "release": {
+        "status": "user-rejected-candidate",
+        "publishedPath": null,
+        "reason": "Rigid cutout joint and occlusion quality rejected by user; kinematic tests are not visual acceptance."
+      }
+    },
+    {
+      "id": "mint-adventurer-fullframe-v4",
+      "source": {
+        "provider": "codex-imagegen",
+        "raw": "input/codex/mint-adventurer-fullframe-v4/walk.png",
+        "reference": "input/codex/mint-adventurer-fullframe-v4/reference.png",
+        "prompt": "input/codex/mint-adventurer-fullframe-v4/prompt.md",
+        "generatedAt": "2026-10-02",
+        "calls": 2,
+        "cost": "platform-included-or-unknown",
+        "files": {
+          "reference.png": {
+            "path": "input/codex/mint-adventurer-fullframe-v4/reference.png",
+            "sha256": "34f6d2136b06fb04e2bfd500aff9af8df32d6b2cb2694dd345e900a1e18c49c8"
+          },
+          "walk.png": {
+            "path": "input/codex/mint-adventurer-fullframe-v4/walk.png",
+            "sha256": "35142161aed1a74dbd4ccc0c3d315d46c2e87840ac02591277e2b81c9311de24"
+          },
+          "walk-draft.png": {
+            "path": "input/codex/mint-adventurer-fullframe-v4/walk-draft.png",
+            "sha256": "9d39871cf022008320b2ae3449fd229034eb21d186a119b6a5964831f23217f4"
+          },
+          "pose-guide.png": {
+            "path": "input/codex/mint-adventurer-fullframe-v4/pose-guide.png",
+            "sha256": "3f8be33732dfc27118b08fca3c5fd043e29ac6998da0402a7a5f05a7958c9d79"
+          }
+        }
+      },
+      "intent": {
+        "consumer": "character-workbench",
+        "kind": "2d-walk-quality-pilot",
+        "background": "native RGBA"
+      },
+      "processing": {
+        "output": "output/mint-adventurer-fullframe-v4/",
+        "note": "Original generated art retained; no game publication."
+      },
+      "verification": {
+        "report": "input/codex/mint-adventurer-fullframe-v4/notes.md",
+        "runtimeEvidence": null
+      },
+      "release": {
+        "status": "pending-review-with-known-issues",
+        "publishedPath": null,
+        "reason": "Whole drawings remove rigid seams; proportions, leg identity and loop remain unapproved."
+      }
+    },
+    {
+      "id": "mint-adventurer-singleframe-v5",
+      "source": {
+        "provider": "codex-builtin-imagegen",
+        "job": "input/codex/mint-adventurer-singleframe-v5/job.json",
+        "generatedAt": "2026-10-03",
+        "calls": 11,
+        "cost": "platform-included-or-unknown"
+      },
+      "intent": {
+        "consumer": "character-workbench",
+        "kind": "2d-individual-frame-walk-pilot",
+        "background": "native RGBA"
+      },
+      "processing": {
+        "output": "output/mint-adventurer-singleframe-v5-repaired/",
+        "note": "8 actual frames, 100ms each; whole-canvas normalization and explicit sole registration; no interpolation."
+      },
+      "verification": {
+        "report": "input/codex/mint-adventurer-singleframe-v5/notes.md",
+        "runtimeEvidence": "docs/validation/character-workbench-v1/singleframe-v5-repaired.png"
+      },
+      "release": {
+        "status": "pending-review-with-known-issues",
+        "publishedPath": null,
+        "reason": "Stance and seam repaired; head, costume and body consistency remain unapproved; no game integration."
+      }
+    },
+    {
+      "id": "mint-adventurer-head-lock-v5",
+      "source": {
+        "provider": "derived-existing-gpt-frames",
+        "plan": "input/codex/mint-adventurer-singleframe-v5/head-lock-plan.json",
+        "generatedAt": "2026-10-03",
+        "newGenerationCalls": 0
+      },
+      "intent": {
+        "consumer": "character-workbench",
+        "kind": "2d-same-direction-region-reuse"
+      },
+      "processing": {
+        "output": "output/mint-adventurer-singleframe-v5-head-lock/",
+        "note": "Explicit head crop reuse, 12px neck seam band, 8 original timing frames."
+      },
+      "verification": {
+        "report": "docs/GPT_MOTION_GENERATION.md",
+        "runtimeEvidence": "docs/validation/character-workbench-v1/head-lock-v5.png"
+      },
+      "release": {
+        "status": "pending-review-with-known-issues",
+        "publishedPath": null,
+        "reason": "Head identity consistent by reuse; torso/costume and whole gait still unapproved."
+      }
+    },
+    {
+      "id": "mint-adventurer-passing-v6",
+      "source": {
+        "provider": "codex-builtin-imagegen-and-derived-head-reuse",
+        "job": "input/codex/mint-adventurer-singleframe-v5/job.json",
+        "newGenerationCalls": 2,
+        "cumulativeGenerationCalls": 13,
+        "generatedAt": "2026-10-03"
+      },
+      "processing": {
+        "output": "output/mint-adventurer-passing-v6-head-lock/",
+        "note": "Actual new passing pose; fixed head, unchanged8frames/800ms; clothing splice experiment discarded."
+      },
+      "verification": {
+        "runtimeEvidence": "docs/validation/character-workbench-v1/passing-v6.png",
+        "cycleReview": "input/codex/mint-adventurer-singleframe-v5/cycle-review-v6.json"
+      },
+      "release": {
+        "status": "agent-cycle-rejected-with-known-issues",
+        "publishedPath": null
+      }
+    },
+    {
+      "id": "mint-adventurer-combat-v1",
+      "source": {
+        "provider": "codex-imagegen",
+        "job": "input/codex/mint-adventurer-combat-v1/job.json",
+        "generatedAt": "2026-10-03",
+        "calls": 4,
+        "cost": "platform-included-or-unknown"
+      },
+      "intent": {
+        "consumer": "character-motion-kit/workbench",
+        "kind": "2d-idle-punch-pilot",
+        "displaySize": "256x256",
+        "background": "native RGBA"
+      },
+      "processing": {
+        "output": "output/mint-adventurer-collection-v2/",
+        "config": "input/codex/mint-adventurer-collection-v2.json",
+        "note": "1 actual idle drawing, 3 actual attack drawings, existing8walkframes. Attack110/80/140ms nonloop. No extra generation in assembly."
+      },
+      "verification": {
+        "runtimeEvidence": "docs/validation/character-workbench-v1/collection-attack-v1.png",
+        "review": "input/codex/mint-adventurer-combat-v1/cycle-review-v1.json"
+      },
+      "release": {
+        "status": "draft-attack-agent-previewed-only",
+        "publishedPath": null,
+        "reason": "Attack preview checked; idle static, full motion consistency and hit/jump/game integration remain."
+      }
+    },
+    {
+      "id": "mint-adventurer-reaction-v1",
+      "source": {
+        "provider": "codex-imagegen",
+        "job": "input/codex/mint-adventurer-reaction-v1/job.json",
+        "generatedAt": "2026-10-03",
+        "calls": 5,
+        "cost": "platform-included-or-unknown"
+      },
+      "intent": {
+        "consumer": "character-motion-kit/workbench",
+        "kind": "2d-hit-jump-pose-pilot",
+        "displaySize": "256x256",
+        "background": "native RGBA"
+      },
+      "processing": {
+        "output": "output/mint-adventurer-collection-v3",
+        "config": "input/codex/mint-adventurer-collection-v3.json",
+        "note": "Five actions16sourceframes. Hit1pose160ms; jump3poses100/220/120ms. Preview-only root arc40cellpixels100..320ms; no pose interpolation. Failed landing preserved."
+      },
+      "verification": {
+        "runtimeEvidence": "input/codex/mint-adventurer-reaction-v1/runtime-review-v3.json",
+        "report": "input/codex/mint-adventurer-reaction-v1/notes.md"
+      },
+      "release": {
+        "status": "draft-five-actions-previewed-only",
+        "publishedPath": null,
+        "reason": "Pose inventory complete; walking consistency, pose transitions/idle motion and consumer acceptance unfinished."
+      }
+    },
+    {
+      "id": "mint-adventurer-jump-v2",
+      "source": {
+        "provider": "codex-imagegen",
+        "job": "input/codex/mint-adventurer-jump-v2/job.json",
+        "generatedAt": "2026-10-03",
+        "calls": 1,
+        "cost": "platform-included-or-unknown"
+      },
+      "processing": {
+        "output": "output/mint-adventurer-collection-v4",
+        "config": "input/codex/mint-adventurer-collection-v4.json",
+        "note": "One actual takeoff inbetween +3reused original GPT poses. Five actions17sourceframes. Jump80/60/180/120ms. Preview-only arc40px80..320ms."
+      },
+      "verification": {
+        "runtimeEvidence": "docs/validation/character-workbench-v1/collection-takeoff-v4.png"
+      },
+      "release": {
+        "status": "draft-previewed-only",
+        "publishedPath": null,
+        "reason": "Preparation and landing pose pops/walk consistency/idle breath remain; no game acceptance."
+      }
+    },
+    {
+      "id": "mint-adventurer-jump-v3",
+      "source": {
+        "provider": "codex-imagegen",
+        "job": "input/codex/mint-adventurer-jump-v3/job.json",
+        "generatedAt": "2026-10-03",
+        "calls": 2,
+        "cost": "platform-included-or-unknown"
+      },
+      "processing": {
+        "output": "output/mint-adventurer-collection-v5",
+        "config": "input/codex/mint-adventurer-collection-v5.json",
+        "note": "2new GPT poses+3existing poses. Five actions18sourceframes; jump5poses440ms. Prep translated0,15 for grounded foot registration; deeper than requested. Preview arc40px80..340ms only."
+      },
+      "verification": {
+        "runtimeEvidence": "input/codex/mint-adventurer-jump-v3/runtime-review-v5.json"
+      },
+      "release": {
+        "status": "draft-previewed-only",
+        "publishedPath": null,
+        "reason": "Visual consistency/idle breath/consumer game checks remain."
+      }
+    },
+    {
+      "id": "mint-adventurer-walk-v7",
+      "source": {
+        "provider": "codex-imagegen",
+        "job": "input/codex/mint-adventurer-singleframe-v5/job.json",
+        "generatedAt": "2026-10-03",
+        "calls": 2,
+        "cost": "platform-included-or-unknown"
+      },
+      "processing": {
+        "output": "output/mint-adventurer-collection-v6",
+        "config": "input/codex/mint-adventurer-collection-v6.json",
+        "note": "Two torso-only edits selected move001index3/move005index2. Eight poses still800ms. Head region reused from existing source; no new generation for crop/assembly."
+      },
+      "verification": {
+        "runtimeEvidence": "input/codex/mint-adventurer-singleframe-v5/consumer-review-v7.json"
+      },
+      "release": {
+        "status": "draft-cycle-rejected",
+        "publishedPath": null,
+        "reason": "Torso/neck variation remains; playable controller is a consumer example, not full game or mobile acceptance."
+      }
+    },
+    {
+      "id": "mint-adventurer-idle-v1",
+      "source": {
+        "provider": "codex-imagegen",
+        "job": "input/codex/mint-adventurer-idle-v1/job.json",
+        "generatedAt": "2026-10-03",
+        "calls": 1,
+        "cost": "platform-included-or-unknown"
+      },
+      "processing": {
+        "output": "output/mint-adventurer-collection-v7",
+        "config": "input/codex/mint-adventurer-collection-v7.json",
+        "note": "Original idle+GPT closed-eye rectangle patch.19sourceframes total. Idle2poses3110/90ms; outside eye rect identical. Optional consumer breath scale0.6%2.4s not new art."
+      },
+      "verification": {
+        "runtimeEvidence": "input/codex/mint-adventurer-idle-v1/runtime-review-v7.json",
+        "pixelCheck": "output/mint-adventurer-idle-v1-patched/eye-patch-check.json"
+      },
+      "release": {
+        "status": "draft-previewed-only",
+        "publishedPath": null,
+        "reason": "Whole motion/game acceptance still unfinished."
+      }
+    },
+    {
+      "id": "mint-adventurer-transition-v1",
+      "source": {
+        "provider": "codex-imagegen",
+        "job": "input/codex/mint-adventurer-transition-v1/job.json",
+        "generatedAt": "2026-10-03",
+        "calls": 1,
+        "cost": "platform-included-or-unknown"
+      },
+      "processing": {
+        "output": "output/mint-adventurer-collection-v8",
+        "config": "input/codex/mint-adventurer-collection-v8.json",
+        "note": "Single actual intermediate reused move-start60ms/move-stop80ms.7actions21frame positions20distinct RGBA poses; no pixel frame interpolation."
+      },
+      "verification": {
+        "runtimeEvidence": "input/codex/mint-adventurer-transition-v1/runtime-review-v8.json"
+      },
+      "release": {
+        "status": "draft-previewed-only",
+        "publishedPath": null,
+        "reason": "Shared midpoint insufficient for arbitrary stopping phase; whole walk/game quality remains unfinished."
+      }
+    },
+    {
+      "id": "mint-adventurer-walk-swing-fix-v8",
+      "source": {
+        "provider": "codex-builtin-imagegen",
+        "job": "input/codex/mint-adventurer-singleframe-v5/job.json",
+        "frame": "move-007",
+        "actualGptCalls": 1,
+        "attemptIndices": [
+          3,
+          4
+        ],
+        "note": "Same original imported twice; both full-frame versions rejected. Derived lower-body use only."
+      },
+      "intent": {
+        "kind": "2d-fullframe-regional-correction",
+        "consumer": "reusable-character-motion-kit"
+      },
+      "output": "output/mint-adventurer-collection-v10",
+      "processingPlan": "input/codex/mint-adventurer-walk-fix-v8/lower-patch-plan-v2.json",
+      "validation": {
+        "status": "draft",
+        "pixelScope": "input/codex/mint-adventurer-walk-fix-v8/pixel-scope-check-v10.json",
+        "visualEvidence": "docs/validation/character-workbench-v1/move-swing-v10.png",
+        "fullCycle": "reject",
+        "gameAcceptance": false
+      }
+    },
+    {
+      "id": "mint-adventurer-torso-consistency-v1",
+      "source": {
+        "provider": "codex-builtin-imagegen",
+        "operation": "edit-existing-eight-frame-sheet",
+        "actualGptCalls": 1,
+        "record": "input/codex/mint-adventurer-torso-fix-v1/generation-record.json",
+        "raw": "input/codex/mint-adventurer-torso-fix-v1/source.png"
+      },
+      "output": "output/mint-adventurer-collection-v12",
+      "registration": "input/codex/mint-adventurer-torso-fix-v1/registration.json",
+      "validation": {
+        "status": "draft",
+        "packCheck": "input/codex/mint-adventurer-torso-fix-v1/pack-check.json",
+        "runtimeEvidence": "docs/validation/character-workbench-v1/torso-consistency-v12.png",
+        "gameAcceptance": false
+      }
+    },
+    {
+      "id": "mint-adventurer-attack-inbetween-v1",
+      "source": {
+        "provider": "codex-builtin-imagegen",
+        "actualGptCalls": 3,
+        "selectedNewPoses": 2,
+        "job": "input/codex/mint-adventurer-attack-inbetween-v1/job.json",
+        "failedRetractionPreserved": true
+      },
+      "output": "output/mint-adventurer-collection-v13",
+      "processing": "input/codex/mint-adventurer-attack-inbetween-v1/assemble_attack.py",
+      "validation": {
+        "status": "draft",
+        "checks": "input/codex/mint-adventurer-attack-inbetween-v1/assembly-check.json",
+        "runtimeEvidence": "docs/validation/character-workbench-v1/attack-inbetween-v13.png",
+        "gameAcceptance": false
+      }
+    },
+    {
+      "id": "mint-adventurer-jump-inbetween-v1",
+      "source": {
+        "provider": "codex-builtin-imagegen",
+        "actualGptCalls": 4,
+        "selectedNewPoses": 2,
+        "job": "input/codex/mint-adventurer-jump-inbetween-v1/job/job.json",
+        "failedCandidatesPreserved": true
+      },
+      "output": "output/mint-adventurer-collection-v14",
+      "processing": "input/codex/mint-adventurer-jump-inbetween-v1/assemble_jump.py",
+      "validation": {
+        "status": "draft",
+        "checks": "input/codex/mint-adventurer-jump-inbetween-v1/assembly-check.json",
+        "runtimeEvidence": "docs/validation/character-workbench-v1/jump-landing-v14.png",
+        "gameAcceptance": false
+      }
+    },
+    {
+      "id": "mint-adventurer-hit-recovery-v1",
+      "source": {
+        "provider": "codex-builtin-imagegen",
+        "actualGptCalls": 1,
+        "selectedNewPoses": 1,
+        "job": "input/codex/mint-adventurer-hit-recovery-v1/job/job.json"
+      },
+      "output": "output/mint-adventurer-collection-v15",
+      "sequence": "input/codex/mint-adventurer-hit-sequence-v1.json",
+      "validation": {
+        "status": "draft",
+        "checks": "input/codex/mint-adventurer-hit-recovery-v1/assembly-check.json",
+        "runtimeEvidence": "docs/validation/character-workbench-v1/hit-recovery-v15.png",
+        "gameAcceptance": false
+      }
+    },
+    {
+      "id": "mint-adventurer-head-consistency-v1",
+      "source": {
+        "provider": "explicit-existing-gpt-frame-reuse",
+        "actualGptCalls": 0,
+        "processing": "input/codex/mint-adventurer-head-consistency-v1/reference-processing.json"
+      },
+      "output": "output/mint-adventurer-collection-v16",
+      "validation": {
+        "status": "draft",
+        "checks": "input/codex/mint-adventurer-head-consistency-v1/assembly-check.json",
+        "runtimeEvidence": "docs/validation/character-workbench-v1/identity-move-v16.png",
+        "gameAcceptance": false
+      }
+    },
+    {
+      "id": "mint-adventurer-arm-cycle-v1",
+      "source": {
+        "provider": "codex-builtin-imagegen",
+        "actualGptCalls": 4,
+        "selectedNewPartialSources": 2,
+        "reusedOldForwardPose": 1,
+        "wholeGeneratedCandidatesAccepted": false,
+        "job": "input/codex/mint-adventurer-arm-cycle-v1/job/job.json"
+      },
+      "output": "output/mint-adventurer-collection-v17",
+      "sequence": "input/codex/mint-adventurer-arm-sequence-v1.json",
+      "processing": "input/codex/mint-adventurer-arm-patch-plan-v1.json",
+      "validation": {
+        "status": "draft",
+        "checks": "input/codex/mint-adventurer-arm-cycle-v1/assembly-check.json",
+        "runtimeEvidence": "docs/validation/character-workbench-v1/arm-cycle-v17.png",
+        "gameAcceptance": false
+      }
+    },
+    {
+      "id": "mint-adventurer-contact-stop-source-v1",
+      "source": {
+        "provider": "codex-builtin-imagegen",
+        "actualGptCalls": 1,
+        "job": "input/codex/mint-adventurer-contact-stop-v1/job/job.json",
+        "wholeGeneratedCandidateAccepted": false
+      },
+      "output": "output/mint-adventurer-contact-stop-source-v1",
+      "validation": {
+        "status": "draft",
+        "checks": "input/codex/mint-adventurer-contact-stop-v1/controller-check.json",
+        "gameAcceptance": false,
+        "note": "整帧拒绝，保留局部候选，不包含已验收停步动画"
+      }
+    },
+    {
+      "id": "mint-adventurer-contact-stops-v18",
+      "source": {
+        "provider": "codex-builtin-imagegen-and-explicit-old-frame-reuse",
+        "actualGptCallsThisTurn": 1,
+        "jobCallsTotal": 2,
+        "wholeGeneratedCandidatesAccepted": false,
+        "job": "input/codex/mint-adventurer-contact-stop-v1/job/job.json"
+      },
+      "output": "output/mint-adventurer-collection-v18",
+      "collection": "input/codex/mint-adventurer-collection-v18.json",
+      "controllerOptions": "input/codex/mint-adventurer-stop-options-v2.json",
+      "validation": {
+        "status": "draft",
+        "checks": "input/codex/mint-adventurer-contact-stop-v1/assembly-v18-check.json",
+        "gameAcceptance": false
+      }
+    },
+    {
+      "id": "mint-adventurer-start-stop-v19",
+      "source": {
+        "provider": "codex-builtin-imagegen-and-explicit-frame-reuse",
+        "actualGptCalls": 1,
+        "wholeGeneratedCandidateAccepted": false,
+        "job": "input/codex/mint-adventurer-half-back-v1/job/job.json"
+      },
+      "output": "output/mint-adventurer-collection-v19",
+      "collection": "input/codex/mint-adventurer-collection-v19.json",
+      "controllerOptions": "input/codex/mint-adventurer-stop-options-v3.json",
+      "validation": {
+        "status": "draft",
+        "checks": "input/codex/mint-adventurer-half-back-v1/assembly-v19-check.json",
+        "gameAcceptance": false
+      }
+    },
+    {
+      "id": "mint-adventurer-jump-entry-v20",
+      "source": {
+        "provider": "explicit-existing-gpt-frame-reuse",
+        "actualGptCalls": 0,
+        "sequence": "input/codex/mint-adventurer-jump-entry-sequence-v1.json"
+      },
+      "output": "output/mint-adventurer-collection-v20",
+      "collection": "input/codex/mint-adventurer-collection-v20.json",
+      "validation": {
+        "status": "draft",
+        "checks": "docs/validation/character-workbench-v1/toolkit-readiness-v20.json",
+        "gameAcceptance": false
+      }
+    },
+    {
+      "id": "mint-adventurer-down-foot-v21",
+      "source": {
+        "provider": "codex-builtin-imagegen-and-explicit-region-reuse",
+        "actualGptCalls": 1,
+        "wholeGeneratedCandidateAccepted": false,
+        "job": "input/codex/mint-adventurer-down-foot-v1/job/job.json",
+        "offsetOn512Canvas": [
+          20,
+          0
+        ]
+      },
+      "output": "output/mint-adventurer-collection-v21",
+      "collection": "input/codex/mint-adventurer-collection-v21.json",
+      "validation": {
+        "status": "draft-candidate",
+        "checks": "docs/validation/character-workbench-v1/walk-candidate-v21.json",
+        "gameAcceptance": false
+      }
+    },
+    {
+      "id": "mint-adventurer-support-return-attempt-v1",
+      "source": {
+        "provider": "codex-builtin-imagegen",
+        "actualGptCalls": 1,
+        "job": "input/codex/mint-adventurer-support-return-v1/job/job.json",
+        "generatedFrames": [
+          6
+        ],
+        "unexecutedPlannedFrames": [
+          7
+        ]
+      },
+      "validation": {
+        "status": "rejected",
+        "wholeGeneratedCandidateAccepted": false,
+        "partialUse": false,
+        "gameAcceptance": false,
+        "reason": "Foot placement failed and upper-body redraw seam; not merged into animation."
+      }
+    },
+    {
+      "id": "mint-adventurer-walk-inbetween-v22",
+      "source": {
+        "provider": "codex-builtin-imagegen-and-explicit-region-reuse",
+        "actualGptCalls": 3,
+        "partialSourcesUsed": 2,
+        "wholeGeneratedCandidatesAccepted": false,
+        "jobs": [
+          "input/codex/mint-adventurer-walk-passing-inbetween-v1/job/job.json",
+          "input/codex/mint-adventurer-walk-passing-inbetween-v1/far-job/job.json"
+        ],
+        "normalizationOffsetsOn512Canvas": [
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            -1
+          ]
+        ],
+        "note": "First raw image registered twice with different offsets; only one generation call. Far first attempt rejected."
+      },
+      "output": "output/mint-adventurer-collection-v22",
+      "collection": "input/codex/mint-adventurer-collection-v22.json",
+      "controllerOptions": "input/codex/mint-adventurer-stop-options-v4.json",
+      "validation": {
+        "status": "draft-candidate",
+        "checks": "docs/validation/character-workbench-v1/walk-v22-proof.json",
+        "gameAcceptance": false
+      }
+    },
+    {
+      "id": "mint-adventurer-walk-roi-v23",
+      "source": {
+        "provider": "explicit-existing-gpt-region-reuse",
+        "actualGptCalls": 0,
+        "plans": [
+          "input/codex/mint-adventurer-walk-passing-patch-v2.json",
+          "input/codex/mint-adventurer-walk-far-patch-v2.json"
+        ]
+      },
+      "output": "output/mint-adventurer-collection-v23",
+      "collection": "input/codex/mint-adventurer-collection-v23.json",
+      "validation": {
+        "status": "draft-candidate",
+        "checks": "docs/validation/character-workbench-v1/walk-v23-proof.json",
+        "gameAcceptance": false
       }
     }
   ]

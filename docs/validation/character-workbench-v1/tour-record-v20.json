@@ -1,0 +1,922 @@
+{
+  "status": "previewed-only",
+  "character": "hero",
+  "spritePreviewZoom": 1,
+  "clips": [
+    {
+      "name": "attack",
+      "duration": 0.33,
+      "loop": false,
+      "previewMotion": null
+    },
+    {
+      "name": "move",
+      "duration": 0.8,
+      "loop": true,
+      "previewMotion": null
+    },
+    {
+      "name": "hit",
+      "duration": 0.16,
+      "loop": false,
+      "previewMotion": null
+    },
+    {
+      "name": "jump",
+      "duration": 0.44,
+      "loop": false,
+      "previewMotion": {
+        "kind": "jump-arc",
+        "heightPixels": 40,
+        "startMs": 80,
+        "endMs": 340
+      }
+    },
+    {
+      "name": "idle",
+      "duration": 3.2,
+      "loop": true,
+      "previewMotion": null
+    },
+    {
+      "name": "move-start",
+      "duration": 0.1,
+      "loop": false,
+      "previewMotion": null
+    },
+    {
+      "name": "move-stop",
+      "duration": 0.175,
+      "loop": false,
+      "previewMotion": null
+    },
+    {
+      "name": "stop-front",
+      "duration": 0.14,
+      "loop": false,
+      "previewMotion": null
+    }
+  ],
+  "visitedActions": [
+    {
+      "character": "hero",
+      "action": "idle",
+      "blendMs": 0,
+      "at": "2026-10-03T06:43:44.583Z"
+    },
+    {
+      "character": "hero",
+      "action": "attack",
+      "blendMs": 0,
+      "at": "2026-10-03T06:43:44.864Z"
+    },
+    {
+      "character": "hero",
+      "action": "move",
+      "blendMs": 0,
+      "at": "2026-10-03T06:43:45.208Z"
+    },
+    {
+      "character": "hero",
+      "action": "hit",
+      "blendMs": 0,
+      "at": "2026-10-03T06:43:46.825Z"
+    },
+    {
+      "character": "hero",
+      "action": "jump",
+      "blendMs": 0,
+      "at": "2026-10-03T06:43:46.991Z"
+    },
+    {
+      "character": "hero",
+      "action": "idle",
+      "blendMs": 0,
+      "at": "2026-10-03T06:43:47.441Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-start",
+      "blendMs": 0,
+      "at": "2026-10-03T06:43:53.857Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-stop",
+      "blendMs": 0,
+      "at": "2026-10-03T06:43:53.958Z"
+    },
+    {
+      "character": "hero",
+      "action": "stop-front",
+      "blendMs": 0,
+      "at": "2026-10-03T06:43:54.140Z"
+    },
+    {
+      "character": "hero",
+      "action": "attack",
+      "blendMs": 0,
+      "at": "2026-10-03T06:43:54.291Z"
+    },
+    {
+      "character": "hero",
+      "action": "move",
+      "blendMs": 0,
+      "at": "2026-10-03T06:43:54.625Z"
+    },
+    {
+      "character": "hero",
+      "action": "hit",
+      "blendMs": 0,
+      "at": "2026-10-03T06:43:56.225Z"
+    },
+    {
+      "character": "hero",
+      "action": "jump",
+      "blendMs": 0,
+      "at": "2026-10-03T06:43:56.391Z"
+    },
+    {
+      "character": "hero",
+      "action": "idle",
+      "blendMs": 0,
+      "at": "2026-10-03T06:43:56.841Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-start",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:03.241Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-stop",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:03.341Z"
+    },
+    {
+      "character": "hero",
+      "action": "stop-front",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:03.524Z"
+    },
+    {
+      "character": "hero",
+      "action": "attack",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:03.675Z"
+    },
+    {
+      "character": "hero",
+      "action": "move",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:04.008Z"
+    },
+    {
+      "character": "hero",
+      "action": "hit",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:05.608Z"
+    },
+    {
+      "character": "hero",
+      "action": "jump",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:05.773Z"
+    },
+    {
+      "character": "hero",
+      "action": "idle",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:06.225Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-start",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:12.641Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-stop",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:12.742Z"
+    },
+    {
+      "character": "hero",
+      "action": "stop-front",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:12.925Z"
+    },
+    {
+      "character": "hero",
+      "action": "attack",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:13.074Z"
+    },
+    {
+      "character": "hero",
+      "action": "move",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:13.408Z"
+    },
+    {
+      "character": "hero",
+      "action": "hit",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:15.024Z"
+    },
+    {
+      "character": "hero",
+      "action": "jump",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:15.191Z"
+    },
+    {
+      "character": "hero",
+      "action": "idle",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:15.640Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-start",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:22.041Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-stop",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:22.159Z"
+    },
+    {
+      "character": "hero",
+      "action": "stop-front",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:22.342Z"
+    },
+    {
+      "character": "hero",
+      "action": "attack",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:22.492Z"
+    },
+    {
+      "character": "hero",
+      "action": "move",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:22.825Z"
+    },
+    {
+      "character": "hero",
+      "action": "hit",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:24.441Z"
+    },
+    {
+      "character": "hero",
+      "action": "jump",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:24.608Z"
+    },
+    {
+      "character": "hero",
+      "action": "idle",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:25.059Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-start",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:31.458Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-stop",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:31.575Z"
+    },
+    {
+      "character": "hero",
+      "action": "stop-front",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:31.758Z"
+    },
+    {
+      "character": "hero",
+      "action": "attack",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:31.908Z"
+    },
+    {
+      "character": "hero",
+      "action": "move",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:32.242Z"
+    },
+    {
+      "character": "hero",
+      "action": "hit",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:33.858Z"
+    },
+    {
+      "character": "hero",
+      "action": "jump",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:34.025Z"
+    },
+    {
+      "character": "hero",
+      "action": "idle",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:34.474Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-start",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:40.890Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-stop",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:40.992Z"
+    },
+    {
+      "character": "hero",
+      "action": "stop-front",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:41.175Z"
+    },
+    {
+      "character": "hero",
+      "action": "attack",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:41.324Z"
+    },
+    {
+      "character": "hero",
+      "action": "move",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:41.658Z"
+    },
+    {
+      "character": "hero",
+      "action": "hit",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:43.258Z"
+    },
+    {
+      "character": "hero",
+      "action": "jump",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:43.425Z"
+    },
+    {
+      "character": "hero",
+      "action": "idle",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:43.875Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-start",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:50.276Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-stop",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:50.392Z"
+    },
+    {
+      "character": "hero",
+      "action": "stop-front",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:50.575Z"
+    },
+    {
+      "character": "hero",
+      "action": "attack",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:50.724Z"
+    },
+    {
+      "character": "hero",
+      "action": "move",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:51.058Z"
+    },
+    {
+      "character": "hero",
+      "action": "hit",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:52.659Z"
+    },
+    {
+      "character": "hero",
+      "action": "jump",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:52.826Z"
+    },
+    {
+      "character": "hero",
+      "action": "idle",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:53.275Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-start",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:59.675Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-stop",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:59.775Z"
+    },
+    {
+      "character": "hero",
+      "action": "stop-front",
+      "blendMs": 0,
+      "at": "2026-10-03T06:44:59.957Z"
+    },
+    {
+      "character": "hero",
+      "action": "attack",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:00.108Z"
+    },
+    {
+      "character": "hero",
+      "action": "move",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:00.442Z"
+    },
+    {
+      "character": "hero",
+      "action": "hit",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:02.057Z"
+    },
+    {
+      "character": "hero",
+      "action": "jump",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:02.225Z"
+    },
+    {
+      "character": "hero",
+      "action": "idle",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:02.675Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-start",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:09.076Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-stop",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:09.190Z"
+    },
+    {
+      "character": "hero",
+      "action": "stop-front",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:09.376Z"
+    },
+    {
+      "character": "hero",
+      "action": "attack",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:09.526Z"
+    },
+    {
+      "character": "hero",
+      "action": "move",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:09.859Z"
+    },
+    {
+      "character": "hero",
+      "action": "hit",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:11.475Z"
+    },
+    {
+      "character": "hero",
+      "action": "jump",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:11.642Z"
+    },
+    {
+      "character": "hero",
+      "action": "idle",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:12.091Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-start",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:18.492Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-stop",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:18.609Z"
+    },
+    {
+      "character": "hero",
+      "action": "stop-front",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:18.791Z"
+    },
+    {
+      "character": "hero",
+      "action": "attack",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:18.942Z"
+    },
+    {
+      "character": "hero",
+      "action": "move",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:19.276Z"
+    },
+    {
+      "character": "hero",
+      "action": "hit",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:20.876Z"
+    },
+    {
+      "character": "hero",
+      "action": "jump",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:21.042Z"
+    },
+    {
+      "character": "hero",
+      "action": "idle",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:21.493Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-start",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:27.892Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-stop",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:28.009Z"
+    },
+    {
+      "character": "hero",
+      "action": "stop-front",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:28.193Z"
+    },
+    {
+      "character": "hero",
+      "action": "attack",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:28.343Z"
+    },
+    {
+      "character": "hero",
+      "action": "move",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:28.675Z"
+    },
+    {
+      "character": "hero",
+      "action": "hit",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:30.276Z"
+    },
+    {
+      "character": "hero",
+      "action": "jump",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:30.442Z"
+    },
+    {
+      "character": "hero",
+      "action": "idle",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:30.891Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-start",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:37.309Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-stop",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:37.426Z"
+    },
+    {
+      "character": "hero",
+      "action": "stop-front",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:37.609Z"
+    },
+    {
+      "character": "hero",
+      "action": "attack",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:37.758Z"
+    },
+    {
+      "character": "hero",
+      "action": "move",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:38.093Z"
+    },
+    {
+      "character": "hero",
+      "action": "hit",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:39.693Z"
+    },
+    {
+      "character": "hero",
+      "action": "jump",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:39.858Z"
+    },
+    {
+      "character": "hero",
+      "action": "idle",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:40.309Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-start",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:46.726Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-stop",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:46.827Z"
+    },
+    {
+      "character": "hero",
+      "action": "stop-front",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:47.007Z"
+    },
+    {
+      "character": "hero",
+      "action": "attack",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:47.159Z"
+    },
+    {
+      "character": "hero",
+      "action": "move",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:47.491Z"
+    },
+    {
+      "character": "hero",
+      "action": "hit",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:49.093Z"
+    },
+    {
+      "character": "hero",
+      "action": "jump",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:49.259Z"
+    },
+    {
+      "character": "hero",
+      "action": "idle",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:49.709Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-start",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:56.125Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-stop",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:56.226Z"
+    },
+    {
+      "character": "hero",
+      "action": "stop-front",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:56.409Z"
+    },
+    {
+      "character": "hero",
+      "action": "attack",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:56.559Z"
+    },
+    {
+      "character": "hero",
+      "action": "move",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:56.891Z"
+    },
+    {
+      "character": "hero",
+      "action": "hit",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:58.493Z"
+    },
+    {
+      "character": "hero",
+      "action": "jump",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:58.658Z"
+    },
+    {
+      "character": "hero",
+      "action": "idle",
+      "blendMs": 0,
+      "at": "2026-10-03T06:45:59.109Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-start",
+      "blendMs": 0,
+      "at": "2026-10-03T06:46:05.526Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-stop",
+      "blendMs": 0,
+      "at": "2026-10-03T06:46:05.643Z"
+    },
+    {
+      "character": "hero",
+      "action": "stop-front",
+      "blendMs": 0,
+      "at": "2026-10-03T06:46:05.824Z"
+    },
+    {
+      "character": "hero",
+      "action": "attack",
+      "blendMs": 0,
+      "at": "2026-10-03T06:46:05.976Z"
+    },
+    {
+      "character": "hero",
+      "action": "move",
+      "blendMs": 0,
+      "at": "2026-10-03T06:46:06.308Z"
+    },
+    {
+      "character": "hero",
+      "action": "hit",
+      "blendMs": 0,
+      "at": "2026-10-03T06:46:07.910Z"
+    },
+    {
+      "character": "hero",
+      "action": "jump",
+      "blendMs": 0,
+      "at": "2026-10-03T06:46:08.076Z"
+    },
+    {
+      "character": "hero",
+      "action": "idle",
+      "blendMs": 0,
+      "at": "2026-10-03T06:46:08.525Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-start",
+      "blendMs": 0,
+      "at": "2026-10-03T06:46:14.927Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-stop",
+      "blendMs": 0,
+      "at": "2026-10-03T06:46:15.043Z"
+    },
+    {
+      "character": "hero",
+      "action": "stop-front",
+      "blendMs": 0,
+      "at": "2026-10-03T06:46:15.226Z"
+    },
+    {
+      "character": "hero",
+      "action": "attack",
+      "blendMs": 0,
+      "at": "2026-10-03T06:46:15.376Z"
+    },
+    {
+      "character": "hero",
+      "action": "move",
+      "blendMs": 0,
+      "at": "2026-10-03T06:46:15.710Z"
+    },
+    {
+      "character": "hero",
+      "action": "hit",
+      "blendMs": 0,
+      "at": "2026-10-03T06:46:17.324Z"
+    },
+    {
+      "character": "hero",
+      "action": "jump",
+      "blendMs": 0,
+      "at": "2026-10-03T06:46:17.494Z"
+    },
+    {
+      "character": "hero",
+      "action": "idle",
+      "blendMs": 0,
+      "at": "2026-10-03T06:46:17.943Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-start",
+      "blendMs": 0,
+      "at": "2026-10-03T06:46:24.358Z"
+    },
+    {
+      "character": "hero",
+      "action": "move-stop",
+      "blendMs": 0,
+      "at": "2026-10-03T06:46:24.459Z"
+    },
+    {
+      "character": "hero",
+      "action": "stop-front",
+      "blendMs": 0,
+      "at": "2026-10-03T06:46:24.642Z"
+    },
+    {
+      "character": "hero",
+      "action": "attack",
+      "blendMs": 0,
+      "at": "2026-10-03T06:46:24.792Z"
+    },
+    {
+      "character": "hero",
+      "action": "move",
+      "blendMs": 0,
+      "at": "2026-10-03T06:46:25.126Z"
+    },
+    {
+      "character": "hero",
+      "action": "hit",
+      "blendMs": 0,
+      "at": "2026-10-03T06:46:26.742Z"
+    },
+    {
+      "character": "hero",
+      "action": "jump",
+      "blendMs": 0,
+      "at": "2026-10-03T06:46:26.909Z"
+    },
+    {
+      "character": "hero",
+      "action": "idle",
+      "blendMs": 0,
+      "at": "2026-10-03T06:46:27.358Z"
+    }
+  ],
+  "manualChecks": [
+    "左右腿交替承重",
+    "脚底与武器轨迹",
+    "循环接缝",
+    "过渡与收招",
+    "目标游戏时间窗口"
+  ],
+  "runtimeEvidence": null
+}

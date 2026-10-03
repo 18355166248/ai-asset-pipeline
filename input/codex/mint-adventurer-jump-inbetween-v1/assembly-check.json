@@ -1,0 +1,16 @@
+{
+  "actualGptCalls": 4,
+  "selectedNewDrawings": 2,
+  "rebuildAtlasEqual": true,
+  "runtimeLaunchMs": 80,
+  "runtimePeakMs": 210,
+  "runtimePeakY": -40,
+  "runtimeLandMs": 340,
+  "runtimeEndMs": 440,
+  "actions": 7,
+  "framePositions": 29,
+  "distinctImages": 23,
+  "status": "draft",
+  "gifSamplingMs": 10,
+  "gifSamplesAreNotNewDrawings": true
+}

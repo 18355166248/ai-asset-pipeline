@@ -1,0 +1,18 @@
+{
+  "status": "previewed-only",
+  "reviewer": "agent",
+  "collectionManifestSha256": "a84ece62a0c42629a0ee13aa1c56c11c2d9648436ad03fc5943406a536757c1a",
+  "observations": [
+    "t0.215s frame3/5 root39.9px",
+    "t0.440s frame5/5 root0px",
+    "正常速度单次结束后显示idle；已重新开启整套巡演"
+  ],
+  "proof": "docs/validation/character-workbench-v1/collection-descent-v5.png",
+  "remaining": [
+    "prep deeper than requested",
+    "walk outfit consistency",
+    "idle breathing",
+    "consumer game acceptance"
+  ],
+  "browserErrors": []
+}

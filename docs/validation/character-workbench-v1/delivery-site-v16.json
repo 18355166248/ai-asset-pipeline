@@ -1,0 +1,35 @@
+{
+  "site": "output/mint-adventurer-collection-v10/viewer/current-v16",
+  "sourceManifestSha256": "1484b056c0d3ca55517d3598066704ff6e6af6c2e6dd3d44d012c2b4bfdac14a",
+  "siteTests": 4,
+  "godotEngine": "4.7.2",
+  "godotChecks": 86,
+  "godotAnimations": 7,
+  "status": "draft",
+  "gameAcceptance": false,
+  "archives": {
+    "game-assets": {
+      "bytes": 4339755,
+      "sha256": "95a0b2f72e6a169f8512ebf822a7ce46dc3f935c01d92737eb461a0bbcd0193c",
+      "members": 64
+    },
+    "godot-preview": {
+      "bytes": 1008924,
+      "sha256": "e030fc6b7bdc32327e519ddf1007a1797d14739a7c92fb4cba8bfa8689e37897",
+      "members": 8
+    },
+    "web-playground": {
+      "bytes": 3531712,
+      "sha256": "12204eb8b151e120d9fc2733502d5ea671c7a4e1c058c41d15243e6a5327cbf6",
+      "members": 25
+    }
+  },
+  "browserRootResolved": "http://127.0.0.1:8770/current-v16/",
+  "workbenchPeak": {
+    "timeSeconds": 0.21,
+    "framePosition": 5,
+    "frameCount": 10,
+    "heightPixels": 40
+  },
+  "browserErrors": []
+}

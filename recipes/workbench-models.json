@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "title": "可选模型检查 · 双足与四足",
+  "characters": [
+    {
+      "id": "humanoid-demo", "title": "双足 · 部件动作模型", "kind": "pivot",
+      "library": "../animation-library", "skeleton": "humanoid-basic", "fps": 24,
+      "defaultAction": "idle", "direction": "model-local",
+      "requiredActions": ["idle", "move", "slash", "slash2", "cast", "jump", "dash", "hit"]
+    },
+    {
+      "id": "quadruped-demo", "title": "四足 · 部件动作模型", "kind": "pivot",
+      "library": "../animation-library", "skeleton": "quadruped-basic", "fps": 24,
+      "defaultAction": "idle", "direction": "model-local",
+      "requiredActions": ["idle", "move", "pounce", "hit"]
+    }
+  ]
+}

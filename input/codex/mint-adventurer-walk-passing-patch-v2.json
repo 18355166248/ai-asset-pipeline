@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "manifest": "../../output/mint-adventurer-walk-passing-source-v1/bundle/manifest.json",
+  "action": "walk-passing-inbetween",
+  "operation": "rectangle-patch",
+  "referenceFrame": 0,
+  "referenceImage": "mint-adventurer-walk-passing-inbetween-v1/reference-cell.png",
+  "rect": [
+    60,
+    174,
+    222,
+    256
+  ],
+  "feather": 2
+}

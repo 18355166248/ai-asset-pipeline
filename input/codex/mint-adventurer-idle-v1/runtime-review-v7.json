@@ -1,0 +1,22 @@
+{
+  "status": "previewed-only",
+  "reviewer": "agent",
+  "actualNewGptCalls": 1,
+  "rawJob": "job.json",
+  "patchPlan": "eye-patch-plan.json",
+  "collectionManifestSha256": "c68246b1e31a7bff85d47c922be5950dbc95df015a8a9e369d47dd4e7757b301",
+  "observed": [
+    "workbench idle2/2 at3.139/3.200s",
+    "consumer idle scale1.0044 root0",
+    "consumer attack scale1 root0"
+  ],
+  "proofs": [
+    "docs/validation/character-workbench-v1/idle-blink-v7.png",
+    "docs/validation/character-workbench-v1/idle-breath-v7.png"
+  ],
+  "limits": [
+    "raw generated whole-body changed, only eye patch used",
+    "breathing is renderer modifier, not extra artwork",
+    "walking/pose transition/game acceptance remain"
+  ]
+}

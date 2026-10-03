@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "action": "move",
+  "title": "步行补帧对比 · v22候选",
+  "note": "左8帧与右10帧，两边总时长均800ms；右侧新增两张GPT下身中间姿态，保持旧上身。",
+  "inputs": [
+    {
+      "manifest": "../../output/mint-adventurer-collection-v21/bundle/manifest.json",
+      "label": "v21 八帧"
+    },
+    {
+      "manifest": "../../output/mint-adventurer-collection-v22/bundle/manifest.json",
+      "label": "v22 十帧候选"
+    }
+  ]
+}

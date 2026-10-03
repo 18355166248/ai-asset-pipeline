@@ -1,0 +1,108 @@
+[
+  {
+    "phase": 0,
+    "startAction": "move-stop",
+    "selectedClip": "move-stop",
+    "stopFrames": [
+      {
+        "index": 0,
+        "x": 0,
+        "y": 1536
+      },
+      {
+        "index": 1,
+        "x": 256,
+        "y": 1536
+      },
+      {
+        "index": 1,
+        "x": 256,
+        "y": 1536
+      },
+      {
+        "index": 3,
+        "x": 768,
+        "y": 1536
+      }
+    ],
+    "finalAction": "idle",
+    "finalX": 9.9
+  },
+  {
+    "phase": 0.4,
+    "startAction": "move-stop",
+    "selectedClip": "stop-front",
+    "stopFrames": [
+      {
+        "index": 0,
+        "x": 0,
+        "y": 1792
+      },
+      {
+        "index": 1,
+        "x": 256,
+        "y": 1792
+      },
+      {
+        "index": 2,
+        "x": 512,
+        "y": 1792
+      }
+    ],
+    "finalAction": "idle",
+    "finalX": 45
+  },
+  {
+    "phase": 0.25,
+    "startAction": "move-settle",
+    "selectedClip": "stop-front",
+    "stopFrames": [
+      {
+        "index": 0,
+        "x": 0,
+        "y": 1792
+      },
+      {
+        "index": 1,
+        "x": 256,
+        "y": 1792
+      },
+      {
+        "index": 2,
+        "x": 512,
+        "y": 1792
+      }
+    ],
+    "finalAction": "idle",
+    "finalX": 33.75
+  },
+  {
+    "phase": 0.65,
+    "startAction": "move-settle",
+    "selectedClip": "move-stop",
+    "stopFrames": [
+      {
+        "index": 0,
+        "x": 0,
+        "y": 1536
+      },
+      {
+        "index": 1,
+        "x": 256,
+        "y": 1536
+      },
+      {
+        "index": 1,
+        "x": 256,
+        "y": 1536
+      },
+      {
+        "index": 3,
+        "x": 768,
+        "y": 1536
+      }
+    ],
+    "finalAction": "idle",
+    "finalX": 69.75
+  }
+]
